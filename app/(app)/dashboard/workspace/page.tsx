@@ -33,6 +33,7 @@ import {
   LockOutlined,
   FilePdfOutlined,
   BellOutlined,
+  HomeOutlined,
 } from '@ant-design/icons';
 import { RupeeOutlined } from '@/components/ui/RupeeIcon';
 import { useWorkspaceStore, useAuthStore, useSubscriptionStore } from '@/lib/store';
@@ -65,10 +66,6 @@ import {
   deleteDesignation as apiDeleteDesignation,
   getDesignationUsage,
 } from '@/lib/actions/workspaces.actions';
-import {
-  getMaintenanceLeadTimeAction,
-  setMaintenanceLeadTimeAction,
-} from '@/lib/actions/machines.actions';
 import type { PendingInvitation } from '@/lib/actions/workspaces.actions';
 import { DsAvatar, DsPageHeader, StatTile } from '@/components/ui';
 import type {
@@ -79,14 +76,12 @@ import type {
   Workspace,
   Shift,
   BankAccount,
-  Firm,
   Role,
   DesignationRecord,
   DesignationLocale,
 } from '@/types';
 import { normalizeWorkspaceList } from '@/lib/utils/workspace.utils';
 import { parseApiError } from '@/lib/utils';
-import { getCurrentFirm, ensureFirm } from '@/lib/actions/finance.actions';
 
 const { Option } = Select;
 
@@ -384,12 +379,6 @@ function GeneralSettingsForm({
   );
 }
 
-// The business-profile editor was relocated to the canonical finance Business
-// Profile page (app/dashboard/finance/firms/[firmId]/settings/business) so the
-// firm's identity/address/GSTINs/preferences have a single source of truth.
-// Workspace settings now links there (see the Business section render) instead
-// of hosting a duplicate editor.
-
 function ChangeRoleForm({
   currentRole,
   onFinish,
@@ -521,114 +510,6 @@ function AppLockIdleForm({
   );
 }
 
-// ── Operations: Maintenance lead time ─────────────────────────────────────
-// Migrated from `app/dashboard/settings/workspace/page.tsx` (Phase 5 W2 +
-// W3 consolidation; old route 308-redirects here on W3).
-function OperationsMaintenanceForm({
-  msgApi,
-  t,
-}: {
-  msgApi: ReturnType<typeof message.useMessage>[0];
-  t: ReturnType<typeof useTranslations>;
-}) {
-  const tMaint = useTranslations('machines-maintenance');
-  const tProfile = useTranslations('profile');
-  // AC-4.1: per-slice selectors (this nested form re-rendered on every workspace
-  // store change before, now only when these two slices move).
-  const currentWorkspaceId = useWorkspaceStore((s) => s.currentWorkspaceId);
-  const currentWorkspace = useWorkspaceStore((s) => s.currentWorkspace);
-  const { user } = useAuthStore();
-  const { entitlements, isHydrated } = useSubscriptionStore();
-
-  const [leadTime, setLeadTime] = useState<number>(7);
-  const [original, setOriginal] = useState<number>(7);
-  const [loading, setLoading] = useState(true);
-  const [saving, setSaving] = useState(false);
-
-  const isOwner = !!(
-    user &&
-    currentWorkspace &&
-    (currentWorkspace.ownerId === user._id ||
-      (currentWorkspace as unknown as { owner?: { _id?: string } })?.owner?._id === user._id)
-  );
-
-  const machinesAccess = entitlements?.moduleAccess?.find((m) => m.module === 'machines');
-  const maintenanceSub = machinesAccess?.subFeatures?.find(
-    (sf) => sf.key === 'machines_maintenance',
-  );
-  const hasMaintenance =
-    !!machinesAccess?.enabled && (!maintenanceSub || maintenanceSub.access !== 'locked');
-
-  useEffect(() => {
-    if (!currentWorkspaceId || !hasMaintenance || !isOwner) return;
-    let cancelled = false;
-    (async () => {
-      try {
-        const r = await getMaintenanceLeadTimeAction(currentWorkspaceId);
-        if (cancelled) return;
-        setLeadTime(r.leadTimeDays);
-        setOriginal(r.leadTimeDays);
-      } catch {
-        // fall back to default
-      } finally {
-        if (!cancelled) setLoading(false);
-      }
-    })();
-    return () => {
-      cancelled = true;
-    };
-  }, [currentWorkspaceId, hasMaintenance, isOwner]);
-
-  if (!isHydrated || !isOwner || !hasMaintenance) {
-    return <p className="m-0 text-[13px] text-muted">{tProfile('section.workspace.empty.desc')}</p>;
-  }
-
-  const onSave = async () => {
-    if (!currentWorkspaceId) return;
-    if (leadTime < 1 || leadTime > 30) {
-      msgApi.error(tMaint('errors.MAINTENANCE_LEAD_TIME_OUT_OF_RANGE'));
-      return;
-    }
-    setSaving(true);
-    try {
-      const r = await setMaintenanceLeadTimeAction(currentWorkspaceId, leadTime);
-      setOriginal(r.leadTimeDays);
-      setLeadTime(r.leadTimeDays);
-      msgApi.success(`${tMaint('settings.leadTimeTitle')} - ${t('generalSettings.saveSuccess')}`);
-    } catch (e) {
-      msgApi.error(parseApiError(e));
-    } finally {
-      setSaving(false);
-    }
-  };
-
-  const dirty = leadTime !== original;
-
-  return (
-    <div className="space-y-3">
-      <div>
-        <p className="m-0 text-[14px] font-medium text-heading">
-          {tMaint('settings.leadTimeTitle')}
-        </p>
-        <p className="m-0 mt-0.5 text-[12.5px] text-muted">{tMaint('settings.leadTimeHelp')}</p>
-      </div>
-      <div className="flex items-center gap-3">
-        <InputNumber
-          min={1}
-          max={30}
-          value={leadTime}
-          disabled={loading || saving}
-          onChange={(v) => setLeadTime(Number(v ?? 7))}
-          style={{ width: 120 }}
-          aria-label={tMaint('settings.leadTimeTitle')}
-        />
-        <Button type="primary" loading={saving} disabled={!dirty || loading} onClick={onSave}>
-          {t('generalSettings.saveBtn')}
-        </Button>
-      </div>
-    </div>
-  );
-}
 
 // Section row component (extracted to avoid creating components during render)
 type SectionDensity = 'standard' | 'heavy';
@@ -837,26 +718,8 @@ export default function WorkspacePage() {
   const [deleteConfirmName, setDeleteConfirmName] = useState('');
   const [deleting, setDeleting] = useState(false);
 
-  // Business profile (firm) - 1:1 with workspace
-  const [firm, setFirm] = useState<Firm | null>(null);
-  const [loadingFirm, setLoadingFirm] = useState(false);
-  const [ensuringFirm, setEnsuringFirm] = useState(false);
-  const businessSectionRef = useRef<HTMLDivElement | null>(null);
-  const [businessHighlight, setBusinessHighlight] = useState(false);
-
   // Derive initial state from search params (avoids setState-in-effect)
   const initialSection = searchParams.get('section');
-
-  // Handle scroll-to-business on section param
-  useEffect(() => {
-    if (initialSection === 'business') {
-      setTimeout(() => {
-        businessSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        setBusinessHighlight(true);
-        setTimeout(() => setBusinessHighlight(false), 2200);
-      }, 200);
-    }
-  }, [initialSection]);
 
   // Force refresh workspace data if missing
   useEffect(() => {
@@ -952,12 +815,6 @@ export default function WorkspacePage() {
       loadMembers(currentWorkspaceId);
       loadShifts(currentWorkspaceId);
       loadPendingInvitations(currentWorkspaceId);
-      // Load the workspace's 1:1 firm (business profile)
-      setLoadingFirm(true);
-      getCurrentFirm(currentWorkspaceId)
-        .then((f) => setFirm(f ?? null))
-        .catch(() => setFirm(null))
-        .finally(() => setLoadingFirm(false));
     }
   }, [
     ws,
@@ -968,21 +825,6 @@ export default function WorkspacePage() {
     permissionsData,
     permissionsLoading,
   ]);
-
-  const handleEnsureFirm = async () => {
-    if (!currentWorkspaceId || !ws) return;
-    setEnsuringFirm(true);
-    try {
-      const f = await ensureFirm(currentWorkspaceId, { firmName: ws.name });
-      setFirm(f);
-      msgApi.success(t('business.setupSuccess'));
-    } catch (e: unknown) {
-      const err = e as { message?: string };
-      msgApi.error(err?.message ?? t('business.setupFailed'));
-    } finally {
-      setEnsuringFirm(false);
-    }
-  };
 
   // RBAC Remediation Tier 1 (2026-05-18): page-level permission guard.
   // Show loading skeleton while permissions are resolving; render a
@@ -1569,17 +1411,6 @@ export default function WorkspacePage() {
           action: () => openAndScroll('general'),
         },
         {
-          key: 'business',
-          label: 'Business profile',
-          done: Boolean(
-            firm &&
-            firm.setupChecklistState?.step1Done &&
-            firm.setupChecklistState?.step2Done &&
-            firm.setupChecklistState?.step3Done,
-          ),
-          action: () => openAndScroll('business'),
-        },
-        {
           key: 'designations',
           label: 'Designations',
           done: designations.length > 0,
@@ -1824,71 +1655,28 @@ export default function WorkspacePage() {
             />
           </SectionRow>
 
-          <div
-            ref={businessSectionRef}
-            className={`transition-shadow ${businessHighlight ? 'rounded-xl ring-2 ring-primary ring-offset-2' : ''}`}
+          {/* Locations — restored standalone (2026-07-04, owner directive). Full
+              CRUD lives at its own route; this is just a launch card. */}
+          <SectionRow
+            activeSection={activeSection}
+            onToggle={toggle}
+            sectionKey="locations"
+            icon={<HomeOutlined />}
+            title="Locations"
+            subtitle="Physical work sites your staff are assigned to"
           >
-            <SectionRow
-              activeSection={activeSection}
-              onToggle={toggle}
-              sectionKey="business"
-              icon={<BankOutlined />}
-              title={t('business.title')}
-              subtitle={t('business.subtitle')}
-              badge={
-                !loadingFirm && !firm ? (
-                  <span className="shrink-0 text-[11.5px] font-semibold text-amber-700">
-                    Set up business profile →
-                  </span>
-                ) : firm &&
-                  (!firm.setupChecklistState?.step1Done ||
-                    !firm.setupChecklistState?.step2Done ||
-                    !firm.setupChecklistState?.step3Done) ? (
-                  <span className="shrink-0 rounded-md border border-amber-200 bg-amber-50 px-2 py-0.5 text-[10.5px] font-semibold text-amber-700">
-                    {t('business.incomplete')}
-                  </span>
-                ) : (
-                  <span className="inline-flex shrink-0 items-center gap-1 text-[11.5px] font-medium text-green-700">
-                    <CheckCircleOutlined style={{ fontSize: 11 }} />
-                    Set
-                  </span>
-                )
-              }
+            <p className="m-0 text-[13px] text-muted">
+              Manage the list of work locations employees can be assigned to on their profile.
+            </p>
+            <Button
+              type="primary"
+              icon={<HomeOutlined />}
+              onClick={() => router.push('/dashboard/workspace/locations')}
+              className="mt-3"
             >
-              {loadingFirm ? (
-                <div className="text-[13px] text-muted">{t('business.loading')}</div>
-              ) : firm ? (
-                <div className="space-y-3">
-                  <p className="m-0 text-[13px] text-muted">
-                    Your business identity, address, GSTINs, and accounting preferences are managed
-                    in one place under Billing &amp; Accounts, so they stay consistent across every
-                    invoice and report.
-                  </p>
-                  <Button
-                    type="primary"
-                    icon={<IdcardOutlined />}
-                    onClick={() =>
-                      router.push(`/dashboard/finance/firms/${firm._id}/settings/business`)
-                    }
-                  >
-                    Open Business Profile
-                  </Button>
-                </div>
-              ) : (
-                <div className="space-y-3">
-                  <Alert
-                    type="warning"
-                    showIcon
-                    title={t('business.missingTitle')}
-                    description={t('business.missingDescription')}
-                  />
-                  <Button type="primary" loading={ensuringFirm} onClick={handleEnsureFirm}>
-                    {t('business.setupBtn')}
-                  </Button>
-                </div>
-              )}
-            </SectionRow>
-          </div>
+              Manage Locations
+            </Button>
+          </SectionRow>
 
           <SectionRow
             activeSection={activeSection}
@@ -2439,33 +2227,8 @@ export default function WorkspacePage() {
           </SectionRow>
         </div>
 
-        {/* ── Operations (W2 - migrated from /dashboard/settings/workspace) ── */}
-        <div
-          className="mt-2 !mb-[20px] flex items-center gap-2.5"
-          id="ws-section-operations-banner"
-        >
-          <div className="h-5 w-1 flex-shrink-0 rounded-full bg-primary" />
-          <div>
-            <h2 className="m-0 mb-0.5 font-label text-[12px] font-bold text-heading">
-              {t('overview.operationsSectionTitle')}
-            </h2>
-            <p className="m-0 text-[12px] text-muted">
-              {t('overview.operationsSectionDescription')}
-            </p>
-          </div>
-        </div>
-        <div className="!mb-[48px] flex flex-col !gap-[16px]">
-          <SectionRow
-            activeSection={activeSection}
-            onToggle={toggle}
-            sectionKey="operations"
-            icon={<ClockCircleOutlined />}
-            title={t('overview.operationsSectionTitle')}
-            subtitle={t('overview.operationsSectionDescription')}
-          >
-            <OperationsMaintenanceForm msgApi={msgApi} t={t} />
-          </SectionRow>
-        </div>
+        {/* Operations section removed (2026-07-04) — Machines/Maintenance module
+            deleted; OperationsMaintenanceForm was its only content. */}
 
         {isOwner && (
           <>

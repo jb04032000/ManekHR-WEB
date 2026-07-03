@@ -272,11 +272,17 @@ interface SubscriptionState {
   entitlements: PlanEntitlements | null;
   plan: { _id: string; name: string; tier: string } | null;
   activeAddOns: PurchasedAddOn[];
+  // Platform-wide "Coming Soon" module flags (admin-set, public read). A LOCKED
+  // module in this list renders the Coming Soon card / nav badge instead of the
+  // upgrade prompt. Fetched fail-soft in DashboardLayout bootstrap; consumed by
+  // useFeatureAccess + Sidebar. Presentation-only - never affects gating.
+  comingSoonModules: string[];
   isLoading: boolean;
   isHydrated: boolean;
   setSubscription: (subscription: Subscription | null) => void;
   setEntitlements: (entitlements: PlanEntitlements | null) => void;
   setActiveAddOns: (addOns: PurchasedAddOn[]) => void;
+  setComingSoonModules: (modules: string[]) => void;
   clearSubscription: () => void;
   setLoading: (loading: boolean) => void;
   _setHydrated: () => void;
@@ -289,6 +295,7 @@ export const useSubscriptionStore = create<SubscriptionState>()(
       entitlements: null,
       plan: null,
       activeAddOns: [],
+      comingSoonModules: [],
       isLoading: true,
       isHydrated: false,
 
@@ -301,6 +308,8 @@ export const useSubscriptionStore = create<SubscriptionState>()(
       setEntitlements: (entitlements) => set({ entitlements, isLoading: false }),
 
       setActiveAddOns: (activeAddOns) => set({ activeAddOns }),
+
+      setComingSoonModules: (comingSoonModules) => set({ comingSoonModules }),
 
       clearSubscription: () =>
         set({
@@ -329,6 +338,7 @@ export const useSubscriptionStore = create<SubscriptionState>()(
         entitlements: s.entitlements,
         plan: s.plan,
         activeAddOns: s.activeAddOns,
+        comingSoonModules: s.comingSoonModules,
       }),
     },
   ),

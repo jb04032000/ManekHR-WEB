@@ -35,8 +35,8 @@ import {
 } from '@ant-design/icons';
 import { useAuthStore } from '@/lib/store';
 import { useShellTitle } from '@/lib/shell-title';
-import { useShellNotifications } from '@/lib/connect/NotificationProvider';
-import type { NotificationItem } from '@/features/connect/notifications/notifications.actions';
+import { useShellNotifications } from '@/lib/notifications/NotificationProvider';
+import type { NotificationItem } from '@/lib/notifications/notifications.actions';
 import { HeaderRightActions } from '@/components/ui/HeaderRightActions';
 import { FN_CHORDS, getModuleFromPath } from '@/lib/constants/keyboard-shortcuts.registry';
 import ShortcutHint from '@/components/ui/ShortcutHint';
@@ -46,8 +46,8 @@ import { useLogout } from '@/hooks/useLogout';
 import { useBrowserPush } from '@/lib/push/useBrowserPush';
 import { DsAvatar } from '@/components/ui';
 import ModeSidebar, { type AppMode } from './ModeSidebar';
-import ConnectSearchBar from '@/components/connect/ConnectSearchBar';
-import ConnectMobileSearch from '@/components/connect/ConnectMobileSearch';
+
+
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import { useTranslations } from 'next-intl';
@@ -66,18 +66,12 @@ const BREADCRUMB_MAP: Record<string, string> = {
   '/dashboard/salary': 'navigation.payroll',
   '/dashboard/shifts': 'navigation.shifts',
   '/dashboard/holidays': 'navigation.holidays',
-  '/dashboard/bills': 'navigation.bills',
   '/dashboard/roles': 'navigation.roles',
   '/dashboard/settings': 'navigation.settings',
   '/dashboard/profile': 'navigation.profile',
   '/dashboard/workspace': 'navigation.workspace',
   '/dashboard/workspace/employee-code': 'navigation.employeeCodeSettings',
   '/account/subscription': 'subscription.title',
-  '/dashboard/finance': 'navigation.billingAccounts',
-  '/dashboard/machines': 'navigation.machines',
-  '/dashboard/maintenance': 'navigation.machines',
-  '/dashboard/production-utilisation': 'navigation.machines',
-  '/dashboard/parties': 'navigation.parties',
   '/connect/feed': 'connectMode.pageTitle',
   '/connect/stores': 'connectMode.storesTitle',
   // The RFQ hub (`/connect/rfq` + its `<id>` detail via the ancestor walk).
@@ -323,19 +317,7 @@ export default function TopHeader({
     '/dashboard/salary': 'Member Detail',
     '/dashboard/attendance': 'Detail',
   };
-  // Finance URLs are firm-scoped (/dashboard/finance/firms/{firmId}/...) because a
-  // firm is 1:1 with the workspace. That scoping is an implementation detail, not
-  // user-meaningful, and it does not appear in the sidebar IA. Collapse the literal
-  // "firms" segment and the {firmId} that follows so the breadcrumb mirrors the
-  // sidebar (Billing & Accounts > Sales > Invoices) instead of showing the
-  // confusing "Firms / Detail" links. Downstream hrefs keep the full path, so
-  // every remaining crumb still navigates correctly.
-  const financeFirmScoped =
-    segments[0] === 'dashboard' && segments[1] === 'finance' && segments[2] === 'firms';
   const breadcrumbs = segments.reduce<Array<{ title: string; href?: string }>>((acc, seg, i) => {
-    if (financeFirmScoped && (i === 2 || (i === 3 && isMongoId(seg)))) {
-      return acc;
-    }
     const path = '/' + segments.slice(0, i + 1).join('/');
     const key = BREADCRUMB_MAP[path];
     let label: string;
@@ -780,13 +762,9 @@ export default function TopHeader({
               Hidden on mobile (where the page would crowd it). ERP mode renders
               a 0-width placeholder so the 3-column grid still has three
               children and the right chunk stays flush-right. */}
-          {mode === 'connect' ? (
-            <div className="hidden w-full md:flex md:items-center md:justify-center">
-              <ConnectSearchBar className="w-full" />
-            </div>
-          ) : (
-            <div className="hidden md:block" aria-hidden />
-          )}
+          {/* Connect product removed (2026-07-04): the center column keeps its
+              0-width placeholder so the 3-column grid stays balanced. */}
+          <div className="hidden md:block" aria-hidden />
 
           <div className="flex flex-shrink-0 items-center gap-2 md:justify-end">
             {/* Mobile Connect search - the desktop bar is hidden below md, so
@@ -1058,9 +1036,7 @@ export default function TopHeader({
 
       {/* Full-screen mobile search sheet (design-decisions doc §6.4). Connect
           mode only; self-hides below its own `md:hidden` + the `open` gate. */}
-      {mode === 'connect' && (
-        <ConnectMobileSearch open={searchOpen} onClose={() => setSearchOpen(false)} />
-      )}
+      {/* Connect product removed (2026-07-04): mobile search sheet deleted. */}
     </>
   );
 }

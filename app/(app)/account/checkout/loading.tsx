@@ -9,9 +9,9 @@
  * primitives (the `.skeleton` shimmer). The whole tree is aria-hidden.
  *
  * Links: app/account/checkout/page.tsx + components/subscription/CheckoutView.tsx
- * (the real layout this mirrors), components/connect/Skeleton.tsx (primitives).
+ * (the real layout this mirrors), components/ui/Skeleton.tsx (primitives).
  */
-import { SkeletonCard, SkeletonLine, SkeletonButton } from '@/components/connect/Skeleton';
+import { SkeletonCard, SkeletonLine, SkeletonButton } from '@/components/ui/Skeleton';
 
 /** A numbered section-card skeleton: badge + heading row, then body slot. */
 function SectionSkeleton({ children }: { children: React.ReactNode }) {

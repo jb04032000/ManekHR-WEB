@@ -21,20 +21,7 @@ const PUBLIC_PATHS = [
   // These live in the app/(marketing) route group and carry no
   // authenticated data, so they must render for logged-out visitors
   // instead of bouncing to /auth.
-  '/connect',
-  '/textile-marketplace',
-  '/textile-services',
-  '/textile-jobs',
-  '/textile-network',
-  // SEO landing pages targeting specific trade intents (app/[locale]/(marketing)/*).
-  // They are in sitemap.ts and meant to rank, so they MUST render logged-out for
-  // crawlers; keep this list in lockstep with sitemap.ts STATIC_ROUTES or they
-  // bounce to /auth (allowlist omission bug).
-  '/saree-wholesalers',
-  '/zari-manufacturers',
-  '/embroidery-job-work',
-  '/fabric-suppliers',
-  '/dress-material-wholesalers',
+  // (Connect product + its SEO trade pages removed 2026-07-04.)
   '/erp',
   '/pricing',
   '/about',
@@ -44,8 +31,8 @@ const PUBLIC_PATHS = [
   // pages above or they bounce to /auth (allowlist omission bug).
   '/guides',
   '/guidelines',
-  // Legal / compliance pages (privacy, terms, grievance + their /connect and
-  // /erp variants via prefix match). MUST be public: AdSense review and DPDP
+  // Legal / compliance pages (privacy, terms, grievance + the /erp variants
+  // via prefix match). MUST be public: AdSense review and DPDP
   // require a reachable privacy policy and grievance route, and the logged-out
   // signup / consent screen links here. They carry no authenticated data.
   '/privacy',
@@ -66,48 +53,24 @@ const PUBLIC_PATHS = [
   '/upgrade',
   '/kiosk',
   '/portal',
-  // Zari360 Connect - public, SEO-indexable entity pages must render
-  // logged-out (crawlers + WhatsApp/share links). These are the
-  // `(connect-public)` route group: `/u` (profile), `/company` (company
-  // page), `/store` (storefront), `/p` (post), `/products` (listing detail),
-  // `/jobs` (job detail). The authenticated product lives under `/connect/*`
-  // and stays gated.
-  '/u',
-  '/company',
-  '/store',
-  '/p',
-  '/products',
-  '/jobs',
 ];
 
 // Paths exempt from the `mobile_only` device-tier redirect below.
 //
-// Two unrelated things both read as "platform" in this app:
-//   • the *device* platform (mobile app vs web) - an ERP subscription tier
-//     (`platformAccess`); the upgrade page is `/platform-restricted`.
-//   • the Zari360 Connect product - the authenticated app at `/connect/*`.
-// They are NOT related. Connect is feature-flagged (`connectEnabled`), never
-// subscription-gated - so `/connect/*` (authed) and `/u/*` (public profiles)
-// are exempt here: a `mobile_only` ERP subscriber may still use Connect.
+// "platform" here = the *device* platform (mobile app vs web) - an ERP
+// subscription tier (`platformAccess`); the upgrade page is `/platform-restricted`.
 const DEVICE_TIER_EXEMPT_PATHS = [
   '/platform-restricted',
   '/api/',
   '/_next/',
   // Offline fallback is a network-error screen, never a device-tier upsell.
   '/offline',
-  '/connect',
-  '/u',
-  '/company',
-  '/store',
-  '/p',
-  '/products',
-  '/jobs',
 ];
 const ACCESS_COOKIE = 'z360_access_token';
 const REFRESH_COOKIE = 'z360_refresh_token';
 const PLATFORM_ACCESS_COOKIE = 'z360_platform_access';
-// Last product surface the user visited ('connect' | 'erp'). Stamped below on
-// authenticated /connect/* and /dashboard* navigations, read by the landing
+// Last product surface the user visited (historically 'connect' | 'erp'; ERP-only
+// since the Connect removal 2026-07-04). Stamped on /dashboard* navigations, read by the landing
 // redirect so an installed-PWA launch (start_url '/', see app/manifest.ts)
 // reopens the product the user was in last session instead of the marketing
 // page. UX hint only, never used for authorization.
@@ -121,31 +84,22 @@ const LAST_PRODUCT_COOKIE_OPTS = {
 
 /**
  * Which product surface a pathname belongs to, for the last-product stamp.
- * Only called AFTER the marketing early-return, so a `/connect...` here is the
- * authenticated Connect app (the marketing landing is exact '/connect' and
- * never reaches the stamp).
+ * Only called AFTER the marketing early-return.
  */
 function lastProductOf(pathname: string): 'connect' | 'erp' | null {
-  if (pathname.startsWith('/connect')) return 'connect';
+  // Connect product removed (2026-07-04): only the ERP surface stamps the cookie.
   if (pathname.startsWith('/dashboard')) return 'erp';
   return null;
 }
 
 /**
  * Where an ALREADY-AUTHENTICATED hit on /auth* should bounce to. Was a
- * hardcoded '/dashboard', which dumped Connect-only users (who never accepted
- * the ERP policy) onto the ERP PolicyGate - the "accept T&C again" bug.
- * Product-aware via the z360_last_product cookie: 'connect' -> the feed,
- * 'erp' or no cookie -> '/dashboard' (the pre-existing behaviour, so users
- * without the cookie see no change). Only these two fixed in-app URLs are
- * ever returned - the cookie value is a hint, never an open redirect.
- * Keep in sync with the '/' landing redirect above, which reads the same
- * cookie. -> app/(app)/dashboard/layout.tsx (ERP gate), connect/layout.tsx.
+ * hardcoded '/dashboard'. Connect was removed (2026-07-04), so this is now a
+ * fixed in-app URL - never an open redirect.
  */
-function authedAuthBounceTarget(request: NextRequest): string {
-  return request.cookies.get(LAST_PRODUCT_COOKIE)?.value === 'connect'
-    ? '/connect/feed'
-    : '/dashboard';
+function authedAuthBounceTarget(_request: NextRequest): string {
+  // Connect product removed (2026-07-04): ERP is the only in-app destination.
+  return '/dashboard';
 }
 
 // next-intl middleware for the PUBLIC marketing surface only. It performs the
@@ -180,10 +134,8 @@ function stripLocale(pathname: string): string {
 }
 
 // The public marketing surface (app/[locale]/(marketing)/**), keyed on the
-// LOCALE-STRIPPED path. `/connect` is EXACT only: it is the marketing landing,
-// whereas `/connect/*` is the authenticated Connect app and must NOT be routed
-// through next-intl. Keep in sync with the (marketing) route group.
-const MARKETING_EXACT = new Set(['/', '/connect']);
+// LOCALE-STRIPPED path. Keep in sync with the (marketing) route group.
+const MARKETING_EXACT = new Set(['/']);
 const MARKETING_PREFIXES = [
   '/about',
   '/contact',
@@ -262,39 +214,6 @@ function isDeviceTierExempt(pathname: string): boolean {
   return DEVICE_TIER_EXEMPT_PATHS.some((p) => pathname.startsWith(p));
 }
 
-/**
- * Map a public Connect profile path to its in-app mirror, or null when the path
- * is not a public profile route. An authenticated visitor on `/u/*` (the public,
- * logged-out, SEO surface) is sent to `/connect/u/*` (the same content inside the
- * Connect shell + rails), so a shared or direct link keeps a signed-in member
- * in-app instead of the bare public page. Logged-out visitors never reach this
- * (the caller only invokes it once the session is known-authenticated), so the
- * public page still renders for crawlers + conversion. No loop: `/connect/*` is
- * not `/u/*`, so the mirror target is never itself remapped.
- */
-function connectMirrorPath(pathname: string): string | null {
-  // Never remap an already in-app path. This guards against producing
-  // `/connect/connect/*` (a redirect loop).
-  if (pathname.startsWith('/connect')) return null;
-  // Public person profiles -> in-app mirror.
-  if (pathname === '/u' || pathname.startsWith('/u/')) return `/connect${pathname}`;
-  // Public company pages -> in-app mirror, so a signed-in member tapping a
-  // workshop lands in the Connect shell instead of the logged-out page.
-  if (pathname === '/company' || pathname.startsWith('/company/')) return `/connect${pathname}`;
-  // Public storefronts -> in-app mirror (same reason as company pages).
-  if (pathname === '/store' || pathname.startsWith('/store/')) return `/connect${pathname}`;
-  // Public product detail -> the in-app marketplace listing (different path
-  // shape, so map explicitly). Only the detail form (`/products/<id>`) mirrors;
-  // a bare `/products` has no in-app equivalent and falls through to public.
-  if (pathname.startsWith('/products/')) {
-    return pathname.replace('/products/', '/connect/marketplace/listing/');
-  }
-  // Public job detail -> the in-app job (apply / hiring-funnel) experience.
-  if (pathname.startsWith('/jobs/')) {
-    return pathname.replace('/jobs/', '/connect/jobs/');
-  }
-  return null;
-}
 
 function isValidReturnTo(url: string | null): boolean {
   if (!url) return false;
@@ -314,15 +233,8 @@ export async function proxy(request: NextRequest) {
   // prefix so the auth/public checks match `/gu/pricing` the same as `/pricing`.
   const barePathname = stripLocale(pathname);
 
-  // '/connect' is EXACT-only here (the marketing landing): '/connect/*' is the
-  // authenticated Connect app and must go through the auth gate. Without this
-  // carve-out the generic prefix match made every /connect/* page public, so a
-  // logged-out visitor rendered the whole Connect shell (empty/sample data).
-  // Keep in sync with MARKETING_EXACT above. Public SEO entity pages stay on
-  // their own prefixes ('/u', '/company', '/store', '/p', '/products', '/jobs').
   const isPublic = PUBLIC_PATHS.some(
-    (p) =>
-      barePathname === p || (p !== '/connect' && p !== '/' && barePathname.startsWith(p + '/')),
+    (p) => barePathname === p || (p !== '/' && barePathname.startsWith(p + '/')),
   );
 
   const accessToken = request.cookies.get(ACCESS_COOKIE)?.value;
@@ -344,7 +256,7 @@ export async function proxy(request: NextRequest) {
   // Logged-in landing redirect: a signed-in user opening '/launch' (the
   // installed PWA's start_url - see app/manifest.ts) or the marketing landing
   // ('/') is sent back to the product they used last session
-  // (z360_last_product cookie, stamped on authed /connect* and /dashboard*
+  // (z360_last_product cookie, stamped on authed /dashboard*
   // navigations below). Deliberately conservative: no last-product cookie ->
   // no redirect for '/', and '/launch' falls back to '/'.
   //
@@ -365,8 +277,7 @@ export async function proxy(request: NextRequest) {
       return res;
     };
     const lastProduct = request.cookies.get(LAST_PRODUCT_COOKIE)?.value;
-    const target =
-      lastProduct === 'erp' ? '/dashboard' : lastProduct === 'connect' ? '/connect/feed' : null;
+    const target = lastProduct === 'erp' ? '/dashboard' : null;
     if (target) {
       if (hasValidAccess) {
         return redirectNoStore(target);
@@ -416,13 +327,6 @@ export async function proxy(request: NextRequest) {
 
   // Fast path: valid access token - let through
   if (hasValidAccess) {
-    // Authed users viewing a public Connect profile / activity (`/u/*`) are sent
-    // to the in-app mirror (`/connect/u/*`) so shared links keep them in the
-    // shell + rails. Logged-out visitors fall through to the public page below.
-    const mirror = connectMirrorPath(pathname);
-    if (mirror) {
-      return NextResponse.redirect(new URL(mirror + request.nextUrl.search, request.url));
-    }
     // Redirect authenticated users away from /auth, but allow token-bearing
     // pages (reset-password, verify-email, setup-pin, setup-workspace) to
     // render - those flows can be triggered while a session is already active
@@ -442,8 +346,8 @@ export async function proxy(request: NextRequest) {
       pathname === '/auth/setup-workspace' ||
       pathname.startsWith('/auth/setup-workspace/');
     if (pathname.startsWith('/auth') && !isTokenBearingAuthRoute) {
-      // Product-aware bounce (see authedAuthBounceTarget): a Connect-only
-      // session goes back to the feed, not the ERP shell + its policy gate.
+      // Bounce an already-authenticated /auth hit into the app (see
+      // authedAuthBounceTarget).
       return NextResponse.redirect(new URL(authedAuthBounceTarget(request), request.url));
     }
     // Stamp the last-product cookie (only when it changes, to avoid a
@@ -474,20 +378,6 @@ export async function proxy(request: NextRequest) {
       };
       const platformCookieOpts = { ...cookieOpts, httpOnly: false };
 
-      // Same in-app mirror redirect as the fast path, for an authed member whose
-      // access token had expired (e.g. a shared `/u/<slug>` link opened after an
-      // idle spell): bounce to `/connect/u/*` and carry the refreshed cookies so
-      // the next request is already authenticated.
-      const mirror = connectMirrorPath(pathname);
-      if (mirror) {
-        const res = NextResponse.redirect(new URL(mirror + request.nextUrl.search, request.url));
-        res.cookies.set(ACCESS_COOKIE, tokens.accessToken, cookieOpts);
-        res.cookies.set(REFRESH_COOKIE, tokens.refreshToken, cookieOpts);
-        if (tokens.platformAccess) {
-          res.cookies.set(PLATFORM_ACCESS_COOKIE, tokens.platformAccess, platformCookieOpts);
-        }
-        return res;
-      }
 
       const isTokenBearingAuthRoute =
         pathname === '/auth/reset-password' ||

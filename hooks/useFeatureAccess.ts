@@ -9,11 +9,23 @@ export interface UseFeatureAccessResult {
   accessLevel: FeatureAccessLevel;
   isLimited: boolean;
   isLocked: boolean;
+  /**
+   * True when the module is LOCKED and platform-flagged "Coming Soon"
+   * (admin-set via /admin/settings, served by the public module-availability
+   * endpoint). Presentation-only: callers (FeatureGate/ModuleGate/Sidebar)
+   * render a Coming Soon card/badge instead of the upgrade prompt. Always
+   * false for an ENABLED module - a plan that includes the module wins.
+   */
+  isComingSoon: boolean;
   isLoading: boolean;
 }
 
 export function useFeatureAccess(module: string, subFeature?: string): UseFeatureAccessResult {
-  const { entitlements, isLoading, isHydrated } = useSubscriptionStore();
+  const { entitlements, comingSoonModules, isLoading, isHydrated } = useSubscriptionStore();
+
+  // Module-level flag: applies to every locked surface of the module,
+  // including sub-feature gates (the whole module ships together).
+  const flaggedComingSoon = (comingSoonModules || []).includes(module);
 
   return useCallback(() => {
     if (!isHydrated || isLoading) {
@@ -22,6 +34,7 @@ export function useFeatureAccess(module: string, subFeature?: string): UseFeatur
         accessLevel: 'locked' as FeatureAccessLevel,
         isLimited: false,
         isLocked: true,
+        isComingSoon: false,
         isLoading: true,
       };
     }
@@ -33,6 +46,7 @@ export function useFeatureAccess(module: string, subFeature?: string): UseFeatur
         accessLevel: 'locked' as FeatureAccessLevel,
         isLimited: false,
         isLocked: true,
+        isComingSoon: flaggedComingSoon,
         isLoading: false,
       };
     }
@@ -46,6 +60,7 @@ export function useFeatureAccess(module: string, subFeature?: string): UseFeatur
         accessLevel: 'locked' as FeatureAccessLevel,
         isLimited: false,
         isLocked: true,
+        isComingSoon: flaggedComingSoon,
         isLoading: false,
       };
     }
@@ -56,6 +71,7 @@ export function useFeatureAccess(module: string, subFeature?: string): UseFeatur
         accessLevel: 'full' as FeatureAccessLevel,
         isLimited: false,
         isLocked: false,
+        isComingSoon: false,
         isLoading: false,
       };
     }
@@ -71,6 +87,7 @@ export function useFeatureAccess(module: string, subFeature?: string): UseFeatur
         accessLevel: 'full' as FeatureAccessLevel,
         isLimited: false,
         isLocked: false,
+        isComingSoon: false,
         isLoading: false,
       };
     }
@@ -83,9 +100,10 @@ export function useFeatureAccess(module: string, subFeature?: string): UseFeatur
       accessLevel,
       isLimited: accessLevel === 'limited',
       isLocked: accessLevel === 'locked',
+      isComingSoon: accessLevel === 'locked' && flaggedComingSoon,
       isLoading: false,
     };
-  }, [entitlements, isLoading, isHydrated, module, subFeature])();
+  }, [entitlements, isLoading, isHydrated, module, subFeature, flaggedComingSoon])();
 }
 
 export function useModuleAccess(module: string): UseFeatureAccessResult {

@@ -42,6 +42,19 @@ describe('ModuleAccessEditor - Machines grouping + dead-card hide', () => {
     expect(screen.getByText('Salary')).toBeInTheDocument();
   });
 
+  it('renders an Accounting group containing finance + inventory + gst_compliance + job_work cards', () => {
+    render(<ModuleAccessEditor moduleAccess={baseAccess()} onChange={vi.fn()} />);
+
+    // Parent group header (owner directive 2026-07-04).
+    expect(screen.getByText('Accounting Group')).toBeInTheDocument();
+
+    // The four accounting module cards render (their module Tag text).
+    expect(screen.getByText('finance')).toBeInTheDocument();
+    expect(screen.getByText('inventory')).toBeInTheDocument();
+    expect(screen.getByText('gst_compliance')).toBeInTheDocument();
+    expect(screen.getByText('job_work')).toBeInTheDocument();
+  });
+
   it('preserves a pre-existing hidden-module (maintenance) entry as pass-through on save', () => {
     // Simulate a plan that already stored a maintenance module entry the admin
     // can no longer see. Toggling a visible module must NOT drop it.

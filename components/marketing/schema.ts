@@ -658,7 +658,7 @@ export function homeJsonLd() {
         publisher: { '@id': `${BASE}/#organization` },
         // SearchAction makes the site eligible for a Google sitelinks search box.
         // Target is the real Connect federated-search route (q= param, see
-        // features/connect/search/url-params.ts). Keep the path + param in sync if
+        // the removed Connect search). Keep the path + param in sync if
         // search ever moves.
         potentialAction: {
           '@type': 'SearchAction',

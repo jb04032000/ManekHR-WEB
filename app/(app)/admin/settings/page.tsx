@@ -9,6 +9,7 @@ import { uploadService } from '@/lib/services/upload.service';
 import { invalidatePlatformDefaultsCache } from '@/lib/export/brandingCache';
 import { parseApiError } from '@/lib/utils';
 import { DsCardTitle } from '@/components/ui';
+import { ModuleAvailabilityEditor } from '@/components/admin/module-availability-editor';
 import type { BrandingAssets } from '@/types';
 
 export default function AdminSettingsPage() {
@@ -34,6 +35,14 @@ export default function AdminSettingsPage() {
     headlineOverride: string;
   }>({ enabled: true, headlineOverride: '' });
 
+  // Module Availability: which LOCKED modules show "Coming Soon" instead of
+  // the upgrade prompt. Loaded from GET /admin/settings, saved on its own via
+  // PATCH /admin/settings { comingSoonModules }. Cross-module: consumed by the
+  // public module-availability endpoint -> subscription store ->
+  // FeatureGate/ModuleGate + Sidebar.
+  const [comingSoonModules, setComingSoonModules] = useState<string[]>([]);
+  const [savingAvailability, setSavingAvailability] = useState(false);
+
   // Branding state
   const [brandingForm] = Form.useForm();
   const [branding, setBranding] = useState<BrandingAssets | undefined>(undefined);
@@ -58,6 +67,9 @@ export default function AdminSettingsPage() {
         enabled: settings.trialBanner?.enabled ?? true,
         headlineOverride: settings.trialBanner?.headlineOverride ?? '',
       });
+      // Coming-soon flags: the BE seeds a default set on a fresh DB, so absent
+      // here only means an old response shape - fall back to empty (all Upgrade).
+      setComingSoonModules(settings.comingSoonModules ?? []);
       if (brandingData) {
         // branding state -> initialValues on the branding Form (same mount-timing
         // reason). No setFieldsValue here: the Form is not mounted during load().
@@ -107,6 +119,20 @@ export default function AdminSettingsPage() {
       msgApi.error(parseApiError(e));
     } finally {
       setSavingTrialBanner(false);
+    }
+  };
+
+  // Save ONLY the coming-soon flags (never disturbs freeTierEnabled/trialBanner;
+  // the BE $sets just the provided key).
+  const handleSaveAvailability = async () => {
+    setSavingAvailability(true);
+    try {
+      await updateAdminSettings({ comingSoonModules });
+      msgApi.success(t('moduleAvailability.saved'));
+    } catch (e) {
+      msgApi.error(parseApiError(e));
+    } finally {
+      setSavingAvailability(false);
     }
   };
 
@@ -260,6 +286,26 @@ export default function AdminSettingsPage() {
             {t('trialBanner.saveButton')}
           </Button>
         </Form>
+      </Card>
+
+      {/* Module Availability: per-module "Coming Soon" vs "Upgrade" presentation
+          for locked modules, grouped like the plan module-access editor.
+          Saved on its own via PATCH /admin/settings { comingSoonModules }. */}
+      <Card title={<DsCardTitle>{t('moduleAvailability.cardTitle')}</DsCardTitle>} className="mt-6">
+        <p className="mb-4 text-xs text-subtle">{t('moduleAvailability.description')}</p>
+        <ModuleAvailabilityEditor
+          comingSoonModules={comingSoonModules}
+          onChange={setComingSoonModules}
+          disabled={savingAvailability}
+        />
+        <Button
+          type="primary"
+          className="mt-4"
+          onClick={handleSaveAvailability}
+          loading={savingAvailability}
+        >
+          {t('moduleAvailability.saveButton')}
+        </Button>
       </Card>
 
       <Card title={<DsCardTitle>Platform Default Branding</DsCardTitle>} className="mt-6">

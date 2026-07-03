@@ -290,6 +290,7 @@
       "creditNotes": "ક્રેડિટ નોટ"
     },
     "lockedTooltip": "{label} પ્રીમિયમ પ્લાનમાં ઉપલબ્ધ છે",
+    "comingSoonTooltip": "{label} ટૂંક સમયમાં આવી રહ્યું છે",
     "backToWorkspace": "વર્કસ્પેસ પર પાછા જાઓ",
     "backToConnect": "Connect પર પાછા જાઓ"
   },
@@ -1096,7 +1097,27 @@
     "addFirstMember": "તમારો પ્રથમ સભ્ય ઉમેરો",
     "noWorkspace": "કોઈ વર્કસ્પેસ પસંદ નથી",
     "selectWorkspaceToContinue": "ચાલુ રાખવા માટે વર્કસ્પેસ પસંદ કરો",
-    "viewAllMembers": "બધા સભ્યો જુઓ"
+    "viewAllMembers": "બધા સભ્યો જુઓ",
+    "hrOverview": {
+      "tagline": "તમારા સ્ટાફ અને પગાર એક નજરમાં",
+      "activeHeadcount": "સક્રિય સ્ટાફ",
+      "activeHeadcountSub": "હાલ રોસ્ટર પર",
+      "addedThisMonth": "આ મહિને જોડાયા",
+      "addedThisMonthSub": "નવા સભ્યો ઉમેરાયા",
+      "withAppAccess": "એપ ઍક્સેસ સાથે",
+      "withAppAccessSub": "ManekHR માં સાઇન ઇન કરી શકે",
+      "payrollThisMonth": "આ મહિનાનો પગાર",
+      "paidLabel": "ચૂકવાયું",
+      "payrollSnapshotTitle": "પગાર સ્નેપશોટ",
+      "payrollEmptyTitle": "હજી પગાર નથી",
+      "payrollEmptyBody": "કુલ રકમ અહીં જોવા આ મહિનાનું પેરોલ બનાવો.",
+      "byDesignationTitle": "હોદ્દા પ્રમાણે સ્ટાફ",
+      "emptyTitle": "હજી કોઈ સ્ટાફ નથી",
+      "emptyBody": "તમારો પહેલો સભ્ય ઉમેરો એટલે ઓવરવ્યૂ જીવંત બને.",
+      "errorTitle": "ઓવરવ્યૂ લોડ ન થયું",
+      "errorBody": "આંકડા લાવવામાં ભૂલ થઈ. ફરી પ્રયત્ન કરો.",
+      "quickTeamSub": "સ્ટાફ જુઓ અને મેનેજ કરો"
+    }
   },
   "activity": {
     "pageTitle": "ટીમ પ્રવૃત્તિ",
@@ -3071,6 +3092,12 @@
   },
   "subscription": {
     "title": "સબ્સ્ક્રિપ્શન",
+    "comingSoonPrompt": {
+      "compact": "ટૂંક સમયમાં",
+      "thisFeature": "આ સુવિધા",
+      "title": "{feature} ટૂંક સમયમાં આવી રહ્યું છે",
+      "description": "અમે આ મોડ્યુલ હમણાં બનાવી રહ્યા છીએ. તે આગામી અપડેટમાં ઉપલબ્ધ થશે."
+    },
     "trial": {
       "eligibleTitle": "આખું પ્લેટફોર્મ {days} દિવસ માટે મફતમાં અજમાવો",
       "eligibleDesc": "સંપૂર્ણ ઍક્સેસ, કાર્ડની જરૂર નથી.",
@@ -5593,6 +5620,20 @@
       "langGujarati": "ગુજરાતી",
       "langGujaratiRoman": "ગુજરાતી (રોમન)",
       "langHindiRoman": "હિન્દી (રોમન)"
+    },
+    "moduleAvailability": {
+      "cardTitle": "મોડ્યુલ ઉપલબ્ધતા",
+      "description": "લૉક કરેલા મોડ્યુલ પર ગ્રાહકોને શું દેખાય તે પસંદ કરો: 'ટૂંક સમયમાં' નોટિસ (મોડ્યુલ હજી બન્યું નથી) અથવા પ્લાન-અપગ્રેડ પ્રોમ્પ્ટ (ઉચ્ચ પ્લાનમાં ઉપલબ્ધ). આ ફક્ત સંદેશ બદલે છે - કંઈ અનલૉક કરતું નથી.",
+      "comingSoon": "ટૂંક સમયમાં",
+      "upgrade": "અપગ્રેડ",
+      "groupAccounting": "એકાઉન્ટિંગ ગ્રુપ",
+      "groupTimeAttendance": "ટાઇમ અને હાજરી ગ્રુપ",
+      "groupMachines": "મશીન ગ્રુપ",
+      "otherModules": "અન્ય મોડ્યુલ",
+      "allComingSoon": "બધા ટૂંક સમયમાં",
+      "allUpgrade": "બધા અપગ્રેડ",
+      "saveButton": "મોડ્યુલ ઉપલબ્ધતા સાચવો",
+      "saved": "મોડ્યુલ ઉપલબ્ધતા સાચવાઈ"
     },
     "trialBanner": {
       "cardTitle": "ટ્રાયલ બેનર",

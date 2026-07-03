@@ -35,7 +35,6 @@ import {
   listMemberDocuments,
   deleteMemberDocument,
   createMemberDocument,
-  listMachines,
 } from '@/lib/actions';
 import { parseApiError } from '@/lib/utils';
 import { uploadService } from '@/lib/services/upload.service';
@@ -721,20 +720,13 @@ export default function MemberProfilePage() {
     void loadDocuments();
   }, [activeTab, documentsLoaded, documentsLoading, loadDocuments]);
 
-  // Lazy-load workspace machines list when piece-rate tab opens (Phase 23).
+  // Machines module removed (2026-07-04) — machinesList stays empty; the
+  // piece-rate per-machine override picker (Phase 23) has no data source.
   useEffect(() => {
-    if (activeTab !== 'piece-rate' || !currentWorkspaceId || machinesLoaded) return;
-    void (async () => {
-      try {
-        const list = await listMachines(currentWorkspaceId);
-        setMachinesList(list ?? []);
-      } catch {
-        setMachinesList([]);
-      } finally {
-        setMachinesLoaded(true);
-      }
-    })();
-  }, [activeTab, currentWorkspaceId, machinesLoaded]);
+    if (activeTab !== 'piece-rate' || machinesLoaded) return;
+    setMachinesList([]);
+    setMachinesLoaded(true);
+  }, [activeTab, machinesLoaded]);
 
   // ── Document handlers ──────────────────────────────────────────────────────
   const handleOpenUpload = (type: TeamMemberDocumentType) => {

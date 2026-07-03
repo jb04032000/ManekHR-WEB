@@ -1,7 +1,7 @@
 /**
  * sync-upload-policies.ts — codegen: regenerate `lib/upload-policies.ts` (the web
  * upload-policy mirror) from the backend's committed
- * `../crewroster-backend/upload-policies.generated.json`.
+ * `../manekhr-backend/upload-policies.generated.json`.
  *
  * WHY: the backend `src/modules/uploads/upload-policies.ts` is the single source
  * of truth for upload limits. The web mirror used to be hand-kept in sync, which
@@ -11,7 +11,7 @@
  *
  * FLOW:
  *   edit backend upload-policies.ts
- *     -> cd ../crewroster-backend && npm run export:upload-policies  (writes JSON)
+ *     -> cd ../manekhr-backend && npm run export:upload-policies  (writes JSON)
  *     -> npm run sync:upload-policies                                (this script)
  *     -> commit all three artifacts together.
  *
@@ -22,7 +22,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const ROOT = resolve(__dirname, '..');
-const JSON_PATH = resolve(ROOT, '..', 'api', 'upload-policies.generated.json');
+const JSON_PATH = resolve(ROOT, '..', 'manekhr-backend', 'upload-policies.generated.json');
 const OUT_PATH = resolve(ROOT, 'lib', 'upload-policies.ts');
 
 interface Artifact {

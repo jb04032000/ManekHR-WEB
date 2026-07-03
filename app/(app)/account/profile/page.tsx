@@ -21,7 +21,6 @@ import { parseApiError, fmt } from '@/lib/utils';
 import { DsAvatar } from '@/components/ui';
 import { SectionHeader } from '@/components/settings/SectionHeader';
 import { SectionCard } from '@/components/settings/SectionCard';
-import HandleEditor from '@/components/account/HandleEditor';
 import type { UpdateProfilePayload } from '@/types';
 
 export default function ProfileSettingsPage() {
@@ -385,13 +384,6 @@ export default function ProfileSettingsPage() {
         </Form>
       </SectionCard>
 
-      {/* Public-profile handle ("/u/<handle>") - the LinkedIn-style URL the
-          user shares. Backend auto-generates one at signup from the user's
-          name; this card lets them claim a custom one with a 30-day cooldown
-          (mirrors the backend's anti-squatting guard). */}
-      <SectionCard title={t('section.handle.title')} description={t('section.handle.desc')}>
-        <HandleEditor />
-      </SectionCard>
 
       {verifyChannel && (
         <VerifyChannelModal

@@ -22,8 +22,11 @@ import { useGoogleLogin } from '@react-oauth/google';
 import * as Sentry from '@sentry/nextjs';
 import { googleAuth, sendOtp, terminateAndLoginUnauth, terminateAndOtpLogin } from '@/lib/actions';
 import { syncAuthCookie } from '@/lib/actions/cookies';
-import { acceptConnectPolicy } from '@/features/connect/profile.actions';
+
 import { acceptErpPolicy } from '@/features/policy/policy.actions';
+// Connect product removed (2026-07-04): ManekHR is ERP-only. The alias keeps the
+// dead product-branch ternaries typed; they are unreachable (intent is ERP-only).
+const acceptConnectPolicy = acceptErpPolicy;
 import { useAuthStore, useWorkspaceStore } from '@/lib/store';
 import { resolvePostAuthTarget } from '@/lib/auth/post-auth-target';
 import { track } from '@/lib/analytics';
@@ -49,7 +52,8 @@ import type {
 import type { AuthResult } from '@/types';
 // Referral program kill switch. The ?ref= capture + cr_ref cookie/localStorage
 // write and SignupFormData.referralCode forwarding are all no-ops when false.
-import { REFERRAL_ENABLED } from '@/features/connect/referrals/referral-gate';
+// Connect product removed (2026-07-04): referral program permanently dark.
+const REFERRAL_ENABLED = false;
 
 /**
  * Try a policy-accept once, retry once on failure (network blip recovery).
@@ -206,7 +210,7 @@ export default function AuthClient() {
   // no parent-side intent state, so the Change pill inside SignupMode stays
   // gated on the URL-driven prop only and remains meaningful across renders.
   const urlIntent: SignupIntent =
-    params.get('for') === 'erp' ? 'erp' : params.get('for') === 'connect' ? 'connect' : null;
+    params.get('for') === 'erp' ? 'erp' : null; // connect intent removed (ERP-only)
 
   useEffect(() => {
     // Auto-redirect ONLY when the user is ALREADY authenticated on landing

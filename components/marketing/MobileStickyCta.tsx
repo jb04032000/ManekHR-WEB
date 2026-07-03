@@ -26,7 +26,8 @@ export function MobileStickyCta({ page }: { page: MarketingPage }) {
   // Pin signup intent so the Connect page's sticky CTA skips the IntentPicker;
   // home (the only other page rendering this) stays neutral. No ERP case: /erp
   // has no sticky CTA. Mirrors Navbar/FinalCta.
-  const signupHref = page === 'connect' ? AUTH.getStartedConnect : AUTH.getStarted;
+  // Connect product removed (2026-07-04): one neutral signup CTA.
+  const signupHref = AUTH.getStarted;
   const [visible, setVisible] = useState(false);
   const dismissedRef = useRef(false);
 

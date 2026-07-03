@@ -44,6 +44,37 @@ export async function getTrialBannerConfig(): Promise<TrialBannerConfig> {
   }
 }
 
+/** Admin-controlled module-availability config (shape mirrors the BE response). */
+export type ModuleAvailabilityConfig = { comingSoonModules: string[] };
+
+/**
+ * Fetch the public module-availability config
+ * (GET /subscriptions/public/module-availability).
+ *
+ * Public endpoint (no auth) - lists the modules the platform shows as
+ * "Coming Soon" when locked, instead of the plan-upgrade prompt. Feeds the
+ * subscription store (DashboardLayout bootstrap) -> useFeatureAccess ->
+ * ComingSoonPrompt + sidebar badge. Fail-soft: on ANY error return an empty
+ * list so locked modules just fall back to the upgrade prompt - a
+ * presentation flag must never break gating. Mirrors getTrialBannerConfig's
+ * swallow-and-default contract.
+ */
+export async function getModuleAvailabilityConfig(): Promise<ModuleAvailabilityConfig> {
+  try {
+    const http = await serverHttp();
+    const cfg = await http
+      .get(E.publicModuleAvailability)
+      .then(unwrapServer<Partial<ModuleAvailabilityConfig>>);
+    return {
+      comingSoonModules: Array.isArray(cfg?.comingSoonModules)
+        ? cfg.comingSoonModules.filter((m): m is string => typeof m === 'string')
+        : [],
+    };
+  } catch {
+    return { comingSoonModules: [] };
+  }
+}
+
 /**
  * Opt-in trial state (shape mirrors the BE response). The trial is one-time and
  * opt-in: the user must explicitly start it (no auto-start at signup anymore).

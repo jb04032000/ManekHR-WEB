@@ -1,7 +1,7 @@
 'use client';
 
 import Sidebar from './Sidebar';
-import ConnectModuleNav from '@/components/connect/ConnectModuleNav';
+
 
 /**
  * Picks the sidebar for the current product mode.
@@ -24,5 +24,7 @@ interface ModeSidebarProps {
 
 export default function ModeSidebar({ mode, ...rest }: ModeSidebarProps) {
   if (mode === 'account') return null;
-  return mode === 'connect' ? <ConnectModuleNav {...rest} /> : <Sidebar {...rest} />;
+  // Connect product removed (2026-07-04): the connect mode can no longer occur.
+  if (mode === 'connect') return null;
+  return <Sidebar {...rest} />;
 }

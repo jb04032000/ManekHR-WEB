@@ -6,14 +6,14 @@
  * `.skeleton` shimmer). The whole tree is aria-hidden (decorative placeholder).
  *
  * Links: app/account/subscription/page.tsx (the real layout this mirrors),
- * components/connect/Skeleton.tsx (primitives).
+ * components/ui/Skeleton.tsx (primitives).
  */
 import {
   SkeletonCard,
   SkeletonLine,
   SkeletonCircle,
   SkeletonButton,
-} from '@/components/connect/Skeleton';
+} from '@/components/ui/Skeleton';
 
 export default function AccountSubscriptionLoading() {
   return (

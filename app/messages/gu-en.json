@@ -1566,6 +1566,7 @@
       "creditNotes": "Credit Notes"
     },
     "lockedTooltip": "{label} premium plan ma madhe che",
+    "comingSoonTooltip": "{label} jaldi aavi rahyu che",
     "backToWorkspace": "Workspace ma pacha jav",
     "backToConnect": "Connect ma pacha jav"
   },
@@ -5234,7 +5235,27 @@
     },
     "refreshData": "Data refresh karo",
     "statistics": "Aankaadaa",
-    "loading": "Load thaay che..."
+    "loading": "Load thaay che...",
+    "hrOverview": {
+      "tagline": "Tamara staff ane pagar ek najar ma",
+      "activeHeadcount": "Active staff",
+      "activeHeadcountSub": "hal roster par",
+      "addedThisMonth": "Aa mahine jodaya",
+      "addedThisMonthSub": "nava sabhyo umeraya",
+      "withAppAccess": "App access sathe",
+      "withAppAccessSub": "ManekHR ma sign in kari shake",
+      "payrollThisMonth": "Aa mahina no pagar",
+      "paidLabel": "chukvayu",
+      "payrollSnapshotTitle": "Pagar snapshot",
+      "payrollEmptyTitle": "Haji pagar nathi",
+      "payrollEmptyBody": "Kul rakam ahi jova aa mahina nu payroll banavo.",
+      "byDesignationTitle": "Hodda pramane staff",
+      "emptyTitle": "Haji koi staff nathi",
+      "emptyBody": "Tamaro pahelo member umero etle overview jivant bane.",
+      "errorTitle": "Overview load na thayu",
+      "errorBody": "Aankda lavva ma bhool thai. Fari prayatna karo.",
+      "quickTeamSub": "staff juo ane manage karo"
+    }
   },
   "rbac": {
     "title": "Roles & Permissions",
@@ -5778,6 +5799,20 @@
       "langGujaratiRoman": "Gujarati (Roman)",
       "langHindiRoman": "Hindi (Roman)"
     },
+    "moduleAvailability": {
+      "cardTitle": "Module Availability",
+      "description": "Locked module par customer ne shu dekhay te pasand karo: 'Coming Soon' notice (module haji banyu nathi) athva plan-upgrade prompt (uncha plan ma male che). Aa fakt message badle che - kai unlock nathi kartu.",
+      "comingSoon": "Coming Soon",
+      "upgrade": "Upgrade",
+      "groupAccounting": "Accounting Group",
+      "groupTimeAttendance": "Time & Attendance Group",
+      "groupMachines": "Machines Group",
+      "otherModules": "Bija Modules",
+      "allComingSoon": "Badha Coming Soon",
+      "allUpgrade": "Badha Upgrade",
+      "saveButton": "Module Availability Save Karo",
+      "saved": "Module availability save thai gayi"
+    },
     "trialBanner": {
       "cardTitle": "Trial Banner",
       "enabledLabel": "Plan page par trial banner batavo",
@@ -5807,6 +5842,12 @@
   },
   "subscription": {
     "title": "Subscription",
+    "comingSoonPrompt": {
+      "compact": "Jaldi aavse",
+      "thisFeature": "Aa feature",
+      "title": "{feature} jaldi aavi rahyu che",
+      "description": "Ame aa module atyare banavi rahya chiye. Te aavta update ma malshe."
+    },
     "trial": {
       "eligibleTitle": "Aakhu platform {days} divas mate free ma ajmaavo",
       "eligibleDesc": "Sampurna access, card ni jaroor nathi.",

@@ -42,28 +42,11 @@ import { env } from '@/lib/env';
  */
 export const AUTH = {
   getStarted: '/auth?redirect=/dashboard',
-  getStartedConnect: '/auth?for=connect&redirect=/connect',
+  // Connect product removed (2026-07-04): kept as an alias of the neutral CTA so
+  // any straggler consumer still routes somewhere sane (never a deleted route).
+  getStartedConnect: '/auth?redirect=/dashboard',
   getStartedErp: '/auth?for=erp',
 } as const;
-
-/**
- * Marketing routes whose AUDIENCE is Connect-specific even though their
- * analytics `page` slug is neutral. Shared chrome (Navbar) pins the signup CTA
- * to `getStartedConnect` on these paths so a visitor is never re-asked the
- * product question their entry page already answered. Keep in sync with the
- * per-page Hero/FinalCta pinning inside each of these page files.
- */
-export const CONNECT_INTENT_PATHS: readonly string[] = [
-  '/textile-jobs',
-  '/textile-marketplace',
-  '/textile-network',
-  '/textile-services',
-  '/saree-wholesalers',
-  '/fabric-suppliers',
-  '/dress-material-wholesalers',
-  '/zari-manufacturers',
-  '/embroidery-job-work',
-];
 
 /** Contact email shown across the marketing footer / contact page. Single source:
  *  the one support mailbox (lib/env `supportEmail`) so it changes in one place. */
@@ -433,7 +416,7 @@ export const SERVICES_FEATURES = ['list', 'discover', 'browse', 'track'] as cons
 
 /**
  * `/textile-services` - the 12 service-type chips. Mirror of the codebase
- * SERVICE_CATEGORIES (features/connect/marketplace/marketplace.types.ts); the
+ * SERVICE_CATEGORIES (removed with the Connect product); the
  * `embroidery` id here labels the `embroidery-zari` listing category. Keep in
  * sync with that source list if service types change.
  */

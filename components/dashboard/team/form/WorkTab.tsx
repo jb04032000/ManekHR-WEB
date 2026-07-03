@@ -32,8 +32,6 @@ import {
   SafetyCertificateOutlined,
 } from '@ant-design/icons';
 import { useTranslations } from 'next-intl';
-import { listMachinesForMember } from '@/lib/actions';
-import type { MachineShiftAssignment } from '@/types';
 import { useFeatureAccess } from '@/hooks/useFeatureAccess';
 import { LockedOverlay } from '@/components/subscription/LockedOverlay';
 import type { TeamMember, Shift, Role, EmployeeComponentOverride, Location } from '@/types';
@@ -55,63 +53,8 @@ import { useMemberFormOptions } from './useMemberFormOptions';
 
 const { Option } = Select;
 
-function AssignedMachinesRow({ workspaceId, memberId }: { workspaceId: string; memberId: string }) {
-  const t = useTranslations('team');
-  const [rows, setRows] = useState<MachineShiftAssignment[]>([]);
-  const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    let cancelled = false;
-    if (!workspaceId || !memberId) return;
-    listMachinesForMember(workspaceId, memberId)
-      .then((r) => {
-        if (!cancelled) setRows(r);
-      })
-      .catch(() => {
-        // Silent fail - module may be locked or endpoint unavailable.
-        if (!cancelled) setRows([]);
-      })
-      .finally(() => {
-        if (!cancelled) setLoaded(true);
-      });
-    return () => {
-      cancelled = true;
-    };
-  }, [workspaceId, memberId]);
-
-  if (!loaded || rows.length === 0) return null;
-
-  return (
-    <div className="mb-4 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2">
-      <div className="mb-2 flex items-center gap-2 text-xs font-semibold text-gray-600">
-        <ToolOutlined /> {t('workAssignedMachines')}
-      </div>
-      <div className="flex flex-wrap gap-2">
-        {rows.map((a) => {
-          const machine = typeof a.machineId === 'object' && a.machineId ? a.machineId : null;
-          const machineIdStr = typeof a.machineId === 'string' ? a.machineId : (machine?._id ?? '');
-          const shift = typeof a.shiftId === 'object' && a.shiftId ? a.shiftId : null;
-          const shiftName = typeof a.shiftId === 'string' ? '' : (shift?.name ?? '');
-          const label = machine?.name
-            ? `${machine.name}${machine.machineCode ? ` · ${machine.machineCode}` : ''}`
-            : machineIdStr;
-          return (
-            <Link
-              key={a.id ?? a._id}
-              href={`/dashboard/machines/${machineIdStr}`}
-              className="no-underline"
-            >
-              <Tag color="blue" className="cursor-pointer" icon={<ToolOutlined />}>
-                {label}
-                {shiftName ? ` (${shiftName})` : ''}
-              </Tag>
-            </Link>
-          );
-        })}
-      </div>
-    </div>
-  );
-}
+// AssignedMachinesRow removed (2026-07-04) — Machines module deleted; the
+// component always rendered null anyway (no data source).
 
 interface WorkTabProps {
   form: FormInstance;
@@ -269,21 +212,16 @@ export default function WorkTab({
         </p>
       </div>
 
-      {mode !== 'add' && member?.id && workspaceId && (
-        <AssignedMachinesRow workspaceId={workspaceId} memberId={member.id} />
-      )}
-
       <div className="flex flex-col gap-3">
         {/* Work location — single-select radio from the workspace Locations
-            master list (the same list the Machines module uses). Stores
-            locationId; the picked location's name is mirrored into `location`
-            (see effect above) for the ID card. Owner manages the list at
-            /dashboard/machines/locations. */}
+            master list. Stores locationId; the picked location's name is
+            mirrored into `location` (see effect above) for the ID card. Owner
+            manages the list at /dashboard/workspace/locations (Workspace
+            Settings — restored standalone 2026-07-04, no longer under Machines). */}
         {locations.length === 0 ? (
           // Gate: an employee's work location can only be picked from the workspace
           // Locations master list. When none exist, prompt the owner to create one
-          // first (same list/screen the Machines module uses) instead of allowing a
-          // free-text value. Mirrors the machine "Add Machine" empty-state.
+          // first instead of allowing a free-text value.
           <div>
             <span className="mb-1.5 block text-sm font-medium text-gray-600">Work location</span>
             <Alert
@@ -294,7 +232,7 @@ export default function WorkTab({
                 <span>
                   Add at least one work location before assigning employees.{' '}
                   <Link
-                    href="/dashboard/machines/locations"
+                    href="/dashboard/workspace/locations"
                     style={{ textDecoration: 'underline' }}
                   >
                     Go to Locations

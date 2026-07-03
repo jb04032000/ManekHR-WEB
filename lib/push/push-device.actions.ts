@@ -8,7 +8,7 @@
  */
 
 import { serverHttp, unwrapServer } from '@/lib/api/server-client';
-import type { ActionResult } from '@/features/connect/profile.types';
+import type { ActionResult } from '@/lib/types/action-result';
 
 export interface RegisteredDevice {
   _id: string;

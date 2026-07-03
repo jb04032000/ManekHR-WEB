@@ -4,6 +4,7 @@ import { ReactNode } from 'react';
 import { Skeleton } from 'antd';
 import { useFeatureAccess } from '@/hooks/useFeatureAccess';
 import { UpgradePrompt } from './UpgradePrompt';
+import { ComingSoonPrompt } from './ComingSoonPrompt';
 
 interface FeatureGateProps {
   module: string;
@@ -27,7 +28,7 @@ export function FeatureGate({
   onLimitedAction,
   as,
 }: FeatureGateProps) {
-  const { hasAccess, isLoading, isLimited, isLocked } = useFeatureAccess(
+  const { hasAccess, isLoading, isLimited, isLocked, isComingSoon } = useFeatureAccess(
     module,
     subFeature,
   );
@@ -39,6 +40,18 @@ export function FeatureGate({
   if (isLocked) {
     if (fallback) {
       return <>{fallback}</>;
+    }
+    // Platform-flagged "Coming Soon" module: show the honest not-built-yet
+    // card (no upgrade CTA) instead of selling access that doesn't exist.
+    if (isComingSoon) {
+      return (
+        <ComingSoonPrompt
+          module={module}
+          subFeature={subFeature}
+          compact={compact}
+          as={as}
+        />
+      );
     }
     return (
       <UpgradePrompt
@@ -67,7 +80,7 @@ interface ModuleGateProps {
 }
 
 export function ModuleGate({ module, children, fallback }: ModuleGateProps) {
-  const { hasAccess, isLoading } = useModuleAccess(module);
+  const { hasAccess, isLoading, isComingSoon } = useModuleAccess(module);
 
   if (isLoading) {
     return <Skeleton active paragraph={{ rows: 3 }} className="w-full" />;
@@ -76,6 +89,11 @@ export function ModuleGate({ module, children, fallback }: ModuleGateProps) {
   if (!hasAccess) {
     if (fallback) {
       return <>{fallback}</>;
+    }
+    // Same Coming Soon branch as FeatureGate: flagged modules are not for
+    // sale yet, so never render the upgrade CTA for them.
+    if (isComingSoon) {
+      return <ComingSoonPrompt module={module} compact={false} />;
     }
     return (
       <UpgradePrompt

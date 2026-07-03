@@ -20,7 +20,7 @@
  * dev backend with NO hardcoded IP. No-op on the server (no `window`) and for any
  * non-localhost target (a real production API domain is never touched). Cross-
  * module: every client API call (lib/api/config.ts) + the notifications socket URL
- * (lib/connect/notification-socket.ts) derive from `env.backendApiUrl`, so this
+ * (lib/notifications/notification-socket.ts) derive from `env.backendApiUrl`, so this
  * one rewrite fixes them all together.
  */
 function resolveBrowserApiUrl(configured: string): string {
@@ -175,18 +175,6 @@ export const env = {
     | 'widget',
   msg91WidgetId: process.env.NEXT_PUBLIC_MSG91_WIDGET_ID ?? '',
   msg91WidgetTokenAuth: process.env.NEXT_PUBLIC_MSG91_WIDGET_TOKEN_AUTH ?? '',
-
-  // ---------- ManekHR Connect ----------
-  // Highest Connect phase enabled in this deploy. Each Connect module goes live
-  // at its phase (gating in `lib/connect/flags.ts`; the highest is the inbox at
-  // 7). DEFAULT 7 = full-featured launch: every current module is on without
-  // any env var. Set NEXT_PUBLIC_CONNECT_PHASE lower in a deploy to stage a
-  // narrower rollout (e.g. 4 for marketplace-only).
-  connectPhase: (() => {
-    const raw = process.env.NEXT_PUBLIC_CONNECT_PHASE;
-    const n = raw ? parseInt(raw, 10) : NaN;
-    return Number.isFinite(n) && n >= 0 ? n : 7;
-  })(),
 
   // ---------- Online payments (subscription / credits checkout) ----------
   // Master switch for self-serve PAID actions in the account Subscription hub

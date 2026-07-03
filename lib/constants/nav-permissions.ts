@@ -89,32 +89,9 @@ export const NAV_PERMISSIONS: Record<string, RequiredPerm> = {
   // per-sub-route ROUTE_PERMISSIONS below enforce the actual gates.
   '/dashboard/leave': { path: 'leave.request.view' },
 
-  // Finance hub + everything underneath. Finance sub-routes nested under
-  // /dashboard/finance/firms/:firmId/* - the route-level guard handles
-  // those via prefix match (see ROUTE_PERMISSIONS below).
-  'finance-submenu': { module: 'finance', action: 'view' },
-  '/dashboard/finance': { module: 'finance', action: 'view' },
-  'finance-bank-reconciliation': { module: 'finance', action: 'view' },
-  'portal-access-entry': { module: 'finance', action: 'view' },
-
-  // Machines (parent + sub-pages each gated at BE).
-  'machines-submenu': { module: 'machines', action: 'view' },
-  '/dashboard/machines': { module: 'machines', action: 'view' },
-  // Shop Floor Control - read surface; BE gates work-order writes on
-  // machines.edit + machines_basic sub-feature.
-  '/dashboard/machines/shop-floor': { module: 'machines', action: 'view' },
-  '/dashboard/machines/locations': { module: 'locations', action: 'view' },
-  '/dashboard/machines/resource-scopes': { module: 'resource_scopes', action: 'view' },
-  '/dashboard/machines/production-logs/bulk': { module: 'machines', action: 'manage_production' },
-  '/dashboard/production-utilisation': { module: 'machines', action: 'dashboard.production.view' },
-  '/dashboard/settings/downtime-reasons': { module: 'downtime', action: 'view' },
-
   // Workspace settings sub-pages with explicit BE permission gates.
   '/dashboard/roles': { module: 'roles', action: 'view' },
   '/dashboard/workspace': { module: 'workspaces', action: 'view' },
-  '/dashboard/settings/tally-export': { module: 'finance', action: 'export' },
-  '/dashboard/settings/fy-close': { module: 'finance', action: 'edit' },
-  '/dashboard/settings/party-intelligence': { module: 'finance', action: 'view' },
 };
 
 /**
@@ -219,26 +196,6 @@ export const ROUTE_PERMISSIONS: Array<{ prefix: string; perm: RequiredPerm | 'op
   { prefix: '/dashboard/shifts', perm: { module: 'shifts', action: 'edit' } },
   // H3 IA - same as the NAV_PERMISSIONS entry above; manager+ only.
   { prefix: '/dashboard/holidays', perm: { module: 'holidays', action: 'edit' } },
-  { prefix: '/dashboard/finance', perm: { module: 'finance', action: 'view' } },
-  { prefix: '/dashboard/machines/locations', perm: { module: 'locations', action: 'view' } },
-  {
-    prefix: '/dashboard/machines/resource-scopes',
-    perm: { module: 'resource_scopes', action: 'view' },
-  },
-  { prefix: '/dashboard/machines', perm: { module: 'machines', action: 'view' } },
-  {
-    prefix: '/dashboard/maintenance',
-    perm: { module: 'machines', action: 'machines.maintenance.schedule' },
-  },
-  {
-    // Mirrors the BE @RequirePermissions(...) decorator action value.
-    prefix: '/dashboard/production-utilisation',
-    perm: { module: 'machines', action: 'dashboard.production.view' },
-  },
-  { prefix: '/dashboard/parties', perm: { module: 'finance', action: 'view' } },
-  { prefix: '/dashboard/bills', perm: { module: 'bills', action: 'view' } },
-  { prefix: '/dashboard/reports', perm: { module: 'finance', action: 'view' } },
-  { prefix: '/dashboard/settings/firm', perm: { module: 'finance', action: 'edit' } },
   { prefix: '/dashboard/roles', perm: { module: 'roles', action: 'view' } },
   { prefix: '/dashboard/workspace', perm: { module: 'workspaces', action: 'view' } },
   // Notification settings sub-page - requires workspaces.edit (mirrors the BE
@@ -247,18 +204,12 @@ export const ROUTE_PERMISSIONS: Array<{ prefix: string; perm: RequiredPerm | 'op
     prefix: '/dashboard/workspace/notifications',
     perm: { module: 'workspaces', action: 'edit' },
   },
+  // Locations — restored standalone (2026-07-04). Longer prefix wins over the
+  // coarse /dashboard/workspace workspaces.view gate above; mirrors the BE
+  // LocationsController @RequirePermissions(LOCATIONS, VIEW) guard.
   {
-    prefix: '/dashboard/settings/downtime-reasons',
-    perm: { module: 'downtime', action: 'view' },
-  },
-  {
-    prefix: '/dashboard/settings/tally-export',
-    perm: { module: 'finance', action: 'export' },
-  },
-  { prefix: '/dashboard/settings/fy-close', perm: { module: 'finance', action: 'edit' } },
-  {
-    prefix: '/dashboard/settings/party-intelligence',
-    perm: { module: 'finance', action: 'view' },
+    prefix: '/dashboard/workspace/locations',
+    perm: { module: 'locations', action: 'view' },
   },
   // F2 - precise gate for the create wizard. Audit §6: it was reachable
   // with only team.view via the coarse `/dashboard/team` prefix; the
@@ -335,49 +286,8 @@ export const ROUTE_MODULES: Array<{ prefix: string; module: string }> = [
   { prefix: '/dashboard/shifts', module: 'shifts' },
   { prefix: '/dashboard/holidays', module: 'holidays' },
   { prefix: '/dashboard/salary', module: 'salary' },
-  // Finance hub + every firm-scoped sub-route (prefix match). Sub-MODULES
-  // (inventory / manufacturing / job-work / gst) layer ON TOP of `finance`
-  // and keep their own per-page sub-feature guards; the gate only ensures the
-  // top-level Finance plan module is present.
-  //
-  // ManekHR (EXCLUDE enforcement): finance + all its sub-modules + machines +
-  // its sub-modules are `enabled:false` in the ManekHR preset, so each prefix
-  // below makes a typed-in deep link plan-locked (ModuleLockedPage). The
-  // firm-scoped sub-module routes (`.../firms/[firmId]/inventory`, `/gst`,
-  // `/manufacturing`, `/job-work`, `/reminders`) carry a DYNAMIC firmId
-  // segment, so a static longer-prefix cannot pin them to their own module —
-  // they are already blocked by this `/dashboard/finance` -> `finance` parent
-  // entry (finance off => the whole subtree is locked). Mirrors Sidebar's
-  // `useModuleEnabled` keys 1:1.
-  { prefix: '/dashboard/finance', module: 'finance' },
-  { prefix: '/dashboard/parties', module: 'finance' },
-  { prefix: '/dashboard/reports', module: 'finance' },
-  // Legacy AP/AR Bills tracker — a Finance surface (entitlement `finance`).
-  // The BE controller gates only on RBAC (`finance.payable.*`), so this
-  // deep-link entry is the web plan-gate twin that blocks owners too.
-  { prefix: '/dashboard/bills', module: 'finance' },
-  { prefix: '/dashboard/machines', module: 'machines' },
-  // Longer prefixes override `/dashboard/machines` -> `machines` above.
-  { prefix: '/dashboard/machines/locations', module: 'locations' },
-  { prefix: '/dashboard/machines/resource-scopes', module: 'resource_scopes' },
-  // Machines ops surfaces that live OUTSIDE the `/dashboard/machines` prefix —
-  // each belongs to the `machines` plan module (mirrors the BE
-  // @RequireSubscription({ module: MACHINES }) on maintenance /
-  // production-utilisation).
-  { prefix: '/dashboard/maintenance', module: 'machines' },
-  { prefix: '/dashboard/production-utilisation', module: 'machines' },
   { prefix: '/dashboard/roles', module: 'roles' },
-  // Settings sub-pages that belong to EXCLUDED modules. `/dashboard/settings`
-  // itself is the ON `settings` module (intentionally UNMAPPED so it falls
-  // through), but these specific sub-pages are Finance / Downtime surfaces —
-  // longest-prefix-wins pins each to its disabled module so a deep link is
-  // plan-locked while the rest of Settings stays open.
-  { prefix: '/dashboard/settings/firm', module: 'finance' },
-  { prefix: '/dashboard/settings/finance', module: 'finance' },
-  { prefix: '/dashboard/settings/tally-export', module: 'finance' },
-  { prefix: '/dashboard/settings/fy-close', module: 'finance' },
-  { prefix: '/dashboard/settings/party-intelligence', module: 'finance' },
-  { prefix: '/dashboard/settings/downtime-reasons', module: 'downtime' },
+  { prefix: '/dashboard/workspace/locations', module: 'locations' },
 ];
 
 /**

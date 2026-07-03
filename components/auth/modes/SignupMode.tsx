@@ -40,9 +40,8 @@ import { InfoTooltip } from '@/components/ui';
 import { env } from '@/lib/env';
 import type { BaseModeProps, SignupFormData, SignupIntent } from './types';
 import type { AuthResult } from '@/types';
-import { IntentPicker } from './IntentPicker';
-// Referral code field is only rendered when the program is live.
-import { REFERRAL_ENABLED } from '@/features/connect/referrals/referral-gate';
+// Connect product removed (2026-07-04): referral program permanently dark.
+const REFERRAL_ENABLED = false;
 
 interface SignupModeProps extends BaseModeProps {
   /**
@@ -126,7 +125,9 @@ export function SignupMode({
   // so the send-OTP failures never show a raw axios string.
   const authErrMsg = useAuthErrorMessage();
   const [pickedIntent, setPickedIntent] = useState<'connect' | 'erp' | null>(null);
-  const effectiveIntent: 'connect' | 'erp' | null = intent ?? pickedIntent;
+  // Connect product removed (2026-07-04): ManekHR is single-product, so signup
+  // always pins ERP and the IntentPicker sub-step is gone.
+  const effectiveIntent: 'connect' | 'erp' | null = intent ?? pickedIntent ?? 'erp';
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -257,9 +258,7 @@ export function SignupMode({
     setLoading(false);
   };
 
-  if (effectiveIntent === null) {
-    return <IntentPicker setMode={setMode} onPick={(product) => setPickedIntent(product)} />;
-  }
+  // (IntentPicker removed with the Connect product — effectiveIntent is never null.)
 
   return (
     /* AuthClient widens the outer wrapper to 880px while mode='signup' so the
@@ -290,19 +289,8 @@ export function SignupMode({
             ),
           })}
         </span>
-        {/* Show Change only when the user got here via the picker (no URL intent
-            pinned the product). The `intent` prop is the URL-driven SignupIntent
-            - it never changes mid-mount. Picker-driven users see this; ?for=…
-            users do not (they came from a canonical product link). */}
-        {intent === null && (
-          <button
-            type="button"
-            onClick={() => setPickedIntent(null)}
-            className="cursor-pointer border-0 bg-transparent p-0 text-[12px] font-medium text-primary hover:underline"
-          >
-            {t('signup.intent.change')}
-          </button>
-        )}
+        {/* Connect product removed (2026-07-04): single product, so there is no
+            intent picker and no "Change" affordance. */}
       </div>
       <h1 className="m-0 mb-2 font-display text-2xl font-extrabold text-heading">
         {t('signup.title')}

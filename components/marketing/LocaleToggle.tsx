@@ -7,7 +7,7 @@ import { LOCALE_OPTIONS, writeLocaleCookie } from '@/lib/locales';
 
 /**
  * Compact button-group language switcher (used by the in-app Connect footer,
- * `components/connect/ConnectAppFooter.tsx`). Options + labels + cookie writer
+ * the removed Connect footer). Options + labels + cookie writer
  * come from the shared `lib/locales.ts` source of truth, so it can never offer
  * a language the site cannot render. Writes the `z360_locale` cookie that
  * `app/i18n.ts` reads, then refreshes so server components re-render.

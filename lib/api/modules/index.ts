@@ -9,7 +9,6 @@ export { attendanceApi } from './attendance.api';
 export { leaveApi } from './leave.api';
 export { salaryApi } from './salary.api';
 export { shiftsApi } from './shifts.api';
-export { billsApi } from './bills.api';
 export { rolesApi } from './roles.api';
 export { meApi } from './me.api';
 export type {

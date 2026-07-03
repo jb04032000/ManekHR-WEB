@@ -17,7 +17,7 @@
  * (gold banner shape mirrored) and ./PlanCard.tsx (card anatomy mirrored). Keep
  * roughly in sync if the banner or card layout changes.
  */
-import { SkeletonLine, SkeletonButton } from '@/components/connect/Skeleton';
+import { SkeletonLine, SkeletonButton } from '@/components/ui/Skeleton';
 
 // Curated bullet count per tier (free/starter/growth/business) so the skeleton's
 // card heights are believable; mirrors FEATURE_COUNT in PlanCard.tsx.

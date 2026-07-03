@@ -27,7 +27,6 @@ vi.mock('next-intl', () => ({
 }));
 
 // Referral field off -> simpler form.
-vi.mock('@/features/connect/referrals/referral-gate', () => ({ REFERRAL_ENABLED: false }));
 
 // Flip the master switch OFF (interim) while keeping every other real env field.
 vi.mock('@/lib/env', async (importOriginal) => {

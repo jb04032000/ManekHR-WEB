@@ -5,7 +5,7 @@ import { Link, usePathname } from '@/i18n/navigation';
 import { useEffect, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import type { MarketingPage } from '@/lib/analytics-events';
-import { AUTH, CONNECT_INTENT_PATHS, NAV_PRODUCT_LINKS, NAV_SITE_LINKS } from './content';
+import { AUTH, NAV_PRODUCT_LINKS, NAV_SITE_LINKS } from './content';
 import { CtaButton } from './CtaButton';
 import { CloseIcon, MenuIcon } from './icons';
 import { LanguageMenu } from './LanguageMenu';
@@ -36,20 +36,9 @@ export function Navbar() {
   const a11y = useTranslations('marketing.a11y');
   const pathname = usePathname();
   const page = pageOf(pathname);
-  // Pin signup intent by page so dedicated product pages skip the IntentPicker
-  // (see AuthClient.tsx `urlIntent`): /erp -> ERP intent, /connect AND the
-  // Connect-audience SEO routes (CONNECT_INTENT_PATHS) -> Connect intent,
-  // everything else (incl. the neutral home landing) stays neutral so a new
-  // user still picks. The analytics `page` slug is NOT changed for the SEO
-  // routes, only the CTA href. Neutral still keeps existing ERP-workspace
-  // users out of /dashboard when they join from a Connect surface
-  // (redirect=/connect).
-  const signupHref =
-    page === 'erp'
-      ? AUTH.getStartedErp
-      : page === 'connect' || CONNECT_INTENT_PATHS.includes(pathname)
-        ? AUTH.getStartedConnect
-        : AUTH.getStarted;
+  // Connect product removed (2026-07-04): single product, so the signup CTA
+  // only distinguishes the ERP detail page from the neutral default.
+  const signupHref = page === 'erp' ? AUTH.getStartedErp : AUTH.getStarted;
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);

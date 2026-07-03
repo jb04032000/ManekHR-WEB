@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { Button } from 'antd';
-import { acceptConnectPolicy } from '@/features/connect/profile.actions';
+
 import { acceptErpPolicy } from '@/features/policy/policy.actions';
 import { logout } from '@/lib/actions/auth.actions';
 import { useAuthStore } from '@/lib/store';
@@ -17,7 +17,9 @@ type PolicyProduct = 'connect' | 'erp';
  * route, and the accept server action.
  */
 const PRODUCT = {
-  connect: { ns: 'connect.policy', terms: '/terms/connect', accept: acceptConnectPolicy },
+  // Connect product removed (2026-07-04): entry kept so the type stays total;
+  // unreachable (no connect surfaces render this gate any more).
+  connect: { ns: 'connect.policy', terms: '/terms/connect', accept: acceptErpPolicy },
   erp: { ns: 'erp.policy', terms: '/terms/erp', accept: acceptErpPolicy },
 } as const;
 

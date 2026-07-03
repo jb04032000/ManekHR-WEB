@@ -2,7 +2,7 @@
 
 /**
  * ERP policy - server actions. The ERP mirror of the Connect policy actions
- * in `features/connect/profile.actions.ts`. Calls the backend `me/erp-*`
+ * in the removed Connect profile.actions. Calls the backend `me/erp-*`
  * endpoints through the httpOnly-cookie-authed `serverHttp` client.
  * See docs/connect/specs/2026-05-19-dual-policy-design.md.
  */

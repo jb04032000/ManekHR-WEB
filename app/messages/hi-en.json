@@ -295,6 +295,7 @@
       "creditNotes": "Credit Notes"
     },
     "lockedTooltip": "{label} premium plan mein milta hai",
+    "comingSoonTooltip": "{label} jald aa raha hai",
     "backToWorkspace": "Workspace pe wapas",
     "backToConnect": "Connect pe wapas"
   },
@@ -1101,7 +1102,27 @@
     "addFirstMember": "Apna pehla member add karein",
     "noWorkspace": "Koi workspace chuna nahi gaya",
     "selectWorkspaceToContinue": "Aage badhne ke liye ek workspace chunein",
-    "viewAllMembers": "Sabhi members dekhein"
+    "viewAllMembers": "Sabhi members dekhein",
+    "hrOverview": {
+      "tagline": "Aapke staff aur salary ek nazar mein",
+      "activeHeadcount": "Active staff",
+      "activeHeadcountSub": "abhi roster par",
+      "addedThisMonth": "Is mahine jude",
+      "addedThisMonthSub": "naye member jude",
+      "withAppAccess": "App access ke saath",
+      "withAppAccessSub": "ManekHR mein sign in kar sakte hain",
+      "payrollThisMonth": "Is mahine ki salary",
+      "paidLabel": "paid",
+      "payrollSnapshotTitle": "Salary snapshot",
+      "payrollEmptyTitle": "Abhi payroll nahi",
+      "payrollEmptyBody": "Total dekhne ke liye is mahine ka payroll banayein.",
+      "byDesignationTitle": "Designation ke hisaab se staff",
+      "emptyTitle": "Abhi koi staff nahi",
+      "emptyBody": "Apna pehla member jodein aur overview zinda ho jaye.",
+      "errorTitle": "Overview load nahi hua",
+      "errorBody": "Numbers laane mein dikkat aayi. Dobara koshish karein.",
+      "quickTeamSub": "staff dekhein aur manage karein"
+    }
   },
   "activity": {
     "pageTitle": "Team activity",
@@ -3076,6 +3097,12 @@
   },
   "subscription": {
     "title": "Subscription",
+    "comingSoonPrompt": {
+      "compact": "Jald aa raha hai",
+      "thisFeature": "Yeh feature",
+      "title": "{feature} jald aa raha hai",
+      "description": "Hum yeh module abhi bana rahe hain. Yeh aane waale update mein milega."
+    },
     "trial": {
       "eligibleTitle": "Poore platform ko {days} din ke liye free mein aazmaayein",
       "eligibleDesc": "Poora access, card ki zaroorat nahi.",
@@ -5598,6 +5625,20 @@
       "langGujarati": "Gujarati",
       "langGujaratiRoman": "Gujarati (Roman)",
       "langHindiRoman": "Hindi (Roman)"
+    },
+    "moduleAvailability": {
+      "cardTitle": "Module Availability",
+      "description": "Locked module par customer ko kya dikhe yeh chunein: 'Coming Soon' notice (module abhi bana nahi hai) ya plan-upgrade prompt (ooche plan mein milta hai). Yeh sirf message badalta hai - kuch unlock nahi hota.",
+      "comingSoon": "Coming Soon",
+      "upgrade": "Upgrade",
+      "groupAccounting": "Accounting Group",
+      "groupTimeAttendance": "Time & Attendance Group",
+      "groupMachines": "Machines Group",
+      "otherModules": "Anya Modules",
+      "allComingSoon": "Sabhi Coming Soon",
+      "allUpgrade": "Sabhi Upgrade",
+      "saveButton": "Module Availability Save Karein",
+      "saved": "Module availability save ho gayi"
     },
     "trialBanner": {
       "cardTitle": "Trial Banner",

@@ -5,7 +5,7 @@
 // client renders inline errors. Admin identity comes from the JWT on the BE.
 import { serverHttp, unwrapServer } from '@/lib/api/server-client';
 import { ApiEndpoints } from '@/lib/api/endpoints';
-import type { ActionResult } from '@/features/connect/profile.types';
+import type { ActionResult } from '@/lib/types/action-result';
 import type {
   AdminFeedbackListResult,
   AdminFeedbackDetail,

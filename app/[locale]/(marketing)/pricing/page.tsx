@@ -27,11 +27,11 @@ import { monthlyInstallment } from '@/lib/pricing';
  *     DYNAMICALLY from the catalogue via the shared ErpPricingTable, led by a
  *     prominent 45-day free-trial highlight (trial length is data-driven from the
  *     configured trial plan via getTrialBannerConfig().days).
- *  2. ManekHR Connect - free to use, plus optional pay-as-you-go boosts.
+ *  2. (Connect section removed 2026-07-04 with the Connect product.)
  *
  * Plus the supporting detail a complete pricing page needs: trial highlight,
  * team-size recommender (inside ErpPricingTable), GST clarity (on the cards),
- * a trust/assurances strip, a Connect free section, a custom/contact block, and
+ * a trust/assurances strip, a custom/contact block, and
  * an FAQ (with FAQPage JSON-LD for answer engines).
  *
  * Cross-module links:
@@ -40,7 +40,7 @@ import { monthlyInstallment } from '@/lib/pricing';
  *    app/(marketing)/erp/pricing/page.tsx) so the two surfaces never drift.
  *  - ERP plan cards + recommender: components/marketing/ErpPricingTable (reads the
  *    marketing.pages.erpPricing namespace, so the card copy is shared, not dup'd).
- *  - Connect free cards reuse marketing.pages.pricing.cards.{free,boosts}.
+
  *  - loading.tsx in this folder should mirror this layout (added alongside).
  *
  * Prices are in RUPEES (not paise) per the seed. Free = 0.
@@ -64,12 +64,6 @@ export async function generateMetadata({
     twitter: { card: 'summary_large_image', title, description },
   };
 }
-
-/** Connect free + boosts cards (static copy; counts the f1..fN keys per card). */
-const CONNECT_CARDS = [
-  { id: 'free', highlighted: true, features: 6 },
-  { id: 'boosts', highlighted: false, features: 5 },
-] as const;
 
 export default async function PricingPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -243,38 +237,6 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
               </li>
             ))}
           </ul>
-        </Container>
-      </section>
-
-      {/* ManekHR Connect - free to use */}
-      <section className="bg-[var(--cr-cream)] py-16 sm:py-20 lg:py-24">
-        <Container>
-          <SectionHeading
-            align="center"
-            eyebrow={t('connectHeading.eyebrow')}
-            title={t('connectHeading.title')}
-            sub={t('connectHeading.sub')}
-          />
-          <div className="mx-auto mt-10 grid max-w-3xl grid-cols-1 gap-6 md:grid-cols-2">
-            {CONNECT_CARDS.map((card) => (
-              <PricingCard
-                key={card.id}
-                name={t(`cards.${card.id}.name`)}
-                price={t(`cards.${card.id}.price`)}
-                period={t(`cards.${card.id}.period`)}
-                desc={t(`cards.${card.id}.desc`)}
-                features={Array.from({ length: card.features }, (_, index) =>
-                  t(`cards.${card.id}.f${index + 1}`),
-                )}
-                ctaLabel={t(`cards.${card.id}.cta`)}
-                ctaHref={AUTH.getStartedConnect}
-                highlighted={card.highlighted}
-              />
-            ))}
-          </div>
-          <p className="mx-auto mt-8 max-w-xl text-center text-sm leading-relaxed text-[var(--cr-neutral-500)]">
-            {t('note')}
-          </p>
         </Container>
       </section>
 

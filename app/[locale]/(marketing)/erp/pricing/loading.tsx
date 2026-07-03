@@ -1,4 +1,4 @@
-import { SkeletonLine } from '@/components/connect/Skeleton';
+import { SkeletonLine } from '@/components/ui/Skeleton';
 import { Container } from '@/components/marketing/ui/Container';
 
 /**
@@ -8,7 +8,7 @@ import { Container } from '@/components/marketing/ui/Container';
  * "coming soon" strip, and the Custom contact band.
  *
  * Server-only (no 'use client', no hooks). Uses the shared `.skeleton` shimmer
- * via the SkeletonLine primitive (components/connect/Skeleton.tsx). Keep in sync
+ * via the SkeletonLine primitive (components/ui/Skeleton.tsx). Keep in sync
  * with app/(marketing)/erp/pricing/page.tsx if its sections change.
  */
 export default function ErpPricingLoading() {

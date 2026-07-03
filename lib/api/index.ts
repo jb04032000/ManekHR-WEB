@@ -15,7 +15,6 @@ export {
   attendanceApi,
   salaryApi,
   shiftsApi,
-  billsApi,
   rolesApi,
   statsApi,
   subscriptionsApi,

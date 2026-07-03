@@ -5,12 +5,11 @@ import Link from 'next/link';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { App as AntApp, Layout, Alert } from 'antd';
 import { useAuthStore, useWorkspaceStore, useSubscriptionStore } from '@/lib/store';
-import { listWorkspaces, getMySubscription } from '@/lib/actions';
+import { listWorkspaces, getMySubscription, getModuleAvailabilityConfig } from '@/lib/actions';
 import type { Subscription, PlanEntitlements } from '@/types';
 import { pinApi, meApi } from '@/lib/api/modules';
 import { env } from '@/lib/env';
 import ModeSidebar, { type AppMode } from '@/components/layout/ModeSidebar';
-import ConnectMobileTabBar from '@/components/connect/ConnectMobileTabBar';
 import TopHeader from '@/components/layout/TopHeader';
 import PageTransitionLoader from '@/components/PageTransitionLoader';
 import { ManekHRStitchLoader } from '@/components/ui/ManekHRStitchLoader';
@@ -33,7 +32,7 @@ import { ForbiddenScreen, PermissionsErrorScreen } from '@/components/rbac/Permi
 // workspace's plan does not include the route's module. See the moduleLocked
 // computation + ROUTE_MODULES in lib/constants/nav-permissions.ts.
 import { ModuleLockedPage } from '@/components/subscription/ModuleLockedPage';
-import { NotificationProvider } from '@/lib/connect/NotificationProvider';
+import { NotificationProvider } from '@/lib/notifications/NotificationProvider';
 
 const { Content } = Layout;
 
@@ -250,6 +249,12 @@ export default function DashboardLayout({
               ? (subRes as { entitlements?: PlanEntitlements }).entitlements
               : null;
           if (entitlements) storeState.setEntitlements(entitlements);
+          // Platform "Coming Soon" module flags (public, admin-set). Feeds
+          // useFeatureAccess + Sidebar so LOCKED flagged modules show the
+          // Coming Soon card/badge instead of the upgrade prompt. The action
+          // is fail-soft (empty list on any error), so this never throws.
+          const availability = await getModuleAvailabilityConfig();
+          storeState.setComingSoonModules(availability.comingSoonModules);
         } catch {
           // Preserve existing subscription/entitlements - DO NOT null.
         }
@@ -920,8 +925,7 @@ export default function DashboardLayout({
               )}
             </div>
           </Content>
-          {/* Connect mobile bottom tab bar - hidden on desktop (md+). */}
-          {mode === 'connect' && <ConnectMobileTabBar />}
+          {/* Connect product removed (2026-07-04): mode can no longer be connect. */}
         </Layout>
       </Layout>
     </NotificationProvider>

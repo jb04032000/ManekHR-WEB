@@ -20,7 +20,7 @@ import { registerWebPushToken, unregisterWebPushDevice } from './push-device.act
 import {
   getNotificationPreferences,
   updateNotificationPreferences,
-} from '@/features/connect/notifications/notifications.actions';
+} from '@/lib/notifications/notifications.actions';
 import { buildEnablePrefsPatch } from './buildEnablePrefsPatch';
 
 // Exported so PushAutoRepair can detect "this browser opted in before" and

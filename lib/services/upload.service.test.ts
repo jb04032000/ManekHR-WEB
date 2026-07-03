@@ -39,7 +39,7 @@ describe('uploadService.uploadSingle compression wiring', () => {
     const compressed = img(100 * 1024, 'image/webp');
     (compressImage as unknown as ReturnType<typeof vi.fn>).mockResolvedValue(compressed);
 
-    await uploadService.uploadSingle(img(2 * 1024 * 1024), { category: 'connect-posts' });
+    await uploadService.uploadSingle(img(2 * 1024 * 1024), { category: 'erp-feedback-media' });
 
     expect(compressImage).toHaveBeenCalledTimes(1);
     const fd = (http.post as unknown as ReturnType<typeof vi.fn>).mock.calls[0][1] as FormData;
@@ -56,7 +56,7 @@ describe('uploadService.uploadSingle compression wiring', () => {
     const original = img(2 * 1024 * 1024);
     (compressImage as unknown as ReturnType<typeof vi.fn>).mockResolvedValue(original);
 
-    await uploadService.uploadSingle(original, { category: 'connect-posts' });
+    await uploadService.uploadSingle(original, { category: 'erp-feedback-media' });
 
     const fd = (http.post as unknown as ReturnType<typeof vi.fn>).mock.calls[0][1] as FormData;
     expect(fd.get('file')).toBe(original);
@@ -68,7 +68,7 @@ describe('uploadService.uploadSingle compression wiring', () => {
     );
     const onProgress = vi.fn();
     await uploadService.uploadSingle(img(2 * 1024 * 1024), {
-      category: 'connect-posts',
+      category: 'erp-feedback-media',
       onProgress,
     });
     expect(onProgress).toHaveBeenCalledWith(0);

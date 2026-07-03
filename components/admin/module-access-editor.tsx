@@ -27,6 +27,12 @@ const MACHINES_GROUP = ['machines', 'locations', 'resource_scopes', 'manufacturi
 // Attendance section). Order here is the render order inside the group.
 const TIME_ATTENDANCE_GROUP = ['attendance', 'leave', 'regularization', 'shifts', 'holidays'];
 
+// Accounting cluster: finance + the modules promoted OUT of finance
+// (inventory / GST / job work), grouped under one collapsible "Accounting"
+// parent - owner directive 2026-07-04 (same pattern as the two groups above).
+// Each module keeps its own switch; the group is a visual wrapper only.
+const ACCOUNTING_GROUP = ['finance', 'inventory', 'gst_compliance', 'job_work'];
+
 // Lending cluster inside the Salary card: advance salary requests + employer/0%
 // loans. Rendered as a labelled subsection so the two assign together visually
 // (they are sub-features of `salary`, not standalone modules like Machines).
@@ -243,7 +249,12 @@ export function ModuleAccessEditor({
 
   // Flat cards: every visible module NOT claimed by a group, in registry order.
   const flatItems = visibleModules
-    .filter((m) => !MACHINES_GROUP.includes(m.module) && !TIME_ATTENDANCE_GROUP.includes(m.module))
+    .filter(
+      (m) =>
+        !MACHINES_GROUP.includes(m.module) &&
+        !TIME_ATTENDANCE_GROUP.includes(m.module) &&
+        !ACCOUNTING_GROUP.includes(m.module),
+    )
     .map(buildModulePanel);
 
   // Build a group's inner module cards in the group's declared order.
@@ -255,6 +266,7 @@ export function ModuleAccessEditor({
 
   const machinesGroupItems = groupItems(MACHINES_GROUP);
   const timeGroupItems = groupItems(TIME_ATTENDANCE_GROUP);
+  const accountingGroupItems = groupItems(ACCOUNTING_GROUP);
 
   const flatDefaultKeys = flatItems.map((i) => i.key);
 
@@ -283,6 +295,19 @@ export function ModuleAccessEditor({
       </div>
       <div className="flex max-h-[400px] flex-col gap-2 overflow-y-auto pr-2">
         <Collapse defaultActiveKey={flatDefaultKeys} items={flatItems} />
+        {/* Accounting parent group: finance / inventory / gst_compliance /
+            job_work under one collapsible header (same pattern as the Time &
+            Attendance and Machines groups below). */}
+        <Collapse
+          defaultActiveKey={['accounting-group']}
+          items={[
+            {
+              key: 'accounting-group',
+              label: <span className="font-medium">Accounting Group</span>,
+              children: <Collapse defaultActiveKey={ACCOUNTING_GROUP} items={accountingGroupItems} />,
+            },
+          ]}
+        />
         {/* Time & Attendance parent group: attendance / leave / regularization /
             shifts / holidays under one collapsible header, mirroring the RBAC
             matrix's Time & Attendance section (same pattern as Machines Group). */}
@@ -322,3 +347,7 @@ export function ModuleAccessEditor({
 export { getDefaultModuleAccessEntries } from '@/lib/utils/subscription.utils';
 
 export { MODULE_COLORS };
+
+// Group membership reused by the admin Module Availability editor
+// (module-availability-editor.tsx) so both admin surfaces group identically.
+export { ACCOUNTING_GROUP, TIME_ATTENDANCE_GROUP, MACHINES_GROUP };

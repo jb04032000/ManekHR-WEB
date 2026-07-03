@@ -1,7 +1,7 @@
 import type {
   ChannelPrefs,
   NotificationPrefs,
-} from '@/features/connect/notifications/notifications.actions';
+} from '@/lib/notifications/notifications.actions';
 
 /**
  * Build the preferences patch that turns browser push on (or off) for ALL of a

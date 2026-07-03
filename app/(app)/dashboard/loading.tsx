@@ -3,7 +3,7 @@
 // greeting header, a 4-up metric-card row, two wide cards (payroll snapshot +
 // designation breakdown), and a quick-links strip. Server-only (no 'use client');
 // composes the shared Connect skeleton primitives (binding loading-skeleton rule).
-import { SkeletonLine } from '@/components/connect/Skeleton';
+import { SkeletonLine } from '@/components/ui/Skeleton';
 
 const card = (h: number) => <div className="skeleton" style={{ height: h, borderRadius: 16 }} />;
 

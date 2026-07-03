@@ -541,6 +541,11 @@ export const ApiEndpoints = {
     // Consumed by lib/actions getTrialBannerConfig (TrialPromoBanner on the
     // plans hub + the marketing pricing page).
     publicTrialBanner: 'subscriptions/public/trial-banner',
+    // Public (no-auth) admin-controlled module-availability config. Backed by
+    // GET /subscriptions/public/module-availability -> { comingSoonModules }.
+    // Consumed by lib/actions getModuleAvailabilityConfig -> subscription store
+    // -> useFeatureAccess (Coming Soon card instead of the upgrade prompt).
+    publicModuleAvailability: 'subscriptions/public/module-availability',
     // Opt-in trial model (2026-06-24). Authed. trialState reads whether the
     // caller can start / is in / has used the trial; startTrial begins it.
     // Backed by GET /subscriptions/trial-state + POST /subscriptions/start-trial.
@@ -717,23 +722,6 @@ export const ApiEndpoints = {
     userAddOns: (id: string) => `admin/users/${id}/add-ons`,
     assignAddOn: 'admin/add-ons/assign',
     revokeAddOn: (id: string) => `admin/add-ons/${id}/revoke`,
-    // Per-user Connect entitlements console (plan defaults vs override vs
-    // effective + usage). Backed by admin-connect-entitlements.controller.ts.
-    connectEntitlements: (id: string) => `admin/connect/users/${id}/entitlements`,
-    connectEntitlementsOverride: (id: string) => `admin/connect/users/${id}/entitlements/override`,
-    // Per-user Connect ads wallet (boost credits). GET reads the balance;
-    // POST adjusts it by a signed whole-rupee amount + reason. Backed by the
-    // admin connect ads-wallet controller; surfaced in the unified Manage Plans
-    // drawer (features/admin/users/ConnectWalletCard.tsx).
-    adminWallet: (id: string) => `admin/connect/ads/wallet/${id}`,
-    adminWalletAdjust: (id: string) => `admin/connect/ads/wallet/${id}/adjust`,
-    // Connect demo manager (list / clear / delete / post-as). Backed by
-    // admin-connect-demo.controller.ts.
-    connectDemoUsers: 'admin/connect/demo/users',
-    connectDemoClear: 'admin/connect/demo/clear',
-    connectDemoUser: (id: string) => `admin/connect/demo/users/${id}`,
-    connectDemoPost: (id: string) => `admin/connect/demo/users/${id}/post`,
-    // Admin-managed legal/policy pages CMS (Terms + Privacy, per product).
     // Backed by legal-pages.admin.controller.ts (IsAdminGuard).
     legalPages: 'admin/legal-pages',
     createLegalPage: 'admin/legal-pages',

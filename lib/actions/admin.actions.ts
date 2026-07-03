@@ -23,7 +23,6 @@ import type {
   UpdateTierPayload,
   BrandingAssets,
   AdminUserWithSubscription,
-  AdminConnectWallet,
 } from '@/types';
 import type { SessionInfo } from '@/lib/api/modules/sessions.api';
 
@@ -238,23 +237,6 @@ export async function adminRevokeSubscription(
   return http.delete(E.revokeSubscription(id), { data }).then(unwrapServer<{ message: string }>);
 }
 
-// Connect ads wallet (boost credits) for one person. Read by the Manage Plans
-// drawer's ConnectWalletCard. Backed by the admin connect ads-wallet endpoint.
-export async function getAdminWallet(userId: string) {
-  const http = await serverHttp();
-  return http.get(E.adminWallet(userId)).then(unwrapServer<AdminConnectWallet>);
-}
-
-// Adjust a person's Connect ads wallet by a signed whole-rupee amount with an
-// audit reason (positive = add credits, negative = deduct). Returns the updated
-// wallet so the card can refresh its balance. Linked to ConnectWalletCard.
-export async function adminAdjustWallet(
-  userId: string,
-  data: { amount: number; reason: string; note?: string },
-) {
-  const http = await serverHttp();
-  return http.post(E.adminWalletAdjust(userId), data).then(unwrapServer<AdminConnectWallet>);
-}
 
 // Global app settings shape. trialBanner toggles + optionally overrides the
 // "45-day free trial" promo shown on the plans pages (in-app + public pricing).
@@ -265,6 +247,10 @@ export interface AdminAppSettings {
     enabled: boolean;
     headlineOverride: string;
   };
+  // Modules shown as "Coming Soon" when locked, instead of the upgrade prompt.
+  // Edited by the Module Availability card on app/(app)/admin/settings; read
+  // publicly via getModuleAvailabilityConfig (subscriptions.actions).
+  comingSoonModules?: string[];
 }
 
 export async function getAdminSettings() {

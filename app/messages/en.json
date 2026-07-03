@@ -290,6 +290,7 @@
       "creditNotes": "Credit Notes"
     },
     "lockedTooltip": "{label} is available on a premium plan",
+    "comingSoonTooltip": "{label} is coming soon",
     "backToWorkspace": "Back to workspace",
     "backToConnect": "Back to Connect"
   },
@@ -1096,7 +1097,27 @@
     "addFirstMember": "Add your first member",
     "noWorkspace": "No workspace selected",
     "selectWorkspaceToContinue": "Please select a workspace to continue",
-    "viewAllMembers": "View all members"
+    "viewAllMembers": "View all members",
+    "hrOverview": {
+      "tagline": "Your people and payroll at a glance",
+      "activeHeadcount": "Active staff",
+      "activeHeadcountSub": "currently on the roster",
+      "addedThisMonth": "Joined this month",
+      "addedThisMonthSub": "new members added",
+      "withAppAccess": "With app access",
+      "withAppAccessSub": "can sign in to ManekHR",
+      "payrollThisMonth": "This month’s payroll",
+      "paidLabel": "paid",
+      "payrollSnapshotTitle": "Payroll snapshot",
+      "payrollEmptyTitle": "No payroll yet",
+      "payrollEmptyBody": "Generate this month’s payroll to see totals here.",
+      "byDesignationTitle": "Staff by designation",
+      "emptyTitle": "No staff yet",
+      "emptyBody": "Add your first team member to see your overview come alive.",
+      "errorTitle": "Couldn’t load your overview",
+      "errorBody": "Something went wrong while fetching the numbers. Try again.",
+      "quickTeamSub": "view and manage staff"
+    }
   },
   "activity": {
     "pageTitle": "Team Activity",
@@ -3071,6 +3092,12 @@
   },
   "subscription": {
     "title": "Subscription",
+    "comingSoonPrompt": {
+      "compact": "Coming soon",
+      "thisFeature": "This feature",
+      "title": "{feature} is coming soon",
+      "description": "We're building this module right now. It will be available in an upcoming update."
+    },
     "trial": {
       "eligibleTitle": "Try the full platform free for {days} days",
       "eligibleDesc": "Full access, no card needed.",
@@ -5592,6 +5619,20 @@
       "langGujarati": "Gujarati",
       "langGujaratiRoman": "Gujarati (Roman)",
       "langHindiRoman": "Hindi (Roman)"
+    },
+    "moduleAvailability": {
+      "cardTitle": "Module Availability",
+      "description": "Choose what customers see on a locked module: a 'Coming Soon' notice (module not built yet) or the plan-upgrade prompt (module available on higher plans). This only changes the message - it never unlocks anything.",
+      "comingSoon": "Coming Soon",
+      "upgrade": "Upgrade",
+      "groupAccounting": "Accounting Group",
+      "groupTimeAttendance": "Time & Attendance Group",
+      "groupMachines": "Machines Group",
+      "otherModules": "Other Modules",
+      "allComingSoon": "All Coming Soon",
+      "allUpgrade": "All Upgrade",
+      "saveButton": "Save Module Availability",
+      "saved": "Module availability saved"
     },
     "trialBanner": {
       "cardTitle": "Trial Banner",

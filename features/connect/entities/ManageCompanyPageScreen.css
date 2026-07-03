@@ -1,0 +1,112 @@
+/**
+ * Company-page manage console - quiet button affordances that inline styles
+ * cannot express (:hover). Scoped to this console so it does not depend on the
+ * storefront console's stylesheet being mounted. Mirrors the storefront
+ * `cn-quiet-btn` so both share-cards read identically.
+ */
+.cn-quiet-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  border: 1px solid var(--cr-border);
+  background: var(--cr-surface);
+  border-radius: var(--cr-radius-sm);
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cr-text-3);
+  transition:
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.cn-quiet-btn:hover {
+  border-color: var(--cr-primary);
+  color: var(--cr-primary);
+}
+
+/**
+ * Manage-console tab bar - skins AntD <Segmented> into a tactile pill track:
+ * a tinted inset track, a navy lozenge for the active tab (white label + icon),
+ * per-tab icons, and a live count chip on Posts / Jobs. AntD keeps the animated
+ * thumb, roving-tabindex keyboard nav, and ARIA for free; only the skin changes.
+ * Root selectors use `.cn-manage-tabs.ant-segmented` (two classes) so they
+ * outrank the base AntD theme without !important.
+ *
+ * Selected-lozenge color comes from the global Segmented theme token
+ * (`lib/theme.ts`: itemSelectedBg #0B6E4F = --cr-primary, itemSelectedColor
+ * #FFFFFF). The selected label/icon below MUST stay white (--cr-text-on-primary)
+ * to read on that navy fill - tinting them --cr-primary makes them vanish into
+ * the lozenge (keep in sync with lib/theme.ts Segmented token).
+ */
+.cn-manage-tabs.ant-segmented {
+  padding: 4px;
+  background: var(--cr-surface-2);
+  border: 1px solid var(--cr-border);
+  border-radius: var(--cr-radius-full);
+}
+
+.cn-manage-tabs .ant-segmented-item {
+  border-radius: var(--cr-radius-full);
+  color: var(--cr-text-3);
+  transition: color 0.16s ease;
+}
+
+/* Hover on an inactive tab = text darkens only, NO fill. A fill would compete
+   with the navy active lozenge and read as a second selected tab. `!important`
+   beats AntD's default `--ant-segmented-item-hover-bg`. */
+.cn-manage-tabs .ant-segmented-item:not(.ant-segmented-item-selected):hover {
+  color: var(--cr-text);
+  background: transparent !important;
+}
+
+/* The settled selected item AND the animating thumb share the lozenge look so
+   the active state is identical mid-transition and at rest. The fill is set
+   EXPLICITLY to --cr-primary (the same navy as the global Segmented theme token
+   in lib/theme.ts) rather than left to the theme: setting it here removes the
+   theme-vs-component race that made the lozenge flicker white in some states and
+   hide the white label/icon. White content (below) reads on this navy fill. */
+.cn-manage-tabs .ant-segmented-item-selected,
+.cn-manage-tabs .ant-segmented-thumb {
+  background: var(--cr-primary);
+  border-radius: var(--cr-radius-full);
+  box-shadow: var(--cr-shadow-sm);
+}
+
+.cn-manage-tabs .ant-segmented-item-selected {
+  color: var(--cr-text-on-primary);
+}
+
+.cn-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.cn-tab-ico {
+  display: inline-flex;
+  color: var(--cr-text-4);
+  transition: color 0.16s ease;
+}
+
+.cn-manage-tabs .ant-segmented-item-selected .cn-tab-ico {
+  color: var(--cr-text-on-primary);
+}
+
+.cn-tab-count {
+  display: inline-grid;
+  place-items: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: var(--cr-radius-full);
+  background: var(--cr-wash-indigo);
+  color: var(--cr-primary);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+}

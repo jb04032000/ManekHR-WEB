@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Zari360 - Connect Wireframes</title>
+<meta name="viewport" content="width=1440" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css" />
+<link rel="stylesheet" href="connect.css" />
+<style>
+  html, body { margin: 0; padding: 0; background: #E5DFD3; font-family: 'Inter', system-ui, sans-serif; }
+</style>
+</head>
+<body>
+
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="icons.jsx"></script>
+<script type="text/babel" src="ios-frame.jsx"></script>
+<script type="text/babel" src="connect-shell.jsx"></script>
+<script type="text/babel" src="connect-feed.jsx"></script>
+<script type="text/babel" src="connect-profile.jsx"></script>
+<script type="text/babel" src="connect-network.jsx"></script>
+<script type="text/babel" src="connect-marketplace.jsx"></script>
+<script type="text/babel" src="connect-jobs.jsx"></script>
+<script type="text/babel" src="connect-company.jsx"></script>
+<script type="text/babel" src="connect-inbox.jsx"></script>
+<script type="text/babel" src="connect-onboarding.jsx"></script>
+<script type="text/babel" src="connect-empty.jsx"></script>
+<script type="text/babel" src="connect-composer.jsx"></script>
+<script type="text/babel" src="connect-mobile.jsx"></script>
+<script type="text/babel" src="connect-modules.jsx"></script>
+<script type="text/babel" src="connect-leads-rfq.jsx"></script>
+
+<script type="text/babel" data-presets="env,react">
+const { DesignCanvas, DCSection, DCArtboard } = window;
+const W = 1440;
+
+const App = () => (
+  <DesignCanvas
+    title="Zari360 Connect - module wireframes"
+    subtitle="One artboard per main screen, mapped to the PRD. Same shell as the live Connect page (ERP/Connect toggle, top bar). Drag to reorder, click any label to open fullscreen."
+  >
+    <DCSection id="onboard" title="0 · First-run (Phase-0 priority)" subtitle="The first 30 seconds - intent routing + day-1 zero-state">
+      <DCArtboard id="intent" label="Onboarding - Intent question (routes to right module)" width={W} height={1000}>
+        <window.OnboardingScreen />
+      </DCArtboard>
+      <DCArtboard id="day1" label="Day-1 Home - checklist is the hero, feed is secondary" width={W} height={1100}>
+        <window.ZeroFeedScreen />
+      </DCArtboard>
+      <DCArtboard id="empty-profile" label="Empty Profile - 22yr daily-wage karigar persona (volume user)" width={W} height={1400}>
+        <window.EmptyProfileScreen />
+      </DCArtboard>
+    </DCSection>
+
+    <DCSection id="mobile" title="0M · Mobile (Surat is mobile-first)" subtitle="iPhone bezels - same brand, condensed for one-thumb use">
+      <DCArtboard id="m-feed" label="Mobile · Feed (default)" width={420} height={900}>
+        <window.MobileFeed />
+      </DCArtboard>
+      <DCArtboard id="m-market" label="Mobile · Marketplace browse (2-up grid)" width={420} height={900}>
+        <window.MobileMarket />
+      </DCArtboard>
+      <DCArtboard id="m-product" label="Mobile · Product detail (sticky CTA bar)" width={420} height={900}>
+        <window.MobileProduct />
+      </DCArtboard>
+      <DCArtboard id="m-profile" label="Mobile · Profile (tab strip)" width={420} height={900}>
+        <window.MobileProfile />
+      </DCArtboard>
+      <DCArtboard id="m-inbox" label="Mobile · Inbox thread + inline quote" width={420} height={900}>
+        <window.MobileInbox />
+      </DCArtboard>
+      <DCArtboard id="m-leads" label="Mobile · Lead Manager (workshop owner) - stale flag + dynamic CTA" width={420} height={900}>
+        <window.MobileLeadManager />
+      </DCArtboard>
+    </DCSection>
+
+    <DCSection id="composers" title="0C · Post composers" subtitle="The 4 main creation flows - what 'compose' actually means in each module">
+      <DCArtboard id="composer-all" label="Composers - Product · Job · Requirement · Voice note (side-by-side)" width={1280} height={1700}>
+        <window.ComposerScreen />
+      </DCArtboard>
+    </DCSection>
+
+    <DCSection id="entry" title="A · Entry & feed" subtitle="The landing surface after toggling Connect">
+      <DCArtboard id="feed" label="Connect Home - Feed (default landing)" width={W} height={1500}>
+        <window.FeedScreen />
+      </DCArtboard>
+    </DCSection>
+
+    <DCSection id="identity" title="B · Identity">
+      <DCArtboard id="profile" label="Person Profile - Master karigar (Meera Sharma)" width={W} height={1800}>
+        <window.ProfileScreen />
+      </DCArtboard>
+      <DCArtboard id="network" label="My Network - invites, suggestions, follows" width={W} height={1500}>
+        <window.NetworkScreen />
+      </DCArtboard>
+    </DCSection>
+
+    <DCSection id="commerce" title="C · Marketplace (lead-gen, no checkout)">
+      <DCArtboard id="market" label="Marketplace Home - categories, products, live RFQs" width={W} height={1500}>
+        <window.MarketplaceHome />
+      </DCArtboard>
+      <DCArtboard id="product" label="Product Detail - gallery + quotation flow" width={W} height={1700}>
+        <window.ProductDetail />
+      </DCArtboard>
+      <DCArtboard id="leads" label="Lead Manager - full CRM (New/Quoted/Negotiating/Won/Lost)" width={W} height={1100}>
+        <window.LeadManager />
+      </DCArtboard>
+      <DCArtboard id="rfq" label="RFQ Board - reverse listings, sellers send quotes" width={W} height={1200}>
+        <window.RFQBoard />
+      </DCArtboard>
+    </DCSection>
+
+    <DCSection id="hiring" title="D · Jobs (karigar-adapted)">
+      <DCArtboard id="jobs" label="Jobs Home - filters · daily-wage / piece-rate / monthly" width={W} height={1500}>
+        <window.JobsHome />
+      </DCArtboard>
+      <DCArtboard id="job" label="Job Detail - Multi-head op, application + voice note" width={W} height={1500}>
+        <window.JobDetail />
+      </DCArtboard>
+      <DCArtboard id="posted" label="Posted Jobs - Lite ATS pipeline (5-stage kanban)" width={1600} height={1100}>
+        <window.PostedJobsPipeline />
+      </DCArtboard>
+      <DCArtboard id="candidates" label="Candidates - search + Caller-ID intent banner" width={W} height={1200}>
+        <window.CandidatesTab />
+      </DCArtboard>
+    </DCSection>
+
+    <DCSection id="entity" title="E · Business presence">
+      <DCArtboard id="company" label="Company Page - Anat Textiles (ERP-linked workshop)" width={W} height={1900}>
+        <window.CompanyScreen />
+      </DCArtboard>
+    </DCSection>
+
+    <DCSection id="xcut" title="F · Cross-cutting (Inbox / Notifications / Search)">
+      <DCArtboard id="inbox" label="Unified Inbox - DMs · Inquiries · Applications · Quotes" width={W} height={1000}>
+        <window.InboxScreen />
+      </DCArtboard>
+      <DCArtboard id="notif" label="Notifications - granular channels, batching" width={W} height={1200}>
+        <window.NotificationsScreen />
+      </DCArtboard>
+      <DCArtboard id="search" label="Unified Search - people, products, jobs, posts, voice" width={W} height={1100}>
+        <window.SearchScreen />
+      </DCArtboard>
+      <DCArtboard id="wa" label="WhatsApp handoff modal - pre-filled context preview" width={W} height={900}>
+        <window.WhatsAppHandoff />
+      </DCArtboard>
+    </DCSection>
+
+    <DCSection id="empty" title="G · Empty states gallery" subtitle="Per design doc §5 - every screen has a designed empty state (day-1 karigar persona)">
+      <DCArtboard id="empties" label="Empty states · 12 screens · same recipe" width={1280} height={1400}>
+        <window.EmptyStatesGallery />
+      </DCArtboard>
+    </DCSection>
+  </DesignCanvas>
+);
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+
+</body>
+</html>

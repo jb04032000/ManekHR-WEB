@@ -1,0 +1,119 @@
+/**
+ * Inbox shell + desktop interaction states (Phase 7 web polish).
+ * Loaded once via `InboxScreen`.
+ *
+ * Two concerns live here because both need real CSS (not inline styles):
+ *  1. `.cn-inbox-shell` -- the full-screen app surface. Like WhatsApp Web, the
+ *     inbox fills the viewport and ONLY its panes scroll; the document itself
+ *     never scrolls (and no marketing footer sits behind it). It is fixed, so
+ *     it leaves the page flow entirely. Mobile: full width above the bottom tab
+ *     bar. Desktop: right of the sidebar, to the bottom edge -- the left offset
+ *     tracks the sidebar's collapse state via the layout's
+ *     `[data-sidebar-collapsed]` attribute.
+ *  2. Hover/selected feedback, which inline styles cannot express (`:hover` is
+ *     impossible inline, and an inline `background` even overrides a stylesheet
+ *     `:hover`). Elements drop their inline background and express it here.
+ *     Hover is gated to `(hover: hover)` so a tap never leaves a stuck state.
+ */
+
+/* ── The full-screen chat shell ─────────────────────────────────────────────── */
+.cn-inbox-shell {
+  position: fixed;
+  top: 64px; /* below the 64px (h-16) shell content header */
+  left: 0;
+  right: 0;
+  bottom: calc(3.5rem + env(safe-area-inset-bottom)); /* above the mobile tab bar */
+  z-index: 1;
+  display: flex;
+  overflow: hidden;
+  background: var(--cr-surface);
+}
+@media (min-width: 768px) {
+  .cn-inbox-shell {
+    left: 240px; /* right of the expanded sidebar */
+    bottom: 0; /* no tab bar on desktop -- fill to the bottom edge */
+    z-index: auto;
+    transition: left 0.2s ease; /* glide with the sidebar collapse animation */
+  }
+  [data-sidebar-collapsed='true'] .cn-inbox-shell {
+    left: 64px; /* right of the collapsed sidebar */
+  }
+}
+
+/* The conversation log surface. A barely-there warm dot texture (brand gold at
+   very low alpha) adds the subtle depth a flat fill lacks -- WhatsApp's doodle
+   wallpaper without the noise. Keep the alpha tiny so it never competes with the
+   bubbles. */
+.cn-chat-log {
+  background-color: var(--cr-surface-2);
+  background-image: radial-gradient(rgba(199, 154, 58, 0.05) 1.1px, transparent 1.2px);
+  background-size: 20px 20px;
+  background-position: -6px -6px;
+}
+
+/* Thread rows: clear hover + an unmistakable selected state (fill + left bar). */
+.cn-thread-row {
+  transition:
+    background-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+.cn-thread-row[aria-current='true'] {
+  background-color: var(--cr-surface-2);
+  box-shadow: inset 3px 0 0 var(--cr-primary);
+}
+@media (hover: hover) {
+  .cn-thread-row:hover:not([aria-current='true']) {
+    background-color: var(--cr-surface-2);
+  }
+}
+
+/* Channel filter chips: hover only on the non-active ones. */
+.cn-chip {
+  background-color: var(--cr-surface);
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+@media (hover: hover) {
+  .cn-chip:hover[aria-pressed='false'] {
+    background-color: var(--cr-surface-2);
+  }
+}
+
+/* Icon buttons (header More, composer photo, ...). */
+.cn-iconbtn {
+  transition: background-color 0.15s ease;
+}
+@media (hover: hover) {
+  .cn-iconbtn:hover {
+    background-color: var(--cr-surface-2);
+  }
+}
+
+/* The conversation header identity links to the person's profile; underline the
+   name on hover so the affordance reads as clickable (handle stays muted). */
+@media (hover: hover) {
+  .cn-identity:hover .cn-identity-name {
+    text-decoration: underline;
+  }
+}
+
+/* The pinned context card (ContextCard.tsx). The frame lifts on hover; its inner
+   subject row (`.cn-context-card-main`) is the deep-link, so the keyboard focus
+   ring rings the link, not the frame (which also holds non-link actions). */
+.cn-context-card {
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+@media (hover: hover) {
+  .cn-context-card:hover {
+    border-color: var(--cr-border);
+    box-shadow: 0 2px 8px rgba(40, 30, 10, 0.1);
+  }
+}
+.cn-context-card-main:focus-visible {
+  outline: 2px solid var(--cr-primary);
+  outline-offset: -2px;
+  border-radius: var(--cr-radius-md);
+}

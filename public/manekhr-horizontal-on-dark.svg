@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 44" width="212" height="44" role="img" aria-label="ManekHR">
+  <g transform="translate(2,2)">
+    <polygon points="20,3 33,13 20,37 7,13" fill="#C49A2E" stroke="#7A5F17" stroke-width="1.1" stroke-linejoin="round"/>
+    <polyline points="7,13 33,13" fill="none" stroke="#7A5F17" stroke-width="1.1"/>
+    <polyline points="13,13 20,37 27,13" fill="none" stroke="#7A5F17" stroke-width="1.1"/>
+    <polygon points="20,3 13,13 27,13" fill="#E4C25A"/>
+  </g>
+  <text x="50" y="30" font-family="'Segoe UI',Arial,sans-serif" font-size="26" font-weight="700" fill="#FFFFFF" letter-spacing="0.3">Manek<tspan fill="#E4C25A">HR</tspan></text>
+</svg>

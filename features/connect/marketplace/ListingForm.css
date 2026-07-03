@@ -1,0 +1,103 @@
+/**
+ * ListingForm section cards.
+ *
+ * Each group of fields sits in a `.cn-listing-section` card. AntD gives every
+ * Form.Item a 24px bottom margin, which would stack on top of the card's bottom
+ * padding and leave an uneven, too-tall gap at the foot of each card. Drop the
+ * trailing item's margin so the card's own padding sets the bottom rhythm -
+ * whether the last child is a single Form.Item or a multi-field row div.
+ */
+.cn-listing-section > .ant-form-item:last-child {
+  margin-bottom: 0;
+}
+
+.cn-listing-section > div:last-child > .ant-form-item {
+  margin-bottom: 0;
+}
+
+/* Anchor jumps from the rail's section nav should clear the 64px sticky
+   TopHeader (h-16) plus a little breathing room. */
+.cn-listing-section {
+  scroll-margin-top: 84px;
+}
+
+/* ── Category picker, grouped ────────────────────────────────────────────────
+   The eight categories sit in two labelled clusters (Process / Trade & goods).
+   Laying the Radio.Buttons out with real gaps reads as scannable chips rather
+   than one long connected segmented bar, so each needs its own rounded border
+   and the AntD connecting divider (::before) removed. */
+.cn-cat-groups {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cr-space-sm);
+  width: 100%;
+}
+.cn-cat-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.cn-cat-group-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--cr-text-4);
+}
+.cn-cat-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.cn-cat-row .ant-radio-button-wrapper {
+  border-radius: var(--cr-radius-sm);
+  border-inline-start-width: 1px;
+}
+.cn-cat-row .ant-radio-button-wrapper::before {
+  display: none;
+}
+
+/* "Add your own" custom-category affordance below the preset chips. */
+.cn-cat-custom {
+  margin-top: var(--cr-space-sm);
+}
+.cn-cat-addown {
+  border: 1px dashed var(--cr-border);
+  background: transparent;
+  border-radius: var(--cr-radius-sm);
+  padding: 5px 11px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--cr-primary);
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+.cn-cat-addown::before {
+  content: '+ ';
+}
+.cn-cat-addown:hover {
+  border-color: var(--cr-primary);
+  background: var(--cr-wash-indigo);
+}
+
+/* ── Sticky commit bar ───────────────────────────────────────────────────────
+   Keeps Cancel / Save / Publish in reach instead of a screen-and-a-half scroll
+   to the foot of the form. Reads as a card pinned to the bottom of the column. */
+.cn-listing-actions {
+  position: sticky;
+  bottom: 0;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: var(--cr-space-md);
+  padding: var(--cr-space-sm);
+  background: var(--cr-surface);
+  border: 1px solid var(--cr-border);
+  border-radius: var(--cr-radius-lg);
+  box-shadow: 0 -2px 10px rgba(16, 24, 40, 0.06);
+}

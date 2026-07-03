@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Zari360 Connect - Verify your business (design mockup)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#1a1c2e; --ink-2:#3a3d55; --ink-3:#5c6076; --ink-4:#8a8fa6;
+    --surface:#ffffff; --surface-2:#f4f5fb; --surface-3:#eceef7;
+    --border:#e3e5f0; --border-light:#edeef6;
+    --indigo:#4733c4; --indigo-light:#ece9fb; --indigo-50:#f4f2fe;
+    --gold:#b8860b; --gold-soft:#f5ecd3;
+    --success:#1f9d68; --success-bg:#e7f6ee;
+    --amber:#b7791f; --amber-bg:#fdf4e3;
+    --wash:linear-gradient(135deg,#f4f2fe 0%,#fbf7ec 100%);
+    --radius:16px; --radius-sm:11px; --radius-full:999px;
+    --shadow:0 4px 22px rgba(26,28,46,.08);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--surface-2);color:var(--ink);font-family:"Mukta",system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 60px}
+  .topnote{font-size:12px;color:var(--ink-4);text-align:center;margin-bottom:18px;letter-spacing:.02em}
+  .topnote b{color:var(--indigo)}
+  .grid{display:grid;gap:20px;grid-template-columns:minmax(0,1fr) 300px}
+  @media(max-width:860px){.grid{grid-template-columns:1fr}}
+  h1{font-family:"Fraunces",serif;font-weight:600;font-size:30px;letter-spacing:-.01em;margin:0 0 6px}
+  .sub{color:var(--ink-3);font-size:14.5px;margin:0 0 22px;max-width:54ch}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+  .pad{padding:20px 22px}
+
+  /* trust ladder */
+  .ladder{display:flex;gap:10px;margin-bottom:22px;flex-wrap:wrap}
+  .rung{flex:1 1 150px;border:1px solid var(--border);border-radius:var(--radius-sm);padding:13px 14px;background:var(--surface);position:relative}
+  .rung .k{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-4)}
+  .rung .v{font-size:13.5px;font-weight:600;margin-top:5px;display:flex;align-items:center;gap:6px}
+  .rung.on{border-color:var(--success);background:var(--success-bg)}
+  .rung.on .v{color:var(--success)}
+  .rung.pend{border-color:var(--amber);background:var(--amber-bg)}
+  .rung.pend .v{color:var(--amber)}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--ink-4)}
+  .rung.on .dot{background:var(--success)} .rung.pend .dot{background:var(--amber)}
+
+  /* tier cards */
+  .tier{display:flex;gap:16px;padding:20px 22px;border-bottom:1px solid var(--border-light)}
+  .tier:last-child{border-bottom:none}
+  .badge-ic{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;flex:none;font-size:20px}
+  .ic-erp{background:var(--indigo-light);color:var(--indigo)}
+  .ic-gst{background:var(--gold-soft);color:var(--gold)}
+  .ic-ud{background:var(--surface-3);color:var(--ink-3)}
+  .ic-ph{background:var(--surface-3);color:var(--ink-3)}
+  .tier h3{margin:0;font-size:15.5px;font-weight:700;display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+  .tier p{margin:5px 0 0;font-size:13px;color:var(--ink-3)}
+  .pill{font-size:11px;font-weight:700;padding:3px 9px;border-radius:var(--radius-full);letter-spacing:.02em}
+  .pill.ok{background:var(--success-bg);color:var(--success)}
+  .pill.declared{background:var(--surface-3);color:var(--ink-3)}
+  .pill.pending{background:var(--amber-bg);color:var(--amber)}
+  .row{display:flex;gap:9px;margin-top:13px;flex-wrap:wrap;align-items:center}
+  input.fld{font:inherit;font-size:14px;padding:9px 12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);width:230px;color:var(--ink)}
+  input.fld::placeholder{color:var(--ink-4)}
+  .btn{font:inherit;font-weight:700;font-size:13.5px;border:none;border-radius:10px;padding:9px 16px;cursor:pointer}
+  .btn.primary{background:var(--indigo);color:#fff}
+  .btn.ghost{background:var(--surface-2);color:var(--ink-2);border:1px solid var(--border)}
+  .note{margin-top:11px;font-size:12.5px;color:var(--amber);background:var(--amber-bg);border:1px solid #f2e2bf;border-radius:10px;padding:9px 12px;display:flex;gap:8px}
+  .note.neutral{color:var(--ink-3);background:var(--surface-2);border-color:var(--border)}
+  .meta{margin-top:9px;font-size:12.5px;color:var(--ink-4)}
+
+  /* rail */
+  .rail .card{padding:18px 18px}
+  .rail h4{margin:0 0 8px;font-size:13px;font-weight:700}
+  .rail p{margin:0;font-size:12.5px;color:var(--ink-3)}
+  .moat{background:var(--wash);border:1px solid #e6e1fb}
+  .moat .tag{font-size:11px;font-weight:700;color:var(--indigo);text-transform:uppercase;letter-spacing:.06em}
+  .legend{display:flex;flex-direction:column;gap:10px;margin-top:6px}
+  .legend .li{display:flex;gap:9px;align-items:flex-start;font-size:12.5px;color:var(--ink-2)}
+  .chk{color:var(--success);font-weight:700}
+  .footnote{margin-top:18px;font-size:11.5px;color:var(--ink-4);text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="topnote">DESIGN MOCKUP - not wired to data. GST &amp; Udyam need a <b>third-party verification API</b> (see REQUIREMENTS.md). Pending states are honest; no fake "verified".</p>
+  <div class="grid">
+    <main>
+      <h1>Verify your business</h1>
+      <p class="sub">Buyers trust workshops they can check. Add the marks below - the strongest is your live ERP workspace, the one signal no one can fake.</p>
+
+      <!-- trust ladder -->
+      <div class="ladder">
+        <div class="rung on"><div class="k">ERP-linked</div><div class="v"><span class="dot"></span>Verified</div></div>
+        <div class="rung pend"><div class="k">GST</div><div class="v"><span class="dot"></span>Pending</div></div>
+        <div class="rung"><div class="k">Udyam</div><div class="v"><span class="dot"></span>Not added</div></div>
+        <div class="rung on"><div class="k">Mobile</div><div class="v"><span class="dot"></span>Confirmed</div></div>
+      </div>
+
+      <div class="card">
+        <!-- Tier 0: ERP (REAL today) -->
+        <div class="tier">
+          <div class="badge-ic ic-erp">&#9679;</div>
+          <div style="flex:1">
+            <h3>ERP-linked <span class="pill ok">Verified</span></h3>
+            <p>Drawn from a running Zari360 ERP workspace - attendance, payroll and parties are live. This is the moat signal; it needs no outside check.</p>
+            <div class="meta">Linked since March 2025 · 17 karigars on payroll</div>
+          </div>
+        </div>
+
+        <!-- Tier 1a: GST (declared now, verified after API) -->
+        <div class="tier">
+          <div class="badge-ic ic-gst">&#8377;</div>
+          <div style="flex:1">
+            <h3>GST registration <span class="pill pending">Pending</span></h3>
+            <p>We confirm your GSTIN against official records, then show your legal name and state to buyers.</p>
+            <div class="row">
+              <input class="fld" placeholder="24ABCDE1234F1Z5" value="24ABCDE1234F1Z5" />
+              <button class="btn primary">Submit for verification</button>
+            </div>
+            <div class="note">&#9888; Submitted - pending verification. Until our records check runs, this shows to buyers as <b>self-declared</b>, never a green tick. (Automated check needs the GST API.)</div>
+          </div>
+        </div>
+
+        <!-- Tier 1b: Udyam -->
+        <div class="tier">
+          <div class="badge-ic ic-ud">&#9635;</div>
+          <div style="flex:1">
+            <h3>Udyam (MSME) <span class="pill declared">Not added</span></h3>
+            <p>Optional. Adds the MSME mark once confirmed against the Udyam registry.</p>
+            <div class="row">
+              <input class="fld" placeholder="UDYAM-GJ-00-0000000" />
+              <button class="btn ghost">Add Udyam number</button>
+            </div>
+            <div class="note neutral">Stored as self-declared until the Udyam registry check is connected.</div>
+          </div>
+        </div>
+
+        <!-- Tier 2: Contact (reuse existing OTP) -->
+        <div class="tier">
+          <div class="badge-ic ic-ph">&#9742;</div>
+          <div style="flex:1">
+            <h3>Contact <span class="pill ok">Mobile confirmed</span></h3>
+            <p>Your mobile is verified by OTP (reuses the existing Team mobile-OTP flow). Email confirmation is next.</p>
+            <div class="row"><button class="btn ghost">Verify email</button></div>
+          </div>
+        </div>
+      </div>
+
+      <p class="footnote">Reconciled to our flow: ERP tier works today (real, no API). GST/Udyam are captured now as self-declared and flip to "Verified" only when the third-party API confirms them. Mobile reuses existing OTP. No fabricated badges.</p>
+    </main>
+
+    <aside class="rail">
+      <div class="card moat">
+        <div class="tag">Why ERP-linked wins</div>
+        <p style="margin-top:7px">A GST number proves you registered. An <b>ERP-linked</b> badge proves you actually run a workshop - karigars on payroll, an attendance ledger, real parties. Competitors can copy a logo; they cannot fake a running back office.</p>
+      </div>
+      <div class="card" style="margin-top:14px">
+        <h4>Badges buyers will see</h4>
+        <div class="legend">
+          <div class="li"><span class="chk">&#10003;</span><div><b>ERP-linked</b> - runs a live Zari360 workspace</div></div>
+          <div class="li"><span class="chk">&#10003;</span><div><b>GST verified</b> - GSTIN confirmed (after API)</div></div>
+          <div class="li"><span class="chk">&#10003;</span><div><b>Udyam</b> - MSME registered (after API)</div></div>
+          <div class="li"><span class="chk">&#10003;</span><div><b>Mobile</b> - number confirmed by OTP</div></div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:14px">
+        <h4>Self-declared vs verified</h4>
+        <p>A number you type is shown as <b>self-declared</b> - a neutral chip, not a green tick - until an official check passes. We never show a verified mark we have not confirmed.</p>
+      </div>
+    </aside>
+  </div>
+</div>
+</body>
+</html>

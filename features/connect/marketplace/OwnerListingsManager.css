@@ -1,0 +1,336 @@
+/**
+ * OwnerListingsManager - the seller's product manager inside the storefront
+ * console. Toolbar (search / filter / sort / view toggle / select), a grid OR
+ * list of product cards, a sticky bulk-action bar, and inline fix-it
+ * affordances. Inline styles cover one-offs; this file owns the :hover /
+ * segmented-control / responsive-grid states that inline styles cannot express.
+ */
+
+/* Toolbar -------------------------------------------------------------- */
+.cn-lm-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: var(--cr-space-md);
+}
+
+.cn-lm-toolbar .cn-lm-search {
+  flex: 1 1 150px;
+  min-width: 130px;
+}
+
+.cn-lm-spacer {
+  flex: 1 1 auto;
+}
+
+/* Segmented control (grid / list view toggle, select toggle) ----------- */
+.cn-seg {
+  display: inline-flex;
+  padding: 2px;
+  border-radius: var(--cr-radius-md);
+  background: var(--cr-surface-2);
+  border: 1px solid var(--cr-border);
+}
+
+.cn-seg-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px 9px;
+  border: none;
+  background: transparent;
+  border-radius: calc(var(--cr-radius-md) - 2px);
+  color: var(--cr-text-4);
+  cursor: pointer;
+  font-size: 12.5px;
+  font-weight: 600;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.cn-seg-btn:hover {
+  color: var(--cr-text-2);
+}
+
+.cn-seg-btn--active {
+  background: var(--cr-surface);
+  color: var(--cr-primary);
+  box-shadow: var(--cr-shadow-xs, 0 1px 2px rgba(16, 24, 40, 0.06));
+}
+
+/* Quiet text button (select-all / cancel inside bulk surfaces). */
+.cn-link-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--cr-primary);
+  padding: 2px 4px;
+}
+
+.cn-link-btn:hover {
+  text-decoration: underline;
+}
+
+/* Sticky bulk-action bar - pins to the viewport bottom while a selection is
+   live, so the actions stay reachable however far the list is scrolled. */
+.cn-bulk-bar {
+  position: sticky;
+  bottom: 12px;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: var(--cr-space-md);
+  padding: 10px 14px;
+  border-radius: var(--cr-radius-md);
+  border: 1px solid var(--cr-primary);
+  background: var(--cr-surface);
+  box-shadow: 0 10px 28px rgba(16, 24, 40, 0.18);
+}
+
+/* Product grid - ~3 columns at the console content width (per spec). The add
+   tile fills the trailing cell so a sparse grid does not read as empty. */
+.cn-prod-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--cr-space-md);
+}
+
+.cn-prod-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--cr-border-light);
+  border-radius: var(--cr-radius-lg);
+  background: var(--cr-surface);
+  overflow: hidden;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+.cn-prod-card:hover {
+  border-color: var(--cr-border);
+  box-shadow: 0 6px 20px rgba(16, 24, 40, 0.08);
+  transform: translateY(-1px);
+}
+
+.cn-prod-card--selected {
+  border-color: var(--cr-primary);
+  box-shadow: 0 0 0 1px var(--cr-primary);
+}
+
+/* Product list --------------------------------------------------------- */
+.cn-prod-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cr-space-sm);
+}
+
+.cn-prod-row {
+  position: relative;
+  display: flex;
+  gap: var(--cr-space-md);
+  padding: var(--cr-space-sm);
+  border: 1px solid var(--cr-border-light);
+  border-radius: var(--cr-radius-md);
+  background: var(--cr-surface);
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.cn-prod-row:hover {
+  border-color: var(--cr-border);
+  box-shadow: 0 2px 8px rgba(16, 24, 40, 0.05);
+}
+
+.cn-prod-row--selected {
+  border-color: var(--cr-primary);
+  box-shadow: 0 0 0 1px var(--cr-primary);
+}
+
+/* Empty-photo slot = the inline fix-it. Amber so it reads as a warning AND a
+   dropzone-style "add a photo" target in one (no separate warning chip). */
+.cn-photo-slot {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border: 1px dashed var(--cr-warning, #d97706);
+  background: var(--cr-warning-bg, #fffbeb);
+  color: var(--cr-warning, #b45309);
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease,
+    filter 0.15s ease;
+}
+
+.cn-photo-slot:hover {
+  border-color: var(--cr-warning, #b45309);
+  background: var(--cr-warning-bg, #fef3c7);
+  filter: brightness(0.99);
+}
+
+/* Add-product affordance closing the grid / list. Deliberately quieter than a
+   product card - muted dashed border + recessed background - so the eye reads it
+   as an "add" affordance, not a broken/empty card. */
+.cn-add-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  /* Clearly-visible dashed affordance (border-light washed out on the cream
+     surface). Still distinct from the solid borders of real product cards. */
+  border: 1.5px dashed var(--cr-text-4);
+  border-radius: var(--cr-radius-lg);
+  background: transparent;
+  color: var(--cr-text-4);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    border-color 0.15s ease,
+    color 0.15s ease,
+    background 0.15s ease;
+}
+
+.cn-add-tile:hover {
+  border-color: var(--cr-primary);
+  color: var(--cr-primary);
+}
+
+/* Grid add tile: a full card-height affordance - circled icon, title, and a
+   one-line "what it takes" hint - quiet (dashed, no fill) but clearly a card. */
+.cn-add-tile--grid {
+  min-height: 220px;
+  flex-direction: column;
+  gap: 10px;
+  padding: var(--cr-space-md);
+}
+
+.cn-add-tile-icon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  background: var(--cr-surface-2);
+  color: var(--cr-text-3);
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.cn-add-tile:hover .cn-add-tile-icon {
+  background: var(--cr-wash-indigo);
+  color: var(--cr-primary);
+}
+
+.cn-add-tile-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--cr-text-2);
+}
+
+.cn-add-tile-hint {
+  max-width: 210px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--cr-text-4);
+  text-align: center;
+}
+
+.cn-add-tile--list {
+  padding: var(--cr-space-md);
+}
+
+/* Collection shelf - the merged Products + Collections nav. A horizontal,
+   scrollable chip row above the toolbar. One accent (primary) on the active
+   chip, mirroring the public store's collection tabs for cross-surface
+   consistency. The "Manage collections" entry sits at the end. */
+.cn-col-shelf {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: var(--cr-space-md);
+  padding-bottom: 2px;
+  overflow-x: auto;
+}
+
+.cn-col-chip {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border: 1px solid var(--cr-border-light);
+  border-radius: var(--cr-radius-full);
+  background: var(--cr-surface);
+  color: var(--cr-text-2);
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.cn-col-chip:hover {
+  border-color: var(--cr-primary);
+  color: var(--cr-primary);
+}
+
+.cn-col-chip--active,
+.cn-col-chip--active:hover {
+  background: var(--cr-primary);
+  border-color: var(--cr-primary);
+  color: var(--cr-on-primary, #fff);
+}
+
+.cn-col-chip-count {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.65;
+}
+
+/* Quiet "Manage collections" entry - pinned to the end of the shelf. */
+.cn-col-manage {
+  flex-shrink: 0;
+  margin-inline-start: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 11px;
+  border: 1px solid var(--cr-border-light);
+  border-radius: var(--cr-radius-md);
+  background: var(--cr-surface);
+  color: var(--cr-text-3);
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.cn-col-manage:hover {
+  border-color: var(--cr-primary);
+  color: var(--cr-primary);
+}
+
+/* Solo state: no chips yet, so the lone "New collection" entry stays left-aligned
+   instead of being pushed to the far right by the chip-spacing auto margin. */
+.cn-col-manage--solo {
+  margin-inline-start: 0;
+}

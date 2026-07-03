@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="44" height="44" role="img" aria-label="ManekHR">
+  <polygon points="22,5 36,16 22,40 8,16" fill="#C49A2E" stroke="#9C7A1E" stroke-width="1.2" stroke-linejoin="round"/>
+  <polyline points="8,16 36,16" fill="none" stroke="#9C7A1E" stroke-width="1.2"/>
+  <polyline points="15,16 22,40 29,16" fill="none" stroke="#9C7A1E" stroke-width="1.2"/>
+  <polygon points="22,5 15,16 29,16" fill="#D9B23C"/>
+</svg>

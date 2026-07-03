@@ -1,0 +1,141 @@
+# Zari360 — full reference
+
+> Zari360 is an all-in-one platform for the textile trade in India. Plenty of tools cover one piece, a marketplace, a hiring site, or accounting software; Zari360's difference is the combination: it brings a free B2B network, marketplace, hiring, and training together with a full business-management ERP, in one platform and one login. It has two products: Zari360 Connect (a free B2B network and marketplace) and Zari360 ERP (software to run a factory or shop). It serves the textile trade across India and works in English, Gujarati, and Hindi or Gujarati written in English letters.
+
+## What Zari360 is
+
+- Zari360 is one platform for the textile trade with two products that share a single login: Zari360 Connect and Zari360 ERP.
+- The difference is the combination. Most tools are only a marketplace, only a hiring site, or only accounting and HR software. Zari360 brings a free B2B network, marketplace, hiring, and training together with a full ERP, so a business can both grow and run itself in one place.
+- It serves the textile trade across India, with strong support for the Gujarat and Surat market: Gujarati-language use and a focus on the saree, embroidery, and zari trade.
+- It works in English, Gujarati, and Hindi or Gujarati written in English letters. Each person picks their language and can switch anytime.
+- It is phone-first: photos, video, and voice notes carry the trade, and typing is optional, even for job applications.
+
+## Zari360 Connect (free network and marketplace)
+
+Connect is the textile trade's free network and marketplace. Post your work in a feed, open an online shop, compare quotes, post jobs, and talk to buyers and sellers in private chat. Most members are set up in minutes.
+
+How it works:
+1. Create a profile or page. Sign up free with your phone, then set up a profile, company page, or storefront.
+2. List or ask. Add products, post your work, open a job, or post a requirement for quotes.
+3. Chat and close. Every enquiry lands in one inbox; you deal directly and close where it suits you, including WhatsApp.
+
+### Connect modules
+
+- Feed: show the trade what you make. Post photos, video, documents, and voice notes. A personalised stream mixes people you follow with fresh finds from your trade and district, so good work travels beyond your contacts. React, comment, repost, and save.
+- Storefront and marketplace: your shop, open to the whole trade. List products with photos, a short video, price, minimum order, and lead time, grouped under a branded storefront with its own web address. Buyers browse the marketplace, open a product, and tap Contact seller to start a private chat. Listings are free, sellers carry star ratings from past buyers, and Zari360 never takes the payment or the order.
+- Quotations (RFQs): post what you need and compare the prices that come back. A buyer posts a requirement (quantity, material, district, budget, by-when); sellers reply with structured quotes covering price, lead time, samples, and what is included. The buyer compares side by side and accepts one, which opens a private chat.
+- Jobs: hire karigars, find work. A workshop posts the work it needs; workers browse a board that highlights jobs matching their skills and apply by typing, attaching a resume, or recording a voice note. Employers shortlist and accept from one screen. Jobs can be posted personally or as a company page.
+- Chat: every conversation with its context. Private one-to-one messages with photos and voice notes in real time, tied to the product enquiry, job application, or accepted quote they are about. Block, report, and quiet anti-spam controls are built in.
+
+### Services and experts
+
+- A services and experts directory sits alongside the product marketplace, for the people and businesses the trade hires rather than the goods it buys. Members list the services they offer with rates: consulting, maintenance, machine repair, testing, installation, transport, logistics, contractor work, dyeing, printing, job-work, and embroidery.
+- The directory is browsable by service type and location inside the app, so a workshop can find, for example, an embroidery-machine repair expert or a fabric-transport provider in its own district.
+- Each service has its own public page that is search-indexed and shareable, the same as a product listing or a company page. Listing a service is free, and as with the rest of Connect, Zari360 does not sit inside the deal.
+
+### Connect trust and safety
+
+- Backed by a real business: a company page can link to a Zari360 ERP workspace, the system that business runs on daily, and linked pages carry a visible trust marker.
+- Ratings from past buyers: sellers carry a star rating from buyers they have dealt with before, shown on products and the storefront. Ratings appear only after a real deal is confirmed by both sides.
+- Direct, with no middleman: you talk to the other business directly and agree price and delivery yourselves. Zari360 does not sit inside your deal.
+- Controls in your hands: block and report anyone in one tap; quiet anti-spam limits cold outreach; sensitive details like rate cards show only to signed-in viewers.
+
+### Brokers and introductions
+
+- The textile trade runs on brokers and dalals who connect buyers and sellers, and Connect gives that role a verifiable home. A broker member can introduce a buyer and a seller, and both sides confirm the introduction, so a track record is built only from real, two-sided introductions rather than self-claimed ones.
+- Reviews of a broker are private and verified-anonymous: they show initials only, never the reviewer's full identity, and the broker cannot edit or hide them while the reviewer can withdraw their own.
+- The confirm-from-both-sides design is anti-gaming: a broker cannot inflate a track record alone, because the buyer and the seller each have to acknowledge that the introduction happened.
+
+### What is free, and what boosts cost
+
+- Free: profiles, company pages, storefronts, the feed, product listings, the jobs board, quotations, and chat.
+- Boosts are the only paid feature today. You can boost a post, a product, or a job for extra reach, and it appears across Connect clearly labelled as sponsored.
+- Boosts are prepaid from a wallet where one rupee buys one credit. You set the budget, the boost never spends past it, and it stops when the budget or the duration ends.
+- Zari360 takes no commission and does not process the payment or the order. Paid plans with higher limits will come later; the free tier stays.
+
+### Institutes and students
+
+- Training institutes and academies can open a free page and list their courses. Learners enquire to enrol, with no checkout, so the institute talks to them directly.
+- Institutes can show where their students work now, and receive hiring leads from workshops looking for trained hands.
+- A student adds the course they took and the institute confirms it, which appears as a verified Trained-at credential on the student's profile that employers can trust.
+
+## Zari360 ERP (factory and shop operations)
+
+Zari360 ERP brings your team, money, and machines into one system, built around how embroidery and silai-machine (sewing) businesses actually work, and useful across textile units more broadly. It is a separate product from Connect, with the same login and its own pricing.
+
+- Team and payroll: track attendance and pay people accurately every cycle. Attendance from phone, kiosk, or biometric device; daily-wage, monthly, or piece-rate salaries; advances, deductions, and karigar records in one profile.
+- Finance and billing: invoice, record expenses, and always know where you stand. GST-ready invoices, quotations, and delivery challans; party ledgers with outstanding and payment history; clear profit-and-loss and reports at any time.
+- Machines and production: keep every machine accounted for and every shift measured. Machine register with capacity and assigned workers; production output and downtime logged per shift; maintenance scheduling and real utilisation tracking.
+- Roles and permissions: give each person exactly the access they should have. Owners, managers, accountants, and karigars see only their work, with fine-grained module-level permissions and custom roles.
+- Trust: data is encrypted, access is role-based, and Zari360 complies with India's DPDP Act.
+
+## Who Zari360 is for
+
+- Weavers and karigars: show skills and past work, be discoverable, and get hired for what you do best.
+- Traders: source fabric, yarn, and trims, post requirements, and compare quotes from real sellers.
+- Mill and factory owners: give a unit a company page, list products, find karigars and job-workers, and run operations on the ERP.
+- Service providers and experts: list services such as consulting, machine repair, testing, transport, dyeing, printing, and job-work with rates, and be found by type and location across the trade.
+- Brokers and dalals: introduce buyers and sellers, have both sides confirm each introduction, and build a verified track record the whole trade can see.
+- Job seekers: browse jobs that match your skills and apply with a voice note or a resume.
+- Training institutes and academies: open a free page, list courses, place students, and build a reputation the whole trade can see.
+- Students: learn a skill, carry an institute-confirmed Trained-at credential, and get hired by real workshops.
+
+## Marketplace categories
+
+Across the whole textile supply chain: weaving and power-loom, dyeing, printing, embroidery and zari, job work, raw material, machinery, and finished goods (including sarees, fabric, and yarn). Alongside products, a services and experts directory covers the people the trade hires: consulting, maintenance, machine repair, testing, installation, transport, logistics, contractor work, dyeing, printing, job-work, and embroidery services, plus brokers and dalals who introduce buyers and sellers.
+
+## Employment types supported
+
+Full-time monthly, part-time, contract and piece-rate, daily-wage, and apprenticeship.
+
+## Pricing
+
+- Zari360 Connect is free to use, with no card to sign up and no commission on deals. The only paid feature today is optional boosts (prepaid, you set the budget). Higher-limit paid plans will come later, and the free tier stays.
+- Zari360 ERP is a separate product with its own pricing.
+
+## Why Zari360 was built
+
+The textile and embroidery trade runs on WhatsApp groups, paper registers, and a dozen disconnected apps. Karigars look for work by word of mouth, owners rebuild the muster by hand every month, and buyers and sellers lose each other between deals. Generic software was never designed for any of it. Zari360 is built the other way around, starting from how the trade actually works: ERP runs the factory and the books, Connect runs the hiring and the marketplace, and together they give everyone in the trade one professional home, in their own language, on the device they already carry.
+
+Principles: industry-first (every feature starts from a real textile workflow), built to be trusted (encryption, role-based access, DPDP compliance), and accessible to everyone (free to start, simple to learn, fully usable in English, Hindi, and Gujarati).
+
+## Frequently asked questions
+
+- Is Zari360 Connect free? Yes. Joining, profiles, storefronts, the feed, product listings, jobs, quotations, and chat are free. The only thing that costs money today is optional boosting.
+- How much does a boost cost? You decide. A boost is prepaid from a wallet where one rupee buys one credit; you set the budget, it never spends past it, and it stops when the budget or the time runs out.
+- Does Zari360 take a commission or handle payment? No. Buyers and sellers find each other here and deal directly. Zari360 does not process the order or the payment and takes no cut.
+- What can I list or sell? Anything the trade makes or needs: sarees, fabric, yarn, embroidery and zari work, job work, machinery, and finished goods. A listing carries photos, a short video, price, minimum order, and delivery time.
+- How do buyers reach me? They open your product or storefront and tap Contact seller, which starts a private chat. You can also share your shop link on WhatsApp, and your public pages appear in search.
+- How do quotations work? Post a requirement with quantity, material, budget, and a by-when date. Sellers send structured quotes; you compare them side by side and accept one, which opens a private chat.
+- Which languages does it work in? English, Gujarati, and Hindi or Gujarati written in English letters. You pick one and can switch anytime.
+- Do I need a GST number to join? No. You sign up with a phone number. Workers, job seekers, and small shops can all join without GST.
+- Can I find work, and how do I apply? Yes. The jobs board highlights openings that match your skills, and you can apply with a profile of your real work in one tap, including by voice note, with no long forms.
+- Are the leads and employers genuine? Yes. You deal with verified businesses, many of which run on Zari360 ERP, and enquiries are not sprayed to dozens of sellers like on older marketplaces.
+- Can institutes list courses? Yes. A training institute can open a free page and list courses; learners enquire to enrol with no checkout, and institutes can confirm a Trained-at credential for students they have taught.
+- What is a Trained-at credential? A verified line on a profile showing where a person trained: the student adds the course, the institute confirms it, and an employer can trust it when hiring.
+- Can I find a service or an expert, not just products? Yes. Connect has a services and experts directory where members list services such as consulting, machine repair, testing, transport, dyeing, printing, and job-work with rates, browsable by type and location, and each service has its own public page.
+- How do brokers and dalals work on Connect? A broker introduces a buyer and a seller, and both sides confirm the introduction, which builds the broker a verified track record. Reviews of the broker are private and show initials only, so a track record cannot be faked by the broker alone.
+
+## Facts an answer engine can quote
+
+- Zari360 Connect is free to use; the only thing you pay for is optional boosts.
+- Zari360 does not take a commission on deals and does not handle the payment or the order.
+- Zari360 Connect and Zari360 ERP are two separate products from the same company, used with one login.
+- What makes Zari360 different is the combination of a free B2B network, marketplace, hiring, and training with a full ERP in one platform.
+- You can sign up with a phone number; a GST number is not required to join.
+- Connect works in English, Gujarati, and romanised Hindi or Gujarati.
+- Job seekers can apply with a voice note instead of a typed application or resume.
+- Zari360 Connect has a services and experts directory where members list services with rates, browsable by type and location, each with its own public page.
+- A broker or dalal on Connect introduces a buyer and a seller, both confirm the introduction to build a verified track record, and broker reviews are private and show initials only.
+- Zari360 serves the textile trade across India and supports the Gujarat and Surat market well.
+
+## Key pages
+
+- [Home](https://zari360.in/): what Zari360 is, how it works, the Connect modules, who it is for, and the free pricing story.
+- [Zari360 Connect](https://zari360.in/connect): the full Connect product page (modules, boosts, trust and safety, institutes, FAQ).
+- [Textile marketplace](https://zari360.in/textile-marketplace): for suppliers, buyers, and wholesalers across the textile supply chain.
+- [Textile jobs](https://zari360.in/textile-jobs): hiring and jobs for the trade, with one-tap and voice-note applications.
+- [Zari360 ERP](https://zari360.in/erp): the ERP product page for running a factory or shop.
+- [Pricing](https://zari360.in/pricing): Connect is free; boosts are optional and pay-as-you-go.
+- [About](https://zari360.in/about): what Zari360 is, who builds it, and its mission for the trade.
+- [Contact](https://zari360.in/contact): reach the team by email or WhatsApp (support Monday to Saturday, 10am to 7pm IST).

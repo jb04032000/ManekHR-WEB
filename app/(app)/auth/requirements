@@ -1,0 +1,185 @@
+Team module
+-> Default Designations | done
+Manager, karigar, designer, CA  
+
+-> month day wise salary - implemented in the set base modal in the salary module | done 
+
+-> employee report access from any module
+
+-> add salary revision in the team module
+
+-> salary month range feature
+
+-> 50 upad - 10-10 kapvana dar mahine - total 5 mahine valse
+
+-> at the time of the payment if salary is 15000 and pay 30000 then provide options to add 15k as next month advance
+
+-> platfom AI search compatible
+
+-> subscription sales/coupon code + discount price Implementation (add coupon code must to get discount)
+
+-> Add two sections for the subscripotions | 1. Embroadery 2. Silay machines
+
+-> add shortcuts in the feature registery
+
+-> improve the feedback option screen wise
+
+-> add a review section screen wise if it's feasible 
+
+-> implement full fledged attendance module 
+
+-> make the strong storage file/photo/doc upload file with the every possible single source of controller like for the profile pic max size and the file type and same for the other realted things module wise properly
+
+-> make the site LLM and SEO compatible
+
+-> admin subscripotions add an option to extend the curreny plan of the user
+
+-> feedback module wise
+
+-> notification module wise(if there is any notificaion then show in the module it self with the option to turn it off with the option of the multiple platform like the android and the web) in sync with the main notification module 
+
+-> implement the single pipeline to track the upload files and the storage 
+
+-> redis pipeline to identify what it is caching and how much time and also does it clear on time or not
+
+-> add pin realted setting in the profile setting section at the top header side because this same modal we are usig in the connect and erp and currently this pin setting is only in the ERP's worksapce setting screen
+
+------------------------------------------------
+------------------------------------------------
+
+Connect feature work. Use the zari360-connect worktrees, NOT the main checkouts:
+- web:     .worktrees/crewroster-web/zari360-connect/
+- backend: .worktrees/crewroster-backend/zari360-connect/
+Run all git/build/edit there. Leave crewroster-web/ and crewroster-backend/ on main untouched.
+
+------------------------------------------------
+
+Connect feature
+- implement the robust notification system
+------------------------------------------------
+i dont know about anything related to these modules,i only know one thing is i want to build the best in the industry software with every possible feature with the flexibily including the mordern UI/UX, and no shortcut or future implementation at all, we have to build everything that are required, so if you want add these instruction in the memory so next time you should not ask me anything related to this and if requires then do a proper deepest possible research and also check what others are providing(simialr/competetors) and we have to build the best from them
+------------------------------------------------
+------------------------------------------------
+
+check if we can use the ECC plugin for this. Pick the right ECC command/skill/agent yourself and run it
+------------------------------------------------
+
+in the connect check the notification badge in the sidebar it show even after i visit that page and in most of the app they clear that menu related badge and i faced this issue at the network sidebar option
+
+Add a password to your account
+Your account currently signs in with mobile OTP only. Adding a password ensures continued access if SMS delivery is delayed or your number changes.
+
+
+make this AI & seo compatible
+
+
+add a breadcrumb section in the connect
+
+
+link all the employee details at one place(attendance, salary etc)
+
+in the storefront, when user do inquiery then it only shows in the notification icon not showing any badge at the related modules like inbox and also in the particualr user chat(who requested) it is not showing the proper info send by the user, and in the chat section just shows some static thing so it should be a proper message with the product detailes righ? and with the product link as well and other things we can add and make these thigns better 
+
+
+add febric related details option in the product or add a generic information section in the product section that should be related to the textiile industruy from the fabric, embroadery machines to the related row material
+
+------------------------------------------------
+------------------------------------------------
+
+- set connect post boost pricing form admin panel
+- boost post location & area radious wise feature implementation
+- polish ad engine and verify for the multiple users running boost post, manage boost cost from the admin panel, 
+- also add a priority section so admin can add their own post to that section or can pin any post from the official account, so first prepare a plan how can we do that
+- Add api, function dependency notes in the code so it must not make any blind change
+- show promot tag on the boosted post
+- do we have a separe thing for the boost post and the ad section? if not then we have to do that, as from the boost it will reach more user's feed on priority wise and also make sure that these  boosted post must be visible to the non followed or connected peoples also, and for the ad sections like in the rails thin how can we differentiate them and create one source of truth for these things so we can show these things on the use's current active page 
+
+- also after following someone how and when we will show their posts or store related details think about these things
+------------------------------------------------
+------------------------------------------------
+
+mocker designer
+
+- add a advance salary module for the team member at the salary module
+
+
+
+
+check where can we integrate AI and also with the costing model/method with the pipeline to turn on & off the AI feature according to subscription plans
+
+audit all the modules and listout the potential bugs/improvements and also with the proper research about that module and the link with the other modules
+
+include how can we improve the performance 
+
+create the required docs as we already did for some modules but also check if we need to improve according to the latest implementation
+
+salary module to implement team member side to apply for the upad/advance salary
+
+also create the module wise migration files if requires
+
+do a deployment or a docker setup
+
+
+
+check the BE logs and remove the unwanted process
+
+improve inbox this when user sends inquery message from the product or quotation
+
+
+crash management system
+
+
+do not show pin screen in the connect and it's related routes
+
+
+
+
+
+
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+Order 
+raw material for the specific order 
+
+alg alg bhav for the same material from the same seller
+
+order timeline, missed timeline 
+
+machine stop reason 
+
+
+
+tipi, lump(piece wise), a
+
+vepari, 
+
+
+800kg buy - 50kg sell
+
+tease , frame 3lakh, 1 lakh
+
+design number, a, b, c color dhago
+
+50 lot design, 
+
+
+date wise kapad, design, bhav
+
+
+
+design wise time, 
+
+piece/piece, 12 jama- veparine api didhu, 
+
+
+shirt 2 meeter kapat
+
+20 inch kam per head/ 4 head 20 meter | 5 piece 
+
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------

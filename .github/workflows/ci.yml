@@ -1,0 +1,53 @@
+# Web CI (launch — Workstream F). Runs on every PR + push.
+# Verified against crewroster-web/package.json scripts. No DB/Redis services
+# needed — the web suite is jsdom + node:test; the build is a static/SSR compile.
+# Web deploy is gated on the backend migrate job (see the backend deploy.yml /
+# docs/deployment/CI-CD-AND-DEPLOY.md for the cross-repo ordering).
+name: web-ci
+
+on:
+  push:
+    branches: [main, zari360-connect]
+  pull_request:
+
+concurrency:
+  group: web-ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+jobs:
+  lint-test-build:
+    runs-on: ubuntu-latest
+    env:
+      # next build reads NEXT_PUBLIC_* through lib/env.ts; all have safe defaults,
+      # so these are only needed for a representative production-shaped build.
+      NEXT_PUBLIC_BACKEND_API_URL: https://staging-api.crewroster.app/api
+      NEXT_PUBLIC_APP_URL: https://staging.crewroster.app
+      CI: 'true'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: npm ci
+      - name: Lint
+        run: npm run lint
+      # i18n locale-parity gate (also auto-runs in prebuild, kept here for fast feedback).
+      - name: i18n check
+        run: npm run check:i18n
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Lib specs (node:test)
+        run: npm run test:lib
+      - name: Unit + component tests (vitest)
+        run: npm run test:unit
+      # Speed up incremental builds by caching Next's build cache.
+      - name: Cache .next/cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ github.workspace }}/.next/cache
+          key: nextjs-${{ hashFiles('package-lock.json') }}-${{ hashFiles('**/*.[jt]s', '**/*.[jt]sx') }}
+          restore-keys: |
+            nextjs-${{ hashFiles('package-lock.json') }}-
+      - name: Build
+        run: npm run build

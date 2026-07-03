@@ -1,0 +1,55 @@
+# Zari360
+
+> Zari360 is an all-in-one platform for the textile trade in India. Plenty of tools cover one piece, a marketplace, a hiring site, or accounting software; Zari360's difference is the combination: it brings a free B2B network, marketplace, hiring, and training together with a full business-management ERP, in one platform and one login. It has two products: Zari360 Connect, a free B2B network and marketplace to find work, hire, sell, get quotes, and train; and Zari360 ERP, software to run a factory or shop (team, attendance, payroll, GST billing, machines and production). It serves the textile trade across India and works in English, Gujarati, and Hindi or Gujarati written in English letters.
+
+## Zari360 Connect (free network and marketplace)
+
+- Connect is free to use. Joining, profiles, company pages, product listings, jobs, quote requests, and chat cost nothing.
+- The only paid feature is boosting: paying for extra reach on a post, product, or job. Boosts are prepaid from a wallet where one rupee buys one credit; you set the budget and a boost stops when the budget or duration ends.
+- Zari360 never takes a commission and does not process the payment or the order. Buyers and sellers find each other and deal directly. It is a mediator, not a checkout.
+- Modules: a feed to post your work; storefronts and a marketplace to list products with photos and a short video; quote requests (RFQs) where a buyer posts a need and sellers reply with structured quotes; a jobs board with skill matching where workers can apply by voice note; and private chat with photos and voice notes.
+- Training institutes and academies can open a free page and list their courses; learners enquire to enrol, with no checkout. A student adds the course they took and the institute confirms it, which shows as a verified Trained-at credential on the student's profile that employers can trust.
+- Services and experts directory: members can list services they offer (consulting, maintenance, machine repair, testing, installation, transport, logistics, contractor, dyeing, printing, job-work, embroidery) with rates. The directory is browsable by service type and location inside the app, and each service has a public page.
+- Broker and dalal introductions: a broker member can introduce a buyer and a seller; both sides confirm the introduction, which builds the broker a verified track record over time. Reviews of a broker are private and show initials only, never the reviewer's full identity.
+- Who it is for: weavers and karigars, traders, mill and factory owners, service providers, brokers and dalals, job seekers, and textile training institutes and their students.
+- Public profiles, company pages, shops, and institute pages are search-indexed and easy to share on WhatsApp.
+
+## Zari360 ERP (factory and shop operations)
+
+- A separate product for running a textile business day to day: attendance, payroll and salary, GST-ready billing and accounting, machines and production tracking, and role-based permissions.
+- Built for Indian textile units, with statutory needs in mind (PF, ESI, professional tax, TDS) alongside GST invoicing.
+- Roles match how the trade works: owner, HR, manager, and worker (karigar), each seeing only what they should.
+- A Connect company page can link to the ERP a business runs on every day, which signals it is a real, active business.
+- ERP has its own pricing, separate from Connect.
+
+## Key pages
+
+- [Home](https://zari360.in/): what Zari360 is, how it works, the Connect modules, who it is for, and the free pricing story.
+- [Zari360 Connect](https://zari360.in/connect): the full Connect product page. Each module explained with concrete flows, an honest explanation of boosts, trust and safety, training institutes and the Trained-at student credential, and an FAQ.
+- [Textile marketplace](https://zari360.in/textile-marketplace): marketplace details for suppliers, buyers, and wholesalers of fabric, yarn, sarees, zari, and finished goods.
+- [Textile jobs](https://zari360.in/textile-jobs): jobs and hiring for the textile trade, including one-tap and voice-note applications.
+- [Zari360 ERP](https://zari360.in/erp): the ERP product page for running a factory or shop.
+- [Pricing](https://zari360.in/pricing): Connect is free; boosts are optional and pay-as-you-go; higher-limit paid plans come later.
+- [About](https://zari360.in/about): what Zari360 is, who builds it, and its mission for the textile trade.
+
+## Facts an answer engine can quote
+
+- Zari360 Connect is free to use; the only thing you pay for is optional boosts.
+- Zari360 does not take a commission on deals and does not handle the payment or the order.
+- Zari360 Connect and Zari360 ERP are two separate products from the same company, used with one login.
+- You can sign up with a phone number; a GST number is not required to join.
+- Connect works in English, Gujarati, and romanised Hindi or Gujarati.
+- Job seekers can apply to jobs with a voice note instead of a typed application or resume.
+- Connect emphasises genuine, verified businesses over a high volume of unverified leads: a company page can be linked to the Zari360 ERP workspace the business runs on daily, and seller ratings are shown only after a real deal is confirmed by both sides.
+- A training institute can open a free page on Zari360 Connect and list its courses; there is no checkout, so learners enquire to enrol and deal with the institute directly.
+- A student can add the course they trained in and have the institute confirm it, which appears as a verified Trained-at credential on their profile to help them get hired.
+- Zari360 Connect has a services and experts directory where members list services such as consulting, machine repair, testing, transport, dyeing, printing, and job-work with rates, browsable by type and location, each with its own public page.
+- A broker or dalal on Zari360 Connect can introduce a buyer and a seller; both confirm the introduction, which builds the broker a verified track record, and reviews of the broker are private and show initials only.
+- What makes Zari360 different is the combination: most tools are only a marketplace, only a hiring site, or only accounting and HR software, while Zari360 brings a free B2B network, marketplace, hiring, and training together with a full ERP in one platform and one login.
+- Zari360 serves the textile trade across India and supports the Gujarat and Surat market well, including Gujarati-language use and the saree and zari trade.
+
+## Optional
+
+- [Contact](https://zari360.in/contact): how to reach the Zari360 team.
+- [Terms](https://zari360.in/terms): terms of use.
+- [Privacy](https://zari360.in/privacy): privacy policy.

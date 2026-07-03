@@ -1,0 +1,24 @@
+node_modules
+.next
+out
+build
+dist
+coverage
+.husky
+public
+package-lock.json
+*.log
+*.lock
+.env
+.env.*
+.vercel
+.turbo
+.cache
+*.min.js
+*.min.css
+app/messages/*.json
+.debug-runs
+
+# Generated upload-policy mirror (machine-emitted from the backend source of
+# truth via `npm run sync:upload-policies`). Not hand-formatted.
+lib/upload-policies.ts

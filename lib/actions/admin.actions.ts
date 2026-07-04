@@ -4,6 +4,7 @@ import axios from 'axios';
 import { serverHttp, unwrapServer } from '@/lib/api/server-client';
 import { ApiEndpoints } from '@/lib/api/endpoints';
 import { extractError } from '@/lib/common';
+import { extractErrorMessage } from '@/lib/format/http-errors';
 import type {
   User,
   Workspace,
@@ -186,12 +187,22 @@ export async function getUserSubscriptionHistory(userId: string) {
 
 export async function adminAssignPlan(data: AdminAssignPlanPayload) {
   const http = await serverHttp();
-  return http.post(E.assignPlan, data).then(unwrapServer<Subscription>);
+  try {
+    return await http.post(E.assignPlan, data).then(unwrapServer<Subscription>);
+  } catch (e) {
+    throw new Error(extractErrorMessage(e, 'Could not assign this plan. Please try again.'));
+  }
 }
 
 export async function adminCustomAssignPlan(data: AdminCustomAssignPayload) {
   const http = await serverHttp();
-  return http.post(E.customAssignPlan, data).then(unwrapServer<Subscription>);
+  try {
+    return await http.post(E.customAssignPlan, data).then(unwrapServer<Subscription>);
+  } catch (e) {
+    throw new Error(
+      extractErrorMessage(e, 'Could not assign this custom plan. Please try again.'),
+    );
+  }
 }
 
 // Assign the configured DEFAULT ERP plan to ONE user who has no active plan

@@ -15,7 +15,11 @@ vi.mock('@/lib/api/server-client', () => ({
   unwrapServer: (r: unknown) => r,
 }));
 
-import { adminAssignDefaultPlan, adminAssignDefaultPlanToMissing } from './admin.actions';
+import {
+  adminAssignDefaultPlan,
+  adminAssignDefaultPlanToMissing,
+  adminCustomAssignPlan,
+} from './admin.actions';
 
 describe('adminAssignDefaultPlan (single-user row action)', () => {
   beforeEach(() => postMock.mockReset());
@@ -52,5 +56,42 @@ describe('adminAssignDefaultPlanToMissing (bulk backfill header action)', () => 
 
     expect(postMock).toHaveBeenCalledWith('admin/subscriptions/assign-default-missing', {});
     expect(res).toEqual({ assigned: 3, skipped: 1, failed: 1, total: 5 });
+  });
+});
+
+describe('adminCustomAssignPlan', () => {
+  beforeEach(() => postMock.mockReset());
+
+  it('rethrows the backend validation message instead of a generic server-action error', async () => {
+    postMock.mockRejectedValueOnce({
+      response: {
+        status: 400,
+        data: { error: { message: 'End date must be in the future' } },
+      },
+    });
+
+    await expect(
+      adminCustomAssignPlan({
+        userId: 'user-123',
+        entitlements: {
+          maxWorkspaces: 1,
+          maxMembersPerWorkspace: 5,
+          maxTotalMembers: 5,
+          modules: [],
+          features: {
+            export: false,
+            apiAccess: false,
+            advancedRbac: false,
+            customRoles: false,
+            shifts: false,
+            bills: false,
+          },
+          moduleAccess: [],
+        },
+        startDate: '2026-07-04T00:00:00.000Z',
+        endDate: '2026-07-03T00:00:00.000Z',
+        billingCycle: 'monthly',
+      }),
+    ).rejects.toThrow('End date must be in the future');
   });
 });

@@ -10,28 +10,26 @@ import { logout } from '@/lib/actions/auth.actions';
 import { useAuthStore } from '@/lib/store';
 import { AuthCompactRail } from '@/components/auth/AuthCompactRail';
 
-type PolicyProduct = 'connect' | 'erp';
+type PolicyProduct = 'erp';
 
 /**
  * Per-product config - the i18n namespace, the (public, un-gated) terms-page
- * route, and the accept server action.
+ * route, and the accept server action. ManekHR ships a single product (ERP),
+ * so this only has one entry; kept as a lookup (not inlined) so a second
+ * product can be added the same way in future.
  */
 const PRODUCT = {
-  // Connect product removed (2026-07-04): entry kept so the type stays total;
-  // unreachable (no connect surfaces render this gate any more).
-  connect: { ns: 'connect.policy', terms: '/terms/connect', accept: acceptErpPolicy },
   erp: { ns: 'erp.policy', terms: '/terms/erp', accept: acceptErpPolicy },
 } as const;
 
 /**
- * Full-screen policy-consent gate. Rendered by `app/connect/layout.tsx` /
- * `app/dashboard/layout.tsx` INSTEAD of the product shell when the caller has
- * not accepted that product's policy - so it covers every authenticated route
- * of the product, with no nav chrome to click around it. Accepting stamps the
- * backend then refreshes the server tree so the layout re-runs and the real
- * shell renders. The gate carries NO policy text - only the consent action
- * and a link to the (separate) terms page.
- * See docs/connect/specs/2026-05-19-dual-policy-design.md §4.4.
+ * Full-screen policy-consent gate. Rendered by `app/dashboard/layout.tsx`
+ * INSTEAD of the product shell when the caller has not accepted that
+ * product's policy - so it covers every authenticated route of the product,
+ * with no nav chrome to click around it. Accepting stamps the backend then
+ * refreshes the server tree so the layout re-runs and the real shell renders.
+ * The gate carries NO policy text - only the consent action and a link to
+ * the (separate) terms page.
  */
 export default function PolicyGate({ product }: { product: PolicyProduct }) {
   const cfg = PRODUCT[product];
@@ -78,10 +76,7 @@ export default function PolicyGate({ product }: { product: PolicyProduct }) {
           <div className="mx-auto mb-6 flex flex-col items-center gap-2">
             <span
               className="flex h-20 w-20 items-center justify-center rounded-2xl"
-              style={{
-                background:
-                  product === 'connect' ? 'var(--cr-primary-light)' : 'var(--cr-wash-cream)',
-              }}
+              style={{ background: 'var(--cr-wash-cream)' }}
             >
               {/* eslint-disable-next-line @next/next/no-img-element -- static SVG brand mark */}
               <img src="/manekhr-symbol.svg" alt="" aria-hidden className="h-11 w-11" />

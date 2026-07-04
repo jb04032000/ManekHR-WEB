@@ -72,31 +72,6 @@ const BREADCRUMB_MAP: Record<string, string> = {
   '/dashboard/workspace': 'navigation.workspace',
   '/dashboard/workspace/employee-code': 'navigation.employeeCodeSettings',
   '/account/subscription': 'subscription.title',
-  '/connect/feed': 'connectMode.pageTitle',
-  '/connect/stores': 'connectMode.storesTitle',
-  // The RFQ hub (`/connect/rfq` + its `<id>` detail via the ancestor walk).
-  // Without this the resolver humanizes the route segment `rfq` -> "Rfq".
-  // Label matches the sidebar item (connect.nav.rfq) so the two never disagree.
-  '/connect/rfq': 'connectMode.rfqTitle',
-  // Viewing another member's in-app profile (`/connect/u/<id>`). Without this
-  // the title resolver humanizes the route segment `u` → "U". The `<id>` child
-  // is dynamic (no static label), and the viewed person's name is not available
-  // to this client-side header, so a stable "Profile" label is the right title
-  // (mirrors how `/dashboard/team/<id>` shows "Member Detail", not the name).
-  '/connect/u': 'connectMode.profileTitle',
-  // Viewing a company page (`/connect/company/<slug>`). Without this the title
-  // resolver humanizes the slug segment (e.g. `rajesh-mehta-textiles` ->
-  // "Rajesh Mehta Textiles"), duplicating the name already shown on the page and
-  // overflowing the bar for long names. A stable "Company" label is the right
-  // title (mirrors `/connect/u` -> "Profile").
-  '/connect/company': 'connectMode.companyTitle',
-  // The owner's Company Pages hub (`/connect/pages`). Without this the resolver
-  // humanizes the route segment `pages` -> "Pages", which reads as generic.
-  // Reuse the existing hub label so the header says "Company pages".
-  '/connect/pages': 'connect.companyPageAdmin.breadcrumbHub',
-  // The create-page editor (`/connect/pages/new`). Without this it falls to the
-  // `/connect/pages` ancestor ("Company pages") or humanizes "new" -> "New".
-  '/connect/pages/new': 'connect.companyPageAdmin.createTitle',
 };
 
 // Category → route map. Phase 7a promoted `category` to a first-class

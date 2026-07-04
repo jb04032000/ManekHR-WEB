@@ -473,17 +473,17 @@
     },
     "hero": {
       "brand": "ManekHR",
-      "eyebrow": "Textile vepar mate ek platform",
-      "heading": "Tamaro <em>business</em>, tamara kaabu ma.",
-      "subheadingHinglish": "Kaam shodho, workshop chalavo, badhu ek app ma.",
-      "subheading": "Connect par kharidnara, karigaro ane ateliers ne malo. ERP par hajri, pagar, GST ane finance chalavo.",
+      "eyebrow": "Staff ane pagar, simple rite",
+      "heading": "Tamari <em>team</em>, tamara kaabu ma.",
+      "subheadingHinglish": "Staff sambhalo, pagar chalavo, badhu ek app ma.",
+      "subheading": "Tamara diamond-polishing unit na staff, hajri, ane pagar nu management ek j jagya e.",
       "features": {
-        "network": "Kaam, kharidnara ane loko shodho",
-        "attendance": "Hajri ane pagar",
-        "gst": "GST invoice ane finance",
-        "oneAccount": "Connect + ERP mate ek khatu"
+        "network": "Staff ane hajri no record",
+        "attendance": "Chokkas pagar calculation",
+        "gst": "Tamari team mate role-based access",
+        "oneAccount": "Ek khatu, tamaru aakhu workspace"
       },
-      "trustLine": "Aakha Bharat na textile maliko no bharoso",
+      "trustLine": "Surat na diamond-polishing units no bharoso",
       "newAccountPrompt": "ManekHR par nava chho?",
       "newAccountLink": "Account banavo",
       "trust": "Aavan-jaavan ane storage ma encrypted · Bharat ma hosted",
@@ -8608,15 +8608,12 @@
   },
   "marketing": {
     "nav": {
-      "connect": "Connect",
       "erp": "ERP",
       "pricing": "Pricing",
       "about": "About",
       "contact": "Contact",
       "login": "Login",
-      "getStarted": "Free ma jodao",
-      "connectTip": "Vecho, hire karo ane network banavo",
-      "erpTip": "Tamari factory chalavo"
+      "getStarted": "Free ma jodao"
     },
     "a11y": {
       "skipToContent": "Content par jao",
@@ -8626,175 +8623,159 @@
       "language": "Bhasha pasand karo"
     },
     "stickyCta": {
-      "label": "Textile trade mate free",
+      "label": "Heera ghasva na units mate free ma try karo",
       "join": "Free ma jodao",
       "dismiss": "Aa bar chhupavo"
     },
     "hero": {
-      "eyebrow": "Textile trade mate banaavel",
-      "headline": "Jya textile trade jodaay, veche ane hire kare.",
-      "sub": "Aakha textile udyog mate ek j jagya. Supplier ane kharidnaar shodho, hunnar vaala loko hire karo, ane tamaro dhandho chalavo, WhatsApp groups, kaagad ane chhutachhvaaya apps ni mathakut vagar.",
+      "eyebrow": "Heera ghasva na units mate banaavel",
+      "headline": "Staff, hajri ane pagaar, badhu ek j jagya e.",
+      "sub": "Tamara aakha heera ghasva na unit mate ek j system. Staff no record rakho, hajri track karo, ane sacho pagaar chalavo, register, WhatsApp ane chhutachhvaaya sheets ni mathakut vagar.",
       "ctaPrimary": "Free ma jodao",
       "ctaSecondary": "Kevi rite kaam kare chhe te juo",
-      "erpQ": "Factory ke dukaan chalavo chho?",
+      "erpQ": "ERP vishe vadhu jaanvu chhe?",
       "erpCta": "ManekHR ERP juo",
-      "trustLine": "Sacha, verified dhandha, nakli lead no dhaglo nahi.",
+      "trustLine": "Surat na heera ghasva na units kharekhar je rite kaam kare chhe tena pramaane banaavel.",
       "chips": {
-        "verified": "ManekHR par verified",
+        "verified": "Unit maliko no bharoso",
         "free": "Sharu karva free",
         "languages": "Gujarati, Hindi, English"
       }
     },
     "pillars": {
       "eyebrow": "Tran vastu, ek jagya",
-      "title": "Network, marketplace ane hiring, saathe.",
-      "sub": "Trade roj kare chhe te tran kaam mate ek j login.",
+      "title": "Staff, hajri ane pagaar, saathe.",
+      "sub": "Darek unit roj kare chhe te tran kaam mate ek j login.",
       "items": {
         "network": {
-          "kicker": "Network",
-          "title": "Juo ane dekhao",
-          "body": "Tamaru kaam post karo ane tamara trade ne follow karo, jethi sacha loko jue ke tame shu banavo chho."
+          "kicker": "Staff",
+          "title": "Darek karigar no ek record",
+          "body": "Darek staff member ni profile, documents ane history ek j jagya e rakho, jethi kaink register ma vikhrayelu na rahe."
         },
         "marketplace": {
-          "kicker": "Marketplace",
-          "title": "Tamaru kaam vecho",
-          "body": "Free dukaan kholo, tamari products muko, ane kharidnaar ne sidha tamara sudhi pahonchva do."
+          "kicker": "Hajri",
+          "title": "Roj ni hajri track karo",
+          "body": "Phone, kiosk ke biometric device thi hajri nodho, ane ek nazar ma juo kon hajar chhe."
         },
         "hiring": {
-          "kicker": "Bharti",
-          "title": "Hire karo ane naukri melvo",
-          "body": "Jobs post karo ke kaam shodho, ane ek tap ma voice note thi arji karo."
+          "kicker": "Pagaar",
+          "title": "Darek vakhat sacho pagaar",
+          "body": "Pagaar hajri parthi aapoaap ganaay chhe, jethi pagaar no divas kadi andaz par na rahe."
         }
       }
     },
     "how": {
       "eyebrow": "Kevi rite kaam kare chhe",
-      "title": "Sign-up thi pehli puchhparchh sudhi tran pagla ma.",
+      "title": "Sign-up thi pehla payslip sudhi tran pagla ma.",
       "sub": "Koi setup fee nahi. Koi training nahi. Ek phone bas chhe.",
       "steps": {
         "create": {
-          "title": "Tamari free profile banavo",
-          "body": "Tamara phone number thi sign up karo. Tamari aavdat, dukaan ke company page umeradi do, tamari bhasha ma."
+          "title": "Tamaru free workspace banavo",
+          "body": "Tamara phone number thi sign up karo ane tamaru unit umero, tamari bhasha ma."
         },
         "post": {
-          "title": "Je banavo chho ke joiye chhe te post karo",
-          "body": "Tamari dukaan ma products muko, feed ma tamaru kaam batavo, job post karo ke bhaav mango."
+          "title": "Tamaro staff umero ane tracking sharu karo",
+          "body": "Tamara karigaro ane staff umero, hajri nodho, ane temni pagaar ni details set karo."
         },
         "deal": {
-          "title": "Sidhi vaat karo ane sodo karo",
-          "body": "Puchhparchh thi private chat sharu thaay chhe. Bhaav ane delivery tame banne nakki karo, ahin ke WhatsApp par."
+          "title": "Bharosa saathe payroll chalavo",
+          "body": "ManekHR hajri parthi pagaar aapoaap gane chhe, jethi darek payslip sacho hoy."
         }
       }
     },
     "modules": {
-      "eyebrow": "Paanch sadhno",
-      "title": "Connect ni andar na paanch sadhno.",
-      "sub": "Network, marketplace ane hiring paanch jodayela sadhno par chaale chhe, je ek profile, ek inbox ane ek search vehenche chhe.",
-      "cta": "ManekHR Connect juo",
+      "eyebrow": "Chaar sadhno",
+      "title": "ManekHR ni andar na chaar sadhno.",
+      "sub": "Team, hajri, pagaar ane roles chaar jodayela sadhno par chaale chhe, je ek staff record ane ek login vehenche chhe.",
+      "cta": "ManekHR ERP juo",
       "items": {
-        "feed": {
-          "title": "Feed",
-          "desc": "Tamara kaam na photo ane video post karo, jethi aakho trade jue ke tame shu banavo chho."
+        "team": {
+          "title": "Team",
+          "desc": "Darek karigar ane staff member mate ek staff directory rakho, jema profile ane documents ek j jagya e hoy."
         },
-        "storefront": {
-          "title": "Dukaan",
-          "desc": "Free online dukaan, jema tamari products, bhaav ane share kari shakaay tevu web address."
+        "attendance": {
+          "title": "Hajri",
+          "desc": "Phone, kiosk ke biometric device thi roj ni hajri track karo, shift ane raja pan saathe."
         },
-        "rfq": {
-          "title": "Quotations",
-          "desc": "Tamare je joiye te post karo ane vechnaar na bhaav baju bajuma sarkhavo."
+        "salary": {
+          "title": "Pagaar",
+          "desc": "Daily-wage, monthly ke piece-rate payroll aapoaap chalavo, payslips ane compliance saathe."
         },
-        "jobs": {
-          "title": "Jobs",
-          "desc": "Kaam post karo ke shodho. Arji ek tap ke voice note thi thaay chhe."
-        },
-        "chat": {
-          "title": "Chat",
-          "desc": "Photo ane voice note saathe na private messages, je soda saathe jodayela rahe chhe."
+        "roles": {
+          "title": "Roles ane Permissions",
+          "desc": "Darek vyakti ne barabar jaruri access aapo, malik thi lai ne accountant ane supervisor sudhi."
         }
       }
     },
     "audience": {
       "eyebrow": "Kona mate chhe",
-      "title": "Trade chalavnara loko mate banaavel.",
-      "sub": "Loom thi dukaan na counter sudhi, ane trade ne taleem aapti sanstha o sudhi.",
+      "title": "Heera ghasva nu unit chalavnara loko mate banaavel.",
+      "sub": "Unit na malik thi lai ne shop floor sudhi, ManekHR tamari team je rite kaam kare chhe tema bandh besе chhe.",
       "items": {
+        "owner": {
+          "title": "Unit maliko",
+          "body": "Ek j dashboard parthi tamari aakhi team, hajri ane pagaar no kharch juo, register pachhad bhagya vagar."
+        },
         "karigar": {
-          "title": "Vankar ane karigaro",
-          "body": "Tamari aavdat ane junu kaam batavo, shodhava laayak bano, ane je best karo chho tena mate kaam melvo."
+          "title": "Karigaro ane staff",
+          "body": "Tamari hajri ane pagaar chokasai thi nondhaay chhe, je tame game tyare chakasi shako tevo spasht record saathe."
         },
-        "trader": {
-          "title": "Vepario",
-          "body": "Kapad, doro ane samagri shodho, jaruriyat post karo, ane sacha vechnaar na bhaav sarkhavo."
+        "supervisor": {
+          "title": "Supervisor",
+          "body": "Tamari team ni hajri jaldi nodho, phone thi ke floor par na shared kiosk thi."
         },
-        "mill": {
-          "title": "Mill ane factory maliko",
-          "body": "Tamara unit ne company page aapo, products muko, ane karigaro tatha job-workers shodho."
-        },
-        "jobseeker": {
-          "title": "Job shodhnara",
-          "body": "Tamari aavdat saathe match thati jobs juo ane voice note ke resume thi arji karo."
-        },
-        "institute": {
-          "title": "Sanstha o ane academy",
-          "body": "Free page kholo, tamara course muko, vidyarthi o ne sacha workshop ma gothvo, ane aakha trade ma olakh banavo."
-        },
-        "student": {
-          "title": "Vidyarthi o",
-          "body": "Kaushalya shikho, tamari sanstha pushti kare evi Trained-at olakh batavo, ane sacha workshop ma naukri melvo."
-        },
-        "serviceProvider": {
-          "title": "Service aapnara ane nishnaat",
-          "body": "Consultants, machine jaalvani, dyeing ane printing, transport ane biju ghanu. Tame su karo chho e batavo, tamara rate nakki karo, ane kaam melvo."
+        "accountant": {
+          "title": "Accountant ane HR admin",
+          "body": "Bharosa saathe payroll chalavo, hajri, advance ane deduction aapoaap ganaay chhe."
         }
       }
     },
     "trust": {
       "eyebrow": "Shu mate alag chhe",
-      "title": "Sacha, verified dhandha saathe vaat karo.",
-      "sub": "Nakli lead no dhaglo nahi. Ahin no bharoso sachi pravrutti thi aave chhe, vachno thi nahi.",
+      "title": "Chokasai par bharoso kari shakaay tevu banaavel.",
+      "sub": "Koi kalpanik number nahi, koi khota vachno nahi. Ahin no bharoso product kharekhar kevi rite kaam kare chhe tema thi aave chhe.",
       "items": {
         "verified": {
-          "title": "ManekHR par verified",
-          "body": "Dhandha potane verify kari shake chhe, jethi tame jaano ke soda ni biji baju kon chhe."
+          "title": "Design thi j chokasaipurn",
+          "body": "Pagaar sidho hajri parthi ganaay chhe, jethi darek payslip kharekhar kaam karel divaso saathe match thaay."
         },
         "erpBacked": {
-          "title": "Sacha dhandha no aadhar",
-          "body": "Company page ManekHR ERP saathe jodi shakaay, je system par te dhandho roj chaale chhe."
+          "title": "Ek system, chhutachhvaaya sadhno nahi",
+          "body": "Staff record, hajri ane pagaar ek j workspace ma rahe chhe, jethi register ane sheets vacche kaink khovaay nahi."
         },
-        "ratings": {
-          "title": "Sacha soda pachhi j rating",
-          "body": "Star rating e kharidnaar pase thi aave chhe jemne kharekhar vechnaar saathe sodo karyo hoy, anaami review thi nahi."
+        "accuracy": {
+          "title": "Ek spasht audit trail",
+          "body": "Hajri ke pagaar ma darek ferfaar nondhaay chhe, jethi tame hammesha joi shako ke shu badlayu ane kone badlyu."
         },
         "direct": {
-          "title": "Sidhu, vacche koi dalaal nahi",
-          "body": "Tame bija dhandha saathe jaate sodo karo. ManekHR koi commission letu nathi ane tamara soda ni vacche aavtu nathi."
+          "title": "Darek staff member mate saral",
+          "body": "Hajri nodhvu ane payslip chakasvu ek tap ma thaay chhe, Gujarati, Hindi ke English ma."
         },
-        "broker": {
-          "title": "Dalaal saacho track record banave chhe",
-          "body": "Dalaal kharidnar ane vechnar ni olakhaan karave chhe. Banne paksh olakhaan ni pushti kare chhe, etle verified record bane chhe. Review khaangi rahe chhe ane fakt aadyaksharo batave chhe, kyarey review aapnar nu naam nahi."
+        "roles": {
+          "title": "Darek role mate yogya access",
+          "body": "Maliko, accountant ane supervisor darek fakt temni role pramane j jue chhe, zinvatbhari permissions saathe."
         }
       }
     },
     "pricingStory": {
       "eyebrow": "Pricing",
-      "title": "Vaaparva free. Fakt vadhu pahonch mate chukvo.",
-      "body": "Profile, dukaan, product listing, jobs, quotations ane chat free chhe. Paisa tyare j aave jyare tame ichchho: post, product ke job ne vadhu loko sudhi pahonchadva boost karo. ManekHR tamara soda ma thi kyarey hisso letu nathi.",
+      "title": "Saral, paardarshi pricing je tamari team saathe vadhe chhe.",
+      "body": "Staff record ane hajri thi free ma sharu karo. Tamaru unit vadhe tem pagaar ane vadhu umero. Ek spasht subscription, koi pan vastu par commission nahi, koi chhupayelo charge nahi.",
       "points": {
-        "free": "Profile, dukaan, job, bhaav ane chat: free",
-        "boost": "Boost optional ane prepaid chhe, budget tame nakki karo",
-        "commission": "Tamara soda par koi commission nahi, kyarey nahi"
+        "free": "Staff record ane hajri: sharu karva free",
+        "noCard": "Try karva mate card ni jarur nathi",
+        "cancel": "Saral monthly pricing, game tyare cancel karo"
       },
       "cta": "Pricing juo"
     },
     "erp": {
-      "eyebrow": "ManekHR taraf thi vadhu",
-      "title": "Factory ke dukaan chalavo chho? Tena mate ERP pan chhe.",
-      "sub": "ManekHR ERP tamari team, hajri, pagaar, billing ane machines sambhale chhe. Ek j login, alag product, e j trade mate banaavel.",
+      "eyebrow": "Ek product, chaar sadhno",
+      "title": "Team, hajri, pagaar ane roles, ek j ERP ma.",
+      "sub": "ManekHR ERP tamaro staff record, hajri ane pagaar sambhale chhe, darek role mate yogya access saathe. Surat na heera ghasva na units mate banaavel.",
       "chips": {
-        "team": "Team ane pagaar",
-        "billing": "Billing ane hisaab",
-        "machines": "Machine ane production",
+        "team": "Team",
+        "attendance": "Hajri",
+        "salary": "Pagaar",
         "roles": "Roles ane permissions"
       },
       "cta": "ManekHR ERP vishe jaano",
@@ -8802,98 +8783,90 @@
     },
     "faq": {
       "eyebrow": "Saamanya prashno",
-      "headline": "Kharidnaar ane vechnaar je puchhe chhe te prashno.",
+      "headline": "Unit maliko je puchhe chhe te prashno.",
       "items": {
         "free": {
-          "q": "Su ManekHR Connect free chhe?",
-          "a": "Ha. Jodavu, products mukvi, job post karvi, bhaav maangva ane chat karvi badhu free chhe. Aaje fakt boost karva na paisa laage chhe, ane te optional chhe."
+          "q": "Su ManekHR free chhe?",
+          "a": "Sharu karva mate, ha. Staff record, hajri ane pagaar tracking free ma try kari shakaay chhe, card ni jarur vagar. Tamari team vadhe tem paid plan vadhu aape chhe."
         },
-        "sell": {
-          "q": "Hu shu muki ke vechi shaku?",
-          "a": "Trade je banave ke jeni jarur pade te badhu: saree, kapad, doro, bharatkam ane jari kaam, job work, machinery ane taiyaar maal. Listing ma photo, tunko video, bhaav, minimum order ane delivery samay hoy chhe."
+        "setup": {
+          "q": "Set up karva ma ketlo samay laage?",
+          "a": "Thodi minute. Tamara phone number thi sign up karo, tamaru unit umero, ane staff umervanu sharu karo. Koi lambi training ke onboarding ni jarur nathi."
         },
-        "commission": {
-          "q": "Su ManekHR commission le chhe?",
-          "a": "Na. ManekHR banne paksho ne jode chhe ane teo sidho sodo kare chhe. Te paisa ke order sambhaltu nathi, ane tamara soda ma thi kyarey hisso letu nathi."
+        "pricing": {
+          "q": "Pricing kevi rite kaam kare chhe?",
+          "a": "ManekHR ek saral monthly subscription chhe, je tamari team na size par aadharit chhe. Koi pan vastu par commission nathi ane koi chhupayelo charge nathi."
         },
-        "enquiries": {
-          "q": "Kharidnaar mara sudhi kevi rite pahonche?",
-          "a": "Kharidnaar tamari product ke dukaan kholi ne Contact seller dabave chhe. Tenathi tamari saathe private chat sharu thaay chhe. Tame tamari dukaan ni link WhatsApp par pan share kari shako chho, ane tamara public pages search ma dekhaay chhe."
+        "attendance": {
+          "q": "Hajri kevi rite nondhaay chhe?",
+          "a": "Hajri phone, shared kiosk ke biometric device thi nondhi shakaay chhe. Supervisor temni aakhi team ni hajri ek j jagya ethi nodhi shake chhe."
         },
-        "quotes": {
-          "q": "Quotations kevi rite kaam kare chhe?",
-          "a": "Kharidnaar jaththo, samagri, budget ane kya sudhi ma joiye te saathe jaruriyat post kare chhe. Vechnaar bhaav ane delivery samay saathe javaab aape chhe. Kharidnaar bhaav baju bajuma sarkhavi ne ek sweekare chhe, jenathi private chat khule chhe."
+        "payroll": {
+          "q": "Pagaar kevi rite ganaay chhe?",
+          "a": "Tamaro staff daily-wage, monthly ke piece-rate par hoy, pagaar hajri parthi aapoaap ganaay chhe. Advance ane deduction pan e j jagya e sambhalaay chhe."
         },
         "languages": {
           "q": "Kai bhashao ma kaam kare chhe?",
           "a": "English, Gujarati, ane English akshro ma lakheli Hindi ke Gujarati. Bhasha ek vaar pasand karo ane gamme tyare badlo."
         },
-        "gst": {
-          "q": "Jodava mate GST number joiye?",
-          "a": "Na. Phone number thi sign up thaay chhe. Karigaro, job shodhnara ane nani dukaano GST vagar jodai shake chhe."
+        "compliance": {
+          "q": "Su te statutory compliance sambhale chhe?",
+          "a": "Ha. Payroll ma PF, ESI, PT ane TDS jevi statutory deductions aadharbhut chhe, jethi tamara payslips compliance ma rahe."
         },
-        "work": {
-          "q": "Su hu tena par kaam shodhi shaku?",
-          "a": "Ha. Job board tamari aavdat saathe match thati jagyao aagal batave chhe. Tame lakhi ne, resume jodi ne ke voice note record kari ne arji kari shako chho."
+        "roles": {
+          "q": "Su hu control kari shaku ke kon shu jue?",
+          "a": "Ha. ManekHR role-based access vaapre chhe, jethi maliko, accountant ane supervisor darek fakt temni role saathe sambandhit maahiti ane actions j jue chhe."
         },
-        "institutes": {
-          "q": "Su sanstha o course muki shake?",
-          "a": "Ha. Taleem aapti sanstha ke academy free page kholi ne potana course muki shake chhe, ane shikhnara checkout vagar puchhpchhar kari ne nondhani karave chhe. Sanstha o pote bhnavela vidyarthi o mate Trained-at olakh ni pushti pan kari shake chhe."
+        "data": {
+          "q": "Su maro data surakshit chhe?",
+          "a": "Ha. Tamaro data tamaro j rahe chhe, ame kyarey vechta nathi, ane hajri ke pagaar ma darek ferfaar spasht audit trail ma nondhaay chhe."
         },
-        "services": {
-          "q": "Su hu fakt product nahi, service o pan aapi shaku?",
-          "a": "Ha. Salahkaro, machine repair ane jaalvani, rangaai ane printing, transport ane logistics, contractor ane job-work karnara pote aapti service o bhaav saathe muke chhe. Kharidnar app ma service na prakaar ane jagya pramane shodhe chhe ane bhaade rakhva khaangi chat shuru kare chhe."
+        "support": {
+          "q": "Jo madad ni jarur pade to?",
+          "a": "Amari team email ane WhatsApp par pahonchi shakaay tevi chhe, ane ame tamaru unit pehla divas thi barabar set karva ma madad karie chhiye."
         },
-        "broker": {
-          "q": "Dalaal suvidha kevi rite kaam kare chhe?",
-          "a": "Dalaal kharidnar ane vechnar ni olakhaan karave chhe, ane banne paksh olakhaan ni pushti kare chhe, etle koi ekla shrey na lai shake. Samay jata dalaal verified track record banave chhe. Review khaangi hoy chhe ane fakt aadyaksharo batave chhe, kyarey review aapnar nu naam nahi, ane dalaal te badli ke chhupavi shakto nathi."
+        "switch": {
+          "q": "Su hu kaagad ke sheets thi badli shaku?",
+          "a": "Ha. Motaa bhagna units temni haali staff list ane hajri record umerine sharu kare chhe, ane ek j divas ma pura set thai jaay chhe."
         }
       }
     },
     "finalCta": {
       "eyebrow": "Aaje j jodao",
-      "headline": "Aakha trade ma dekhava laago.",
-      "sub": "Profile ane dukaan banavva ma thodi minute laage chhe. Free, tamari bhasha ma, tamari paase rahela phone par.",
+      "headline": "Tamari team ek j app thi chalavo.",
+      "sub": "Staff record, hajri ane pagaar set karva ma thodi minute laage chhe. Sharu karva free, tamari bhasha ma, tamari paase rahela phone par.",
       "ctaPrimary": "Free ma jodao",
       "ctaSecondary": "Amari sathe vaat karo",
       "erp": {
         "eyebrow": "Aaje j sharu karo",
         "headline": "Tamaru aakhu unit ek app thi chalavo.",
-        "sub": "Hajri, pagaar, billing ane machine ek j jagya e. Badha feature saathe free trial thi sharu karo. Card ni jarur nathi.",
+        "sub": "Staff record, hajri ane pagaar ek j jagya e. Badha feature saathe free trial thi sharu karo. Card ni jarur nathi.",
         "ctaPrimary": "Free trial sharu karo"
       }
     },
     "footer": {
-      "tagline": "Textile trade nu potanu network.",
+      "tagline": "Heera ghasva na units mate banaavel staff ane pagaar.",
       "madeIn": "India ma banaavel",
       "emailLabel": "Email",
       "rights": "© {year} ManekHR. Badha hakk surakshit.",
-      "trust": "Tamaro data tamaro j rahe chhe - ame kyarey vechta nathi. Vaparva mate free, tamara sauda par koi commission nahi.",
+      "trust": "Tamaro data tamaro j rahe chhe - ame kyarey vechta nathi. Saral pricing, koi pan vastu par commission nahi.",
       "legal": {
         "terms": "Sharto",
         "privacy": "Gopniyata",
-        "guidelines": "Community Guidelines",
         "grievance": "Fariyaad"
       },
       "cols": {
-        "connect": "Connect",
-        "erp": "ERP",
+        "erp": "ManekHR",
         "company": "Company"
       },
       "links": {
-        "connectOverview": "Overview",
-        "marketplace": "Marketplace",
-        "services": "Services",
-        "jobs": "Jobs",
         "erpOverview": "Overview",
-        "erpTeam": "Team ane hajri",
-        "erpFinance": "Finance ane GST",
-        "erpMachines": "Machines",
-        "erpRoles": "Roles ane access",
+        "erpTeam": "Team",
+        "erpSalary": "Pagaar",
+        "erpRoles": "Roles ane permissions",
         "about": "Amara vishe",
         "pricing": "Pricing",
         "contact": "Contact",
-        "network": "Network",
         "guides": "Guides"
       },
       "social": {
@@ -8901,394 +8874,20 @@
       }
     },
     "pages": {
-      "fabricSuppliers": {
-        "meta": {
-          "title": "Surat na fabric suppliers - grey, georgette & more, ManekHR par",
-          "description": "Surat na verified fabric suppliers shodho - grey, georgette, chiffon, crepe ane more. Storefronts juo, quotes compare karo, ane WhatsApp par sidha deal karo. Join free."
-        },
-        "hero": {
-          "badge": "Fabric suppliers",
-          "title": "Fabric suppliers shodho, sidha kharido.",
-          "sub": "Surat na verified fabric ane grey-goods suppliers sudhi pahoncho, emno stock ane rate juo, je joiye e post karo, ane deal WhatsApp par close karo - koi vachetiyo nahi, koi commission nahi.",
-          "ctaPrimary": "Free join karo",
-          "ctaSecondary": "Marketplace juo"
-        },
-        "intro": {
-          "eyebrow": "Units ane traders mate",
-          "title": "Base fabric ane grey goods sidha source karo.",
-          "sub": "Embroidery units, traders ane brands asli, verified suppliers pase thi kharide chhe - anonymous leads nahi.",
-          "points": {
-            "p1": "Real stock photos, rate ane minimum order sathe suppliers juo.",
-            "p2": "Requirement post karo ane suppliers na quotes side by side compare karo.",
-            "p3": "Verified businesses, ratings sirf asli deal pachhi.",
-            "p4": "WhatsApp par sidha chat ane deal - Gujarati, Hindi ke English ma."
-          },
-          "lead": "Finished products joiye?",
-          "cta": "Aakhu textile marketplace juo"
-        }
-      },
-      "dressMaterialWholesalers": {
-        "meta": {
-          "title": "Surat na dress material wholesalers - ManekHR",
-          "description": "Surat na verified dress material wholesalers ane manufacturers shodho. Per-dozen ranges juo, quotes compare karo, ane WhatsApp par sidha deal karo. Join free, tamari bhasha ma."
-        },
-        "hero": {
-          "badge": "Dress material",
-          "title": "Dress material wholesalers shodho, sidha deal.",
-          "sub": "Surat na verified dress-material wholesalers ane manufacturers sudhi pahoncho, emna catalogue juo, je joiye e post karo, ane deal WhatsApp par close karo - koi vachetiyo nahi, koi commission nahi.",
-          "ctaPrimary": "Free join karo",
-          "ctaSecondary": "Marketplace juo"
-        },
-        "intro": {
-          "eyebrow": "Retailers ane resellers mate",
-          "title": "Per-dozen dress material, sidha source.",
-          "sub": "Boutiques, retailers ane online resellers asli, verified wholesalers pase thi kharide chhe - fake leads ni deewal nahi.",
-          "points": {
-            "p1": "Real photos, per-dozen rate ane minimum order sathe catalogue juo.",
-            "p2": "Requirement post karo ane wholesalers na quotes side by side compare karo.",
-            "p3": "Verified businesses, ratings sirf asli deal pachhi.",
-            "p4": "WhatsApp par sidha chat ane deal - Gujarati, Hindi ke English ma."
-          },
-          "lead": "Sarees ke job-work joiye?",
-          "cta": "Aakhu textile marketplace juo"
-        }
-      },
-      "zariManufacturers": {
-        "meta": {
-          "title": "Surat na zari manufacturers & embroidery units - ManekHR",
-          "description": "Surat na verified zari manufacturers, embroidery ane job-work units shodho. Storefronts juo, requirements post karo, quotes compare karo, ane WhatsApp par sidha deal karo. Join free."
-        },
-        "hero": {
-          "badge": "Zari manufacturers",
-          "title": "Zari manufacturers ane embroidery units shodho.",
-          "sub": "Surat na verified zari ane embroidery manufacturers sudhi pahoncho, emnu kaam ane storefronts juo, je joiye e post karo, ane deal WhatsApp par close karo - koi vachetiyo nahi, koi commission nahi.",
-          "ctaPrimary": "Free join karo",
-          "ctaSecondary": "Marketplace juo"
-        },
-        "intro": {
-          "eyebrow": "Buyers ane brands mate",
-          "title": "Zari ane embroidery sourcing, saralu.",
-          "sub": "Designers, brands ane traders asli, verified zari ane embroidery units shodhe chhe - self-claimed listings nahi.",
-          "points": {
-            "p1": "Daral storefront par real work photos, machine capacity ane minimum order juo.",
-            "p2": "Job-work requirement post karo ane units na quotes side by side compare karo.",
-            "p3": "Verified businesses, ratings sirf asli deal pachhi.",
-            "p4": "WhatsApp par sidha chat ane deal - Gujarati, Hindi ke English ma."
-          },
-          "lead": "Bija textile suppliers joiye?",
-          "cta": "Aakhu textile marketplace juo"
-        }
-      },
-      "embroideryJobWork": {
-        "meta": {
-          "title": "Surat ma embroidery job work - units shodho ManekHR par",
-          "description": "Surat na verified embroidery job-work units shodho - multi-head, aari, zardozi ane hand work. Tamaru job post karo, quotes compare karo, ane WhatsApp par sidha deal karo. Join free."
-        },
-        "hero": {
-          "badge": "Embroidery job work",
-          "title": "Verified units pase thi embroidery job work karavo.",
-          "sub": "Tamaru embroidery job-work post karo - multi-head, aari, zardozi ke hand work - Surat na verified units sudhi pahoncho, quotes compare karo, ane WhatsApp par close karo. Koi vachetiyo nahi, koi commission nahi.",
-          "ctaPrimary": "Free join karo",
-          "ctaSecondary": "Marketplace juo"
-        },
-        "intro": {
-          "eyebrow": "Traders ane brands mate",
-          "title": "Per-metre ane per-piece job-work, sorted.",
-          "sub": "Tamaru fabric verified units ne moklo ane clean, time-sar embroidery melavo - anonymous vachetiya nahi.",
-          "points": {
-            "p1": "Quantity, work type ane by-when date sathe job-work need post karo.",
-            "p2": "Units na quotes ane lead time side by side compare karo.",
-            "p3": "Verified businesses, ratings sirf asli deal pachhi.",
-            "p4": "Sample run moklo ane WhatsApp par sidha finalise karo."
-          },
-          "lead": "Products joiye, job-work nahi?",
-          "cta": "Aakhu textile marketplace juo"
-        }
-      },
-      "sareeWholesalers": {
-        "meta": {
-          "title": "Surat na saree wholesalers - ManekHR par sidha connect",
-          "description": "Surat na verified saree wholesalers ane manufacturers shodho. Storefronts juo, quotes compare karo, ane WhatsApp par sidha deal karo. Join karvanu free, tamari bhasha ma."
-        },
-        "hero": {
-          "badge": "Saree wholesalers",
-          "title": "Saree wholesalers shodho, sidha deal karo.",
-          "sub": "Surat na verified saree wholesalers ane manufacturers sudhi pahoncho, emna storefronts juo, je joiye e post karo, ane deal WhatsApp par close karo - koi vachetiyo nahi, koi commission nahi.",
-          "ctaPrimary": "Free join karo",
-          "ctaSecondary": "Marketplace juo"
-        },
-        "intro": {
-          "eyebrow": "Buyers ane retailers mate",
-          "title": "Surat na saree trade sathe sidho sambandh.",
-          "sub": "Boutiques, retailers ane resellers asli, verified wholesalers pase thi sarees ane dress material source kare chhe - fake leads ni deewal nahi.",
-          "points": {
-            "p1": "Real product photos, price ane minimum order sathe storefronts juo.",
-            "p2": "Requirement post karo ane wholesalers na quotes side by side compare karo.",
-            "p3": "Verified businesses juo, ratings sirf asli deal pachhi.",
-            "p4": "WhatsApp par sidha chat ane deal - Gujarati, Hindi ke English ma."
-          },
-          "lead": "Sarees thi vadhare joiye?",
-          "cta": "Aakhu textile marketplace juo"
-        }
-      },
-      "connect": {
-        "meta": {
-          "title": "Textile trade mate free B2B network ane marketplace",
-          "description": "India mate free online textile bazaar: dukaan kholo, video saathe products muko, jaruriyat post kari bhaav sarkhavo, karigaro hire karo, ane kharidnaar-vechnaar saathe sidhi chat karo."
-        },
-        "hero": {
-          "badge": "ManekHR Connect",
-          "title": "Dekhao. Tamaru kaam vecho. Tamara loko hire karo.",
-          "sub": "Connect e textile trade nu free network ane marketplace chhe. Feed ma tamaru kaam post karo, online dukaan kholo, bhaav sarkhavo, jobs post karo, ane kharidnaar-vechnaar saathe private chat ma vaat karo.",
-          "ctaPrimary": "Free ma jodao",
-          "ctaSecondary": "Andar shu chhe te juo"
-        },
-        "how": {
-          "eyebrow": "Kevi rite kaam kare chhe",
-          "title": "Tran pagla ma chaalu.",
-          "sub": "Mota bhaag na members minutes ma taiyaar thai jaay chhe.",
-          "steps": {
-            "profile": {
-              "title": "Profile ke page banavo",
-              "body": "Phone thi free sign up karo. Tamari profile, company page ke dukaan minutes ma taiyaar karo."
-            },
-            "post": {
-              "title": "Muko ke mango",
-              "body": "Products umero, tamaru kaam post karo, job kholo, ke bhaav mate jaruriyat post karo."
-            },
-            "deal": {
-              "title": "Chat karo ane sodo karo",
-              "body": "Darek puchhparchh ek inbox ma aave chhe. Tame sidho vyavhaar karo ane jya faave tya sodo puro karo, WhatsApp sahit."
-            }
-          }
-        },
-        "modules": {
-          "eyebrow": "Modules",
-          "title": "Connect ni andar shu chhe.",
-          "sub": "Paanch jodayela saadhano, je ek profile, ek inbox ane ek search vapre chhe.",
-          "feed": {
-            "kicker": "Feed",
-            "title": "Trade ne batavo ke tame shu banavo chho.",
-            "body": "Tamara kaam na photo, video, documents ane voice note post karo. Tamari feed ma tame follow karo chho te loko ane tamara trade tatha jilla nu navu saru kaam banne male chhe, etle saru kaam tamara contacts thi aagal pahonche chhe. Ochhu batavo options thi tame tamari feed jaate ghado chho.",
-            "b1": "Photo, video, documents ane voice note",
-            "b2": "Tamara trade ane jilla na loko sudhi pahoncho",
-            "b3": "React, comment, repost ane save karo"
-          },
-          "storefront": {
-            "kicker": "Dukaan ane marketplace",
-            "title": "Tamari dukaan, aakha trade mate khulli.",
-            "body": "Photo, tunko video, bhaav, minimum order ane delivery samay saathe products muko. Temne tamara brand ni dukaan niche gothvo, jenu potanu web address hoy chhe. Kharidnaar marketplace ma fare chhe, tamari product khole chhe, ane Contact seller dabavi ne tamari saathe private chat sharu kare chhe.",
-            "b1": "Photo ane tunka video saathe free listing",
-            "b2": "Tamari potani dukaan ni link, WhatsApp par share karvi saheli",
-            "b3": "Juna kharidnaar na star rating",
-            "b4": "Puchhparchh private chat tarike aave chhe",
-            "note": "ManekHR kyarey paisa ke order letu nathi. Tame saamevala saathe sidho vyavhaar karo chho."
-          },
-          "rfq": {
-            "kicker": "Quotations",
-            "title": "Je joiye te post karo. Aavela bhaav sarkhavo.",
-            "body": "Kharidnaar jaruriyat post kare chhe: jaththo, samagri, jillo, budget ane kya sudhi ma. Vechnaar bhaav, delivery samay, sample ane shu shaamel chhe te saathe vyavasthit quote aape chhe. Kharidnaar bhaav baju bajuma sarkhave chhe, shortlist kare chhe ane ek sweekare chhe. Sweekarvathi sodo puro karva private chat khule chhe.",
-            "b1": "Ek jaruriyat ghana vechnaar sudhi pahonche chhe",
-            "b2": "Quotes vyavasthit hoy chhe ane sarkhavva sahela chhe",
-            "b3": "Sweekarel quote thi private chat khule chhe"
-          },
-          "jobs": {
-            "kicker": "Jobs",
-            "title": "Karigaro hire karo. Kaam shodho.",
-            "body": "Workshop potane joitu kaam post kare chhe. Karigaro eva board par fare chhe je temni aavdat saathe match thati jobs aagal batave chhe, ane lakhi ne, resume jodi ne ke voice note record kari ne arji kare chhe. Malik ek j screen parthi shortlist kari ne sweekare chhe. Job potana naame ke company page tarike post kari shakaay chhe.",
-            "b1": "Aavdat match thavathi yogya jobs aagal aave chhe",
-            "b2": "Voice note thi arji karo, lakhvani jarur nathi",
-            "b3": "Ek j jagya e shortlist karo ane sweekaro"
-          },
-          "chat": {
-            "kicker": "Chat",
-            "title": "Darek vaatchit, tena sandarbh saathe.",
-            "body": "Photo ane voice note saathe na private messages, tarat pahonche chhe. Chat product ni puchhparchh, job ni arji ke sweekarel quote saathe jodayeli rahi shake chhe, etle vaatchit shena vishe chhe te hammesha khabar rahe chhe. Block, report ane shaant anti-spam ajanya messages kaabu ma raakhe chhe.",
-            "b1": "Tarat pahonche, photo ane voice note saathe",
-            "b2": "Product, job ke quote saathe jodayeli",
-            "b3": "Block ane report controls andar j chhe"
-          }
-        },
-        "ctaBand": {
-          "shop": {
-            "title": "Tamari products ne dukaan ni baari malvi joiye.",
-            "cta": "Tamari free dukaan kholo"
-          },
-          "hire": {
-            "title": "Aa season ma hire karo chho?",
-            "cta": "Free ma job post karo"
-          }
-        },
-        "boost": {
-          "eyebrow": "Paisa shena laage chhe",
-          "title": "Boost vishe ek saachi vaat.",
-          "body": "Upar nu badhu free chhe. Vadhu pahonch joiye tyare tame post, product ke job boost kari shako chho, ane te aakha Connect ma sponsored label saathe dekhaay chhe. Chukvani prepaid wallet ma thi thaay chhe, jya ek rupiya nu ek credit male chhe. Budget tame nakki karo chho, boost tenathi vadhare kyarey kharch kartu nathi, ane budget puru thaay ke samay puro thaay tyare atki jaay chhe. Vadhu limits vaali paid plans pachhi aavshe; free tier raheshe j."
-        },
-        "trust": {
-          "eyebrow": "Vishwas ane salaamti",
-          "title": "Evu banaavel ke tame koni saathe vyavhaar karo chho te khabar rahe.",
-          "sub": "Vishwas na sanket sachi pravruti ma thi aave chhe, vachano ma thi nahi.",
-          "items": {
-            "erpLinked": {
-              "title": "Sacha dhandha no teko",
-              "body": "Company page ManekHR ERP workspace saathe jodi shakaay chhe, je system par te dhandho roj chale chhe. Jodayela pages par dekhaatu vishwas chinh hoy chhe."
-            },
-            "ratings": {
-              "title": "Juna kharidnaar na rating",
-              "body": "Vechnaar paase pehla vyavhaar karela kharidnaar na star rating hoy chhe, je temni products ane dukaan par dekhaay chhe."
-            },
-            "direct": {
-              "title": "Sidho vyavhaar, vachetiya vagar",
-              "body": "Tame saamena dhandha saathe sidhi vaat karo chho ane bhaav tatha delivery tame banne nakki karo chho. ManekHR tamara soda ni vachche aavtu nathi."
-            },
-            "safety": {
-              "title": "Control tamara haath ma",
-              "body": "Koi ne pan ek tap ma block ane report karo. Shaant anti-spam chat ma ajanya messages kaabu ma raakhe chhe."
-            },
-            "broker": {
-              "title": "Verified record vala dalaal",
-              "body": "Dalaal kharidnar ane vechnar ni olakhaan karave chhe, banne paksh teni pushti kare chhe, ane verified track record bane chhe. Review khaangi rahe chhe ane fakt aadyaksharo batave chhe, kyarey review aapnar nu naam nahi."
-            }
-          }
-        },
-        "builtFor": {
-          "eyebrow": "Trade mate banaavel",
-          "title": "Trade kharekhar je rite chale chhe tena mate banaavel.",
-          "sub": "India na textile trade mate banaavel, karigar thi factory owner sudhi.",
-          "items": {
-            "whatsapp": {
-              "title": "WhatsApp ne anukul",
-              "body": "Darek public page ek tap ma WhatsApp par share thaay chhe, etle sodo tya puro thaay jya trade pehlethi vaat kare chhe."
-            },
-            "languages": {
-              "title": "Tamari bhasha bole chhe",
-              "body": "English, Gujarati, ane English akshro ma Hindi ke Gujarati. Darek potani bhasha pasand kare chhe."
-            },
-            "mobile": {
-              "title": "Pehla phone",
-              "body": "Badhu tamara khissa na phone par chale chhe, ane joiye tyare laptop par pan."
-            },
-            "visual": {
-              "title": "Shabdo karta kaam",
-              "body": "Ahin photo, video ane voice note trade chalave chhe. Lakhvu optional chhe, job ni arji mate pan."
-            },
-            "free": {
-              "title": "Dekhavu free chhe",
-              "body": "Profile, listing, jobs ane quotations free chhe. Aaje fakt boost j paid chhe."
-            },
-            "services": {
-              "title": "Service aapo, kaam melvo",
-              "body": "Consultants, jaalvani ane repair, dyeing ane printing, transport, contractors ane job-workers potani profile par aapti service ane rate batave chhe, ane madi aavi ne kaam melve chhe."
-            }
-          }
-        },
-        "institutes": {
-          "eyebrow": "Sanstha o ane vidyarthi o",
-          "title": "Trade shikhvo. Tena mate naukri melvo.",
-          "sub": "Taleem sanstha o potana course batave chhe ane vidyarthi o ne gothve chhe; vidyarthi o potani sanstha e pushti kareli olakh saathe raakhe chhe.",
-          "items": {
-            "courses": {
-              "title": "Tamara course muko",
-              "body": "Free page kholo ane tame shikhvo chho te darek course muko. Shikhnara jue chhe ane checkout vagar puchhpchhar kari ne nondhani karave chhe, etle tame sidhi vaat karo."
-            },
-            "placement": {
-              "title": "Tamara vidyarthi o ne gothvo",
-              "body": "Tamara vidyarthi o have kya kaam kare chhe te batavo, ane taleembaddh haath shodhta workshop pase thi bharti ni tako melvo."
-            },
-            "credential": {
-              "title": "Trained-at olakh saathe raakho",
-              "body": "Vidyarthi shu shikhyo te batave chhe, jeni teni sanstha pushti kare chhe, jethi bharti vakhte maalik tena par bharoso kari shake."
-            }
-          }
-        },
-        "services": {
-          "eyebrow": "Service ane nishnaat",
-          "title": "Service aapo. Tena mate madi aavo.",
-          "sub": "Consultant thi lai ne machine repair, dyeing, transport ane job-work sudhi, trade pote shu kare chhe te muke chhe ane kharidnar prakaar ane jagya pramane shodhe chhe.",
-          "items": {
-            "list": {
-              "title": "Tame aapo chho te service muko",
-              "body": "Salah ane jaalvani thi lai ne dyeing, printing, transport ane job-work sudhi, tame aapo chho te service o bhaav saathe sidhi tamari profile par umero."
-            },
-            "found": {
-              "title": "Madi aavo ane kaam melvo",
-              "body": "Jemne service joiye chhe te kharidnar ane vechnar tamne bhaade rakhva khaangi chat shuru kare chhe. Tame sidho vyavhaar karo, vachetiya vagar."
-            },
-            "browse": {
-              "title": "Prakaar ane jagya pramane shodho",
-              "body": "App ma service o ne prakaar ane jagya pramane filter karo ane tamari najik ni yogya madad shodho, jethi shodh kharekhar kaam karnara loko sudhi pahonche."
-            },
-            "track": {
-              "title": "Track record banavo",
-              "body": "Juna kharidnar na star rating tamari service par rahe chhe, jethi saaru kaam aagal vadhe ane navo kharidnar kone bhaade raakhe chhe tena par bharoso kari shake."
-            }
-          }
-        },
-        "faq": {
-          "eyebrow": "Saamanya prashno",
-          "title": "Connect vishe loko je puchhe chhe.",
-          "items": {
-            "free": {
-              "q": "Su Connect free chhe?",
-              "a": "Ha. Profile, dukaan, listing, feed, jobs, quotations ane chat free chhe. Vadhu pahonch mate boost karvu e j aaje paisa vaali vastu chhe."
-            },
-            "boost": {
-              "q": "Boost na ketla paisa laage?",
-              "a": "Tame nakki karo. Boost prepaid wallet ma thi thaay chhe, jya ek rupiya nu ek credit male chhe. Budget tame nakki karo chho, te tenathi vadhare kharch kartu nathi, ane budget ke samay puro thaay tyare atki jaay chhe."
-            },
-            "commission": {
-              "q": "Su ManekHR commission le chhe ke paisa sambhale chhe?",
-              "a": "Na. Kharidnaar ane vechnaar ahin ek bija ne shodhe chhe ane sidho vyavhaar kare chhe. ManekHR order ke paisa process kartu nathi, ane koi hisso letu nathi."
-            },
-            "storefront": {
-              "q": "Mari dukaan ma shu shaamel chhe?",
-              "a": "Photo ane tunka video, bhaav, minimum order ane delivery samay saathe ni tamari products, tamara brand niche gothveli, potana web address saathe. Link WhatsApp par share karo ke gamme tya chhaapo."
-            },
-            "rfq": {
-              "q": "Quotations kevi rite kaam kare chhe?",
-              "a": "Jaththo, samagri, budget ane kya sudhi ma joiye te saathe tamari jaruriyat post karo. Vechnaar vyavasthit quotes mokle chhe. Baju bajuma sarkhavo ane gamme te sweekaro. Tenathi private chat khule chhe."
-            },
-            "voice": {
-              "q": "Koi lakhya vagar mari job mate arji kari shake?",
-              "a": "Ha. Karigar voice note record kari ne ke resume jodi ne arji kari shake chhe. Tame tamari arajdaar yaadi ma te sambhdo ke vaancho chho ane tyathi shortlist karo chho."
-            },
-            "languages": {
-              "q": "Connect kai bhashao support kare chhe?",
-              "a": "English, Gujarati, ane English akshro ma lakheli Hindi ke Gujarati. Darek potani bhasha pasand kare chhe ane gamme tyare badli shake chhe."
-            },
-            "safety": {
-              "q": "Koi mane spam kare to?",
-              "a": "Ek tap ma block karo ane account report karo. Shaant anti-spam chat ma ajanya messages maryadit raakhe chhe, ane rate card jevi samvedansheel vigato fakt sign in karela jonaar ne j dekhaay chhe."
-            },
-            "trainedAt": {
-              "q": "Trained-at olakh etle su?",
-              "a": "Te profile par ni ek verified line chhe je batave chhe ke vyakti e kya taleem lidhi. Vidyarthi course umere chhe, sanstha teni pushti kare chhe, ane naukri aapti vakhte maalik tena par bharoso kari shake chhe. Jene kaushalya shikhyu hoy tene ena mate shodhva ma te madad kare chhe."
-            },
-            "services": {
-              "q": "Su hu fakt product nahi, service o muki shaku?",
-              "a": "Ha. Consultants, machine repair ane jaalvani, dyeing ane printing, transport ane logistics, contractor ane job-work karnara pote aapti service o bhaav saathe muke chhe. Kharidnar app ma service na prakaar ane jagya pramane shodhe chhe ane bhaade rakhva khaangi chat shuru kare chhe."
-            },
-            "broker": {
-              "q": "Dalaal ni olakhaan kevi rite kaam kare chhe?",
-              "a": "Dalaal kharidnar ane vechnar ni olakhaan karave chhe, ane banne paksh olakhaan ni pushti kare chhe, etle koi ekla shrey na lai shake. Samay jata dalaal verified track record banave chhe. Review khaangi hoy chhe ane fakt aadyaksharo batave chhe, kyarey review aapnar nu naam nahi, ane dalaal te badli ke chhupavi shakto nathi."
-            }
-          }
-        }
-      },
       "pricing": {
         "meta": {
-          "title": "Pricing: ManekHR ERP plans ane free Connect network",
-          "description": "Tamara aakha textile business mate saral, transparent pricing. ManekHR ERP free ma athva full-access trial sathe shuru karo, card vagar. ManekHR Connect vaaparva free chhe."
+          "title": "Pricing: ManekHR ERP plans",
+          "description": "Diamond-polishing units mate simple, transparent pricing. Koi card vagar ManekHR ERP free ma athva full-access trial par shru karo."
         },
         "hero": {
           "eyebrow": "Pricing",
           "title": "Tamara aakha business mate saral pricing.",
-          "sub": "Tamari factory ManekHR ERP par chalavo. Free ma shuru karo athva full-access trial lo, card vagar. Ane ManekHR Connect network hammesha vaaparva free chhe."
+          "sub": "Tamaru unit ManekHR ERP par chalavo. Koi card vagar free ma athva full-access trial par shru karo."
         },
         "erpHeading": {
           "eyebrow": "ManekHR ERP",
           "title": "Tamari team sathe vadhta plans",
-          "sub": "Hajri, pagar, machine ane production ek j system ma. Free ma shuru karo ane jem vadho tem tools umero. Setup fee nahi, gme tyare cancel karo."
+          "sub": "Attendance, salary, ane staff management ek j system ma. Free ma shru karo ane jarur pramane tools umero. Koi setup fee nahi, gamme tyare cancel karo."
         },
         "trial": {
           "eyebrow": "Free trial",
@@ -9306,39 +8905,7 @@
           "a3": "GST-taiyaar invoice ane billing",
           "a4": "Encrypted ane DPDP-susangat"
         },
-        "connectHeading": {
-          "eyebrow": "ManekHR Connect",
-          "title": "Network vaaparva free chhe",
-          "sub": "Aakha textile vepaar ma shodhao, bharti karo ane soda karo. Hammesha free. Vadhu pahonch joiye tyare j optional boost mate chukvo."
-        },
-        "cards": {
-          "free": {
-            "name": "Free",
-            "price": "₹0",
-            "period": "hammesha mate",
-            "desc": "Dekhava ane vyavhaar karva je joiye te badhu.",
-            "cta": "Free ma jodao",
-            "f1": "Profile, company page ane dukaan",
-            "f2": "Photo ane tunka video saathe product listing",
-            "f3": "Job board: job post karo ane arji karo",
-            "f4": "Quotations: jaruriyat post karo ane bhaav moklo",
-            "f5": "Photo ane voice note saathe private chat",
-            "f6": "English, Gujarati ane English akshro ma Hindi ke Gujarati"
-          },
-          "boosts": {
-            "name": "Boost",
-            "price": "Vapro tetlu chukvo",
-            "period": "prepaid wallet ma thi",
-            "desc": "Post, product ke job mate optional vadharani pahonch.",
-            "cta": "Free ma jodao, boost pachhi",
-            "f1": "Ek rupiya nu ek credit, koi pack nahi",
-            "f2": "Budget ane samay tame nakki karo",
-            "f3": "Hammesha sponsored label saathe",
-            "f4": "Budget ke samay puro thaay tyare atke chhe",
-            "f5": "Koi subscription ni jarur nathi"
-          }
-        },
-        "note": "Free tier hammesha free rahe chhe. Fakt vadhu pahonch joiye tyare j boost karo. Ek rupiye ek credit, ane koi subscription jaroori nathi.",
+        "note": "Staff records ane attendance sathe free ma shru karo. Tamari team ane jarurat vadhe tem gamme tyare upgrade karo.",
         "faq": {
           "eyebrow": "FAQ",
           "title": "Pricing na sawalo na jawab",
@@ -9363,10 +8930,6 @@
               "q": "Shu hu pachhi upgrade ke downgrade kari shaku?",
               "a": "Ha. Tamari team vadhe ke jarooriyat badlay tem gme tyare plan badlo. Tamaro data ane itihaas sathe rahe chhe."
             },
-            "connectFree": {
-              "q": "Shu ManekHR Connect kharekhar free chhe?",
-              "a": "Ha. Connect network (tamari profile, storefront, jobs ane quotation) tamara soda par commission vagar vaaparva free chhe. Fakt optional kharch e vadhu pahonch mate post boost karvano chhe, je vapraash pramane chukvay chhe."
-            },
             "cancel": {
               "q": "Jo hu cancel karu to shu thay?",
               "a": "Tame koi lock-in vagar gme tyare cancel kari shako chho. Tamari paid mudat na ant sudhi tamne access rahe chhe, ane amari retention policy mujab tamaro data uplabdh rahe chhe."
@@ -9376,42 +8939,42 @@
       },
       "erp": {
         "meta": {
-          "title": "ERP - tamari textile factory ke dukaan chalavo",
-          "description": "Tamari textile factory ke workshop mate attendance, payroll, billing, machines ane production manage karo. GST-ready. Shuru karva free."
+          "title": "ManekHR ERP - heera ghasva na units mate staff, hajri ane pagaar",
+          "description": "Tamara heera ghasva na unit mate staff record, hajri ane pagaar manage karo. Saral, chokasaipurn ane compliance saathe. Shuru karva free."
         },
         "hero": {
           "badge": "ManekHR ERP",
-          "title": "Tamari factory ke dukaan kaagaj, WhatsApp ke andaaj vagar chalavo.",
-          "sub": "ERP tamari team, paisa ane machines ne ek system ma laave chhe - textile factory ane workshop saache kevi rite chale chhe te dhyaane raakhi banaavel.",
+          "title": "Tamaru unit kaagaj, WhatsApp ke andaaj vagar chalavo.",
+          "sub": "ManekHR tamaro staff record, hajri ane pagaar ne ek system ma laave chhe - Surat na heera ghasva na units saache kevi rite chale chhe te dhyaane raakhi banaavel.",
           "ctaPrimary": "Shuru karo",
-          "ctaSecondary": "ManekHR Connect juo",
+          "ctaSecondary": "Vadhu jaano",
           "ctaPricing": "Bhaav juo"
         },
         "features": {
           "eyebrow": "Tame su chalavi shako",
-          "title": "Tamaru aakhu operation, end to end.",
-          "sub": "Attendance na pehla punch thi le mahina na ant na clear profit aankada sudhi - ERP kaam, paisa ane machines badhu cover kare chhe.",
+          "title": "Tamari aakhi team, ek spasht system.",
+          "sub": "Attendance na pehla punch thi le chokasaipurn monthly payslip sudhi - ERP tamaro staff record, hajri ane pagaar cover kare chhe, daraek role mate yogya access saathe.",
           "items": {
             "team": {
-              "title": "Team ane Payroll",
-              "desc": "Attendance track karo ane tamara loko ne daraek cycle ma saachi rite paisa aapo.",
-              "b1": "Phone, kiosk ke biometric device thi attendance",
-              "b2": "Daily-wage, monthly ke piece-rate salaries - badha support thay chhe",
-              "b3": "Advances, deductions ane karigar records ek j profile ma"
+              "title": "Team ane Staff Record",
+              "desc": "Daraek karigar ane staff member ni profile, documents ane history ek j jagya e rakho.",
+              "b1": "Contact, ID ane role ni details saathe staff profile",
+              "b2": "Daraek vyakti mate documents ane history ek j jagya e",
+              "b3": "Tamara aakha unit ma shodhi shakaay tevi directory"
             },
-            "finance": {
-              "title": "Finance ane Billing",
-              "desc": "Invoice banaavo, kharcha note karo, ane hammesha khabar raakho ke tame kya chho.",
-              "b1": "GST-ready invoices, quotations ane delivery challans",
-              "b2": "Baaki ane payment history sathe party ledgers",
-              "b3": "Gamme tyare clear profit-and-loss ane reports"
+            "attendance": {
+              "title": "Hajri",
+              "desc": "Phone, kiosk ke biometric device thi hajri track karo, daraek divas.",
+              "b1": "Phone, kiosk ke biometric device thi roj ni hajri",
+              "b2": "Shift scheduling ane chukayela punch nu regularisation",
+              "b3": "Raja ane holiday tracking pan saathe"
             },
-            "machines": {
-              "title": "Machine ane Utpadan",
-              "desc": "Daraek machine no hisaab raakho ane daraek shift maapo.",
-              "b1": "Capacity ane assigned workers sathe machine register",
-              "b2": "Daraek shift nu production output ane downtime note karo",
-              "b3": "Maintenance schedule karo ane saachi utilisation track karo"
+            "salary": {
+              "title": "Pagaar ane Payroll",
+              "desc": "Koi manual calculation vagar, daraek cycle ma tamara loko ne saachi rite paisa aapo.",
+              "b1": "Daily-wage, monthly ke piece-rate salaries - badha support thay chhe",
+              "b2": "Advances, deductions ane payslips aapoaap sambhalaay chhe",
+              "b3": "PF, ESI, PT, TDS jevu statutory compliance saathe"
             },
             "roles": {
               "title": "Bhumikao ane Parvangio",
@@ -9535,7 +9098,7 @@
       "about": {
         "meta": {
           "title": "ManekHR vishe: te shu chhe ane kona mate chhe",
-          "description": "ManekHR India na textile vepar mate ek free B2B network, marketplace ane jobs platform chhe, jeni niche ERP tools chhe. Vepari, karigar, dalal, mill ane institute mate banaavel, Gujarati, Hindi ane English ma."
+          "description": "ManekHR Surat na heera ghasva na units mate ek staff ane pagaar management system chhe. Unit maliko, karigaro, supervisor ane accountant mate banaavel, Gujarati, Hindi ane English ma."
         },
         "hero": {
           "eyebrow": "ManekHR vishe",
@@ -9545,59 +9108,51 @@
         },
         "answer": {
           "heading": "Tunk ma.",
-          "body": "ManekHR India na textile vepar mate ek free B2B network, marketplace ane jobs platform chhe, jeni niche ERP tools (hajri, pagar, GST billing, utpadan) chhe. Te kapda na vepari, karigar, dalal, mill ane talim institute mate banaavel chhe, ane Gujarati, Hindi ane English ma chale chhe."
+          "body": "ManekHR Surat na heera ghasva na units mate banaavel staff ane pagaar management system chhe. Te staff no record rakhe chhe, hajri track kare chhe ane sacho pagaar chalave chhe, maliko, accountant ane supervisor mate role-based access saathe. Te Gujarati, Hindi ane English ma chale chhe."
         },
         "audience": {
           "eyebrow": "Kona mate chhe",
-          "heading": "Aakha textile vepar mate banaavel.",
-          "sub": "Udyog ni darek bhumika mate ek professional ghar, koi saamanya business app nahi.",
+          "heading": "Aakha heera ghasva na unit mate banaavel.",
+          "sub": "Unit ni darek bhumika mate ek professional ghar, koi saamanya business app nahi.",
           "items": {
-            "trader": {
-              "title": "Vepari ane jatthaband vechnaar",
-              "body": "Free dukaan kholo, product list karo, puchhpuchh na javab aapo ane kharidnaar sathe sidho vepar karo."
+            "owner": {
+              "title": "Unit maliko",
+              "body": "Ek j dashboard parthi tamari aakhi team, hajri ane pagaar no kharch juo, register pachhad bhagya vagar."
             },
             "karigar": {
-              "title": "Karigar ane kaamdaar",
-              "body": "Tamari kushalta batavo, kaam shodho ane bolchal ni bhalaman vagar nokri melavo."
+              "title": "Karigaro ane staff",
+              "body": "Tamari hajri ane pagaar chokasai thi nondhaay chhe, je tame game tyare chakasi shako tevo spasht record saathe."
             },
-            "dalal": {
-              "title": "Dalal ane broker",
-              "body": "Kharidnaar ane vechnaar ni olkhan karavo, ane banne paksh maanya kare evo bharosapatra record banavo."
+            "supervisor": {
+              "title": "Supervisor",
+              "body": "Tamari team ni hajri jaldi nodho, phone thi ke floor par na shared kiosk thi."
             },
-            "mill": {
-              "title": "Mill ane utpadak",
-              "body": "Kshamta list karo, job work ane jatthaband order lo, ane ERP tools thi floor chalavo."
-            },
-            "institute": {
-              "title": "Talim institute",
-              "body": "Institute page chalavo, course list karo, ane tame je vidyarthio ne talim aapi chhe tene maanya karo."
-            },
-            "serviceProvider": {
-              "title": "Seva aapnaar",
-              "body": "Machine repair, dyeing, printing, testing ke transport jevi sevao list karo ane shodhao."
+            "accountant": {
+              "title": "Accountant ane HR admin",
+              "body": "Bharosa saathe payroll chalavo, hajri, advance ane deduction aapoaap ganaay chhe."
             }
           }
         },
         "doItems": {
           "eyebrow": "Tame shu kari sako",
           "heading": "Char vastu, ek platform.",
-          "sub": "Network, vechan, bharti ane tamari kaamgiri ek j jagya e chalavo.",
+          "sub": "Tamaro staff, hajri, pagaar ane access, badhu ek j jagya e sambhalo.",
           "items": {
-            "network": {
-              "title": "Network (Connect)",
-              "body": "Professional profile banavo, vepar ne follow karo ane saachaa, chakasayela textile vepar sathe sidho sampark karo."
+            "team": {
+              "title": "Team",
+              "body": "Darek karigar ane staff member ni profile, documents ane history ek j jagya e rakho."
             },
-            "marketplace": {
-              "title": "Marketplace",
-              "body": "Product ane seva list karo, vepar browse karo, puchhpuchh moklo ane commission vagar bhaav maago."
+            "attendance": {
+              "title": "Hajri",
+              "body": "Phone, kiosk ke biometric device thi roj ni hajri track karo, shift ane raja pan saathe."
             },
-            "jobs": {
-              "title": "Jobs",
-              "body": "Textile value chain ma karigar thi manager sudhi nokri post karo ke arji karo."
+            "salary": {
+              "title": "Pagaar",
+              "body": "Daily-wage, monthly ke piece-rate payroll aapoaap chalavo, payslips ane compliance saathe."
             },
-            "erp": {
-              "title": "ERP tools",
-              "body": "Tamari factory ke dukaan mate hajri, pagar, GST billing ane utpadan chalavo, free ma shuru."
+            "roles": {
+              "title": "Roles ane Permissions",
+              "body": "Darek vyakti ne barabar jaruri access aapo, malik thi lai ne accountant ane supervisor sudhi."
             }
           }
         },
@@ -9607,7 +9162,7 @@
         },
         "free": {
           "heading": "Free ma shuru.",
-          "body": "Jodavu, profile banavvi, product ane seva list karvi, nokri post karvi, bhaav maagva ane chat karvi, badhu free chhe. Vaikalpik boosting ane paid ERP plan jarur pade tyare vadhu aape chhe, ane ManekHR tamara soda par koi commission leta nathi."
+          "body": "Jodavu, tamaro staff umervo, hajri track karvi, ane tamaru pehlu payroll cycle chalavvu, badhu free ma try kari shakaay chhe. Tamaru unit vadhe tem paid plan vadhu aape chhe, ane ManekHR kyarey koi pan vastu par commission leta nathi."
         },
         "faq": {
           "eyebrow": "Saamanya prashno",
@@ -9615,19 +9170,19 @@
           "items": {
             "what": {
               "q": "ManekHR shu chhe?",
-              "a": "ManekHR India na textile vepar mate ek free B2B network, marketplace ane jobs platform chhe, jeni niche ERP tools (hajri, pagar, GST billing, utpadan) chhe. Te aakha vepar ne ek professional ghar ma laave chhe."
+              "a": "ManekHR Surat na heera ghasva na units mate banaavel staff ane pagaar management system chhe. Te staff no record rakhe chhe, hajri track kare chhe ane darek staff member mate role-based access saathe sacho pagaar chalave chhe."
             },
             "who": {
               "q": "ManekHR kona mate chhe?",
-              "a": "ManekHR kapda na vepari, karigar, dalal, mill ane utpadak, talim institute ane temna vidyarthi, ane udyogbhar na seva aapnaar mate banaavel chhe."
+              "a": "ManekHR heera ghasva na units na maliko, karigaro ane staff, supervisor, ane payroll chalavta accountant ke HR admin mate banaavel chhe."
             },
             "free": {
               "q": "Shu ManekHR free chhe?",
-              "a": "Haa. Jodavu, profile banavvi, product ane seva list karvi, nokri post karvi, bhaav maagva ane chat karvi, badhu free chhe. Vaikalpik boosting ane paid ERP plan no kharch thaay chhe, ane ManekHR tamara soda par koi commission leta nathi."
+              "a": "Sharu karva mate, haa. Staff record, hajri ane pagaar tracking free ma try kari shakaay chhe, card ni jarur vagar. Tamari team vadhe tem paid plan vadhu aape chhe, ane ManekHR kyarey koi pan vastu par commission leta nathi."
             },
             "do": {
               "q": "ManekHR par hu shu kari saku?",
-              "a": "Tame vepar sathe network kari sako, free dukaan kholine product ke seva vechi sako, nokri post ane arji kari sako, ane hajri, pagar ane GST billing jeva ERP tools thi tamari factory ke dukaan chalavi sako."
+              "a": "Tame ek staff directory rakhi sako, phone, kiosk ke biometric device thi hajri track kari sako, sacho payroll chalavi sako, ane role-based access thi control kari sako ke kon shu jue ke badle."
             },
             "languages": {
               "q": "ManekHR kai bhashao support kare chhe?",
@@ -9705,401 +9260,22 @@
           "mailSubject": "{name} tarafthi ManekHR puchhparachh",
           "mailSubjectFallback": "website no ek visitor"
         }
-      },
-      "marketplace": {
-        "meta": {
-          "title": "Suppliers, buyers ane wholesalers mate textile marketplace",
-          "description": "ManekHR Connect par verified textile suppliers ane buyers shodho. Inquiries ane quote requests moklo, vachetiya vagar, deal WhatsApp par close karo. Shuru karva free."
-        },
-        "hero": {
-          "badge": "ManekHR Connect",
-          "title": "Textile trade nu marketplace.",
-          "sub": "Aakhi textile trade ma verified suppliers ane buyers shodho. Inquiry ke quote request moklo, seedha deal karo, ane WhatsApp par close karo. Saachaa businesses paasethi genuine leads, vachetiya vagar, koi commission nahi.",
-          "ctaPrimary": "Free shuru karo",
-          "ctaSecondary": "Connect par paachha jao"
-        },
-        "features": {
-          "eyebrow": "Tame shu kari shako",
-          "title": "Kharidva ane vechva mate je joiye te badhu.",
-          "sub": "Textile trade saachi rite jevi rite vepar kare chhe te mujab banaavel.",
-          "items": {
-            "discover": {
-              "title": "Verified businesses shodho",
-              "desc": "Sahi supplier ke buyer, jaldi.",
-              "b1": "Category, location ane price thi search karo",
-              "b2": "Verified businesses, ghana ERP-backed",
-              "b3": "Bilkul noise alag karo"
-            },
-            "list": {
-              "title": "Tamara products list karo",
-              "desc": "Tamaaru catalog aakhi trade saame raakho.",
-              "b1": "Photos, specs ane pricing add karo",
-              "b2": "Products ne collections ma goothvo",
-              "b3": "List karva free"
-            },
-            "enquire": {
-              "title": "Inquiries moklo ane melvo",
-              "desc": "Saachaa businesses sathe seedha vaat karo.",
-              "b1": "Pricing mate ek tap ma inquiry karo",
-              "b2": "Badhi inquiries ek inbox ma manage karo",
-              "b3": "Leads dozen sellers ne nathi chhante"
-            },
-            "rfq": {
-              "title": "Quote requests post karo",
-              "desc": "Tamne shu joiye te trade ne kaho.",
-              "b1": "Quantity, target price ane timeline share karo",
-              "b2": "Matched suppliers tamne quotes mokle",
-              "b3": "Saamave ane pasand karo, koi badhaai nahi"
-            },
-            "storefront": {
-              "title": "Tamaaru potanu storefront",
-              "desc": "Tamara products mate share thay evu shop.",
-              "b1": "Tamaaru potanu store link ane QR code",
-              "b2": "Ek tap ma WhatsApp par share karo",
-              "b3": "QR labels ane cards par chodi do"
-            },
-            "whatsapp": {
-              "title": "WhatsApp par close karo",
-              "desc": "Deal jevi rite hammesha kari chhe evi rite puri karo.",
-              "b1": "Gamme te inquiry WhatsApp par lai jao",
-              "b2": "Photos ane videos share karo",
-              "b3": "Price ane delivery seedha naki karo"
-            }
-          }
-        },
-        "categories": {
-          "eyebrow": "Categories",
-          "title": "Textile trade no daraek khuno.",
-          "sub": "Yarn thi finished goods sudhi, aakhi supply chain ma list karo ane shodho.",
-          "items": {
-            "weaving": "Weaving ane power-loom",
-            "dyeing": "Dyeing",
-            "printing": "Printing",
-            "embroidery": "Embroidery ane zari",
-            "jobwork": "Job work",
-            "rawmaterial": "Kacho maal",
-            "machinery": "Machinery",
-            "finished": "Taiyar maal"
-          },
-          "servicesLead": "Product nahi, service aapnar shodho chho?",
-          "servicesCta": "Prakar ane sthal pramane services browse karo"
-        },
-        "popular": {
-          "title": "Popular searches"
-        },
-        "faq": {
-          "eyebrow": "Saamaanya prashno",
-          "title": "Marketplace na prashno.",
-          "items": {
-            "cost": {
-              "q": "List karva koi kharch lage chhe?",
-              "a": "Na. Tame products list kari shako, inquiries mokli shako ane quote requests free ma post kari shako. Paid plans jyaare joiye tyaare vadhu reach aape chhe."
-            },
-            "genuine": {
-              "q": "Leads genuine chhe?",
-              "a": "Ha. Tame verified businesses sathe deal karo, ane ghana to potana operations pan ManekHR ERP par chalave chhe. Inquiries juni marketplaces ni jem dozen sellers ne nathi chhantati."
-            },
-            "payment": {
-              "q": "Su ManekHR payment handle kare chhe?",
-              "a": "Na. Tame price ane delivery saamavaala business sathe seedha naki karo ane WhatsApp par close karo. ManekHR koi commission leti nathi ke tamari deal ni vachche bestu nathi."
-            },
-            "categories": {
-              "q": "Hu kaya products list kari shaku?",
-              "a": "Textile trade ma gamme te: weaving ane power-loom, dyeing, printing, embroidery ane zari, job work, raw material, machinery, ane finished goods."
-            }
-          }
-        }
-      },
-      "jobs": {
-        "meta": {
-          "title": "Textile trade mate jobs ane hiring",
-          "description": "ManekHR Connect par hunnar vaala loko hire karo ke tamari next job shodho. Verified employers, daily-wage thi monthly roles, tamara profile thi apply karo. Shuru karva free."
-        },
-        "hero": {
-          "badge": "ManekHR Connect",
-          "title": "Textile trade mate hiring ane jobs.",
-          "sub": "Hunnar vaala loko hire karo, ke tamari next job shodho. Verified employers, saachu kaam batavta profiles, ane daily-wage, piece-rate ke monthly roles, badhu ek j jagya e.",
-          "ctaPrimary": "Free shuru karo",
-          "ctaSecondary": "Connect par paachha jao"
-        },
-        "features": {
-          "eyebrow": "Tame shu kari shako",
-          "title": "Hiring ane job-hunting, trade mate banaavel.",
-          "sub": "Tame hire karta ho ke shodhta ho, te trade jevi rite chale chhe evi rite chale chhe.",
-          "items": {
-            "post": {
-              "title": "Job post karo",
-              "desc": "Minute ma aakhi trade sudhi pahoncho.",
-              "b1": "Role, skills, location ane pay set karo",
-              "b2": "Daily-wage, piece-rate ke monthly",
-              "b3": "Post karva free"
-            },
-            "apply": {
-              "title": "Tamara profile thi apply karo",
-              "desc": "Tamaaru kaam j tamari vaat kare.",
-              "b1": "Work-sample profile thi apply karo",
-              "b2": "Koi lambaa forms ke resumes ni jarur nahi",
-              "b3": "Ek tap ma apply karo"
-            },
-            "verified": {
-              "title": "Chakasayel nokridata",
-              "desc": "Hiring je surakshit lage.",
-              "b1": "Employers verified businesses chhe",
-              "b2": "Ghana ERP-backed ane active chhe",
-              "b3": "Bunch fake postings ochi"
-            },
-            "inbox": {
-              "title": "Applicants mate ek inbox",
-              "desc": "Daraek ne ek jagya e track karo.",
-              "b1": "Applications aave em joto raho",
-              "b2": "Candidates shortlist ane message karo",
-              "b3": "Group ma fari koi candidate na khovo"
-            },
-            "alerts": {
-              "title": "Nokri alerts",
-              "desc": "Sahi roles vishe pehla jaano.",
-              "b1": "Fit thay evi roles na alerts melvo",
-              "b2": "Skill, location ane type mujab",
-              "b3": "Je phone tame pehlethi raakho chho te par"
-            },
-            "whatsapp": {
-              "title": "WhatsApp par vaat karo",
-              "desc": "Sahelaai thi sampark karo.",
-              "b1": "Gamme te chat WhatsApp par lai jao",
-              "b2": "Voice note ke photo moklo",
-              "b3": "Call ke trial seedha goothvo"
-            }
-          }
-        },
-        "types": {
-          "eyebrow": "Nokri na prakar",
-          "title": "Trade jevi rite hire kare te badhi rite.",
-          "sub": "Fakt monthly salaries nahi. Textile trade saachi rite je roles aape chhe te.",
-          "items": {
-            "fulltime": "Full-time masik",
-            "parttime": "Part-time",
-            "piecerate": "Contract ane piece-rate",
-            "dailywage": "Dainik vetan",
-            "apprenticeship": "Apprenticeship"
-          }
-        },
-        "faq": {
-          "eyebrow": "Saamaanya prashno",
-          "title": "Hiring ane jobs na prashno.",
-          "items": {
-            "cost": {
-              "q": "Job post karva free chhe?",
-              "a": "Ha. Tame jobs post kari shako ane applications free ma melvi shako. Paid plans vadhu reach ane premium hiring tools aape chhe."
-            },
-            "verified": {
-              "q": "Employers verified chhe?",
-              "a": "Ha. Employers verified businesses chhe, ane ghana to potana operations pan ManekHR ERP par chalave chhe, etle hiring moderated ane surakshit lage chhe."
-            },
-            "types": {
-              "q": "Su hu daily-wage ke piece-rate hire kari shaku?",
-              "a": "Ha. Full-time monthly, part-time, contract ane piece-rate, daily-wage, ane apprenticeship roles badha support thay chhe."
-            },
-            "apply": {
-              "q": "Candidates kevi rite apply kare?",
-              "a": "Candidates potanu saachu kaam batavta profile thi, ek tap ma apply kare. Koi lambaa forms nahi, ane vaatchit WhatsApp par chalu rahi shake chhe."
-            }
-          }
-        }
-      },
-      "services": {
-        "meta": {
-          "title": "Textile services ane experts: consultant, machine repair, dyeing, transport",
-          "description": "Trade ma textile service aapnara ane experts shodho: consultant, machine repair ane maintenance, dyeing ane printing job-work, kapad transport ane logistics, ane vadhu. Tame je service aapo chho te list karo, kharidnara ane suppliers thi shodhao, ane sidho sodo karo. Shuru karva mate free."
-        },
-        "hero": {
-          "badge": "ManekHR Connect",
-          "title": "Textile trade ni services ane experts.",
-          "sub": "Consultant, machine repair karnar, dyeing ke printing job-work unit, kapad transporter, ke koi pan textile service aapnar ne hire karo. Tame je service aapo chho te tamara rates sathe list karo, kharidnara ane suppliers thi shodhao, ane sidho sodo karo. Koi vachetiyo nahi, koi commission nahi.",
-          "ctaPrimary": "Free ma shuru karo",
-          "ctaSecondary": "Connect par pacha"
-        },
-        "features": {
-          "eyebrow": "Tame shu kari shako",
-          "title": "Service list karo, ke yogya haath shodho.",
-          "sub": "Textile udyog chalavti service-trade mate banavelu.",
-          "items": {
-            "list": {
-              "title": "Tame je service aapo chho te list karo",
-              "desc": "Tamari service aakha trade saame muko.",
-              "b1": "Service no prakar pasand karo ane tamara rates umero",
-              "b2": "Tamaro experience ane junu kaam batavo",
-              "b3": "List karva mate free"
-            },
-            "discover": {
-              "title": "Kharidnara ane suppliers thi shodhao",
-              "desc": "Trade ne jarur pade tyare shodhi shakay teva bano.",
-              "b1": "Search ma ane service na prakar pramane dekhao",
-              "b2": "Verified business, ghana ERP-aadharit",
-              "b3": "Puchhparchh tamari sathe private chat khole chhe"
-            },
-            "browse": {
-              "title": "Prakar ane sthal pramane browse karo",
-              "desc": "Yogya service aapnar zadpathi shodho.",
-              "b1": "Service na prakar ane district pramane filter karo",
-              "b2": "Service aapnaraone baju-baju sarkhavo",
-              "b3": "Dozanband lokone chhantela leads nahi"
-            },
-            "track": {
-              "title": "Verified track record banavo",
-              "desc": "Pramanik rite bharoso kamao.",
-              "b1": "Rating fakt saacha soda pachhi j",
-              "b2": "Tamaru saachu kaam batavti profile",
-              "b3": "Tamaru company page ane ERP jodo"
-            }
-          }
-        },
-        "categories": {
-          "eyebrow": "Service na prakar",
-          "title": "Textile trade ne jaruri darek service.",
-          "sub": "Consulting thi job-work sudhi, aakha udyog ma list karo ane shodho.",
-          "items": {
-            "consulting": "Consulting",
-            "maintenance": "Maintenance",
-            "machine-repair": "Machine repair",
-            "testing": "Testing ane quality",
-            "installation": "Installation",
-            "transport": "Transport",
-            "logistics": "Logistics",
-            "contractor": "Contractor ane majuri",
-            "dyeing": "Dyeing",
-            "printing": "Printing",
-            "job-work": "Job work",
-            "embroidery": "Bharatkaam ane zari"
-          },
-          "browseLead": "Atyare kon service aapi rahyu chhe te jova mango chho?",
-          "browseCta": "App ma prakar ane sthal pramane services browse karo"
-        },
-        "faq": {
-          "eyebrow": "Saamanya prashno",
-          "title": "Services vishe prashno.",
-          "items": {
-            "cost": {
-              "q": "Service list karva no koi kharch chhe?",
-              "a": "Na. Tame je service aapo chho te list kari shako, tamara rates set kari shako, ane puchhparchh free ma melavi shako. Paid plan tame ichho tyare vadhu pahonch umere chhe."
-            },
-            "find": {
-              "q": "Hu service aapnar kevi rite shodhu?",
-              "a": "App ma service na prakar ane sthal pramane services browse karo, ke search mathi service aapnar nu page kholo. Darek service nu potanu jaher page hoy chhe, etle tame tene search engine ke share kareli link thi pan sidha pahonchi shako."
-            },
-            "payment": {
-              "q": "Shu ManekHR payment sambhale chhe?",
-              "a": "Na. Tame bhaav ane kaam service aapnar sathe sidha nakki karo chho ane WhatsApp par sodo puro kari shako. ManekHR koi commission leti nathi ke tamara soda ni vachche besti nathi."
-            },
-            "types": {
-              "q": "Hu kai services list kari shaku?",
-              "a": "Textile trade ne jaruri kainpan: consulting, maintenance, machine repair, testing ane quality, installation, transport, logistics, contractor ane majuri, dyeing, printing, job work, ane bharatkaam ane zari."
-            }
-          }
-        }
-      },
-      "network": {
-        "meta": {
-          "title": "Surat ane India mate textile networking | ManekHR",
-          "description": "India na textile vepar sathe network karo. Surat ane aakha India ma vepari, karigar, dalal, mill, institute ane seva aapnaar sathe jodao. Jodavu free, Gujarati, Hindi ane English ma."
-        },
-        "hero": {
-          "badge": "ManekHR Connect",
-          "title": "Surat ane India nu textile networking platform.",
-          "sub": "Textile veparbhar ma vepari, karigar, dalal, mill, institute ane seva aapnaar ne shodho ane jodao. Profile banavo, saachaa chakasayela vepar sudhi pahancho ane sidho soda karo. Jodavu free.",
-          "ctaPrimary": "Free ma jodao",
-          "ctaSecondary": "Connect juo"
-        },
-        "answer": {
-          "heading": "Textile network shu chhe?",
-          "body": "Textile network e jagya chhe jya vepar na badha, vepari ane karigar thi laine dalal, mill, institute ane seva aapnaar, ekbija ne shodhi sake ane vepar kari sake. Surat ane aakha India ma aa networking WhatsApp group, market ane bolchal par chaltu hatu. ManekHR tene online laave chhe: tame professional profile banavo, seva na prakar ane sthan pramane shodhao, ane commission vagar chakasayela vepar sudhi sidha pahancho.",
-          "lead": "Kevi rite chale chhe te juo",
-          "connectLink": "ManekHR Connect",
-          "homeLink": "ke home page thi shuru karo."
-        },
-        "connects": {
-          "eyebrow": "Kone jode chhe",
-          "title": "Aakho vepar, ek network ma.",
-          "sub": "Textile udyog ni darek bhumika ne ahi jagya chhe.",
-          "items": {
-            "traders": {
-              "title": "Vepari ane jatthaband vechnaar",
-              "body": "Kharidnaar ane supplier sudhi sidha pahancho ane tamaru vepar vartul vadharo."
-            },
-            "karigars": {
-              "title": "Karigar ane kaamdaar",
-              "body": "Tamari kushalta batavo, unit sathe jodao ane niyamit kaam shodho."
-            },
-            "dalals": {
-              "title": "Dalal ane broker",
-              "body": "Kharidnaar ane vechnaar ni olkhan karavo ane bharosapatra record banavo."
-            },
-            "mills": {
-              "title": "Mill ane utpadak",
-              "body": "Kshamta list karo, job work lo ane jatthaband kharidnaar sathe jodao."
-            },
-            "institutes": {
-              "title": "Talim institute",
-              "body": "Vidyarthi ane unit sudhi pahancho, ane tame talim aapo chho tene gothvo."
-            },
-            "serviceProviders": {
-              "title": "Seva aapnaar",
-              "body": "Machine repair, dyeing, printing, transport ane vadhu aapo."
-            }
-          }
-        },
-        "features": {
-          "eyebrow": "Kevi rite chale chhe",
-          "title": "Network karva na tran pagla.",
-          "sub": "Minato ma vepar network ma jodao.",
-          "items": {
-            "connect": {
-              "title": "Tamari profile banavo",
-              "body": "Ek free profile banavo je vepar ma tamari bhumika, kaam ane sthan batave."
-            },
-            "discover": {
-              "title": "Shodhao",
-              "body": "Vepar ne jarur pade tyare bhumika, seva na prakar ane jilla pramane search ma aavo."
-            },
-            "deal": {
-              "title": "Sidho soda karo",
-              "body": "Puchhpuchh private chat khole chhe, jethi tame koi vachetiya fee vagar sidhi vaat ane soda kari sako."
-            }
-          }
-        },
-        "faq": {
-          "eyebrow": "Saamanya prashno",
-          "title": "Networking na prashno.",
-          "items": {
-            "how": {
-              "q": "Surat ma textile vepar sathe hu kevi rite network karu?",
-              "a": "ManekHR ma jodao, vepar ma tamari bhumika mate free profile banavo, ane tame seva na prakar ane sthan pramane shodhava lago. Tame Surat ane aakha India ma vepari, karigar, dalal, mill, institute ane seva aapnaar ne shodhi sako, ane pachhi vaat shuru karva temne sidho sandesh moklo."
-            },
-            "free": {
-              "q": "Shu textile network free chhe?",
-              "a": "Haa. Jodavu, profile banavvi, shodhavu ane chat karvi, badhu free chhe. Vaikalpik boosting jarur pade tyare vadhu pahanch aape chhe, ane ManekHR tamara soda par koi commission leta nathi."
-            },
-            "who": {
-              "q": "Kon jodai sake?",
-              "a": "Textile vepar ma koi pan: vepari ane jatthaband vechnaar, karigar ane kaamdaar, dalal ane broker, mill ane utpadak, talim institute ane vidyarthi, ane seva aapnaar. Network Gujarati, Hindi ane English ma chale chhe."
-            }
-          }
-        }
       }
     },
     "industry": {
-      "caption": "India no textile udyog ek najar ma",
+      "caption": "Surat na diamond-polishing industry par ek najar",
       "items": {
         "workforce": {
-          "stat": "4.5 crore+",
-          "label": "loko India na textile ane kapda na vepar ma kaam kare chhe, je kheti pachhi bija kram e chhe."
+          "stat": "Laakho loko",
+          "label": "Surat na diamond-polishing units ma kaam kare chhe, India na sauthi mota skilled workforce ma nu ek."
         },
         "value": {
-          "stat": "Laakho crore",
-          "label": "varshik utpadan, ane India duniya na sauthi mota textile utpadak ane nikaskar ma nu ek chhe."
+          "stat": "10 ma thi 9",
+          "label": "duniya bhar ma cut ane polish thayela diamonds Surat na units ma thi pasar thay chhe."
         },
         "hubs": {
-          "stat": "Darek rajya",
-          "label": "Bharat bhar na textile hub ane cluster, badha ManekHR par jodayela."
+          "stat": "Darek unit",
+          "label": "naanu hoy ke motu, register, WhatsApp group, ane spreadsheet par chale chhe, jene ManekHR ek j system thi badle chhe."
         }
       }
     }
@@ -14760,15 +13936,11 @@
     "meta": {
       "platform": {
         "title": "Niyamo ane Sharto | ManekHR",
-        "description": "ManekHR ni Niyamo ane Sharto: ManekHR platform vaaprvana niyamo, jema textile trade mate Connect network, marketplace, jobs ane ERP tools samel chhe."
-      },
-      "connect": {
-        "title": "Connect Niyamo ane Sharto | ManekHR",
-        "description": "ManekHR Connect mateni Niyamo ane Sharto, Bharat na textile trade mate B2B network, marketplace ane jobs platform."
+        "description": "ManekHR na Terms & Conditions: diamond-polishing units mate staff ane salary management platform vaparva na niyamo."
       },
       "erp": {
         "title": "ERP Niyamo ane Sharto | ManekHR",
-        "description": "ManekHR ERP mateni Niyamo ane Sharto, textile factory ane dukan mate hajri, pagar, GST billing ane production tools."
+        "description": "ManekHR ERP mate Terms & Conditions: diamond-polishing units mate attendance, salary, ane staff management tools."
       }
     }
   },
@@ -14780,27 +13952,11 @@
     "meta": {
       "platform": {
         "title": "Gopniyata Niti | ManekHR",
-        "description": "ManekHR aakha platform par tamaro data kevi rite ekatra kare, vaapre ane surakshit raakhe chhe: textile trade mate Connect network, marketplace, jobs ane ERP tools."
-      },
-      "connect": {
-        "title": "Connect Gopniyata Niti | ManekHR",
-        "description": "ManekHR Connect Bharat na textile trade mate B2B network, marketplace ane jobs platform par tamaro data kevi rite sambhale chhe."
+        "description": "ManekHR tamaro data kevi rite collect kare, vapare, ane protect kare: diamond-polishing units mate staff records, attendance, ane salary."
       },
       "erp": {
         "title": "ERP Gopniyata Niti | ManekHR",
-        "description": "ManekHR ERP textile factory ane dukan mate hajri, pagar, GST billing ane production ma tamaro data kevi rite sambhale chhe."
-      }
-    }
-  },
-  "guidelines": {
-    "placeholder": {
-      "title": "Samuday Margdarshika",
-      "body": "Sampoorna {product} samuday margdarshika jaldi ahiya publish thashe."
-    },
-    "meta": {
-      "connect": {
-        "title": "Samuday Margdarshika | ManekHR",
-        "description": "ManekHR Connect mateni samuday margdarshika: tame shu post kari shako, kevi rite vartavu, ane textile trade network ne salamat ane saachu kevi rite raakhe chhe."
+        "description": "ManekHR ERP diamond-polishing units mate attendance, salary, ane staff management ma tamaro data kevi rite sambhale chhe."
       }
     }
   },

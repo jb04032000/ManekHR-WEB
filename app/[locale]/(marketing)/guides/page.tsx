@@ -20,13 +20,13 @@ export async function generateMetadata({
   setRequestLocale(locale);
   const alternates = marketingAlternates('/guides', locale);
   return {
-    title: 'Guides — embroidery, machines & fabric | ManekHR',
+    title: 'Guides — staff, attendance & payroll | ManekHR',
     description:
-      'Practical, no-jargon guides for the textile trade: an embroidery machine buying guide, an embroidery terms glossary, and a saree fabric guide.',
+      'Practical, no-jargon guides for running your diamond-polishing unit: karigar salary structures, attendance rules, role-based permissions, and a monthly payroll checklist.',
     alternates,
     openGraph: {
-      title: 'Guides — embroidery, machines & fabric',
-      description: 'Practical guides for the textile trade.',
+      title: 'Guides — staff, attendance & payroll',
+      description: "Practical guides for running your diamond-polishing unit's staff and payroll.",
       url: alternates.canonical,
     },
   };
@@ -51,8 +51,8 @@ export default function GuidesIndexPage() {
 
       <PageHero
         badge={{ label: 'Guides', tone: 'connect' }}
-        title="Guides for the textile trade."
-        sub="Practical, no-jargon guides on embroidery machines, trade terms, and fabric — written for the people who run the trade."
+        title="Practical guides for running your diamond-polishing unit's staff and payroll."
+        sub="No-jargon guides on karigar pay structures, attendance rules, permissions, and monthly payroll — written for unit owners and their accountants."
       />
 
       <section className="bg-[var(--cr-cream)] py-16 sm:py-20 lg:py-24">

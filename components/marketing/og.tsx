@@ -75,7 +75,7 @@ export function renderOgCard(opts: { eyebrow: string; title: string }): ReactEle
           color: 'rgba(255,255,255,0.72)',
         }}
       >
-        Free for the textile trade · starting from Surat
+        Staff & salary made simple · built in Surat
       </div>
     </div>
   );

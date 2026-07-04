@@ -477,17 +477,17 @@
     },
     "hero": {
       "brand": "ManekHR",
-      "eyebrow": "Textile vyapar ke liye ek platform",
-      "heading": "Apka <em>business</em>, apke control mein.",
-      "subheadingHinglish": "Kaam dhundhein, workshop chalayein, sab ek app mein.",
-      "subheading": "Connect par kharidaar, karigar aur ateliers se milein. ERP par hajiri, salary, GST aur finance chalayein.",
+      "eyebrow": "Staff aur salary, aasaan tareeke se",
+      "heading": "Apki <em>team</em>, apke control mein.",
+      "subheadingHinglish": "Staff sambhalein, salary chalayein, sab ek app mein.",
+      "subheading": "Apke diamond-polishing unit ke staff, hajiri, aur salary ka management ek hi jagah.",
       "features": {
-        "network": "Kaam, kharidaar aur log dhundhein",
-        "attendance": "Hajiri aur salary",
-        "gst": "GST invoice aur finance",
-        "oneAccount": "Connect + ERP ke liye ek account"
+        "network": "Staff aur hajiri ka record",
+        "attendance": "Sahi salary calculation",
+        "gst": "Apki team ke liye role-based access",
+        "oneAccount": "Ek account, apka poora workspace"
       },
-      "trustLine": "Poore Bharat ke textile maliko ka bharosa",
+      "trustLine": "Surat ke diamond-polishing units ka bharosa",
       "newAccountPrompt": "ManekHR par naye hain?",
       "newAccountLink": "Account banayein",
       "trust": "Transit aur storage me encrypted · Bharat me hosted",
@@ -8363,15 +8363,12 @@
   },
   "marketing": {
     "nav": {
-      "connect": "Connect",
       "erp": "ERP",
       "pricing": "Pricing",
       "about": "About",
       "contact": "Contact",
       "login": "Login",
-      "getStarted": "Free mein join karein",
-      "connectTip": "Bechein, hire karein aur network banayein",
-      "erpTip": "Apni factory chalayein"
+      "getStarted": "Free mein join karein"
     },
     "a11y": {
       "skipToContent": "Content par jao",
@@ -8381,175 +8378,159 @@
       "language": "Bhasha chunein"
     },
     "stickyCta": {
-      "label": "Textile trade ke liye free",
+      "label": "Heera polish units ke liye free mein try karein",
       "join": "Free mein join karein",
       "dismiss": "Yeh bar chhupayein"
     },
     "hero": {
-      "eyebrow": "Textile trade ke liye banaya gaya",
-      "headline": "Jahan textile trade jude, beche aur hire kare.",
-      "sub": "Poore textile udyog ke liye ek hi jagah. Supplier aur buyer dhoondhein, skilled log hire karein, aur apna dhandha chalayein, WhatsApp groups, kaagaz aur bikhre hue apps ki mathapachi ke bina.",
+      "eyebrow": "Heera polish units ke liye banaya gaya",
+      "headline": "Staff, attendance aur salary - sab ek hi jagah.",
+      "sub": "Aapke poore heera polish unit ke liye ek hi system. Staff ka record rakhein, attendance track karein, aur sahi salary chalayein, register, WhatsApp aur bikhri hui sheets ki mathapachi ke bina.",
       "ctaPrimary": "Free mein join karein",
       "ctaSecondary": "Kaise kaam karta hai dekhein",
-      "erpQ": "Factory ya dukaan chalate hain?",
+      "erpQ": "ERP ke baare mein aur jaanna hai?",
       "erpCta": "ManekHR ERP dekhein",
-      "trustLine": "Sacche, verified businesses, nakli leads ka dher nahi.",
+      "trustLine": "Surat ke heera polish units sach mein jis tarah kaam karte hain, us par banaya gaya.",
       "chips": {
-        "verified": "ManekHR par verified",
+        "verified": "Unit owners ka bharosa",
         "free": "Shuru karna free",
         "languages": "Gujarati, Hindi, English"
       }
     },
     "pillars": {
       "eyebrow": "Teen cheezein, ek jagah",
-      "title": "Network, marketplace aur hiring, ek saath.",
-      "sub": "Trade roz jo teen kaam karta hai, unke liye ek hi login.",
+      "title": "Staff, attendance aur salary, saath.",
+      "sub": "Har unit roz jo teen kaam karta hai, unke liye ek hi login.",
       "items": {
         "network": {
-          "kicker": "Network",
-          "title": "Dekhein aur dikhayein",
-          "body": "Apna kaam post karein aur apne trade ko follow karein, taaki sahi log dekhein ki aap kya banate hain."
+          "kicker": "Staff",
+          "title": "Har karigar ka ek record",
+          "body": "Har staff member ki profile, documents aur history ek hi jagah rakhein, taaki kuch bhi register mein bikhra na rahe."
         },
         "marketplace": {
-          "kicker": "Marketplace",
-          "title": "Apna kaam bechein",
-          "body": "Free dukaan kholein, apne products dalein, aur buyers ko seedha aap tak pahunchne dein."
+          "kicker": "Attendance",
+          "title": "Roz ki attendance track karein",
+          "body": "Phone, kiosk ya biometric device se attendance darj karein, aur ek nazar mein dekhein kaun present hai."
         },
         "hiring": {
-          "kicker": "Hiring",
-          "title": "Hire karein aur naukri payein",
-          "body": "Jobs post karein ya kaam dhoondhein, aur ek tap mein voice note se apply karein."
+          "kicker": "Salary",
+          "title": "Har baar sahi salary",
+          "body": "Salary attendance se automatically calculate hoti hai, taaki salary ka din kabhi andaaza na rahe."
         }
       }
     },
     "how": {
       "eyebrow": "Kaise kaam karta hai",
-      "title": "Sign-up se pehli inquiry tak teen step mein.",
+      "title": "Sign-up se pehli payslip tak teen step mein.",
       "sub": "Koi setup fee nahi. Koi training nahi. Phone kaafi hai.",
       "steps": {
         "create": {
-          "title": "Apni free profile banayein",
-          "body": "Apne phone number se sign up karein. Apni skills, dukaan ya company page jodein, apni bhasha mein."
+          "title": "Apna free workspace banayein",
+          "body": "Apne phone number se sign up karein aur apna unit jodein, apni bhasha mein."
         },
         "post": {
-          "title": "Jo banate hain ya chahiye woh post karein",
-          "body": "Apni dukaan mein products dalein, feed mein apna kaam dikhayein, job post karein ya bhaav maangein."
+          "title": "Apna staff jodein aur tracking shuru karein",
+          "body": "Apne karigar aur staff jodein, attendance darj karein, aur unki salary ki details set karein."
         },
         "deal": {
-          "title": "Seedhi baat karein aur sauda karein",
-          "body": "Inquiry se private chat shuru hoti hai. Bhaav aur delivery aap dono tay karein, yahan ya WhatsApp par."
+          "title": "Bharose ke saath payroll chalayein",
+          "body": "ManekHR attendance se salary automatically calculate karta hai, taaki har payslip sahi ho."
         }
       }
     },
     "modules": {
-      "eyebrow": "Paanch tools",
-      "title": "Connect ke andar ke paanch tools.",
-      "sub": "Network, marketplace aur hiring paanch jude hue tools par chalte hain, jo ek profile, ek inbox aur ek search share karte hain.",
-      "cta": "ManekHR Connect dekhein",
+      "eyebrow": "Chaar tools",
+      "title": "ManekHR ke andar ke chaar tools.",
+      "sub": "Team, attendance, salary aur roles chaar jude hue tools par chalte hain, jo ek staff record aur ek login share karte hain.",
+      "cta": "ManekHR ERP dekhein",
       "items": {
-        "feed": {
-          "title": "Feed",
-          "desc": "Apne kaam ki photo aur video post karein, taaki poora trade dekhe ki aap kya banate hain."
+        "team": {
+          "title": "Team",
+          "desc": "Har karigar aur staff member ke liye ek staff directory rakhein, jismein profile aur documents ek hi jagah hon."
         },
-        "storefront": {
-          "title": "Dukaan",
-          "desc": "Free online dukaan, jismein aapke products, bhaav aur share karne layak web address."
+        "attendance": {
+          "title": "Attendance",
+          "desc": "Phone, kiosk ya biometric device se roz ki attendance track karein, shift aur leave bhi saath mein."
         },
-        "rfq": {
-          "title": "Quotations",
-          "desc": "Jo chahiye woh post karein aur sellers ke bhaav saath saath compare karein."
+        "salary": {
+          "title": "Salary",
+          "desc": "Daily-wage, monthly ya piece-rate payroll automatically chalayein, payslips aur compliance ke saath."
         },
-        "jobs": {
-          "title": "Jobs",
-          "desc": "Kaam post karein ya dhoondhein. Apply ek tap ya voice note se hota hai."
-        },
-        "chat": {
-          "title": "Chat",
-          "desc": "Photo aur voice note ke saath private messages, jo saude se jude rehte hain."
+        "roles": {
+          "title": "Roles aur Permissions",
+          "desc": "Har vyakti ko bilkul utna hi access dein jitna unhein chahiye, owner se lekar accountant aur supervisor tak."
         }
       }
     },
     "audience": {
       "eyebrow": "Kiske liye hai",
-      "title": "Trade chalane wale logon ke liye banaya.",
-      "sub": "Loom se dukaan ke counter tak, aur trade ko training dene wali sansthaayein bhi.",
+      "title": "Heera polish unit chalane wale logon ke liye banaya.",
+      "sub": "Unit ke owner se lekar shop floor tak, ManekHR aapki team jis tarah kaam karti hai usmein fit baithta hai.",
       "items": {
+        "owner": {
+          "title": "Unit owners",
+          "body": "Ek hi dashboard se apni poori team, attendance aur salary ka kharch dekhein, register ke peeche bhage bina."
+        },
         "karigar": {
-          "title": "Bunkar aur karigar",
-          "body": "Apni skills aur purana kaam dikhayein, dhoondhe jane layak banein, aur jo best karte hain uske liye kaam payein."
+          "title": "Karigar aur staff",
+          "body": "Aapki attendance aur salary sahi tarike se darj hoti hai, ek saaf record ke saath jise aap kabhi bhi check kar sakte hain."
         },
-        "trader": {
-          "title": "Vyapari",
-          "body": "Kapda, dhaaga aur material dhoondhein, zaroorat post karein, aur sahi sellers ke bhaav compare karein."
+        "supervisor": {
+          "title": "Supervisor",
+          "body": "Apni team ki attendance jaldi darj karein, phone se ya floor par ke shared kiosk se."
         },
-        "mill": {
-          "title": "Mill aur factory maalik",
-          "body": "Apne unit ko company page dein, products dalein, aur karigar tatha job-workers dhoondhein."
-        },
-        "jobseeker": {
-          "title": "Naukri dhoondhne wale",
-          "body": "Apni skills se match hoti jobs dekhein aur voice note ya resume se apply karein."
-        },
-        "institute": {
-          "title": "Sansthaayein aur academy",
-          "body": "Free page kholein, apne course dalein, apne students ko sahi workshops mein lagayein, aur poore trade mein pehchaan banayein."
-        },
-        "student": {
-          "title": "Students",
-          "body": "Koi skill seekhein, apni sanstha se confirm hui Trained-at pehchaan dikhayein, aur sahi workshops mein hire hon."
-        },
-        "serviceProvider": {
-          "title": "Service dene wale aur experts",
-          "body": "Consultants, machine maintenance, dyeing aur printing, transport aur bahut kuch. Aap kya karte hain dikhayein, apne rate set karein, aur hire hon."
+        "accountant": {
+          "title": "Accountant aur HR admin",
+          "body": "Bharose ke saath payroll chalayein, attendance, advance aur deduction automatically calculate hote hain."
         }
       }
     },
     "trust": {
       "eyebrow": "Kyon alag hai",
-      "title": "Sacche, verified businesses se baat karein.",
-      "sub": "Nakli leads ka dher nahi. Yahan ka bharosa sacchi activity se aata hai, vaadon se nahi.",
+      "title": "Aisi accuracy jis par bharosa kiya ja sake.",
+      "sub": "Koi kalpanik number nahi, koi jhoote vaade nahi. Yahan ka bharosa isse aata hai ki product sach mein kaise kaam karta hai.",
       "items": {
         "verified": {
-          "title": "ManekHR par verified",
-          "body": "Businesses khud ko verify kar sakte hain, taaki aap jaanein ki deal ki doosri taraf kaun hai."
+          "title": "Design se hi accurate",
+          "body": "Salary seedhe attendance se calculate hoti hai, taaki har payslip sach mein kaam kiye gaye dinon se match kare."
         },
         "erpBacked": {
-          "title": "Ek sacche business ka sahara",
-          "body": "Company page ManekHR ERP se jud sakta hai, jis system par woh business roz chalta hai."
+          "title": "Ek system, bikhre hue tools nahi",
+          "body": "Staff record, attendance aur salary ek hi workspace mein rehte hain, taaki register aur sheets ke beech kuch kho na jaaye."
         },
-        "ratings": {
-          "title": "Sacche deal ke baad hi rating",
-          "body": "Star rating un buyers se aati hai jinhone sach mein seller se deal ki hai, anaami reviews se nahi."
+        "accuracy": {
+          "title": "Ek saaf audit trail",
+          "body": "Attendance ya salary mein har badlaav darj hota hai, taaki aap hamesha dekh sakein ki kya badla aur kisne badla."
         },
         "direct": {
-          "title": "Seedha, beech mein koi dalaal nahi",
-          "body": "Aap doosre business se khud deal karein. ManekHR koi commission nahi leta aur aapki deal ke beech mein nahi aata."
+          "title": "Har staff member ke liye aasaan",
+          "body": "Attendance darj karna aur payslip check karna ek tap mein hota hai, Gujarati, Hindi ya English mein."
         },
-        "broker": {
-          "title": "Dalaal sachcha track record banata hai",
-          "body": "Dalaal kharidaar aur bechne wale ki pehchaan karata hai. Dono paksh pehchaan ki pushti karte hain, isse verified record banta hai. Review niji rehte hain aur sirf aadyaksharon dikhate hain, kabhi review dene wale ka naam nahi."
+        "roles": {
+          "title": "Har role ke liye sahi access",
+          "body": "Owners, accountants aur supervisors har koi sirf apne role ke mutabik dekhte hain, detailed permissions ke saath."
         }
       }
     },
     "pricingStory": {
       "eyebrow": "Pricing",
-      "title": "Istemaal ke liye free. Sirf zyada pahunch ke liye pay karein.",
-      "body": "Profile, dukaan, product listing, jobs, quotations aur chat free hain. Paisa tabhi lagta hai jab aap khud chahein: post, product ya job ko zyada logon tak pahunchane ke liye boost karein. ManekHR aapke saude se kabhi hissa nahi leta.",
+      "title": "Simple, transparent pricing jo aapki team ke saath badhti hai.",
+      "body": "Staff record aur attendance se free mein shuru karein. Aapka unit badhe waise salary aur aur jodein. Ek clear subscription, kisi bhi cheez par commission nahi, koi chhupa hua charge nahi.",
       "points": {
-        "free": "Profile, dukaan, job, bhaav aur chat: free",
-        "boost": "Boost optional aur prepaid hai, budget aap tay karein",
-        "commission": "Aapke saude par koi commission nahi, kabhi nahi"
+        "free": "Staff record aur attendance: shuru karna free",
+        "noCard": "Try karne ke liye card ki zarurat nahi",
+        "cancel": "Simple monthly pricing, kabhi bhi cancel karein"
       },
       "cta": "Pricing dekhein"
     },
     "erp": {
-      "eyebrow": "ManekHR se aur",
-      "title": "Factory ya dukaan chalate hain? Uske liye bhi ERP hai.",
-      "sub": "ManekHR ERP aapki team, attendance, salary, billing aur machines sambhalta hai. Ek hi login, alag product, usi trade ke liye banaya gaya.",
+      "eyebrow": "Ek product, chaar tools",
+      "title": "Team, attendance, salary aur roles, ek hi ERP mein.",
+      "sub": "ManekHR ERP aapka staff record, attendance aur salary sambhalta hai, har role ke liye sahi access ke saath. Surat ke heera polish units ke liye banaya gaya.",
       "chips": {
-        "team": "Team aur salary",
-        "billing": "Billing aur hisaab",
-        "machines": "Machine aur production",
+        "team": "Team",
+        "attendance": "Attendance",
+        "salary": "Salary",
         "roles": "Roles aur permissions"
       },
       "cta": "ManekHR ERP ke baare mein jaanein",
@@ -8557,98 +8538,90 @@
     },
     "faq": {
       "eyebrow": "Aam sawaal",
-      "headline": "Buyer aur seller jo sawaal poochhte hain.",
+      "headline": "Unit owners jo sawaal poochhte hain.",
       "items": {
         "free": {
-          "q": "Kya ManekHR Connect free hai?",
-          "a": "Haan. Join karna, products dalna, job post karna, bhaav maangna aur chat karna sab free hai. Aaj sirf boost karne ke paise lagte hain, aur woh optional hai."
+          "q": "Kya ManekHR free hai?",
+          "a": "Shuru karne ke liye, haan. Staff record, attendance aur salary tracking free mein try ki ja sakti hai, card ki zarurat nahi. Aapki team badhe waise paid plans aur dete hain."
         },
-        "sell": {
-          "q": "Main kya daal ya bech sakta hoon?",
-          "a": "Trade jo banata hai ya jiski zaroorat hoti hai woh sab: saree, kapda, dhaaga, embroidery aur zari kaam, job work, machinery aur taiyaar maal. Listing mein photo, chhota video, bhaav, minimum order aur delivery time hota hai."
+        "setup": {
+          "q": "Set up karne mein kitna time lagta hai?",
+          "a": "Bas kuch minute. Apne phone number se sign up karein, apna unit jodein, aur staff jodna shuru karein. Koi lambi training ya onboarding ki zarurat nahi."
         },
-        "commission": {
-          "q": "Kya ManekHR commission leta hai?",
-          "a": "Nahi. ManekHR dono ko jodta hai aur woh seedha sauda karte hain. Yeh paisa ya order nahi sambhalta, aur aapke saude se kabhi hissa nahi leta."
+        "pricing": {
+          "q": "Pricing kaise kaam karti hai?",
+          "a": "ManekHR ek simple monthly subscription hai, jo aapki team ke size par depend karta hai. Kisi bhi cheez par commission nahi hai aur koi chhupa hua charge nahi hai."
         },
-        "enquiries": {
-          "q": "Buyer mujh tak kaise pahunchte hain?",
-          "a": "Buyer aapka product ya dukaan khol kar Contact seller dabate hain. Isse aapke saath private chat shuru hoti hai. Aap apni dukaan ka link WhatsApp par bhi share kar sakte hain, aur aapke public pages search mein dikhte hain."
+        "attendance": {
+          "q": "Attendance kaise track hoti hai?",
+          "a": "Attendance phone, shared kiosk, ya biometric device se darj ki ja sakti hai. Supervisors apni poori team ki attendance ek hi jagah se darj kar sakte hain."
         },
-        "quotes": {
-          "q": "Quotations kaise kaam karte hain?",
-          "a": "Buyer quantity, material, budget aur kab tak chahiye ke saath zaroorat post karta hai. Seller bhaav aur delivery time ke saath jawab deta hai. Buyer bhaav saath saath compare kar ke ek accept karta hai, jisse private chat khulti hai."
+        "payroll": {
+          "q": "Salary kaise calculate hoti hai?",
+          "a": "Aapka staff daily-wage, monthly, ya piece-rate par ho, salary attendance se automatically calculate hoti hai. Advance aur deduction bhi usi jagah sambhale jaate hain."
         },
         "languages": {
           "q": "Kin bhashaon mein kaam karta hai?",
           "a": "English, Gujarati, aur English akshar mein likhi Hindi ya Gujarati. Bhasha ek baar chunein aur kabhi bhi badlein."
         },
-        "gst": {
-          "q": "Join karne ke liye GST number chahiye?",
-          "a": "Nahi. Phone number se sign up hota hai. Karigar, naukri dhoondhne wale aur chhoti dukaanein GST ke bina join kar sakti hain."
+        "compliance": {
+          "q": "Kya yeh statutory compliance sambhalta hai?",
+          "a": "Haan. Payroll mein PF, ESI, PT aur TDS jaise statutory deductions support kiye jaate hain, taaki aapki payslips compliance mein rahein."
         },
-        "work": {
-          "q": "Kya main ispar kaam dhoondh sakta hoon?",
-          "a": "Haan. Job board aapki skills se match hoti jagahein aage dikhata hai. Aap likh kar, resume jod kar ya voice note record kar ke apply kar sakte hain."
+        "roles": {
+          "q": "Kya main control kar sakta hoon ki kaun kya dekhe?",
+          "a": "Haan. ManekHR role-based access use karta hai, taaki owners, accountants aur supervisors har koi sirf apne role se related information aur actions hi dekhte hain."
         },
-        "institutes": {
-          "q": "Kya sansthaayein course list kar sakti hain?",
-          "a": "Haan. Training dene wali sanstha ya academy free page khol kar apne course list kar sakti hai, aur seekhne wale bina checkout enquire kar ke enrol karte hain. Sansthaayein apne padhaaye students ke liye Trained-at pehchaan confirm bhi kar sakti hain."
+        "data": {
+          "q": "Kya mera data surakshit hai?",
+          "a": "Haan. Aapka data aapka hi rehta hai, hum kabhi bechte nahi, aur attendance ya salary mein har badlaav ek saaf audit trail mein darj hota hai."
         },
-        "services": {
-          "q": "Kya main sirf product nahi, services bhi de sakta hoon?",
-          "a": "Haan. Consultants, machine repair aur maintenance, dyeing aur printing, transport aur logistics, contractors aur job-work karne wale apni di jaane wali services rates ke saath list karte hain. Kharidaar app ke andar service type aur location se browse karte hain aur hire karne ke liye niji chat shuru karte hain."
+        "support": {
+          "q": "Agar madad chahiye ho to?",
+          "a": "Hamari team email aur WhatsApp par pahunchi ja sakti hai, aur hum aapka unit pehle din se sahi tarike se set up karne mein madad karte hain."
         },
-        "broker": {
-          "q": "Dalaal feature kaise kaam karta hai?",
-          "a": "Dalaal kharidaar aur bechne wale ki pehchaan karata hai, aur dono paksh pehchaan ki pushti karte hain, isse koi akela shrey nahi le sakta. Samay ke saath dalaal verified track record banata hai. Review niji hote hain aur sirf aadyaksharon dikhate hain, kabhi review dene wale ka naam nahi, aur dalaal use badal ya chhupa nahi sakta."
+        "switch": {
+          "q": "Kya main kaagaz ya sheets se switch kar sakta hoon?",
+          "a": "Haan. Zyaadatar units apni maujooda staff list aur attendance records jod kar shuru karte hain, aur ek hi din mein pura set up ho jaate hain."
         }
       }
     },
     "finalCta": {
       "eyebrow": "Aaj hi join karein",
-      "headline": "Poore trade mein dikhna shuru karein.",
-      "sub": "Profile aur dukaan banane mein kuch minute lagte hain. Free, apni bhasha mein, aapke paas wale phone par.",
+      "headline": "Apni team ek hi app se chalayein.",
+      "sub": "Staff record, attendance aur salary set up karne mein kuch minute lagte hain. Shuru karna free, apni bhasha mein, aapke paas wale phone par.",
       "ctaPrimary": "Free mein join karein",
       "ctaSecondary": "Humse baat karein",
       "erp": {
         "eyebrow": "Aaj hi shuru karein",
         "headline": "Apna poora unit ek app se chalayein.",
-        "sub": "Attendance, salary, billing aur machine ek hi jagah. Sabhi features ke saath free trial se shuru karein. Card ki zarurat nahi.",
+        "sub": "Staff record, attendance aur salary ek hi jagah. Sabhi features ke saath free trial se shuru karein. Card ki zarurat nahi.",
         "ctaPrimary": "Free trial shuru karein"
       }
     },
     "footer": {
-      "tagline": "Textile trade ka apna network.",
+      "tagline": "Heera polish units ke liye banaya gaya staff aur salary.",
       "madeIn": "India mein banaya gaya",
       "emailLabel": "Email",
       "rights": "© {year} ManekHR. Saare rights reserved.",
-      "trust": "Aapka data aapka hi rehta hai - hum kabhi bechte nahi. Use karna free, aapke sauda par koi commission nahi.",
+      "trust": "Aapka data aapka hi rehta hai - hum kabhi bechte nahi. Simple pricing, kisi bhi cheez par commission nahi.",
       "legal": {
         "terms": "Sharten",
         "privacy": "Gopniyata",
-        "guidelines": "Community Guidelines",
         "grievance": "Shikayat"
       },
       "cols": {
-        "connect": "Connect",
-        "erp": "ERP",
+        "erp": "ManekHR",
         "company": "Company"
       },
       "links": {
-        "connectOverview": "Overview",
-        "marketplace": "Marketplace",
-        "services": "Services",
-        "jobs": "Jobs",
         "erpOverview": "Overview",
-        "erpTeam": "Team aur hajiri",
-        "erpFinance": "Finance aur GST",
-        "erpMachines": "Machines",
-        "erpRoles": "Roles aur access",
+        "erpTeam": "Team",
+        "erpSalary": "Salary",
+        "erpRoles": "Roles aur permissions",
         "about": "Hamare baare mein",
         "pricing": "Pricing",
         "contact": "Contact",
-        "network": "Network",
         "guides": "Guides"
       },
       "social": {
@@ -8656,394 +8629,20 @@
       }
     },
     "pages": {
-      "fabricSuppliers": {
-        "meta": {
-          "title": "Surat ke fabric suppliers - grey, georgette & more, ManekHR par",
-          "description": "Surat ke verified fabric suppliers dhoondo - grey, georgette, chiffon, crepe aur more. Storefronts dekho, quotes compare karo, aur WhatsApp par seedha deal karo. Join free."
-        },
-        "hero": {
-          "badge": "Fabric suppliers",
-          "title": "Fabric suppliers dhoondo, seedha khareedo.",
-          "sub": "Surat ke verified fabric aur grey-goods suppliers tak pahuncho, unka stock aur rate dekho, jo chahiye wo post karo, aur deal WhatsApp par close karo - koi bichauliya nahi, koi commission nahi.",
-          "ctaPrimary": "Free join karo",
-          "ctaSecondary": "Marketplace dekho"
-        },
-        "intro": {
-          "eyebrow": "Units aur traders ke liye",
-          "title": "Base fabric aur grey goods seedha source karo.",
-          "sub": "Embroidery units, traders aur brands asli, verified suppliers se khareedte hain - anonymous leads nahi.",
-          "points": {
-            "p1": "Real stock photos, rate aur minimum order ke saath suppliers dekho.",
-            "p2": "Requirement post karo aur suppliers ke quotes side by side compare karo.",
-            "p3": "Verified businesses, ratings sirf asli deal ke baad.",
-            "p4": "WhatsApp par seedha chat aur deal - Gujarati, Hindi ya English mein."
-          },
-          "lead": "Finished products chahiye?",
-          "cta": "Poora textile marketplace dekho"
-        }
-      },
-      "dressMaterialWholesalers": {
-        "meta": {
-          "title": "Surat ke dress material wholesalers - ManekHR",
-          "description": "Surat ke verified dress material wholesalers aur manufacturers dhoondo. Per-dozen ranges dekho, quotes compare karo, aur WhatsApp par seedha deal karo. Join free, apni bhasha mein."
-        },
-        "hero": {
-          "badge": "Dress material",
-          "title": "Dress material wholesalers dhoondo, seedha deal.",
-          "sub": "Surat ke verified dress-material wholesalers aur manufacturers tak pahuncho, unke catalogue dekho, jo chahiye wo post karo, aur deal WhatsApp par close karo - koi bichauliya nahi, koi commission nahi.",
-          "ctaPrimary": "Free join karo",
-          "ctaSecondary": "Marketplace dekho"
-        },
-        "intro": {
-          "eyebrow": "Retailers aur resellers ke liye",
-          "title": "Per-dozen dress material, seedha source.",
-          "sub": "Boutiques, retailers aur online resellers asli, verified wholesalers se khareedte hain - fake leads ki deewar nahi.",
-          "points": {
-            "p1": "Real photos, per-dozen rate aur minimum order ke saath catalogue dekho.",
-            "p2": "Requirement post karo aur wholesalers ke quotes side by side compare karo.",
-            "p3": "Verified businesses, ratings sirf asli deal ke baad.",
-            "p4": "WhatsApp par seedha chat aur deal - Gujarati, Hindi ya English mein."
-          },
-          "lead": "Sarees ya job-work chahiye?",
-          "cta": "Poora textile marketplace dekho"
-        }
-      },
-      "zariManufacturers": {
-        "meta": {
-          "title": "Surat ke zari manufacturers & embroidery units - ManekHR",
-          "description": "Surat ke verified zari manufacturers, embroidery aur job-work units dhoondo. Storefronts dekho, requirements post karo, quotes compare karo, aur WhatsApp par seedha deal karo. Join free."
-        },
-        "hero": {
-          "badge": "Zari manufacturers",
-          "title": "Zari manufacturers aur embroidery units dhoondo.",
-          "sub": "Surat ke verified zari aur embroidery manufacturers tak pahuncho, unka kaam aur storefronts dekho, jo chahiye wo post karo, aur deal WhatsApp par close karo - koi bichauliya nahi, koi commission nahi.",
-          "ctaPrimary": "Free join karo",
-          "ctaSecondary": "Marketplace dekho"
-        },
-        "intro": {
-          "eyebrow": "Buyers aur brands ke liye",
-          "title": "Zari aur embroidery sourcing, asaan.",
-          "sub": "Designers, brands aur traders asli, verified zari aur embroidery units dhoondte hain - self-claimed listings nahi.",
-          "points": {
-            "p1": "Har storefront par real work photos, machine capacity aur minimum order dekho.",
-            "p2": "Job-work requirement post karo aur units ke quotes side by side compare karo.",
-            "p3": "Verified businesses, ratings sirf asli deal ke baad.",
-            "p4": "WhatsApp par seedha chat aur deal - Gujarati, Hindi ya English mein."
-          },
-          "lead": "Aur textile suppliers chahiye?",
-          "cta": "Poora textile marketplace dekho"
-        }
-      },
-      "embroideryJobWork": {
-        "meta": {
-          "title": "Surat mein embroidery job work - units dhoondo ManekHR par",
-          "description": "Surat ke verified embroidery job-work units dhoondo - multi-head, aari, zardozi aur hand work. Apna job post karo, quotes compare karo, aur WhatsApp par seedha deal karo. Join free."
-        },
-        "hero": {
-          "badge": "Embroidery job work",
-          "title": "Verified units se embroidery job work karwao.",
-          "sub": "Apna embroidery job-work post karo - multi-head, aari, zardozi ya hand work - Surat ke verified units tak pahuncho, quotes compare karo, aur WhatsApp par close karo. Koi bichauliya nahi, koi commission nahi.",
-          "ctaPrimary": "Free join karo",
-          "ctaSecondary": "Marketplace dekho"
-        },
-        "intro": {
-          "eyebrow": "Traders aur brands ke liye",
-          "title": "Per-metre aur per-piece job-work, sorted.",
-          "sub": "Apna fabric verified units ko bhejo aur clean, time-par embroidery pao - anonymous bichauliye nahi.",
-          "points": {
-            "p1": "Quantity, work type aur by-when date ke saath job-work need post karo.",
-            "p2": "Units ke quotes aur lead time side by side compare karo.",
-            "p3": "Verified businesses, ratings sirf asli deal ke baad.",
-            "p4": "Sample run bhejo aur WhatsApp par seedha finalise karo."
-          },
-          "lead": "Products chahiye, job-work nahi?",
-          "cta": "Poora textile marketplace dekho"
-        }
-      },
-      "sareeWholesalers": {
-        "meta": {
-          "title": "Surat ke saree wholesalers - ManekHR par seedha connect",
-          "description": "Surat ke verified saree wholesalers aur manufacturers dhoondo. Storefronts dekho, quotes compare karo, aur WhatsApp par seedha deal karo. Join karna free, apni bhasha mein."
-        },
-        "hero": {
-          "badge": "Saree wholesalers",
-          "title": "Saree wholesalers dhoondo, seedha deal karo.",
-          "sub": "Surat ke verified saree wholesalers aur manufacturers tak pahuncho, unke storefronts dekho, jo chahiye wo post karo, aur deal WhatsApp par close karo - koi bichauliya nahi, koi commission nahi.",
-          "ctaPrimary": "Free join karo",
-          "ctaSecondary": "Marketplace dekho"
-        },
-        "intro": {
-          "eyebrow": "Buyers aur retailers ke liye",
-          "title": "Surat ke saree trade se seedha rishta.",
-          "sub": "Boutiques, retailers aur resellers asli, verified wholesalers se sarees aur dress material source karte hain - fake leads ki deewar nahi.",
-          "points": {
-            "p1": "Real product photos, price aur minimum order ke saath storefronts dekho.",
-            "p2": "Requirement post karo aur wholesalers ke quotes side by side compare karo.",
-            "p3": "Verified businesses dekho, ratings sirf asli deal ke baad.",
-            "p4": "WhatsApp par seedha chat aur deal - Gujarati, Hindi ya English mein."
-          },
-          "lead": "Sarees se zyada chahiye?",
-          "cta": "Poora textile marketplace dekho"
-        }
-      },
-      "connect": {
-        "meta": {
-          "title": "Textile trade ke liye free B2B network aur marketplace",
-          "description": "India ke liye free online textile bazaar: dukaan kholein, video ke saath products dalein, zaroorat post kar ke bhaav compare karein, karigar hire karein, aur buyer-seller se seedhi chat karein."
-        },
-        "hero": {
-          "badge": "ManekHR Connect",
-          "title": "Dikhein. Apna kaam bechein. Apne log hire karein.",
-          "sub": "Connect textile trade ka free network aur marketplace hai. Feed mein apna kaam post karein, online dukaan kholein, bhaav compare karein, jobs post karein, aur buyer-seller se private chat mein baat karein.",
-          "ctaPrimary": "Free mein join karein",
-          "ctaSecondary": "Andar kya hai dekhein"
-        },
-        "how": {
-          "eyebrow": "Kaise kaam karta hai",
-          "title": "Teen step mein chaalu.",
-          "sub": "Zyadatar members minute mein taiyaar ho jaate hain.",
-          "steps": {
-            "profile": {
-              "title": "Profile ya page banayein",
-              "body": "Phone se free sign up karein. Apni profile, company page ya dukaan minute mein taiyaar karein."
-            },
-            "post": {
-              "title": "Dalein ya maangein",
-              "body": "Products jodein, apna kaam post karein, job kholein, ya bhaav ke liye zaroorat post karein."
-            },
-            "deal": {
-              "title": "Chat karein aur sauda karein",
-              "body": "Har inquiry ek hi inbox mein aati hai. Aap seedha baat karein aur jahan theek lage wahan sauda poora karein, WhatsApp samet."
-            }
-          }
-        },
-        "modules": {
-          "eyebrow": "Modules",
-          "title": "Connect ke andar kya hai.",
-          "sub": "Paanch jude hue tools, jo ek profile, ek inbox aur ek search istemaal karte hain.",
-          "feed": {
-            "kicker": "Feed",
-            "title": "Trade ko dikhayein ki aap kya banate hain.",
-            "body": "Apne kaam ki photo, video, documents aur voice note post karein. Aapki feed mein aap jinhein follow karte hain woh log aur aapke trade tatha district ki nayi khoj dono milte hain, isliye accha kaam aapke contacts se aage pahunchta hai. Kam dikhayein options se aap apni feed khud banate hain.",
-            "b1": "Photo, video, documents aur voice note",
-            "b2": "Apne trade aur district ke logon tak pahunchein",
-            "b3": "React, comment, repost aur save karein"
-          },
-          "storefront": {
-            "kicker": "Dukaan aur marketplace",
-            "title": "Aapki dukaan, poore trade ke liye khuli.",
-            "body": "Photo, chhota video, bhaav, minimum order aur delivery time ke saath products dalein. Unhein apne brand ki dukaan ke neeche rakhein, jiska apna web address hota hai. Buyer marketplace mein ghoomta hai, aapka product kholta hai, aur Contact seller dabakar aapke saath private chat shuru karta hai.",
-            "b1": "Photo aur chhote video ke saath free listing",
-            "b2": "Apni dukaan ka link, WhatsApp par share karna aasaan",
-            "b3": "Purane buyers ke star rating",
-            "b4": "Inquiry private chat ke roop mein aati hai",
-            "note": "ManekHR kabhi paisa ya order nahi leta. Aap saamne wale se seedha deal karte hain."
-          },
-          "rfq": {
-            "kicker": "Quotations",
-            "title": "Jo chahiye post karein. Wapas aaye bhaav compare karein.",
-            "body": "Buyer zaroorat post karta hai: quantity, material, district, budget aur kab tak chahiye. Seller bhaav, delivery time, sample aur kya kya shaamil hai, ye sab ke saath structured quote bhejta hai. Buyer bhaav saath saath compare karta hai, shortlist karta hai aur ek accept karta hai. Accept karte hi sauda poora karne ke liye private chat khul jaati hai.",
-            "b1": "Ek zaroorat kai sellers tak pahunchti hai",
-            "b2": "Quotes structured hote hain aur compare karna aasaan",
-            "b3": "Accept kiye quote se private chat khulti hai"
-          },
-          "jobs": {
-            "kicker": "Jobs",
-            "title": "Karigar hire karein. Kaam dhoondhein.",
-            "body": "Workshop apna zaroori kaam post karta hai. Karigar aise board par dekhte hain jo unki skills se match hoti jobs aage dikhata hai, aur likh kar, resume jod kar ya voice note record kar ke apply karte hain. Maalik ek hi screen se shortlist kar ke accept karta hai. Job apne naam se ya company page ke naam se post ki ja sakti hai.",
-            "b1": "Skill match se sahi jobs aage aati hain",
-            "b2": "Voice note se apply karein, likhne ki zaroorat nahi",
-            "b3": "Ek hi jagah shortlist karein aur accept karein"
-          },
-          "chat": {
-            "kicker": "Chat",
-            "title": "Har baatcheet, apne context ke saath.",
-            "body": "Photo aur voice note ke saath private messages, turant pahunchte hain. Chat product ki inquiry, job ki application ya accept kiye quote se judi reh sakti hai, isliye baat kis baare mein hai yeh hamesha pata rehta hai. Block, report aur chupchaap chalne wala anti-spam anjaane messages ko control mein rakhte hain.",
-            "b1": "Turant pahunchein, photo aur voice note ke saath",
-            "b2": "Product, job ya quote se judi",
-            "b3": "Block aur report controls andar hi hain"
-          }
-        },
-        "ctaBand": {
-          "shop": {
-            "title": "Aapke products ko dukaan ki khidki milni chahiye.",
-            "cta": "Apni free dukaan kholein"
-          },
-          "hire": {
-            "title": "Is season hire kar rahe hain?",
-            "cta": "Free mein job post karein"
-          }
-        },
-        "boost": {
-          "eyebrow": "Paise kis cheez ke lagte hain",
-          "title": "Boost ke baare mein ek imaandaar paragraph.",
-          "body": "Upar ka sab kuch free hai. Zyada pahunch chahiye to aap post, product ya job boost kar sakte hain, aur woh poore Connect mein saaf Sponsored label ke saath dikhta hai. Payment prepaid wallet se hoti hai, jahan ek rupaye ka ek credit milta hai. Budget aap tay karte hain, boost usse zyada kabhi kharch nahi karta, aur budget khatam hone ya samay poora hone par apne aap ruk jaata hai. Zyada limits wale paid plans baad mein aayenge, free tier to rahega hi."
-        },
-        "trust": {
-          "eyebrow": "Bharosa aur safety",
-          "title": "Aise banaya ki aap kis ke saath deal kar rahe hain, pata rahe.",
-          "sub": "Bharosa asli kaam se banta hai, sirf vaadon se nahi.",
-          "items": {
-            "erpLinked": {
-              "title": "Asli dhandhe ka bharosa",
-              "body": "Company page ko ManekHR ERP workspace se joda ja sakta hai, jis system par woh dhandha roz chalta hai. Jude hue pages par ek dikhne wala bharosa-mark hota hai."
-            },
-            "ratings": {
-              "title": "Purane buyers ki rating",
-              "body": "Seller ke paas pehle vyavhaar kar chuke buyers ke star rating hote hain, jo unke products aur dukaan par dikhte hain."
-            },
-            "direct": {
-              "title": "Seedha sauda, beech wale ke bina",
-              "body": "Aap saamne wale dhandhe se seedhi baat karte hain aur bhaav aur delivery aap dono tay karte hain. ManekHR aapke saude ke beech mein nahi aata."
-            },
-            "safety": {
-              "title": "Control aapke haath mein",
-              "body": "Kisi ko bhi ek tap mein block aur report karein. Chupchaap chalne wala anti-spam chat mein anjaane messages ko control mein rakhta hai."
-            },
-            "broker": {
-              "title": "Verified record wale dalaal",
-              "body": "Dalaal kharidaar aur bechne wale ki pehchaan karata hai, dono paksh use confirm karte hain, aur verified track record banta hai. Review niji rehte hain aur sirf aadyaksharon dikhate hain, kabhi review dene wale ka naam nahi."
-            }
-          }
-        },
-        "builtFor": {
-          "eyebrow": "Trade ke liye banaya gaya",
-          "title": "Trade asal mein jaise chalta hai uske liye banaya gaya.",
-          "sub": "India ki textile trade ke liye banaya gaya, karigar se lekar factory owner tak.",
-          "items": {
-            "whatsapp": {
-              "title": "WhatsApp ke liye taiyaar",
-              "body": "Har public page ek tap mein WhatsApp par share hota hai, isliye sauda wahan poora ho jahan trade pehle se baat karta hai."
-            },
-            "languages": {
-              "title": "Aapki bhasha bolta hai",
-              "body": "English, Gujarati, aur English akshar mein Hindi ya Gujarati. Har koi apni bhasha chunta hai."
-            },
-            "mobile": {
-              "title": "Pehle phone",
-              "body": "Sab kuch aapke jeb wale phone par chalta hai, aur zaroorat ho to laptop par bhi."
-            },
-            "visual": {
-              "title": "Shabdon se zyada kaam",
-              "body": "Yahan photo, video aur voice note trade chalate hain. Likhna optional hai, job ki application ke liye bhi."
-            },
-            "free": {
-              "title": "Dikhna free hai",
-              "body": "Profile, listing, jobs aur quotations free hain. Aaj sirf boost hi paid hai."
-            },
-            "services": {
-              "title": "Service dein, hire hon",
-              "body": "Consultants, maintenance aur repair, dyeing aur printing, transport, contractors aur job-workers apni profile par di jaane wali services aur rate dikhate hain, aur mil kar hire hote hain."
-            }
-          }
-        },
-        "institutes": {
-          "eyebrow": "Sansthaayein aur students",
-          "title": "Trade sikhayein. Uske liye hire hon.",
-          "sub": "Training sansthaayein apne course dikhati hain aur students ko lagati hain; students apni sanstha se confirm hui pehchaan saath rakhte hain.",
-          "items": {
-            "courses": {
-              "title": "Apne course list karein",
-              "body": "Free page kholein aur jo bhi course aap sikhate hain wo list karein. Seekhne wale dekhte hain aur bina checkout enquire kar ke enrol karte hain, to aap seedhe baat karte hain."
-            },
-            "placement": {
-              "title": "Apne students ko lagayein",
-              "body": "Apne students ab kahaan kaam karte hain ye dikhayein, aur trained haath dhoondhte workshops se hiring leads payein."
-            },
-            "credential": {
-              "title": "Trained-at pehchaan saath rakhein",
-              "body": "Student kya seekha ye dikhata hai, jise uski sanstha confirm karti hai, taaki hire karte waqt maalik us par bharosa kar sake."
-            }
-          }
-        },
-        "services": {
-          "eyebrow": "Services aur experts",
-          "title": "Service dein. Uske liye mil jaayein.",
-          "sub": "Consultants se lekar machine repair, dyeing, transport aur job-work tak, trade jo karta hai wo list karta hai aur kharidaar type aur location se dhoondhta hai.",
-          "items": {
-            "list": {
-              "title": "Aap jo services dete hain wo list karein",
-              "body": "Consulting aur maintenance se lekar dyeing, printing, transport aur job-work tak, aap jo services dete hain wo rate ke saath seedhe apni profile par jodein."
-            },
-            "found": {
-              "title": "Mil jaayein aur hire hon",
-              "body": "Jinhe service chahiye wo buyer aur supplier aapko hire karne ke liye niji chat shuru karte hain. Aap seedha vyavhaar karte hain, beech wale ke bina."
-            },
-            "browse": {
-              "title": "Type aur jagah se dhoondhein",
-              "body": "App ke andar services ko type aur location se filter karein aur apne paas ki sahi madad dhoondhein, taaki ek search asal mein kaam karne wale logon tak pahunche."
-            },
-            "track": {
-              "title": "Track record banayein",
-              "body": "Purane buyers ki star rating aapki service par rehti hai, isliye achcha kaam aage badhta hai aur naya buyer kise hire kar raha hai us par bharosa kar sakta hai."
-            }
-          }
-        },
-        "faq": {
-          "eyebrow": "Aam sawaal",
-          "title": "Connect ke baare mein log jo poochhte hain.",
-          "items": {
-            "free": {
-              "q": "Kya Connect free hai?",
-              "a": "Haan. Profile, dukaan, listing, feed, jobs, quotations aur chat free hain. Zyada pahunch ke liye boost karna hi aaj paise wali cheez hai."
-            },
-            "boost": {
-              "q": "Boost ke kitne paise lagte hain?",
-              "a": "Aap tay karein. Boost prepaid wallet se hota hai, jahan ek rupaye ka ek credit milta hai. Budget aap tay karte hain, woh usse zyada kharch nahi karta, aur budget ya samay poora hone par ruk jaata hai."
-            },
-            "commission": {
-              "q": "Kya ManekHR commission leta hai ya payment sambhalta hai?",
-              "a": "Nahi. Buyer aur seller yahan ek doosre ko dhoondhte hain aur seedha vyavhaar karte hain. ManekHR order ya payment process nahi karta, aur koi hissa nahi leta."
-            },
-            "storefront": {
-              "q": "Meri dukaan mein kya shaamil hai?",
-              "a": "Photo aur chhote video, bhaav, minimum order aur delivery time ke saath aapke products, aapke brand ke neeche rakhe, apne web address ke saath. Link WhatsApp par share karein ya kahin bhi chhaapein."
-            },
-            "rfq": {
-              "q": "Quotations kaise kaam karte hain?",
-              "a": "Quantity, material, budget aur kab tak chahiye ke saath apni zaroorat post karein. Sellers structured quotes bhejte hain. Saath saath compare karein aur jo theek lage accept karein. Isse private chat khulti hai."
-            },
-            "voice": {
-              "q": "Kya koi likhe bina meri job ke liye apply kar sakta hai?",
-              "a": "Haan. Karigar voice note record kar ke ya resume jod kar apply kar sakta hai. Aap apni applicant list mein use sunte ya padhte hain aur wahin se shortlist karte hain."
-            },
-            "languages": {
-              "q": "Connect kin bhashaon ko support karta hai?",
-              "a": "English, Gujarati, aur English akshar mein likhi Hindi ya Gujarati. Har koi apni bhasha chunta hai aur kabhi bhi badal sakta hai."
-            },
-            "safety": {
-              "q": "Agar koi mujhe spam kare to?",
-              "a": "Ek tap mein block karein aur account report karein. Shaant anti-spam chat mein anjaan messages ko seemit rakhta hai, aur rate card jaisi sensitive cheezein sirf sign in kiye dekhne wale ko dikhti hain."
-            },
-            "trainedAt": {
-              "q": "Trained-at pehchaan kya hai?",
-              "a": "Ye profile par ek verified line hai jo batati hai ki vyakti ne kahaan training li. Student course jodta hai, sanstha use confirm karti hai, aur hire karte waqt maalik us par bharosa kar sakta hai. Jisne koi skill seekhi ho use uske liye dhoondhe jaane mein ye madad karti hai."
-            },
-            "services": {
-              "q": "Kya main sirf product nahi, services list kar sakta hoon?",
-              "a": "Haan. Consultants, machine repair aur maintenance, dyeing aur printing, transport aur logistics, contractors aur job-work karne wale apni di jaane wali services rates ke saath list karte hain. Kharidaar app ke andar service type aur location se browse karte hain aur hire karne ke liye niji chat shuru karte hain."
-            },
-            "broker": {
-              "q": "Dalaal ki pehchaan kaise kaam karti hai?",
-              "a": "Dalaal kharidaar aur bechne wale ki pehchaan karata hai, aur dono paksh pehchaan ki pushti karte hain, isse koi akela shrey nahi le sakta. Samay ke saath dalaal verified track record banata hai. Review niji hote hain aur sirf aadyaksharon dikhate hain, kabhi review dene wale ka naam nahi, aur dalaal use badal ya chhupa nahi sakta."
-            }
-          }
-        }
-      },
       "pricing": {
         "meta": {
-          "title": "Pricing: ManekHR ERP plans aur free Connect network",
-          "description": "Aapke poore textile business ke liye simple, transparent pricing. ManekHR ERP free mein ya full-access trial ke saath shuru karein, bina card. ManekHR Connect istemaal ke liye free hai."
+          "title": "Pricing: ManekHR ERP plans",
+          "description": "Diamond-polishing units ke liye simple, transparent pricing. Bina card ke ManekHR ERP free me ya full-access trial par shuru karein."
         },
         "hero": {
           "eyebrow": "Pricing",
           "title": "Aapke poore business ke liye simple pricing.",
-          "sub": "Apni factory ManekHR ERP par chalayein. Free mein shuru karein ya full-access trial lein, bina card. Aur ManekHR Connect network hamesha istemaal ke liye free hai."
+          "sub": "Apna unit ManekHR ERP par chalayein. Bina card ke free me ya full-access trial par shuru karein."
         },
         "erpHeading": {
           "eyebrow": "ManekHR ERP",
           "title": "Aapki team ke saath badhte plans",
-          "sub": "Haazri, salary, machine aur production ek hi system mein. Free mein shuru karein aur jaise badhein waise tools add karein. Koi setup fee nahi, kabhi bhi cancel karein."
+          "sub": "Attendance, salary, aur staff management ek hi system me. Free me shuru karein aur zaroorat ke hisaab se tools jodein. Koi setup fee nahi, kabhi bhi cancel karein."
         },
         "trial": {
           "eyebrow": "Free trial",
@@ -9061,39 +8660,7 @@
           "a3": "GST-ready invoice aur billing",
           "a4": "Encrypted aur DPDP-compliant"
         },
-        "connectHeading": {
-          "eyebrow": "ManekHR Connect",
-          "title": "Network istemaal ke liye free hai",
-          "sub": "Poore textile vyapaar mein dikhein, hire karein aur saude karein. Hamesha free. Sirf zyada pahunch chahiye tab hi optional boost ke liye pay karein."
-        },
-        "cards": {
-          "free": {
-            "name": "Free",
-            "price": "₹0",
-            "period": "hamesha ke liye",
-            "desc": "Dikhne aur vyavhaar karne ke liye jo chahiye sab kuch.",
-            "cta": "Free mein join karein",
-            "f1": "Profile, company page aur dukaan",
-            "f2": "Photo aur chhote video ke saath product listing",
-            "f3": "Job board: job post karein aur apply karein",
-            "f4": "Quotations: zaroorat post karein aur bhaav bhejein",
-            "f5": "Photo aur voice note ke saath private chat",
-            "f6": "English, Gujarati aur English akshar mein Hindi ya Gujarati"
-          },
-          "boosts": {
-            "name": "Boost",
-            "price": "Jitna istemaal utna pay",
-            "period": "prepaid wallet se",
-            "desc": "Post, product ya job ke liye optional extra pahunch.",
-            "cta": "Free mein join karein, boost baad mein",
-            "f1": "Ek rupaye ka ek credit, koi pack nahi",
-            "f2": "Budget aur samay aap tay karein",
-            "f3": "Hamesha Sponsored label ke saath",
-            "f4": "Budget ya samay poora hone par rukta hai",
-            "f5": "Koi subscription ki zaroorat nahi"
-          }
-        },
-        "note": "Free tier hamesha free rehta hai. Sirf zyada pahunch chahiye tab boost karein. Ek rupaye mein ek credit, aur koi subscription ki zaroorat nahi.",
+        "note": "Staff records aur attendance ke saath free me shuru karein. Aapki team aur zaroorat badhne par kabhi bhi upgrade karein.",
         "faq": {
           "eyebrow": "FAQ",
           "title": "Pricing ke sawaalon ke jawab",
@@ -9118,10 +8685,6 @@
               "q": "Kya main baad mein upgrade ya downgrade kar sakta hoon?",
               "a": "Haan. Jaise aapki team badhe ya zaroorat badle, kabhi bhi plan badlein. Aapka data aur history saath chalta hai."
             },
-            "connectFree": {
-              "q": "Kya ManekHR Connect sach mein free hai?",
-              "a": "Haan. Connect network (aapki profile, storefront, jobs aur quotations) aapke saudon par bina commission istemaal ke liye free hai. Sirf optional kharch zyada pahunch ke liye post boost karna hai, jo per-use pay hota hai."
-            },
             "cancel": {
               "q": "Agar main cancel karoon to kya hota hai?",
               "a": "Aap bina lock-in kabhi bhi cancel kar sakte hain. Apni paid avadhi ke ant tak aapko access rehta hai, aur hamari retention policy ke anusaar aapka data uplabdh rehta hai."
@@ -9131,42 +8694,42 @@
       },
       "erp": {
         "meta": {
-          "title": "ERP - apni textile factory ya shop chalayein",
-          "description": "Apni textile factory ya workshop ke liye attendance, payroll, billing, machines aur production manage karein. GST-ready. Free mein shuru."
+          "title": "ManekHR ERP - heera polish units ke liye staff, attendance aur salary",
+          "description": "Apne heera polish unit ke liye staff record, attendance aur salary manage karein. Simple, accurate aur compliant. Free mein shuru."
         },
         "hero": {
           "badge": "ManekHR ERP",
-          "title": "Apni factory ya shop chalayein - bina paper, WhatsApp ya guesswork ke.",
-          "sub": "ERP aapki team, paisa aur machines ko ek system mein laata hai - textile factories aur workshops ke asli kaam ke hisaab se banaya gaya.",
+          "title": "Apna unit chalayein - bina paper, WhatsApp ya guesswork ke.",
+          "sub": "ManekHR aapka staff record, attendance aur salary ko ek system mein laata hai - Surat ke heera polish units ke asli kaam ke hisaab se banaya gaya.",
           "ctaPrimary": "Shuru karein",
-          "ctaSecondary": "ManekHR Connect explore karein",
+          "ctaSecondary": "Aur jaanein",
           "ctaPricing": "Pricing dekhein"
         },
         "features": {
           "eyebrow": "Aap kya chala sakte hain",
-          "title": "Aapka poora operation, end to end.",
-          "sub": "Attendance ke pehle punch se lekar mahine ke ant ke saaf profit figure tak - ERP kaam, paisa aur machines, sab cover karta hai.",
+          "title": "Aapki poori team, ek saaf system.",
+          "sub": "Attendance ke pehle punch se lekar ek accurate monthly payslip tak - ERP aapka staff record, attendance aur salary cover karta hai, har role ke liye sahi access ke saath.",
           "items": {
             "team": {
-              "title": "Team aur Payroll",
-              "desc": "Attendance track karein aur har cycle apne logon ko sahi se pay karein.",
-              "b1": "Phone, kiosk ya biometric device se attendance",
-              "b2": "Daily-wage, monthly ya piece-rate salaries - sab supported",
-              "b3": "Advances, deductions aur karigar records ek hi profile mein"
+              "title": "Team aur Staff Record",
+              "desc": "Har karigar aur staff member ki profile, documents aur history ek hi jagah rakhein.",
+              "b1": "Contact, ID aur role ki details ke saath staff profiles",
+              "b2": "Har vyakti ke liye documents aur history ek hi jagah",
+              "b3": "Aapke poore unit mein search ki ja sakne wali directory"
             },
-            "finance": {
-              "title": "Finance aur Billing",
-              "desc": "Invoice banayein, expenses record karein, aur hamesha jaanein ki aap kahan khade hain.",
-              "b1": "GST-ready invoices, quotations aur delivery challans",
-              "b2": "Outstanding aur payment history ke saath party ledgers",
-              "b3": "Kisi bhi waqt saaf profit-and-loss aur reports"
+            "attendance": {
+              "title": "Attendance",
+              "desc": "Phone, kiosk ya biometric device se attendance track karein, har din.",
+              "b1": "Phone, kiosk ya biometric device se roz ki attendance",
+              "b2": "Shift scheduling aur missed-punch regularisation",
+              "b3": "Leave aur holiday tracking bhi shaamil"
             },
-            "machines": {
-              "title": "Machine aur Production",
-              "desc": "Har machine ka hisaab rakhein aur har shift maapein.",
-              "b1": "Capacity aur assigned workers ke saath machine register",
-              "b2": "Har shift ka production output aur downtime log karein",
-              "b3": "Maintenance schedule karein aur asli utilisation track karein"
+            "salary": {
+              "title": "Salary aur Payroll",
+              "desc": "Koi manual calculation ke bina, har cycle apne logon ko sahi se pay karein.",
+              "b1": "Daily-wage, monthly ya piece-rate salaries - sab supported",
+              "b2": "Advances, deductions aur payslips automatically sambhale jaate hain",
+              "b3": "PF, ESI, PT, TDS jaisa statutory compliance shaamil"
             },
             "roles": {
               "title": "Roles aur Permissions",
@@ -9290,7 +8853,7 @@
       "about": {
         "meta": {
           "title": "ManekHR ke bare me: yah kya hai aur kiske liye hai",
-          "description": "ManekHR India ke textile vyapar ke liye ek free B2B network, marketplace aur jobs platform hai, jiske niche ERP tools hain. Vyapari, karigar, dalal, mill aur institute ke liye banaya gaya, Gujarati, Hindi aur English me."
+          "description": "ManekHR Surat ke heera polish units ke liye ek staff aur salary management system hai. Unit owners, karigar, supervisors aur accountants ke liye banaya gaya, Gujarati, Hindi aur English me."
         },
         "hero": {
           "eyebrow": "ManekHR ke bare me",
@@ -9300,59 +8863,51 @@
         },
         "answer": {
           "heading": "Sankshep me.",
-          "body": "ManekHR India ke textile vyapar ke liye ek free B2B network, marketplace aur jobs platform hai, jiske niche ERP tools (hajiri, salary, GST billing, utpadan) hain. Yah kapde ke vyapari, karigar, dalal, mill aur training institute ke liye banaya gaya hai, aur Gujarati, Hindi aur English me chalta hai."
+          "body": "ManekHR Surat ke heera polish units ke liye banaya gaya staff aur salary management system hai. Yah staff ka record rakhta hai, attendance track karta hai, aur sahi salary chalata hai, owners, accountants aur supervisors ke liye role-based access ke saath. Yah Gujarati, Hindi aur English me chalta hai."
         },
         "audience": {
           "eyebrow": "Kiske liye hai",
-          "heading": "Poore textile vyapar ke liye banaya gaya.",
-          "sub": "Udyog ki har bhumika ke liye ek professional ghar, koi aam business app nahi.",
+          "heading": "Poore heera polish unit ke liye banaya gaya.",
+          "sub": "Unit ki har bhumika ke liye ek professional ghar, koi aam business app nahi.",
           "items": {
-            "trader": {
-              "title": "Vyapari aur thok vikreta",
-              "body": "Free dukaan kholein, product list karein, puchhtachh ka jawab dein aur kharidar se seedha vyapar karein."
+            "owner": {
+              "title": "Unit owners",
+              "body": "Ek hi dashboard se apni poori team, attendance aur salary ka kharch dekhein, register ke peeche bhage bina."
             },
             "karigar": {
-              "title": "Karigar aur kaamgaar",
-              "body": "Apni kushalta dikhayein, kaam dhoondhein aur zubani sifarish ke bina naukri payein."
+              "title": "Karigar aur staff",
+              "body": "Aapki attendance aur salary sahi tarike se darj hoti hai, ek saaf record ke saath jise aap kabhi bhi check kar sakte hain."
             },
-            "dalal": {
-              "title": "Dalal aur broker",
-              "body": "Kharidar aur vikreta ki pehchaan karayein, aur dono pakshon ki pushti waala bharosemand record banayein."
+            "supervisor": {
+              "title": "Supervisor",
+              "body": "Apni team ki attendance jaldi darj karein, phone se ya floor par ke shared kiosk se."
             },
-            "mill": {
-              "title": "Mill aur nirmaata",
-              "body": "Kshamta list karein, job work aur thok order lein, aur ERP tools se floor chalayein."
-            },
-            "institute": {
-              "title": "Training institute",
-              "body": "Institute page chalayein, course list karein, aur aapne jin students ko training di hai unki pushti karein."
-            },
-            "serviceProvider": {
-              "title": "Seva dene waale",
-              "body": "Machine repair, dyeing, printing, testing ya transport jaisi sevaayein list karein aur dhoondhe jaayein."
+            "accountant": {
+              "title": "Accountant aur HR admin",
+              "body": "Bharose ke saath payroll chalayein, attendance, advance aur deduction automatically calculate hote hain."
             }
           }
         },
         "doItems": {
           "eyebrow": "Aap kya kar sakte hain",
           "heading": "Chaar cheezein, ek platform.",
-          "sub": "Network, bikri, bharti aur apna kaamkaaj ek hi jagah par chalayein.",
+          "sub": "Apna staff, attendance, salary aur access, sab ek hi jagah sambhalein.",
           "items": {
-            "network": {
-              "title": "Network (Connect)",
-              "body": "Professional profile banayein, vyapar ko follow karein aur sacche, verified textile vyapar se seedha sampark karein."
+            "team": {
+              "title": "Team",
+              "body": "Har karigar aur staff member ki profile, documents aur history ek hi jagah rakhein."
             },
-            "marketplace": {
-              "title": "Marketplace",
-              "body": "Product aur seva list karein, vyapar browse karein, puchhtachh bhejein aur commission ke bina rate maangein."
+            "attendance": {
+              "title": "Attendance",
+              "body": "Phone, kiosk ya biometric device se roz ki attendance track karein, shift aur leave bhi saath mein."
             },
-            "jobs": {
-              "title": "Jobs",
-              "body": "Textile value chain me karigar se manager tak naukri post karein ya apply karein."
+            "salary": {
+              "title": "Salary",
+              "body": "Daily-wage, monthly ya piece-rate payroll automatically chalayein, payslips aur compliance ke saath."
             },
-            "erp": {
-              "title": "ERP tools",
-              "body": "Apni factory ya dukaan ke liye hajiri, salary, GST billing aur utpadan chalayein, free me shuru."
+            "roles": {
+              "title": "Roles aur Permissions",
+              "body": "Har vyakti ko bilkul utna hi access dein jitna unhein chahiye, owner se lekar accountant aur supervisor tak."
             }
           }
         },
@@ -9362,7 +8917,7 @@
         },
         "free": {
           "heading": "Free me shuru.",
-          "body": "Judna, profile banana, product aur seva list karna, naukri post karna, rate maangna aur chat karna, sab free hai. Optional boosting aur paid ERP plan zaroorat par zyada dete hain, aur ManekHR aapke sauda par koi commission nahi leta."
+          "body": "Judna, apna staff jodna, attendance track karna, aur apna pehla payroll cycle chalana, sab free mein try kiya ja sakta hai. Aapka unit badhe waise paid plans aur dete hain, aur ManekHR kabhi kisi bhi cheez par commission nahi leta."
         },
         "faq": {
           "eyebrow": "Aam sawaal",
@@ -9370,19 +8925,19 @@
           "items": {
             "what": {
               "q": "ManekHR kya hai?",
-              "a": "ManekHR India ke textile vyapar ke liye ek free B2B network, marketplace aur jobs platform hai, jiske niche ERP tools (hajiri, salary, GST billing, utpadan) hain. Yah poore vyapar ko ek professional ghar me laata hai."
+              "a": "ManekHR Surat ke heera polish units ke liye banaya gaya staff aur salary management system hai. Yah staff ka record rakhta hai, attendance track karta hai, aur har staff member ke liye role-based access ke saath sahi salary chalata hai."
             },
             "who": {
               "q": "ManekHR kiske liye hai?",
-              "a": "ManekHR kapde ke vyapari, karigar, dalal, mill aur nirmaata, training institute aur unke students, aur udyogbhar ke seva dene waalon ke liye banaya gaya hai."
+              "a": "ManekHR heera polish units ke owners, karigar aur staff, supervisors, aur payroll chalane wale accountants ya HR admins ke liye banaya gaya hai."
             },
             "free": {
               "q": "Kya ManekHR free hai?",
-              "a": "Haan. Judna, profile banana, product aur seva list karna, naukri post karna, rate maangna aur chat karna, sab free hai. Optional boosting aur paid ERP plan ka kharch hota hai, aur ManekHR aapke sauda par koi commission nahi leta."
+              "a": "Shuru karne ke liye, haan. Staff record, attendance aur salary tracking free mein try ki ja sakti hai, card ki zarurat nahi. Aapki team badhe waise paid plans aur dete hain, aur ManekHR kabhi kisi bhi cheez par commission nahi leta."
             },
             "do": {
               "q": "ManekHR par main kya kar sakta hoon?",
-              "a": "Aap vyapar se network kar sakte hain, free dukaan kholkar product ya seva bech sakte hain, naukri post aur apply kar sakte hain, aur hajiri, salary aur GST billing jaise ERP tools se apni factory ya dukaan chala sakte hain."
+              "a": "Aap ek staff directory rakh sakte hain, phone, kiosk ya biometric device se attendance track kar sakte hain, sahi payroll chala sakte hain, aur role-based access se control kar sakte hain ki kaun kya dekhe ya badle."
             },
             "languages": {
               "q": "ManekHR kaun si bhashaayein support karta hai?",
@@ -9460,401 +9015,22 @@
           "mailSubject": "{name} ki taraf se ManekHR enquiry",
           "mailSubjectFallback": "ek website visitor"
         }
-      },
-      "marketplace": {
-        "meta": {
-          "title": "Suppliers, buyers aur wholesalers ke liye textile marketplace",
-          "description": "ManekHR Connect par verified textile suppliers aur buyers dhoondhein. Inquiries aur quote requests bhejein, koi middleman nahi, deal WhatsApp par close karein. Free mein shuru."
-        },
-        "hero": {
-          "badge": "ManekHR Connect",
-          "title": "Textile trade ka marketplace.",
-          "sub": "Poori textile trade mein verified suppliers aur buyers dhoondhein. Inquiry ya quote request bhejein, seedhe deal karein, aur WhatsApp par close karein. Asli businesses se genuine leads, koi middleman nahi, koi commission nahi.",
-          "ctaPrimary": "Free mein shuru karein",
-          "ctaSecondary": "Connect par wapas"
-        },
-        "features": {
-          "eyebrow": "Aap kya kar sakte hain",
-          "title": "Khareedne aur bechne ke liye sab kuch.",
-          "sub": "Textile trade jaise sach mein deal karti hai, vaise banaya gaya.",
-          "items": {
-            "discover": {
-              "title": "Verified businesses dhoondhein",
-              "desc": "Sahi supplier ya buyer, jaldi dhoondhein.",
-              "b1": "Category, location aur price ke hisaab se search karein",
-              "b2": "Verified businesses, kayi ERP-backed",
-              "b3": "Faltu noise filter kar dein"
-            },
-            "list": {
-              "title": "Apne products list karein",
-              "desc": "Apna catalog poori trade ke saamne rakhein.",
-              "b1": "Photos, specs aur pricing add karein",
-              "b2": "Products ko collections mein organise karein",
-              "b3": "List karna free"
-            },
-            "enquire": {
-              "title": "Inquiries bhejein aur receive karein",
-              "desc": "Asli businesses se seedhe baat karein.",
-              "b1": "Ek tap mein pricing ke liye inquiry karein",
-              "b2": "Saari inquiries ek inbox mein manage karein",
-              "b3": "Lead dozens sellers ko nahi bheji jaati"
-            },
-            "rfq": {
-              "title": "Quote requests post karein",
-              "desc": "Trade ko bataayein ki aapko kya chahiye.",
-              "b1": "Quantity, target price aur timeline share karein",
-              "b2": "Matched suppliers aapko quotes bhejte hain",
-              "b3": "Compare karein aur chunein, koi obligation nahi"
-            },
-            "storefront": {
-              "title": "Apna khud ka storefront",
-              "desc": "Aapke products ke liye ek shareable shop.",
-              "b1": "Apna store link aur QR code",
-              "b2": "Ek tap mein WhatsApp par share karein",
-              "b3": "QR ko labels aur cards par lagayein"
-            },
-            "whatsapp": {
-              "title": "WhatsApp par close karein",
-              "desc": "Deal usi tarah finish karein jaise hamesha karte aaye hain.",
-              "b1": "Koi bhi inquiry WhatsApp par le jaayein",
-              "b2": "Photos aur videos share karein",
-              "b3": "Price aur delivery seedhe tay karein"
-            }
-          }
-        },
-        "categories": {
-          "eyebrow": "Categories",
-          "title": "Textile trade ka har kona.",
-          "sub": "Yarn se lekar finished goods tak, poori supply chain mein list aur dhoondhein.",
-          "items": {
-            "weaving": "Weaving aur power-loom",
-            "dyeing": "Dyeing",
-            "printing": "Printing",
-            "embroidery": "Embroidery aur zari",
-            "jobwork": "Job work",
-            "rawmaterial": "Raw material",
-            "machinery": "Machinery",
-            "finished": "Finished goods"
-          },
-          "servicesLead": "Product nahi, service dene wala dhundh rahe hain?",
-          "servicesCta": "Prakar aur sthan se services browse karo"
-        },
-        "popular": {
-          "title": "Popular searches"
-        },
-        "faq": {
-          "eyebrow": "Aam sawaal",
-          "title": "Marketplace ke sawaal.",
-          "items": {
-            "cost": {
-              "q": "Kya list karne ka koi kharcha hai?",
-              "a": "Nahi. Aap products list kar sakte hain, inquiries bhej sakte hain, aur quote requests free post kar sakte hain. Paid plans tab zyada reach dete hain jab aap chahein."
-            },
-            "genuine": {
-              "q": "Kya leads genuine hain?",
-              "a": "Haan. Aap verified businesses se deal karte hain, aur kayi apna operations bhi ManekHR ERP par chalate hain. Inquiries purane marketplaces ki tarah dozens sellers ko nahi bheji jaati."
-            },
-            "payment": {
-              "q": "Kya ManekHR payment handle karta hai?",
-              "a": "Nahi. Aap price aur delivery doosre business ke saath seedhe tay karte hain aur WhatsApp par close karte hain. ManekHR na commission leta hai na aapki deal ke beech mein baithta hai."
-            },
-            "categories": {
-              "q": "Main kaunse products list kar sakta hoon?",
-              "a": "Textile trade ka kuch bhi: weaving aur power-loom, dyeing, printing, embroidery aur zari, job work, raw material, machinery, aur finished goods."
-            }
-          }
-        }
-      },
-      "jobs": {
-        "meta": {
-          "title": "Textile trade ke liye jobs aur hiring",
-          "description": "ManekHR Connect par skilled log hire karein ya textile trade mein apni agli job dhoondhein. Verified employers, daily-wage se monthly tak roles, apni profile se apply karein. Free mein shuru."
-        },
-        "hero": {
-          "badge": "ManekHR Connect",
-          "title": "Textile trade ke liye hiring aur jobs.",
-          "sub": "Skilled log hire karein, ya apni agli job dhoondhein. Verified employers, asli kaam dikhati profiles, aur daily-wage, piece-rate ya monthly roles, sab ek jagah.",
-          "ctaPrimary": "Free mein shuru karein",
-          "ctaSecondary": "Connect par wapas"
-        },
-        "features": {
-          "eyebrow": "Aap kya kar sakte hain",
-          "title": "Hiring aur job-hunting, trade ke liye banaya gaya.",
-          "sub": "Chahe aap hire kar rahe hon ya dhoondh rahe hon, ye trade jaise kaam karti hai vaise chalta hai.",
-          "items": {
-            "post": {
-              "title": "Job post karein",
-              "desc": "Minutes mein poori trade tak pahunchein.",
-              "b1": "Role, skills, location aur pay set karein",
-              "b2": "Daily-wage, piece-rate ya monthly",
-              "b3": "Post karna free"
-            },
-            "apply": {
-              "title": "Apni profile se apply karein",
-              "desc": "Apna kaam aapke liye bole.",
-              "b1": "Work-sample profile ke saath apply karein",
-              "b2": "Lambe forms ya resumes ki zaroorat nahi",
-              "b3": "Ek tap mein apply karein"
-            },
-            "verified": {
-              "title": "Verified employers",
-              "desc": "Aisi hiring jo surakshit lage.",
-              "b1": "Employers verified businesses hain",
-              "b2": "Kayi ERP-backed aur active hain",
-              "b3": "Kam fake postings"
-            },
-            "inbox": {
-              "title": "Applicants ke liye ek inbox",
-              "desc": "Sabko ek jagah track karein.",
-              "b1": "Applications aate hi dekhein",
-              "b2": "Candidates ko shortlist aur message karein",
-              "b3": "Kisi group mein candidate phir kabhi na khoyein"
-            },
-            "alerts": {
-              "title": "Job alerts",
-              "desc": "Sahi roles ke baare mein pehle jaanein.",
-              "b1": "Aapke fit hone wali roles ke alerts paayein",
-              "b2": "Skill, location aur type ke hisaab se",
-              "b3": "Usi phone par jo aap pehle se rakhte hain"
-            },
-            "whatsapp": {
-              "title": "WhatsApp par baat karein",
-              "desc": "Aasaan tareeke se sampark karein.",
-              "b1": "Koi bhi chat WhatsApp par le jaayein",
-              "b2": "Voice note ya photo bhejein",
-              "b3": "Call ya trial seedhe arrange karein"
-            }
-          }
-        },
-        "types": {
-          "eyebrow": "Employment types",
-          "title": "Trade jis-jis tarah hire karti hai.",
-          "sub": "Sirf monthly salary nahi. Textile trade sach mein jo roles deti hai.",
-          "items": {
-            "fulltime": "Full-time monthly",
-            "parttime": "Part-time",
-            "piecerate": "Contract aur piece-rate",
-            "dailywage": "Daily-wage",
-            "apprenticeship": "Apprenticeship"
-          }
-        },
-        "faq": {
-          "eyebrow": "Aam sawaal",
-          "title": "Hiring aur jobs ke sawaal.",
-          "items": {
-            "cost": {
-              "q": "Kya job post karna free hai?",
-              "a": "Haan. Aap jobs post kar sakte hain aur applications free receive kar sakte hain. Paid plans zyada reach aur premium hiring tools dete hain."
-            },
-            "verified": {
-              "q": "Kya employers verified hote hain?",
-              "a": "Haan. Employers verified businesses hain, aur kayi apna operations bhi ManekHR ERP par chalate hain, isliye hiring moderated aur surakshit lagti hai."
-            },
-            "types": {
-              "q": "Kya main daily-wage ya piece-rate hire kar sakta hoon?",
-              "a": "Haan. Full-time monthly, part-time, contract aur piece-rate, daily-wage, aur apprenticeship roles sab supported hain."
-            },
-            "apply": {
-              "q": "Candidates kaise apply karte hain?",
-              "a": "Candidates ek tap mein apni asli kaam dikhati profile se apply karte hain. Koi lambe forms nahi, aur baatcheet WhatsApp par jaari rah sakti hai."
-            }
-          }
-        }
-      },
-      "services": {
-        "meta": {
-          "title": "Textile services aur experts: consultant, machine repair, dyeing, transport",
-          "description": "Trade mein textile service dene wale aur experts dhoondhein: consultant, machine repair aur maintenance, dyeing aur printing job-work, kapde ka transport aur logistics, aur bahut kuch. Jo service aap dete hain use list karein, kharidaron aur suppliers se dhoondhe jaayein, aur seedha sauda karein. Shuru karne ke liye free."
-        },
-        "hero": {
-          "badge": "ManekHR Connect",
-          "title": "Textile trade ki services aur experts.",
-          "sub": "Consultant, machine repair karne wala, dyeing ya printing job-work unit, kapde ka transporter, ya koi bhi textile service dene wale ko hire karein. Jo service aap dete hain use apne rates ke saath list karein, kharidaron aur suppliers se dhoondhe jaayein, aur seedha sauda karein. Koi bichauliya nahi, koi commission nahi.",
-          "ctaPrimary": "Free mein shuru karein",
-          "ctaSecondary": "Connect par wapas"
-        },
-        "features": {
-          "eyebrow": "Aap kya kar sakte hain",
-          "title": "Service list karein, ya sahi haath dhoondhein.",
-          "sub": "Textile udyog chalane wali service-trade ke liye banaya gaya.",
-          "items": {
-            "list": {
-              "title": "Jo service aap dete hain use list karein",
-              "desc": "Apni service poore trade ke saamne rakhein.",
-              "b1": "Service ka prakaar chunein aur apne rates jodein",
-              "b2": "Apna experience aur purana kaam dikhayein",
-              "b3": "List karne ke liye free"
-            },
-            "discover": {
-              "title": "Kharidaron aur suppliers se dhoondhe jaayein",
-              "desc": "Trade ko zaroorat pade tab dhoondhe ja sakein.",
-              "b1": "Search mein aur service ke prakaar se dikhein",
-              "b2": "Verified business, kai ERP-aadharit",
-              "b3": "Poochhtaachh aapke saath private chat kholti hai"
-            },
-            "browse": {
-              "title": "Prakaar aur sthaan se browse karein",
-              "desc": "Sahi service dene wala tezi se dhoondhein.",
-              "b1": "Service ke prakaar aur district se filter karein",
-              "b2": "Service dene walon ko aas-paas rakh kar tulna karein",
-              "b3": "Dozanon logon ko chhidke gaye leads nahi"
-            },
-            "track": {
-              "title": "Verified track record banayein",
-              "desc": "Imaandaari se bharosa kamayein.",
-              "b1": "Rating sirf asli sauda hone ke baad",
-              "b2": "Aapka asli kaam dikhati profile",
-              "b3": "Apna company page aur ERP jodein"
-            }
-          }
-        },
-        "categories": {
-          "eyebrow": "Service ke prakaar",
-          "title": "Textile trade ko zaroori har service.",
-          "sub": "Consulting se job-work tak, poore udyog mein list karein aur dhoondhein.",
-          "items": {
-            "consulting": "Consulting",
-            "maintenance": "Maintenance",
-            "machine-repair": "Machine repair",
-            "testing": "Testing aur quality",
-            "installation": "Installation",
-            "transport": "Transport",
-            "logistics": "Logistics",
-            "contractor": "Contractor aur majdoori",
-            "dyeing": "Dyeing",
-            "printing": "Printing",
-            "job-work": "Job work",
-            "embroidery": "Kadhai aur zari"
-          },
-          "browseLead": "Abhi kaun service de raha hai ye dekhna chahte hain?",
-          "browseCta": "App mein prakaar aur sthaan se services browse karein"
-        },
-        "faq": {
-          "eyebrow": "Aam sawaal",
-          "title": "Services ke sawaal.",
-          "items": {
-            "cost": {
-              "q": "Service list karne ka koi kharch hai?",
-              "a": "Nahi. Jo service aap dete hain use list kar sakte hain, apne rates set kar sakte hain, aur poochhtaachh free mein paa sakte hain. Paid plan aap chahein tab zyada pahunch jodte hain."
-            },
-            "find": {
-              "q": "Main service dene wala kaise dhoondhu?",
-              "a": "App mein service ke prakaar aur sthaan se services browse karein, ya search se service dene wale ka page kholein. Har service ka apna public page hota hai, isliye aap use search engine ya share ki gayi link se bhi seedha pahunch sakte hain."
-            },
-            "payment": {
-              "q": "Kya ManekHR payment sambhalta hai?",
-              "a": "Nahi. Aap daam aur kaam service dene wale ke saath seedha tay karte hain aur WhatsApp par sauda poora kar sakte hain. ManekHR koi commission nahi leta aur aapke saude ke beech mein nahi baithta."
-            },
-            "types": {
-              "q": "Main kaun si services list kar sakta hu?",
-              "a": "Textile trade ko zaroori kuch bhi: consulting, maintenance, machine repair, testing aur quality, installation, transport, logistics, contractor aur majdoori, dyeing, printing, job work, aur kadhai aur zari."
-            }
-          }
-        }
-      },
-      "network": {
-        "meta": {
-          "title": "Surat aur India ke liye textile networking | ManekHR",
-          "description": "India ke textile vyapar se network karein. Surat aur poore India me vyapari, karigar, dalal, mill, institute aur seva dene waalon se judein. Judna free, Gujarati, Hindi aur English me."
-        },
-        "hero": {
-          "badge": "ManekHR Connect",
-          "title": "Surat aur India ka textile networking platform.",
-          "sub": "Textile vyaparbhar me vyapari, karigar, dalal, mill, institute aur seva dene waalon ko dhoondhein aur judein. Profile banayein, sacche verified vyapar tak pahunchein aur seedha sauda karein. Judna free.",
-          "ctaPrimary": "Free me judein",
-          "ctaSecondary": "Connect dekhein"
-        },
-        "answer": {
-          "heading": "Textile network kya hai?",
-          "body": "Textile network wah jagah hai jahan vyapar ke sabhi, vyapari aur karigar se lekar dalal, mill, institute aur seva dene waale, ek doosre ko dhoondh sakein aur vyapar kar sakein. Surat aur poore India me yah networking WhatsApp group, market aur zubani baat par chalta tha. ManekHR ise online laata hai: aap professional profile banayein, seva ke prakar aur sthaan ke hisaab se dhoondhe jaayein, aur commission ke bina verified vyapar tak seedha pahunchein.",
-          "lead": "Kaise chalta hai dekhein",
-          "connectLink": "ManekHR Connect",
-          "homeLink": "ya home page se shuru karein."
-        },
-        "connects": {
-          "eyebrow": "Kisko jodta hai",
-          "title": "Poora vyapar, ek network me.",
-          "sub": "Textile udyog ki har bhumika ko yahan jagah hai.",
-          "items": {
-            "traders": {
-              "title": "Vyapari aur thok vikreta",
-              "body": "Kharidar aur supplier tak seedha pahunchein aur apna vyapar daayra badhayein."
-            },
-            "karigars": {
-              "title": "Karigar aur kaamgaar",
-              "body": "Apni kushalta dikhayein, unit se judein aur niyamit kaam dhoondhein."
-            },
-            "dalals": {
-              "title": "Dalal aur broker",
-              "body": "Kharidar aur vikreta ki pehchaan karayein aur bharosemand record banayein."
-            },
-            "mills": {
-              "title": "Mill aur nirmaata",
-              "body": "Kshamta list karein, job work lein aur thok kharidaron se judein."
-            },
-            "institutes": {
-              "title": "Training institute",
-              "body": "Students aur unit tak pahunchein, aur aap jinhein training dete hain unhein lagaayein."
-            },
-            "serviceProviders": {
-              "title": "Seva dene waale",
-              "body": "Machine repair, dyeing, printing, transport aur zyada dein."
-            }
-          }
-        },
-        "features": {
-          "eyebrow": "Kaise chalta hai",
-          "title": "Network karne ke teen kadam.",
-          "sub": "Minaton me vyapar network me judein.",
-          "items": {
-            "connect": {
-              "title": "Apni profile banayein",
-              "body": "Ek free profile banayein jo vyapar me aapki bhumika, kaam aur sthaan dikhaaye."
-            },
-            "discover": {
-              "title": "Dhoondhe jaayein",
-              "body": "Vyapar ko zaroorat par bhumika, seva ke prakar aur zile ke hisaab se search me aayein."
-            },
-            "deal": {
-              "title": "Seedha sauda karein",
-              "body": "Puchhtachh private chat kholti hai, taaki aap kisi bicholiye fee ke bina seedhi baat aur sauda kar sakein."
-            }
-          }
-        },
-        "faq": {
-          "eyebrow": "Aam sawaal",
-          "title": "Networking ke sawaal.",
-          "items": {
-            "how": {
-              "q": "Surat me textile vyapar se main kaise network karoon?",
-              "a": "ManekHR me judein, vyapar me apni bhumika ke liye free profile banayein, aur aap seva ke prakar aur sthaan ke hisaab se dhoondhe jaane lagte hain. Aap Surat aur poore India me vyapari, karigar, dalal, mill, institute aur seva dene waalon ko dhoondh sakte hain, aur phir baat shuru karne ke liye unhein seedha message bhej sakte hain."
-            },
-            "free": {
-              "q": "Kya textile network free hai?",
-              "a": "Haan. Judna, profile banana, dhoondhe jaana aur chat karna, sab free hai. Optional boosting zaroorat par zyada pahunch deti hai, aur ManekHR aapke sauda par koi commission nahi leta."
-            },
-            "who": {
-              "q": "Kaun jud sakta hai?",
-              "a": "Textile vyapar me koi bhi: vyapari aur thok vikreta, karigar aur kaamgaar, dalal aur broker, mill aur nirmaata, training institute aur students, aur seva dene waale. Network Gujarati, Hindi aur English me chalta hai."
-            }
-          }
-        }
       }
     },
     "industry": {
-      "caption": "India ka textile udyog ek nazar me",
+      "caption": "Surat ke diamond-polishing industry par ek nazar",
       "items": {
         "workforce": {
-          "stat": "4.5 crore+",
-          "label": "log India ke textile aur kapde ke vyapar me kaam karte hain, jo kheti ke baad doosre number par hai."
+          "stat": "Laakhon log",
+          "label": "Surat ke diamond-polishing units me kaam karte hain, India ke sabse bade skilled workforce me se ek."
         },
         "value": {
-          "stat": "Laakhon crore",
-          "label": "saalana utpadan, aur India duniya ke sabse bade textile utpadak aur niryatak me se ek hai."
+          "stat": "10 me se 9",
+          "label": "duniya bhar me cut aur polish kiye gaye diamonds Surat ke units se guzarte hain."
         },
         "hubs": {
-          "stat": "Har rajya",
-          "label": "Bharat bhar ke textile hub aur cluster, sabhi ManekHR par jude hue."
+          "stat": "Har unit",
+          "label": "chhota ho ya bada, register, WhatsApp group, aur spreadsheet par chalta hai, jise ManekHR ek hi system se badal deta hai."
         }
       }
     }
@@ -14515,15 +13691,11 @@
     "meta": {
       "platform": {
         "title": "Niyam aur Sharten | ManekHR",
-        "description": "ManekHR ke Niyam aur Sharten: ManekHR platform istemaal karne ke niyam, jisme textile trade ke liye Connect network, marketplace, jobs aur ERP tools shaamil hain."
-      },
-      "connect": {
-        "title": "Connect Niyam aur Sharten | ManekHR",
-        "description": "ManekHR Connect ke liye Niyam aur Sharten, Bharat ke textile trade ke liye B2B network, marketplace aur jobs platform."
+        "description": "ManekHR ke Terms & Conditions: diamond-polishing units ke liye staff aur salary management platform istemal karne ke niyam."
       },
       "erp": {
         "title": "ERP Niyam aur Sharten | ManekHR",
-        "description": "ManekHR ERP ke liye Niyam aur Sharten, textile factory aur dukaan ke liye hajiri, payroll, GST billing aur production tools."
+        "description": "ManekHR ERP ke liye Terms & Conditions: diamond-polishing units ke liye attendance, salary, aur staff management tools."
       }
     }
   },
@@ -14535,27 +13707,11 @@
     "meta": {
       "platform": {
         "title": "Gopniyata Niti | ManekHR",
-        "description": "ManekHR poore platform par aapka data kaise ekatra karta, istemaal karta aur surakshit rakhta hai: textile trade ke liye Connect network, marketplace, jobs aur ERP tools."
-      },
-      "connect": {
-        "title": "Connect Gopniyata Niti | ManekHR",
-        "description": "ManekHR Connect Bharat ke textile trade ke liye B2B network, marketplace aur jobs platform par aapka data kaise sambhalta hai."
+        "description": "ManekHR aapka data kaise collect karta hai, istemal karta hai, aur protect karta hai: diamond-polishing units ke liye staff records, attendance, aur salary."
       },
       "erp": {
         "title": "ERP Gopniyata Niti | ManekHR",
-        "description": "ManekHR ERP textile factory aur dukaan ke liye hajiri, payroll, GST billing aur production mein aapka data kaise sambhalta hai."
-      }
-    }
-  },
-  "guidelines": {
-    "placeholder": {
-      "title": "Community Guidelines",
-      "body": "Poori {product} community guidelines jaldi yahan publish hongi."
-    },
-    "meta": {
-      "connect": {
-        "title": "Community Guidelines | ManekHR",
-        "description": "ManekHR Connect ke liye community guidelines: aap kya post kar sakte hain, kaise behave karein, aur textile trade network ko safe aur genuine kaise rakha jaata hai."
+        "description": "ManekHR ERP diamond-polishing units ke liye attendance, salary, aur staff management me aapka data kaise sambhalta hai."
       }
     }
   },

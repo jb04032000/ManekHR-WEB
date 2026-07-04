@@ -17,13 +17,14 @@ import { ProductTour } from '@/components/marketing/sections/ProductTour';
 import { TrustWedge } from '@/components/marketing/sections/TrustWedge';
 
 // Brand-led AND keyword-aware home title: leads with the brand entity (so the
-// "ManekHR" brand query resolves to us) and names the three core jobs + market.
-// Keep consistent with the canonical positioning used across the marketing site.
-const TITLE = 'ManekHR - Textile B2B network, marketplace & jobs for India';
-// Names BOTH products: Connect's jobs first (the page's story), then a short
-// ERP clause so brand queries from factory/shop owners see their product too.
+// "ManekHR" brand query resolves to us) and names the core job (staff + salary)
+// + market (diamond-polishing units, Surat). Keep consistent with the canonical
+// positioning used across the marketing site.
+const TITLE = 'ManekHR - Staff & salary management for diamond-polishing units';
+// Names the product plainly: staff directory, attendance, and payroll for
+// diamond-polishing unit owners in Surat.
 const DESCRIPTION =
-  'Open a free online shop, post your work, get quotes, and hire skilled people, in your own language. Plus ManekHR ERP for team, billing, and machines.';
+  'Manage your karigars and staff, track attendance, and run payroll — all in one place, in your own language. Built for diamond-polishing units in Surat.';
 
 export async function generateMetadata({
   params,
@@ -37,29 +38,18 @@ export async function generateMetadata({
     title: { absolute: TITLE },
     description: DESCRIPTION,
     keywords: [
-      'textile B2B marketplace India',
-      'online textile market',
-      'saree wholesale suppliers',
-      'textile RFQ quotes',
-      'textile jobs',
-      'karigar work',
-      'free online store for textiles',
-      'textile ERP',
-      // Institutes feature now live: course + training-institute discovery terms.
-      'embroidery course',
-      'textile training institute',
-      'learn aari zardosi',
-      'embroidery classes Surat',
-      // Services/experts directory + broker (dalal) introductions now live: terms
-      // a service-seeker or someone looking for an introduction would search.
-      'textile services directory',
-      'textile consultant',
-      'embroidery machine repair',
-      'dyeing job work',
-      'fabric transport',
-      'textile contractor',
-      'dalal',
-      'broker introductions',
+      'diamond polishing staff management',
+      'karigar attendance software',
+      'diamond unit payroll software Surat',
+      'staff management software India',
+      'salary software for diamond units',
+      'attendance tracking Surat',
+      'karigar salary management',
+      'HR software for diamond polishing units',
+      'roles and permissions software',
+      'staff directory app',
+      'payroll software Gujarat',
+      'diamond industry HR software',
     ],
     alternates,
     openGraph: {
@@ -99,8 +89,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           (TrustWedge, FinalCta) far apart: Hero(tinted) -> Industry(cream) ->
           Tour(white) -> Steps(cream) -> Trust(dark) -> Audience(cream) ->
           Pricing(white) -> ERP(cream) -> FAQ(white) -> FinalCta(dark).
-          IndustryStrip is honest market context (India textile-trade scale,
-          NOT ManekHR's own metrics) right under the fold. */}
+          IndustryStrip is honest market context (Surat's diamond-polishing
+          industry, NOT ManekHR's own metrics) right under the fold. */}
       <Hero />
       <IndustryStrip />
       <ProductTour />

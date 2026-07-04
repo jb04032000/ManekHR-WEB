@@ -5,16 +5,17 @@ import { SectionView } from '../motion/SectionView';
 import { Container } from '../ui/Container';
 
 /**
- * Home industry-context stat strip. Shows a few conservative, widely-cited India
- * textile-industry figures framed clearly as the MARKET ManekHR serves, NOT as
- * ManekHR's own usage (we publish no user counts). A small caption makes the
- * "industry context" framing explicit so the numbers can never be misread as
- * platform metrics. Visual style matches the rest of the site (cream band,
- * gold-accented serif stat, neutral label).
+ * Home industry-context strip. Frames ManekHR as built specifically for Surat's
+ * diamond-polishing units, favoring honest qualitative framing over invented
+ * statistics (we publish no user counts, and the diamond-polishing trade does
+ * not have the kind of widely-cited public figures a mass-market industry
+ * would). A small caption makes the "industry context" framing explicit so the
+ * copy can never be misread as platform metrics. Visual style matches the rest
+ * of the site (cream band, gold-accented serif stat, neutral label).
  *
  * Cross-module links: LANDING_INDUSTRY_STATS in content.ts; copy under
- * marketing.industry.* in every locale. Watch: keep figures approximate and
- * conservative; if ever updated, never restate them as ManekHR's metrics.
+ * marketing.industry.* in every locale. Watch: keep claims qualitative and
+ * conservative; never restate them as ManekHR's own metrics.
  */
 export async function IndustryStrip() {
   const t = await getTranslations('marketing.industry');

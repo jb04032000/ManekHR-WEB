@@ -353,17 +353,17 @@
     "logout": "Logout",
     "hero": {
       "brand": "ManekHR",
-      "eyebrow": "One platform for the textile trade",
-      "heading": "Your <em>business</em>, in your control.",
-      "subheadingHinglish": "Kaam dhundo, workshop chalao, sab ek app mein.",
-      "subheading": "Meet buyers, karigars and ateliers on Connect. Run attendance, salary, GST and finance on ERP.",
+      "eyebrow": "Staff & salary, made simple",
+      "heading": "Your <em>team</em>, in your control.",
+      "subheadingHinglish": "Staff sambhalo, salary chalao, sab ek app mein.",
+      "subheading": "Manage your diamond-polishing unit's staff, attendance, and salary — all in one place.",
       "features": {
-        "network": "Find work, buyers & people",
-        "attendance": "Attendance & salary",
-        "gst": "GST invoices & finance",
-        "oneAccount": "One account for Connect + ERP"
+        "network": "Staff & attendance records",
+        "attendance": "Accurate salary calculations",
+        "gst": "Role-based access for your team",
+        "oneAccount": "One account, your whole workspace"
       },
-      "trustLine": "Trusted by textile owners across India",
+      "trustLine": "Trusted by diamond-polishing units across Surat",
       "newAccountPrompt": "New to ManekHR?",
       "newAccountLink": "Create account",
       "trust": "Encrypted in transit & at rest · Hosted in India",
@@ -8357,15 +8357,12 @@
   },
   "marketing": {
     "nav": {
-      "connect": "Connect",
       "erp": "ERP",
       "pricing": "Pricing",
       "about": "About",
       "contact": "Contact",
       "login": "Login",
-      "getStarted": "Join free",
-      "connectTip": "Sell, hire & network",
-      "erpTip": "Run your factory"
+      "getStarted": "Join free"
     },
     "a11y": {
       "skipToContent": "Skip to content",
@@ -8375,175 +8372,159 @@
       "language": "Choose language"
     },
     "stickyCta": {
-      "label": "Free for the textile trade",
+      "label": "Free to try for diamond-polishing units",
       "join": "Join free",
       "dismiss": "Hide this bar"
     },
     "hero": {
-      "eyebrow": "Built for the textile trade",
-      "headline": "Where the textile trade connects, sells, and hires.",
-      "sub": "One place for the whole textile industry. Find suppliers and buyers, hire skilled people, and run your business, instead of juggling WhatsApp groups, paper, and scattered apps.",
+      "eyebrow": "Built for diamond-polishing units",
+      "headline": "Staff, attendance, and salary - all in one place.",
+      "sub": "One system for your whole diamond-polishing unit. Keep staff records, track attendance, and run accurate salary, instead of juggling registers, WhatsApp, and scattered spreadsheets.",
       "ctaPrimary": "Join free",
       "ctaSecondary": "See how it works",
-      "erpQ": "Run a factory or shop?",
+      "erpQ": "Want a closer look at the ERP?",
       "erpCta": "See ManekHR ERP",
-      "trustLine": "Real, verified businesses, not a wall of fake leads.",
+      "trustLine": "Built around how diamond-polishing units in Surat actually work.",
       "chips": {
-        "verified": "Verified on ManekHR",
+        "verified": "Trusted by unit owners",
         "free": "Free to start",
         "languages": "Gujarati, Hindi, English"
       }
     },
     "pillars": {
       "eyebrow": "Three things, one place",
-      "title": "Network, marketplace, and hiring, together.",
-      "sub": "One login for the three jobs the trade does every day.",
+      "title": "Staff, attendance, and salary, together.",
+      "sub": "One login for the three jobs every unit does every day.",
       "items": {
         "network": {
-          "kicker": "Network",
-          "title": "See and be seen",
-          "body": "Post your work and follow your trade, so the right people see what you make."
+          "kicker": "Staff",
+          "title": "Every karigar, one record",
+          "body": "Keep every staff member's profile, documents, and history in one place, so nothing is scattered across registers."
         },
         "marketplace": {
-          "kicker": "Marketplace",
-          "title": "Sell your work",
-          "body": "Open a free shop, list your products, and let buyers reach you directly."
+          "kicker": "Attendance",
+          "title": "Track attendance daily",
+          "body": "Mark attendance from a phone, kiosk, or biometric device, and see who is present at a glance."
         },
         "hiring": {
-          "kicker": "Hiring",
-          "title": "Hire and get hired",
-          "body": "Post jobs or find work, and apply with a voice note in one tap."
+          "kicker": "Salary",
+          "title": "Pay accurately, every time",
+          "body": "Salary is calculated automatically from attendance, so payday is never a guessing game."
         }
       }
     },
     "how": {
       "eyebrow": "How it works",
-      "title": "From sign-up to your first enquiry in three steps.",
+      "title": "From sign-up to your first payslip in three steps.",
       "sub": "No setup fee. No training. A phone is enough.",
       "steps": {
         "create": {
-          "title": "Create your free profile",
-          "body": "Sign up with your phone number. Add your skills, your shop, or your company page, in your own language."
+          "title": "Create your free workspace",
+          "body": "Sign up with your phone number and add your unit, in your own language."
         },
         "post": {
-          "title": "Post what you make or need",
-          "body": "List products in your storefront, share your work in the feed, post a job, or ask for quotes."
+          "title": "Add your staff and start tracking",
+          "body": "Add your karigars and staff, mark attendance, and set up their salary details."
         },
         "deal": {
-          "title": "Talk and close directly",
-          "body": "Enquiries open a private chat. You agree price and delivery between yourselves, here or on WhatsApp."
+          "title": "Run payroll with confidence",
+          "body": "ManekHR calculates salary from attendance automatically, so every payslip is accurate."
         }
       }
     },
     "modules": {
-      "eyebrow": "The five tools",
-      "title": "The five tools inside Connect.",
-      "sub": "Network, marketplace, and hiring run on five connected tools that share one profile, one inbox, and one search.",
-      "cta": "Explore ManekHR Connect",
+      "eyebrow": "The four tools",
+      "title": "The four tools inside ManekHR.",
+      "sub": "Team, attendance, salary, and roles run on four connected tools that share one staff record and one login.",
+      "cta": "Explore ManekHR ERP",
       "items": {
-        "feed": {
-          "title": "Feed",
-          "desc": "Post photos and videos of your work so the whole trade can see what you make."
+        "team": {
+          "title": "Team",
+          "desc": "Keep a staff directory for every karigar and staff member, with profiles and documents in one place."
         },
-        "storefront": {
-          "title": "Storefront",
-          "desc": "A free online shop with your products, prices, and a web address you can share."
+        "attendance": {
+          "title": "Attendance",
+          "desc": "Track daily attendance from a phone, kiosk, or biometric device, with shifts and leave built in."
         },
-        "rfq": {
-          "title": "Quotations",
-          "desc": "Post what you need and compare sellers' quotes side by side."
+        "salary": {
+          "title": "Salary",
+          "desc": "Run daily-wage, monthly, or piece-rate payroll automatically, with payslips and compliance handled."
         },
-        "jobs": {
-          "title": "Jobs",
-          "desc": "Post work or find it. Applying takes one tap or a voice note."
-        },
-        "chat": {
-          "title": "Chat",
-          "desc": "Private messages with photos and voice notes, tied to the deal they are about."
+        "roles": {
+          "title": "Roles & Permissions",
+          "desc": "Give each person exactly the access they should have, from owner to accountant to supervisor."
         }
       }
     },
     "audience": {
       "eyebrow": "Who it is for",
-      "title": "Built for the people who run the trade.",
-      "sub": "From the loom to the shop counter, and the institutes that train the trade.",
+      "title": "Built for the people who run a diamond-polishing unit.",
+      "sub": "From the unit owner to the shop floor, ManekHR fits how your team already works.",
       "items": {
+        "owner": {
+          "title": "Unit owners",
+          "body": "See your whole team, attendance, and salary cost from one dashboard, without chasing registers."
+        },
         "karigar": {
-          "title": "Weavers and karigars",
-          "body": "Show your skills and past work, be discoverable, and get hired for what you do best."
+          "title": "Karigars and staff",
+          "body": "Your attendance and salary are tracked accurately, with a clear record you can check anytime."
         },
-        "trader": {
-          "title": "Traders",
-          "body": "Source fabric, yarn, and trims, post requirements, and compare quotes from real sellers."
+        "supervisor": {
+          "title": "Supervisors",
+          "body": "Mark attendance for your team quickly, from a phone or a shared kiosk on the floor."
         },
-        "mill": {
-          "title": "Mill and factory owners",
-          "body": "Give your unit a company page, list products, and find karigars and job-workers."
-        },
-        "jobseeker": {
-          "title": "Job seekers",
-          "body": "Browse jobs that match your skills and apply with a voice note or a resume."
-        },
-        "institute": {
-          "title": "Institutes and academies",
-          "body": "Open a free page, list your courses, place your students with real workshops, and build a reputation the whole trade can see."
-        },
-        "student": {
-          "title": "Students",
-          "body": "Learn a skill, show a Trained-at credential your institute confirms, and get hired by real workshops."
-        },
-        "serviceProvider": {
-          "title": "Service providers and experts",
-          "body": "Consultants, machine maintenance, dyeing and printing, transport and more. Show what you do, set your rates, and get hired."
+        "accountant": {
+          "title": "Accountants and HR admins",
+          "body": "Run payroll with confidence, with attendance, advances, and deductions calculated automatically."
         }
       }
     },
     "trust": {
       "eyebrow": "Why it is different",
-      "title": "Talk to real, verified businesses.",
-      "sub": "Not a wall of fake leads. The trust here comes from real activity, not promises.",
+      "title": "Built for accuracy you can trust.",
+      "sub": "No invented numbers, no fake promises. The trust here comes from how the product actually works.",
       "items": {
         "verified": {
-          "title": "Verified on ManekHR",
-          "body": "Businesses can verify themselves, so you know who is on the other side of the deal."
+          "title": "Accurate by design",
+          "body": "Salary is calculated straight from attendance, so every payslip matches the days actually worked."
         },
         "erpBacked": {
-          "title": "Backed by a real business",
-          "body": "A company page can link to the ManekHR ERP that business runs on every day."
+          "title": "One system, not scattered tools",
+          "body": "Staff records, attendance, and salary live in one workspace, so nothing gets lost between registers and spreadsheets."
         },
-        "ratings": {
-          "title": "Ratings only after a real deal",
-          "body": "Star ratings come from buyers who actually dealt with a seller, never anonymous reviews."
+        "accuracy": {
+          "title": "A clear audit trail",
+          "body": "Every change to attendance or salary is logged, so you can always see what changed and who changed it."
         },
         "direct": {
-          "title": "Direct, with no middleman",
-          "body": "You deal with the other business yourself. ManekHR takes no cut and never sits inside your deal."
+          "title": "Simple for every team member",
+          "body": "Marking attendance and checking a payslip takes a tap, in Gujarati, Hindi, or English."
         },
-        "broker": {
-          "title": "Brokers build a real track record",
-          "body": "A broker introduces a buyer and a seller. Both sides confirm the introduction, so a verified record builds up. Reviews stay private and show only initials, never the reviewer's name."
+        "roles": {
+          "title": "The right access for every role",
+          "body": "Owners, accountants, and supervisors each see only what their role should, with fine-grained permissions."
         }
       }
     },
     "pricingStory": {
       "eyebrow": "Pricing",
-      "title": "Free to use. Pay only for extra reach.",
-      "body": "Profiles, storefronts, listings, jobs, quotations, and chat are free. Money comes in only when you choose it: boost a post, a product, or a job to reach more people. ManekHR never takes a cut of your deals.",
+      "title": "Simple, transparent pricing that grows with your team.",
+      "body": "Start free with staff records and attendance. Add payroll and more as your unit grows. One clear subscription, no commission on anything, no hidden charges.",
       "points": {
-        "free": "Profile, shop, jobs, quotes, and chat: free",
-        "boost": "Boosts are optional and prepaid, you set the budget",
-        "commission": "No commission on your deals, ever"
+        "free": "Staff records and attendance: free to start",
+        "noCard": "No card needed to try it",
+        "cancel": "Simple monthly pricing, cancel anytime"
       },
       "cta": "See pricing"
     },
     "erp": {
-      "eyebrow": "Also from ManekHR",
-      "title": "Run a factory or shop? There is an ERP for that.",
-      "sub": "ManekHR ERP manages your team, attendance, payroll, billing, and machines. Same login, separate product, built for the same trade.",
+      "eyebrow": "One product, four tools",
+      "title": "Team, attendance, salary, and roles, in one ERP.",
+      "sub": "ManekHR ERP manages your staff records, attendance, and salary, with the right access for every role. Built for diamond-polishing units in Surat.",
       "chips": {
-        "team": "Team and payroll",
-        "billing": "Billing and accounts",
-        "machines": "Machines and production",
+        "team": "Team",
+        "attendance": "Attendance",
+        "salary": "Salary",
         "roles": "Roles and permissions"
       },
       "cta": "Learn about ManekHR ERP",
@@ -8551,98 +8532,90 @@
     },
     "faq": {
       "eyebrow": "Common questions",
-      "headline": "Questions buyers and sellers ask.",
+      "headline": "Questions unit owners ask.",
       "items": {
         "free": {
-          "q": "Is ManekHR Connect free?",
-          "a": "Yes. Joining, listing products, posting jobs, asking for quotes, and chatting are all free. The only thing that costs money today is boosting, and that is optional."
+          "q": "Is ManekHR free?",
+          "a": "Yes, to start. Staff records, attendance, and salary tracking are free to try, with no card needed. Paid plans add more as your team grows."
         },
-        "sell": {
-          "q": "What can I list or sell?",
-          "a": "Anything the trade makes or needs: sarees, fabric, yarn, embroidery and zari work, job work, machinery, and finished goods. A listing carries photos, a short video, price, minimum order, and delivery time."
+        "setup": {
+          "q": "How long does it take to set up?",
+          "a": "A few minutes. Sign up with your phone number, add your unit, and start adding staff. There is no lengthy onboarding or training needed."
         },
-        "commission": {
-          "q": "Does ManekHR take a commission?",
-          "a": "No. ManekHR connects the two sides and they deal directly. It does not handle the payment or the order, and it never takes a cut of your deal."
+        "pricing": {
+          "q": "How does pricing work?",
+          "a": "ManekHR is a simple monthly subscription based on your team size. There is no commission on anything and no hidden charges."
         },
-        "enquiries": {
-          "q": "How do buyers reach me?",
-          "a": "A buyer opens your product or storefront and taps Contact seller. That starts a private chat with you. You can also share your shop link on WhatsApp, and your public pages show up in search."
+        "attendance": {
+          "q": "How is attendance tracked?",
+          "a": "Attendance can be marked from a phone, a shared kiosk, or a biometric device. Supervisors can mark it for their whole team in one place."
         },
-        "quotes": {
-          "q": "How do quotations work?",
-          "a": "A buyer posts a requirement with quantity, material, budget, and a by-when date. Sellers reply with price and delivery time. The buyer compares the quotes side by side and accepts one, which opens a private chat."
+        "payroll": {
+          "q": "How is salary calculated?",
+          "a": "Salary is calculated automatically from attendance, whether your staff are on daily-wage, monthly, or piece-rate pay. Advances and deductions are handled in the same place."
         },
         "languages": {
           "q": "Which languages does it work in?",
           "a": "English, Gujarati, and Hindi or Gujarati written in English letters. You pick your language once and can switch anytime."
         },
-        "gst": {
-          "q": "Do I need a GST number to join?",
-          "a": "No. You sign up with a phone number. Workers, job seekers, and small shops can all join without GST."
+        "compliance": {
+          "q": "Does it handle statutory compliance?",
+          "a": "Yes. Payroll supports statutory deductions like PF, ESI, PT, and TDS, so your payslips stay compliant."
         },
-        "work": {
-          "q": "Can I find work on it?",
-          "a": "Yes. The jobs board highlights openings that match your skills. You apply by typing, attaching a resume, or recording a voice note."
+        "roles": {
+          "q": "Can I control who sees what?",
+          "a": "Yes. ManekHR uses role-based access, so owners, accountants, and supervisors each see only the information and actions relevant to their role."
         },
-        "institutes": {
-          "q": "Can institutes list courses?",
-          "a": "Yes. A training institute or academy can open a free page and list its courses, and learners enquire to enrol with no checkout. Institutes can also confirm a Trained-at credential for the students they have taught."
+        "data": {
+          "q": "Is my data safe?",
+          "a": "Yes. Your data stays yours, we never sell it, and every change to attendance or salary is logged in a clear audit trail."
         },
-        "services": {
-          "q": "Can I offer services, not just products?",
-          "a": "Yes. Consultants, machine repair and maintenance, dyeing and printing, transport and logistics, contractors, and job-workers list the services they offer with rates. Buyers browse by service type and location inside the app and start a private chat to hire."
+        "support": {
+          "q": "What if I need help?",
+          "a": "Our team is reachable by email and WhatsApp, and we help you get your unit set up correctly from day one."
         },
-        "broker": {
-          "q": "How does the broker feature work?",
-          "a": "A broker introduces a buyer and a seller, and both sides confirm the introduction, so no one can claim credit alone. Over time a broker builds a verified track record. Reviews are private and show only initials, never the reviewer's name, and a broker cannot edit or hide them."
+        "switch": {
+          "q": "Can I switch from paper or spreadsheets?",
+          "a": "Yes. Most units start by adding their current staff list and attendance records, and are fully set up within a day."
         }
       }
     },
     "finalCta": {
       "eyebrow": "Join today",
-      "headline": "Be found by the whole trade.",
-      "sub": "A profile and a shop take minutes to set up. Free, in your language, on the phone you already have.",
+      "headline": "Run your team from one app.",
+      "sub": "Staff records, attendance, and salary take minutes to set up. Free to start, in your language, on the phone you already have.",
       "ctaPrimary": "Join free",
       "ctaSecondary": "Talk to us",
       "erp": {
         "eyebrow": "Start today",
         "headline": "Run your whole unit from one app.",
-        "sub": "Attendance, salary, billing, and machines in one place. Start with a full-access free trial. No card needed.",
+        "sub": "Staff records, attendance, and salary in one place. Start with a full-access free trial. No card needed.",
         "ctaPrimary": "Start free trial"
       }
     },
     "footer": {
-      "tagline": "The textile trade's own network.",
+      "tagline": "Staff and salary, built for diamond-polishing units.",
       "madeIn": "Made in India",
       "emailLabel": "Email",
       "rights": "© {year} ManekHR. All rights reserved.",
-      "trust": "Your data stays yours. we never sell it. Free to use, with no commission on your deals.",
+      "trust": "Your data stays yours. we never sell it. Simple pricing, with no commission on anything.",
       "legal": {
         "terms": "Terms",
         "privacy": "Privacy",
-        "guidelines": "Community Guidelines",
         "grievance": "Grievance"
       },
       "cols": {
-        "connect": "Connect",
-        "erp": "ERP",
+        "erp": "ManekHR",
         "company": "Company"
       },
       "links": {
-        "connectOverview": "Overview",
-        "marketplace": "Marketplace",
-        "services": "Services",
-        "jobs": "Jobs",
         "erpOverview": "Overview",
-        "erpTeam": "Team & attendance",
-        "erpFinance": "Finance & GST",
-        "erpMachines": "Machines",
-        "erpRoles": "Roles & access",
+        "erpTeam": "Team",
+        "erpSalary": "Salary",
+        "erpRoles": "Roles & permissions",
         "about": "About us",
         "pricing": "Pricing",
         "contact": "Contact",
-        "network": "Network",
         "guides": "Guides"
       },
       "social": {
@@ -8650,394 +8623,20 @@
       }
     },
     "pages": {
-      "fabricSuppliers": {
-        "meta": {
-          "title": "Fabric suppliers in Surat - grey, georgette & more on ManekHR",
-          "description": "Find verified fabric suppliers in Surat - grey, georgette, chiffon, crepe and more. See storefronts, compare quotes, and deal directly on WhatsApp. Free to join."
-        },
-        "hero": {
-          "badge": "Fabric suppliers",
-          "title": "Find fabric suppliers and buy direct.",
-          "sub": "Reach verified Surat fabric and grey-goods suppliers, see their stock and rates, post what you need, and close the deal on WhatsApp - no middleman, no commission.",
-          "ctaPrimary": "Join free",
-          "ctaSecondary": "Browse the marketplace"
-        },
-        "intro": {
-          "eyebrow": "For units & traders",
-          "title": "Source base fabric and grey goods directly.",
-          "sub": "Embroidery units, traders and brands buy from real, verified suppliers - not anonymous leads.",
-          "points": {
-            "p1": "Browse suppliers with real stock photos, rates and minimum order.",
-            "p2": "Post a requirement and compare suppliers' quotes side by side.",
-            "p3": "Verified businesses, with ratings only after a real deal.",
-            "p4": "Chat and close directly on WhatsApp, in Gujarati, Hindi or English."
-          },
-          "lead": "Looking for finished products?",
-          "cta": "Explore the full textile marketplace"
-        }
-      },
-      "dressMaterialWholesalers": {
-        "meta": {
-          "title": "Dress material wholesalers in Surat - ManekHR",
-          "description": "Find verified dress material wholesalers and manufacturers in Surat. Browse per-dozen ranges, compare quotes, and deal directly on WhatsApp. Free to join, in your language."
-        },
-        "hero": {
-          "badge": "Dress material",
-          "title": "Find dress material wholesalers, deal direct.",
-          "sub": "Reach verified Surat dress-material wholesalers and manufacturers, see their catalogues, post what you need, and close on WhatsApp - no middleman, no commission.",
-          "ctaPrimary": "Join free",
-          "ctaSecondary": "Browse the marketplace"
-        },
-        "intro": {
-          "eyebrow": "For retailers & resellers",
-          "title": "Per-dozen dress material, sourced directly.",
-          "sub": "Boutiques, retailers and online resellers buy from real, verified wholesalers - not a wall of fake leads.",
-          "points": {
-            "p1": "Browse catalogues with real photos, per-dozen rates and minimum order.",
-            "p2": "Post a requirement and compare wholesalers' quotes side by side.",
-            "p3": "Verified businesses, with ratings only after a real deal.",
-            "p4": "Chat and close directly on WhatsApp, in Gujarati, Hindi or English."
-          },
-          "lead": "Looking for sarees or job-work?",
-          "cta": "Explore the full textile marketplace"
-        }
-      },
-      "zariManufacturers": {
-        "meta": {
-          "title": "Zari manufacturers & embroidery units in Surat - ManekHR",
-          "description": "Find verified zari manufacturers, embroidery and job-work units in Surat. See storefronts, post requirements, compare quotes, and deal directly on WhatsApp. Free to join."
-        },
-        "hero": {
-          "badge": "Zari manufacturers",
-          "title": "Find zari manufacturers and embroidery units.",
-          "sub": "Reach verified Surat zari and embroidery manufacturers, view their work and storefronts, post what you need, and close the deal on WhatsApp - no middleman, no commission.",
-          "ctaPrimary": "Join free",
-          "ctaSecondary": "Browse the marketplace"
-        },
-        "intro": {
-          "eyebrow": "For buyers & brands",
-          "title": "Sourcing zari and embroidery, made simple.",
-          "sub": "Designers, brands and traders find real, verified zari and embroidery units - not self-claimed listings.",
-          "points": {
-            "p1": "See real work photos, machine capacity and minimum order on each storefront.",
-            "p2": "Post a job-work requirement and compare units' quotes side by side.",
-            "p3": "Verified businesses, with ratings only after a real deal.",
-            "p4": "Chat and finalise directly on WhatsApp, in Gujarati, Hindi or English."
-          },
-          "lead": "Need other textile suppliers?",
-          "cta": "Explore the full textile marketplace"
-        }
-      },
-      "embroideryJobWork": {
-        "meta": {
-          "title": "Embroidery job work in Surat - find units on ManekHR",
-          "description": "Find verified embroidery job-work units in Surat - multi-head, aari, zardozi and hand work. Post your job, compare quotes, and deal directly on WhatsApp. Free to join."
-        },
-        "hero": {
-          "badge": "Embroidery job work",
-          "title": "Get embroidery job work done by verified units.",
-          "sub": "Post your embroidery job-work - multi-head, aari, zardozi or hand work - reach verified Surat units, compare quotes, and close on WhatsApp. No middleman, no commission.",
-          "ctaPrimary": "Join free",
-          "ctaSecondary": "Browse the marketplace"
-        },
-        "intro": {
-          "eyebrow": "For traders & brands",
-          "title": "Per-metre and per-piece job-work, sorted.",
-          "sub": "Send your fabric to verified units and get clean, on-time embroidery - not anonymous middlemen.",
-          "points": {
-            "p1": "Post a job-work need with quantity, work type and a by-when date.",
-            "p2": "Compare units' quotes and lead times side by side.",
-            "p3": "Verified businesses, with ratings only after a real deal.",
-            "p4": "Send a sample run and finalise directly on WhatsApp."
-          },
-          "lead": "Looking for products, not job-work?",
-          "cta": "Explore the full textile marketplace"
-        }
-      },
-      "sareeWholesalers": {
-        "meta": {
-          "title": "Saree wholesalers in Surat - connect direct on ManekHR",
-          "description": "Find verified saree wholesalers and manufacturers in Surat. Browse storefronts, compare quotes, and deal directly on WhatsApp. Free to join, in your language."
-        },
-        "hero": {
-          "badge": "Saree wholesalers",
-          "title": "Find saree wholesalers and deal directly.",
-          "sub": "Reach verified Surat saree wholesalers and manufacturers, see their storefronts, post what you need, and close the deal on WhatsApp - no middleman, no commission.",
-          "ctaPrimary": "Join free",
-          "ctaSecondary": "Browse the marketplace"
-        },
-        "intro": {
-          "eyebrow": "For buyers & retailers",
-          "title": "A direct line to Surat's saree trade.",
-          "sub": "Boutiques, retailers and resellers source sarees and dress material from real, verified wholesalers - not a wall of fake leads.",
-          "points": {
-            "p1": "Browse storefronts with real product photos, prices and minimum order.",
-            "p2": "Post a requirement and compare wholesalers' quotes side by side.",
-            "p3": "See verified businesses, with ratings only after a real deal.",
-            "p4": "Chat and close directly on WhatsApp, in Gujarati, Hindi or English."
-          },
-          "lead": "Looking for more than sarees?",
-          "cta": "Explore the full textile marketplace"
-        }
-      },
-      "connect": {
-        "meta": {
-          "title": "Free B2B textile network and marketplace",
-          "description": "A free online textile market for India. Open a storefront, list products with videos, post requirements, compare quotes, hire karigars, and chat directly."
-        },
-        "hero": {
-          "badge": "ManekHR Connect",
-          "title": "Be found. Sell your work. Hire your people.",
-          "sub": "Connect is the textile trade's free network and marketplace. Post your work in the feed, open an online shop, compare quotes, post jobs, and talk to buyers and sellers in private chat.",
-          "ctaPrimary": "Join free",
-          "ctaSecondary": "See what is inside"
-        },
-        "how": {
-          "eyebrow": "How it works",
-          "title": "Live in three steps.",
-          "sub": "Most members are up and running in minutes.",
-          "steps": {
-            "profile": {
-              "title": "Create a profile or page",
-              "body": "Sign up free with your phone. Set up your profile, company page, or storefront in minutes."
-            },
-            "post": {
-              "title": "List or ask",
-              "body": "Add products, post your work, open a job, or post a requirement for quotes."
-            },
-            "deal": {
-              "title": "Chat and close",
-              "body": "Every enquiry lands in one inbox. You deal directly and close where it suits you, including WhatsApp."
-            }
-          }
-        },
-        "modules": {
-          "eyebrow": "The modules",
-          "title": "What is inside Connect.",
-          "sub": "Five connected tools that share one profile, one inbox, and one search.",
-          "feed": {
-            "kicker": "Feed",
-            "title": "Show the trade what you make.",
-            "body": "Post photos, video, documents, and voice notes of your work. A personalised stream mixes people you follow with fresh finds from your trade and district, so good work travels beyond your contacts. You shape your own feed with show-me-less controls.",
-            "b1": "Photos, video, documents, and voice notes",
-            "b2": "Reach people in your trade and district",
-            "b3": "React, comment, repost, and save"
-          },
-          "storefront": {
-            "kicker": "Storefront and marketplace",
-            "title": "Your shop, open to the whole trade.",
-            "body": "List products with photos, a short video, price, minimum order, and lead time. Group them under a branded storefront with its own web address. Buyers browse the marketplace, open your product, and tap Contact seller to start a private chat with you.",
-            "b1": "Free listings with photos and a short video",
-            "b2": "Your own shop link, easy to share on WhatsApp",
-            "b3": "Star ratings from past buyers",
-            "b4": "Enquiries arrive as private chats",
-            "note": "ManekHR never takes the payment or the order. You deal directly with the other side."
-          },
-          "rfq": {
-            "kicker": "Quotations",
-            "title": "Post what you need. Compare the prices that come back.",
-            "body": "A buyer posts a requirement: quantity, material, district, budget, and by-when. Sellers reply with structured quotes that cover price, lead time, samples, and what is included. The buyer compares quotes side by side, shortlists, and accepts one. Accepting opens a private chat to close the deal.",
-            "b1": "One requirement reaches many sellers",
-            "b2": "Quotes are structured and easy to compare",
-            "b3": "An accepted quote opens a private chat"
-          },
-          "jobs": {
-            "kicker": "Jobs",
-            "title": "Hire karigars. Find work.",
-            "body": "A workshop posts the work it needs done. Workers browse a board that highlights jobs matching their skills, and apply by typing, attaching a resume, or recording a voice note. Employers shortlist and accept from one screen. Jobs can be posted personally or as a company page.",
-            "b1": "Skill matching surfaces the right jobs",
-            "b2": "Apply with a voice note, no typing needed",
-            "b3": "Shortlist and accept in one flow"
-          },
-          "chat": {
-            "kicker": "Chat",
-            "title": "Every conversation, with its context.",
-            "body": "Private one-to-one messages with photos and voice notes, delivered in real time. A chat can be tied to a product enquiry, a job application, or an accepted quote, so you always know what a conversation is about. Blocking, reporting, and quiet anti-spam keep cold outreach in check.",
-            "b1": "Real time, with photos and voice notes",
-            "b2": "Tied to the product, job, or quote",
-            "b3": "Block and report controls built in"
-          }
-        },
-        "ctaBand": {
-          "shop": {
-            "title": "Your products deserve a shop window.",
-            "cta": "Open your free shop"
-          },
-          "hire": {
-            "title": "Hiring for the season?",
-            "cta": "Post a job free"
-          }
-        },
-        "boost": {
-          "eyebrow": "What is paid",
-          "title": "One honest paragraph about boosts.",
-          "body": "Everything above is free. When you want extra reach, you can boost a post, a product, or a job, and it appears across Connect clearly labelled as sponsored. You pay from a prepaid wallet where one rupee buys one credit. You set the budget, the boost never spends past it, and it stops when the budget runs out or the time ends. Paid plans with higher limits will come later; the free tier stays."
-        },
-        "trust": {
-          "eyebrow": "Trust and safety",
-          "title": "Built so you know who you are dealing with.",
-          "sub": "Trust signals come from real activity, not from promises.",
-          "items": {
-            "erpLinked": {
-              "title": "Backed by a real business",
-              "body": "A company page can be linked to a ManekHR ERP workspace, the system that business runs on daily. Linked pages carry a visible trust marker."
-            },
-            "ratings": {
-              "title": "Ratings from past buyers",
-              "body": "Sellers carry a star rating from buyers they have dealt with before, shown on their products and storefront."
-            },
-            "direct": {
-              "title": "Direct, with no middleman",
-              "body": "You talk to the other business directly and agree price and delivery between yourselves. ManekHR does not sit inside your deal."
-            },
-            "safety": {
-              "title": "Controls in your hands",
-              "body": "Block and report anyone in one tap. Quiet anti-spam keeps cold outreach in check across chat."
-            },
-            "broker": {
-              "title": "Brokers with a verified record",
-              "body": "A broker introduces a buyer and a seller, both sides confirm it, and a verified track record builds up. Reviews stay private and show only initials, never the reviewer's name."
-            }
-          }
-        },
-        "builtFor": {
-          "eyebrow": "Made for the trade",
-          "title": "Built for how the trade actually works.",
-          "sub": "Built for India's textile trade, from karigars to factory owners.",
-          "items": {
-            "whatsapp": {
-              "title": "WhatsApp friendly",
-              "body": "Every public page shares to WhatsApp in one tap, so deals can close where the trade already talks."
-            },
-            "languages": {
-              "title": "Speaks your language",
-              "body": "English, Gujarati, and Hindi or Gujarati in English letters. Everyone picks their own."
-            },
-            "mobile": {
-              "title": "Phone first",
-              "body": "Everything works on the phone in your pocket, and on a laptop when you want one."
-            },
-            "visual": {
-              "title": "Work over words",
-              "body": "Photos, video, and voice notes carry the trade here. Typing is optional, even for job applications."
-            },
-            "free": {
-              "title": "Free to be found",
-              "body": "Profiles, listings, jobs, and quotations are free. Boosting is the only paid thing today."
-            },
-            "services": {
-              "title": "Offer services, get hired",
-              "body": "Consultants, maintenance and repair, dyeing and printing, transport, contractors, and job-workers show the services they offer and their rates on their profile, and get found and hired."
-            }
-          }
-        },
-        "institutes": {
-          "eyebrow": "Institutes and students",
-          "title": "Teach the trade. Get hired for it.",
-          "sub": "Training institutes showcase their courses and place their students; students carry a credential their institute confirms.",
-          "items": {
-            "courses": {
-              "title": "List your courses",
-              "body": "Open a free page and list every course you teach. Learners browse and enquire to enrol, with no checkout, so you talk to them directly."
-            },
-            "placement": {
-              "title": "Place your students",
-              "body": "Show where your students work now, and get hiring leads from workshops looking for trained hands."
-            },
-            "credential": {
-              "title": "Carry a Trained-at credential",
-              "body": "A student shows what they trained in, confirmed by their institute, so employers can trust it when they hire."
-            }
-          }
-        },
-        "services": {
-          "eyebrow": "Services and experts",
-          "title": "Offer a service. Get found for it.",
-          "sub": "From consultants to machine repair, dyeing, transport, and job-work, the trade lists what it does and buyers find it by type and location.",
-          "items": {
-            "list": {
-              "title": "List the services you offer",
-              "body": "Add the services you provide with rates, from consulting and maintenance to dyeing, printing, transport, and job-work, right on your profile."
-            },
-            "found": {
-              "title": "Get found and hired",
-              "body": "Buyers and suppliers who need a service start a private chat to hire you. You deal directly, with no middleman."
-            },
-            "browse": {
-              "title": "Browse by type and place",
-              "body": "Inside the app, filter services by type and location to find the right help near you, so a search reaches the people who actually do the work."
-            },
-            "track": {
-              "title": "Build a track record",
-              "body": "Star ratings from past buyers sit on your service, so good work travels and a new buyer can trust who they are hiring."
-            }
-          }
-        },
-        "faq": {
-          "eyebrow": "Common questions",
-          "title": "Questions people ask about Connect.",
-          "items": {
-            "free": {
-              "q": "Is Connect free?",
-              "a": "Yes. Profiles, storefronts, listings, the feed, jobs, quotations, and chat are free. Boosting for extra reach is the only thing that costs money today."
-            },
-            "boost": {
-              "q": "How much does a boost cost?",
-              "a": "You decide. A boost is prepaid from a wallet where one rupee buys one credit. You set the budget, it never spends past it, and it stops when the budget or the time runs out."
-            },
-            "commission": {
-              "q": "Does ManekHR take a commission or handle payment?",
-              "a": "No. Buyers and sellers find each other here and deal directly. ManekHR does not process the order or the payment, and it takes no cut."
-            },
-            "storefront": {
-              "q": "What does my storefront include?",
-              "a": "Your products with photos and a short video, price, minimum order, and lead time, grouped under your own brand with its own web address. Share the link on WhatsApp or print it anywhere."
-            },
-            "rfq": {
-              "q": "How do quotations work?",
-              "a": "Post your requirement with quantity, material, budget, and a by-when date. Sellers send structured quotes. Compare them side by side and accept the one you like. That opens a private chat."
-            },
-            "voice": {
-              "q": "Can someone apply to my job without typing?",
-              "a": "Yes. A worker can apply by recording a voice note or attaching a resume. You hear or read it in your applicant list and shortlist from there."
-            },
-            "languages": {
-              "q": "Which languages does Connect support?",
-              "a": "English, Gujarati, and Hindi or Gujarati written in English letters. Each person picks their own and can switch anytime."
-            },
-            "safety": {
-              "q": "What if someone spams me?",
-              "a": "Block them in one tap and report the account. Quiet anti-spam limits cold outreach in chat, and sensitive details like rate cards show only to signed-in viewers."
-            },
-            "trainedAt": {
-              "q": "What is a Trained-at credential?",
-              "a": "It is a verified line on a profile showing where a person trained. The student adds the course, the institute confirms it, and an employer can trust it when hiring. It helps someone who learned a skill get found for it."
-            },
-            "services": {
-              "q": "Can I list services, not just products?",
-              "a": "Yes. Consultants, machine repair and maintenance, dyeing and printing, transport and logistics, contractors, and job-workers list the services they offer with rates. Buyers browse by service type and location inside the app and start a private chat to hire."
-            },
-            "broker": {
-              "q": "How do broker introductions work?",
-              "a": "A broker introduces a buyer and a seller, and both sides confirm the introduction, so no one can claim credit alone. Over time a broker builds a verified track record. Reviews are private and show only initials, never the reviewer's name, and a broker cannot edit or hide them."
-            }
-          }
-        }
-      },
       "pricing": {
         "meta": {
-          "title": "Pricing: ManekHR ERP plans & the free Connect network",
-          "description": "Simple, transparent pricing for your whole textile business. Start ManekHR ERP free or on a full-access trial, no card needed. ManekHR Connect is free to use."
+          "title": "Pricing: ManekHR ERP plans",
+          "description": "Simple, transparent pricing for diamond-polishing units. Start ManekHR ERP free or on a full-access trial, no card needed."
         },
         "hero": {
           "eyebrow": "Pricing",
           "title": "Simple pricing for your whole business.",
-          "sub": "Run your factory on ManekHR ERP. Start free or take a full-access trial, no card needed. And the ManekHR Connect network is free to use, always."
+          "sub": "Run your unit on ManekHR ERP. Start free or take a full-access trial, no card needed."
         },
         "erpHeading": {
           "eyebrow": "ManekHR ERP",
           "title": "Plans that grow with your team",
-          "sub": "Attendance, payroll, machines, and production in one system. Start free and add tools as you grow. No setup fees, cancel anytime."
+          "sub": "Attendance, payroll, and staff management in one system. Start free and add tools as you grow. No setup fees, cancel anytime."
         },
         "trial": {
           "eyebrow": "Free trial",
@@ -9055,39 +8654,7 @@
           "a3": "GST-ready invoices & billing",
           "a4": "Encrypted & DPDP-compliant"
         },
-        "connectHeading": {
-          "eyebrow": "ManekHR Connect",
-          "title": "The network is free to use",
-          "sub": "Get found, hire, and deal across the textile trade. Free forever. Pay only for optional boosts when you want extra reach."
-        },
-        "cards": {
-          "free": {
-            "name": "Free",
-            "price": "₹0",
-            "period": "forever",
-            "desc": "Everything you need to be found and to deal.",
-            "cta": "Join free",
-            "f1": "Profile, company page, and storefront",
-            "f2": "Product listings with photos and a short video",
-            "f3": "Jobs board: post jobs and apply",
-            "f4": "Quotations: post requirements and send quotes",
-            "f5": "Private chat with photos and voice notes",
-            "f6": "English, Gujarati, and romanised Hindi or Gujarati"
-          },
-          "boosts": {
-            "name": "Boosts",
-            "price": "Pay per use",
-            "period": "from a prepaid wallet",
-            "desc": "Optional extra reach for a post, a product, or a job.",
-            "cta": "Join free, boost later",
-            "f1": "One rupee buys one credit, no packs",
-            "f2": "You set the budget and the duration",
-            "f3": "Always labelled as sponsored",
-            "f4": "Stops when the budget or the time ends",
-            "f5": "No subscription needed"
-          }
-        },
-        "note": "The free tier stays free, always. Boost only when you want extra reach. One rupee buys one credit, and no subscription is needed.",
+        "note": "Start free with staff records and attendance. Upgrade any time as your team and needs grow.",
         "faq": {
           "eyebrow": "FAQ",
           "title": "Pricing questions, answered",
@@ -9112,10 +8679,6 @@
               "q": "Can I upgrade or downgrade later?",
               "a": "Yes. Change plans anytime as your team grows or your needs change. Your data and history carry over."
             },
-            "connectFree": {
-              "q": "Is ManekHR Connect really free?",
-              "a": "Yes. The Connect network (your profile, storefront, jobs, and quotations) is free to use with no commission on your deals. The only optional cost is boosting a post for extra reach, paid per use."
-            },
             "cancel": {
               "q": "What happens if I cancel?",
               "a": "You can cancel anytime with no lock-in. You keep access until the end of your paid term, and your data remains available per our retention policy."
@@ -9125,42 +8688,42 @@
       },
       "erp": {
         "meta": {
-          "title": "ERP - run your textile factory or shop",
-          "description": "Manage attendance, payroll, billing, machines, and production for your textile factory or workshop. GST-ready. Free to start."
+          "title": "ManekHR ERP - staff, attendance & salary for diamond-polishing units",
+          "description": "Manage staff records, attendance, and salary for your diamond-polishing unit. Simple, accurate, and compliant. Free to start."
         },
         "hero": {
           "badge": "ManekHR ERP",
-          "title": "Run your factory or shop without paper, WhatsApp, or guesswork.",
-          "sub": "ERP brings your team, money, and machines into one system - built around how textile factories and workshops actually work.",
+          "title": "Run your unit without paper, WhatsApp, or guesswork.",
+          "sub": "ManekHR brings your staff records, attendance, and salary into one system - built around how diamond-polishing units in Surat actually work.",
           "ctaPrimary": "Get started",
-          "ctaSecondary": "Explore ManekHR Connect",
+          "ctaSecondary": "Learn more",
           "ctaPricing": "See pricing"
         },
         "features": {
           "eyebrow": "What you can run",
-          "title": "Your whole operation, end to end.",
-          "sub": "From the first punch of attendance to a clear month-end profit figure - ERP covers the work, the money, and the machines.",
+          "title": "Your whole team, one clear system.",
+          "sub": "From the first punch of attendance to an accurate monthly payslip - ERP covers your staff records, attendance, and salary, with the right access for every role.",
           "items": {
             "team": {
-              "title": "Team & Payroll",
-              "desc": "Track attendance and pay your people accurately, every cycle.",
-              "b1": "Attendance from phone, kiosk, or biometric device",
-              "b2": "Daily-wage, monthly, or piece-rate salaries - all supported",
-              "b3": "Advances, deductions, and karigar records in one profile"
+              "title": "Team & Staff Records",
+              "desc": "Keep every karigar and staff member's profile, documents, and history in one place.",
+              "b1": "Staff profiles with contact, ID, and role details",
+              "b2": "Documents and history kept together per person",
+              "b3": "Searchable directory across your whole unit"
             },
-            "finance": {
-              "title": "Finance & Billing",
-              "desc": "Invoice, record expenses, and always know where you stand.",
-              "b1": "GST-ready invoices, quotations, and delivery challans",
-              "b2": "Party ledgers with outstanding and payment history",
-              "b3": "Clear profit-and-loss and reports at any time"
+            "attendance": {
+              "title": "Attendance",
+              "desc": "Track attendance from phone, kiosk, or biometric device, every single day.",
+              "b1": "Daily attendance from phone, kiosk, or biometric device",
+              "b2": "Shift scheduling and missed-punch regularisation",
+              "b3": "Leave and holiday tracking built in"
             },
-            "machines": {
-              "title": "Machines & Production",
-              "desc": "Keep every machine accounted for and every shift measured.",
-              "b1": "Machine register with capacity and assigned workers",
-              "b2": "Log production output and downtime per shift",
-              "b3": "Schedule maintenance and track real utilisation"
+            "salary": {
+              "title": "Salary & Payroll",
+              "desc": "Pay your people accurately, every cycle, with no manual calculation.",
+              "b1": "Daily-wage, monthly, or piece-rate salaries - all supported",
+              "b2": "Advances, deductions, and payslips handled automatically",
+              "b3": "Statutory compliance (PF, ESI, PT, TDS) built in"
             },
             "roles": {
               "title": "Roles & Permissions",
@@ -9284,7 +8847,7 @@
       "about": {
         "meta": {
           "title": "About ManekHR: what it is and who it is for",
-          "description": "ManekHR is a free B2B network, marketplace, and jobs platform for India's textile trade, with ERP tools underneath. Built for traders, karigars, dalals, mills, and institutes, in Gujarati, Hindi, and English."
+          "description": "ManekHR is a staff and salary management system for diamond-polishing units in Surat. Built for unit owners, karigars, supervisors, and accountants, in Gujarati, Hindi, and English."
         },
         "hero": {
           "eyebrow": "About ManekHR",
@@ -9294,59 +8857,51 @@
         },
         "answer": {
           "heading": "In short.",
-          "body": "ManekHR is a free B2B network, marketplace, and jobs platform for India's textile trade, with ERP tools (attendance, payroll, GST billing, production) underneath. It is built for textile traders, karigars, dalals (brokers), mills, and training institutes, and works in Gujarati, Hindi, and English."
+          "body": "ManekHR is a staff and salary management system built for diamond-polishing units in Surat. It keeps staff records, tracks attendance, and runs accurate salary, with role-based access for owners, accountants, and supervisors. It works in Gujarati, Hindi, and English."
         },
         "audience": {
           "eyebrow": "Who it is for",
-          "heading": "Built for the whole textile trade.",
-          "sub": "One professional home for every role in the industry, not a generic business app.",
+          "heading": "Built for the whole diamond-polishing unit.",
+          "sub": "One professional home for every role in the unit, not a generic business app.",
           "items": {
-            "trader": {
-              "title": "Traders and wholesalers",
-              "body": "Open a free shop, list products, answer enquiries, and deal directly with buyers across the trade."
+            "owner": {
+              "title": "Unit owners",
+              "body": "See your whole team, attendance, and salary cost from one dashboard, without chasing registers."
             },
             "karigar": {
-              "title": "Karigars and workers",
-              "body": "Show your skill, find work, and get hired without going through word of mouth."
+              "title": "Karigars and staff",
+              "body": "Your attendance and salary are tracked accurately, with a clear record you can check anytime."
             },
-            "dalal": {
-              "title": "Dalals and brokers",
-              "body": "Introduce buyers and sellers, and build a verified track record both sides confirm."
+            "supervisor": {
+              "title": "Supervisors",
+              "body": "Mark attendance for your team quickly, from a phone or a shared kiosk on the floor."
             },
-            "mill": {
-              "title": "Mills and manufacturers",
-              "body": "List capacity, take job work and bulk orders, and run the floor with the ERP tools."
-            },
-            "institute": {
-              "title": "Training institutes",
-              "body": "Run an institute page, list courses, and confirm the students you have trained."
-            },
-            "serviceProvider": {
-              "title": "Service providers",
-              "body": "List services like machine repair, dyeing, printing, testing, or transport, and get found."
+            "accountant": {
+              "title": "Accountants and HR admins",
+              "body": "Run payroll with confidence, with attendance, advances, and deductions calculated automatically."
             }
           }
         },
         "doItems": {
           "eyebrow": "What you can do",
           "heading": "Four things, one platform.",
-          "sub": "Network, sell, hire, and run your operations in one place.",
+          "sub": "Manage your staff, attendance, salary, and access, all in one place.",
           "items": {
-            "network": {
-              "title": "Network (Connect)",
-              "body": "Build a professional profile, follow the trade, and reach real, verified textile businesses directly."
+            "team": {
+              "title": "Team",
+              "body": "Keep every karigar and staff member's profile, documents, and history in one place."
             },
-            "marketplace": {
-              "title": "Marketplace",
-              "body": "List products and services, browse the trade, send enquiries, and ask for quotes with no commission."
+            "attendance": {
+              "title": "Attendance",
+              "body": "Track daily attendance from a phone, kiosk, or biometric device, with shifts and leave built in."
             },
-            "jobs": {
-              "title": "Jobs",
-              "body": "Post jobs or apply for them across the textile value chain, from karigars to managers."
+            "salary": {
+              "title": "Salary",
+              "body": "Run daily-wage, monthly, or piece-rate payroll automatically, with payslips and compliance handled."
             },
-            "erp": {
-              "title": "ERP tools",
-              "body": "Run attendance, payroll, GST billing, and production for your factory or shop, free to start."
+            "roles": {
+              "title": "Roles & Permissions",
+              "body": "Give each person exactly the access they should have, from owner to accountant to supervisor."
             }
           }
         },
@@ -9356,7 +8911,7 @@
         },
         "free": {
           "heading": "Free to start.",
-          "body": "Joining, building a profile, listing products and services, posting jobs, asking for quotes, and chatting are all free. Optional boosting and paid ERP plans add more when you want it, and ManekHR takes no commission on your deals."
+          "body": "Joining, adding your staff, tracking attendance, and running your first payroll cycle are all free to try. Paid plans add more as your unit grows, and ManekHR never takes a commission on anything."
         },
         "faq": {
           "eyebrow": "Common questions",
@@ -9364,19 +8919,19 @@
           "items": {
             "what": {
               "q": "What is ManekHR?",
-              "a": "ManekHR is a free B2B network, marketplace, and jobs platform for India's textile trade, with ERP tools (attendance, payroll, GST billing, production) underneath. It brings the whole trade into one professional home."
+              "a": "ManekHR is a staff and salary management system built for diamond-polishing units in Surat. It keeps staff records, tracks attendance, and runs accurate salary, with role-based access for every team member."
             },
             "who": {
               "q": "Who is ManekHR for?",
-              "a": "ManekHR is built for textile traders, karigars, dalals (brokers), mills and manufacturers, training institutes and their students, and service providers across the industry."
+              "a": "ManekHR is built for diamond-polishing unit owners, karigars and staff, supervisors, and accountants or HR admins who run payroll."
             },
             "free": {
               "q": "Is ManekHR free?",
-              "a": "Yes. Joining, building a profile, listing products and services, posting jobs, asking for quotes, and chatting are all free. Optional boosting and paid ERP plans cost money, and ManekHR takes no commission on your deals."
+              "a": "Yes, to start. Staff records, attendance, and salary tracking are free to try, with no card needed. Paid plans add more as your team grows, and ManekHR never takes a commission on anything."
             },
             "do": {
               "q": "What can I do on ManekHR?",
-              "a": "You can network with the trade, open a free shop and sell products or services, post and apply for jobs, and run your factory or shop with ERP tools like attendance, payroll, and GST billing."
+              "a": "You can keep a staff directory, track attendance from a phone, kiosk, or biometric device, run accurate payroll, and control who can see or change what with role-based access."
             },
             "languages": {
               "q": "Which languages does ManekHR support?",
@@ -9454,401 +9009,22 @@
           "mailSubject": "ManekHR enquiry from {name}",
           "mailSubjectFallback": "a website visitor"
         }
-      },
-      "marketplace": {
-        "meta": {
-          "title": "Textile marketplace for suppliers, buyers, and wholesalers",
-          "description": "Find verified textile suppliers and buyers on ManekHR Connect. Send enquiries and quote requests, no middleman, close on WhatsApp. Free to start."
-        },
-        "hero": {
-          "badge": "ManekHR Connect",
-          "title": "The textile trade's marketplace.",
-          "sub": "Find verified suppliers and buyers across the whole textile trade. Send an enquiry or a quote request, deal directly, and close on WhatsApp. Genuine leads from real businesses, no middleman, no commission.",
-          "ctaPrimary": "Get started free",
-          "ctaSecondary": "Back to Connect"
-        },
-        "features": {
-          "eyebrow": "What you can do",
-          "title": "Everything you need to buy and sell.",
-          "sub": "Built for the way the textile trade actually trades.",
-          "items": {
-            "discover": {
-              "title": "Discover verified businesses",
-              "desc": "Find the right supplier or buyer, fast.",
-              "b1": "Search by category, location, and price",
-              "b2": "Verified businesses, many ERP-backed",
-              "b3": "Filter out the noise"
-            },
-            "list": {
-              "title": "List your products",
-              "desc": "Put your catalog in front of the trade.",
-              "b1": "Add photos, specs, and pricing",
-              "b2": "Organise products into collections",
-              "b3": "Free to list"
-            },
-            "enquire": {
-              "title": "Send and receive enquiries",
-              "desc": "Talk to real businesses directly.",
-              "b1": "Enquire for pricing in one tap",
-              "b2": "Manage enquiries in one inbox",
-              "b3": "No leads sprayed to dozens of sellers"
-            },
-            "rfq": {
-              "title": "Post quote requests",
-              "desc": "Tell the trade what you need.",
-              "b1": "Share quantity, target price, and timeline",
-              "b2": "Matched suppliers send you quotes",
-              "b3": "Compare and choose, no obligation"
-            },
-            "storefront": {
-              "title": "Your own storefront",
-              "desc": "A shareable shop for your products.",
-              "b1": "Your own store link and QR code",
-              "b2": "Share on WhatsApp in one tap",
-              "b3": "Stick the QR on labels and cards"
-            },
-            "whatsapp": {
-              "title": "Close on WhatsApp",
-              "desc": "Finish the deal the way you always have.",
-              "b1": "Move any enquiry to WhatsApp",
-              "b2": "Share photos and videos",
-              "b3": "Agree price and delivery directly"
-            }
-          }
-        },
-        "categories": {
-          "eyebrow": "Categories",
-          "title": "Every corner of the textile trade.",
-          "sub": "From yarn to finished goods, list and find across the whole supply chain.",
-          "items": {
-            "weaving": "Weaving and power-loom",
-            "dyeing": "Dyeing",
-            "printing": "Printing",
-            "embroidery": "Embroidery and zari",
-            "jobwork": "Job work",
-            "rawmaterial": "Raw material",
-            "machinery": "Machinery",
-            "finished": "Finished goods"
-          },
-          "servicesLead": "Looking for a service provider, not a product?",
-          "servicesCta": "Browse services by type and location"
-        },
-        "popular": {
-          "title": "Popular searches"
-        },
-        "faq": {
-          "eyebrow": "Common questions",
-          "title": "Marketplace questions.",
-          "items": {
-            "cost": {
-              "q": "Does it cost anything to list?",
-              "a": "No. You can list products, send enquiries, and post quote requests for free. Paid plans add more reach when you want it."
-            },
-            "genuine": {
-              "q": "Are the leads genuine?",
-              "a": "Yes. You deal with verified businesses, and many also run their operations on ManekHR ERP. Enquiries are not sprayed to dozens of sellers like on older marketplaces."
-            },
-            "payment": {
-              "q": "Does ManekHR handle payment?",
-              "a": "No. You agree price and delivery directly with the other business and close on WhatsApp. ManekHR does not take a commission or sit in the middle of your deal."
-            },
-            "categories": {
-              "q": "Which products can I list?",
-              "a": "Anything across the textile trade: weaving and power-loom, dyeing, printing, embroidery and zari, job work, raw material, machinery, and finished goods."
-            }
-          }
-        }
-      },
-      "jobs": {
-        "meta": {
-          "title": "Textile jobs and hiring for the trade",
-          "description": "Hire skilled people or find your next job in the textile trade. Verified employers, daily-wage to monthly roles, apply with your profile. Free to start."
-        },
-        "hero": {
-          "badge": "ManekHR Connect",
-          "title": "Hiring and jobs for the textile trade.",
-          "sub": "Hire skilled people, or find your next job. Verified employers, profiles that show real work, and daily-wage, piece-rate, or monthly roles, all in one place.",
-          "ctaPrimary": "Get started free",
-          "ctaSecondary": "Back to Connect"
-        },
-        "features": {
-          "eyebrow": "What you can do",
-          "title": "Hiring and job-hunting, made for the trade.",
-          "sub": "Whether you are hiring or looking, it works the way the trade works.",
-          "items": {
-            "post": {
-              "title": "Post a job",
-              "desc": "Reach the whole trade in minutes.",
-              "b1": "Set role, skills, location, and pay",
-              "b2": "Daily-wage, piece-rate, or monthly",
-              "b3": "Free to post"
-            },
-            "apply": {
-              "title": "Apply with your profile",
-              "desc": "Let your work speak for you.",
-              "b1": "Apply with a work-sample profile",
-              "b2": "No long forms or resumes needed",
-              "b3": "Apply in one tap"
-            },
-            "verified": {
-              "title": "Verified employers",
-              "desc": "Hiring that feels safe.",
-              "b1": "Employers are verified businesses",
-              "b2": "Many are ERP-backed and active",
-              "b3": "Fewer fake postings"
-            },
-            "inbox": {
-              "title": "One inbox for applicants",
-              "desc": "Track everyone in one place.",
-              "b1": "See applications as they arrive",
-              "b2": "Shortlist and message candidates",
-              "b3": "Never lose a candidate in a group"
-            },
-            "alerts": {
-              "title": "Job alerts",
-              "desc": "Hear about the right roles first.",
-              "b1": "Get alerts for roles that fit",
-              "b2": "By skill, location, and type",
-              "b3": "On the phone you already carry"
-            },
-            "whatsapp": {
-              "title": "Talk on WhatsApp",
-              "desc": "Reach out the easy way.",
-              "b1": "Move any chat to WhatsApp",
-              "b2": "Send a voice note or photo",
-              "b3": "Arrange a call or a trial directly"
-            }
-          }
-        },
-        "types": {
-          "eyebrow": "Employment types",
-          "title": "Every way the trade hires.",
-          "sub": "Not just monthly salaries. The roles the textile trade actually offers.",
-          "items": {
-            "fulltime": "Full-time monthly",
-            "parttime": "Part-time",
-            "piecerate": "Contract and piece-rate",
-            "dailywage": "Daily-wage",
-            "apprenticeship": "Apprenticeship"
-          }
-        },
-        "faq": {
-          "eyebrow": "Common questions",
-          "title": "Hiring and jobs questions.",
-          "items": {
-            "cost": {
-              "q": "Is it free to post a job?",
-              "a": "Yes. You can post jobs and receive applications for free. Paid plans add more reach and premium hiring tools."
-            },
-            "verified": {
-              "q": "Are employers verified?",
-              "a": "Yes. Employers are verified businesses, and many also run their operations on ManekHR ERP, so hiring feels moderated and safe."
-            },
-            "types": {
-              "q": "Can I hire daily-wage or piece-rate?",
-              "a": "Yes. Full-time monthly, part-time, contract and piece-rate, daily-wage, and apprenticeship roles are all supported."
-            },
-            "apply": {
-              "q": "How do candidates apply?",
-              "a": "Candidates apply with a profile that shows their real work, in one tap. No long forms, and conversations can continue on WhatsApp."
-            }
-          }
-        }
-      },
-      "services": {
-        "meta": {
-          "title": "Textile services and experts: consultants, machine repair, dyeing, transport",
-          "description": "Find textile service providers and experts across the trade: consultants, machine repair and maintenance, dyeing and printing job work, fabric transport and logistics, and more. List the service you offer, get found by buyers and suppliers, and deal directly. Free to start."
-        },
-        "hero": {
-          "badge": "ManekHR Connect",
-          "title": "The textile trade's services and experts.",
-          "sub": "Hire a consultant, a machine repair hand, a dyeing or printing job-work unit, a fabric transporter, or any textile service provider. List the service you offer with your rates, get found by buyers and suppliers, and deal directly. No middleman, no commission.",
-          "ctaPrimary": "Get started free",
-          "ctaSecondary": "Back to Connect"
-        },
-        "features": {
-          "eyebrow": "What you can do",
-          "title": "List a service, or find the right hand.",
-          "sub": "Built for the service trades that keep the textile industry running.",
-          "items": {
-            "list": {
-              "title": "List the service you offer",
-              "desc": "Put your service in front of the whole trade.",
-              "b1": "Pick a service type and add your rates",
-              "b2": "Show your experience and past work",
-              "b3": "Free to list"
-            },
-            "discover": {
-              "title": "Get found by buyers and suppliers",
-              "desc": "Be discoverable when the trade needs you.",
-              "b1": "Show up in search and by service type",
-              "b2": "Verified businesses, many ERP-backed",
-              "b3": "Enquiries open a private chat with you"
-            },
-            "browse": {
-              "title": "Browse by service type and location",
-              "desc": "Find the right provider, fast.",
-              "b1": "Filter by service type and district",
-              "b2": "Compare providers side by side",
-              "b3": "No leads sprayed to dozens of people"
-            },
-            "track": {
-              "title": "Build a verified track record",
-              "desc": "Earn trust the honest way.",
-              "b1": "Ratings only after a real deal",
-              "b2": "A profile that shows your real work",
-              "b3": "Link your company page and ERP"
-            }
-          }
-        },
-        "categories": {
-          "eyebrow": "Service types",
-          "title": "Every service the textile trade needs.",
-          "sub": "From consulting to job work, list and find across the whole industry.",
-          "items": {
-            "consulting": "Consulting",
-            "maintenance": "Maintenance",
-            "machine-repair": "Machine repair",
-            "testing": "Testing and quality",
-            "installation": "Installation",
-            "transport": "Transport",
-            "logistics": "Logistics",
-            "contractor": "Contractor and labour",
-            "dyeing": "Dyeing",
-            "printing": "Printing",
-            "job-work": "Job work",
-            "embroidery": "Embroidery and zari"
-          },
-          "browseLead": "Want to see who is offering a service right now?",
-          "browseCta": "Browse services in the app by type and location"
-        },
-        "faq": {
-          "eyebrow": "Common questions",
-          "title": "Services questions.",
-          "items": {
-            "cost": {
-              "q": "Does it cost anything to list a service?",
-              "a": "No. You can list the service you offer, set your rates, and receive enquiries for free. Paid plans add more reach when you want it."
-            },
-            "find": {
-              "q": "How do I find a service provider?",
-              "a": "Browse services inside the app by service type and location, or open a provider's page from search. Each service has its own public page, so you can also reach it directly from a search engine or a shared link."
-            },
-            "payment": {
-              "q": "Does ManekHR handle payment?",
-              "a": "No. You agree the price and the work directly with the provider and can close on WhatsApp. ManekHR does not take a commission or sit in the middle of your deal."
-            },
-            "types": {
-              "q": "Which services can I list?",
-              "a": "Anything the textile trade needs: consulting, maintenance, machine repair, testing and quality, installation, transport, logistics, contractor and labour, dyeing, printing, job work, and embroidery and zari."
-            }
-          }
-        }
-      },
-      "network": {
-        "meta": {
-          "title": "Textile Networking for Surat and India | ManekHR",
-          "description": "Network with India's textile trade. Connect with traders, karigars, dalals, mills, institutes, and service providers in Surat and across India. Free to join, in Gujarati, Hindi, and English."
-        },
-        "hero": {
-          "badge": "ManekHR Connect",
-          "title": "Surat and India's textile networking platform.",
-          "sub": "Find and connect with traders, karigars, dalals, mills, institutes, and service providers across the textile trade. Build a profile, reach real verified businesses, and deal directly. Free to join.",
-          "ctaPrimary": "Join free",
-          "ctaSecondary": "Explore Connect"
-        },
-        "answer": {
-          "heading": "What is a textile network?",
-          "body": "A textile network is where everyone in the trade, from traders and karigars to dalals, mills, institutes, and service providers, can find each other and do business. In Surat and across India, that networking has run on WhatsApp groups, markets, and word of mouth. ManekHR brings it online: you build a professional profile, get discovered by service type and location, and reach verified businesses directly, with no commission on your deals.",
-          "lead": "See how it works on",
-          "connectLink": "ManekHR Connect",
-          "homeLink": "or start from the home page."
-        },
-        "connects": {
-          "eyebrow": "Who it connects",
-          "title": "The whole trade, in one network.",
-          "sub": "Every role in the textile industry has a place here.",
-          "items": {
-            "traders": {
-              "title": "Traders and wholesalers",
-              "body": "Reach buyers and suppliers directly and grow your trade circle."
-            },
-            "karigars": {
-              "title": "Karigars and workers",
-              "body": "Show your skill, connect with units, and find steady work."
-            },
-            "dalals": {
-              "title": "Dalals and brokers",
-              "body": "Introduce buyers and sellers and build a verified track record."
-            },
-            "mills": {
-              "title": "Mills and manufacturers",
-              "body": "List capacity, take job work, and connect with bulk buyers."
-            },
-            "institutes": {
-              "title": "Training institutes",
-              "body": "Reach students and units, and place the people you train."
-            },
-            "serviceProviders": {
-              "title": "Service providers",
-              "body": "Offer machine repair, dyeing, printing, transport, and more."
-            }
-          }
-        },
-        "features": {
-          "eyebrow": "How it works",
-          "title": "Three steps to network.",
-          "sub": "Get into the trade network in minutes.",
-          "items": {
-            "connect": {
-              "title": "Build your profile",
-              "body": "Create a free profile that shows your role, work, and location in the trade."
-            },
-            "discover": {
-              "title": "Get discovered",
-              "body": "Show up in search by trade role, service type, and district when the trade needs you."
-            },
-            "deal": {
-              "title": "Deal directly",
-              "body": "Enquiries open a private chat, so you talk and close directly with no middleman fee."
-            }
-          }
-        },
-        "faq": {
-          "eyebrow": "Common questions",
-          "title": "Networking questions.",
-          "items": {
-            "how": {
-              "q": "How do I network with textile businesses in Surat?",
-              "a": "Join ManekHR, build a free profile for your role in the trade, and you become discoverable by service type and location. You can search for traders, karigars, dalals, mills, institutes, and service providers in Surat and across India, then message them directly to start a conversation."
-            },
-            "free": {
-              "q": "Is the textile network free?",
-              "a": "Yes. Joining, building a profile, getting discovered, and chatting are all free. Optional boosting adds more reach when you want it, and ManekHR takes no commission on your deals."
-            },
-            "who": {
-              "q": "Who can join?",
-              "a": "Anyone in the textile trade: traders and wholesalers, karigars and workers, dalals and brokers, mills and manufacturers, training institutes and students, and service providers. The network works in Gujarati, Hindi, and English."
-            }
-          }
-        }
       }
     },
     "industry": {
-      "caption": "India textile industry at a glance",
+      "caption": "Surat's diamond-polishing industry at a glance",
       "items": {
         "workforce": {
-          "stat": "4.5 crore+",
-          "label": "people work across India's textile and apparel trade, second only to agriculture."
+          "stat": "Lakhs of people",
+          "label": "work in Surat's diamond-polishing units, one of the largest skilled workforces of its kind in India."
         },
         "value": {
-          "stat": "Lakhs of crores",
-          "label": "in annual output, with India among the world's largest textile producers and exporters."
+          "stat": "9 in 10",
+          "label": "diamonds cut and polished worldwide pass through Surat's units."
         },
         "hubs": {
-          "stat": "Every state",
-          "label": "textile hubs and clusters across India, all connected on ManekHR."
+          "stat": "Every unit",
+          "label": "big or small, runs on the same registers, WhatsApp groups, and spreadsheets, ManekHR replaces with one system."
         }
       }
     }
@@ -14509,15 +13685,11 @@
     "meta": {
       "platform": {
         "title": "Terms & Conditions | ManekHR",
-        "description": "ManekHR's Terms & Conditions: the rules for using the ManekHR platform, including the Connect network, marketplace, jobs, and ERP tools for the textile trade."
-      },
-      "connect": {
-        "title": "Connect Terms & Conditions | ManekHR",
-        "description": "Terms & Conditions for ManekHR Connect, the B2B network, marketplace, and jobs platform for India's textile trade."
+        "description": "ManekHR's Terms & Conditions: the rules for using the ManekHR staff and salary management platform for diamond-polishing units."
       },
       "erp": {
         "title": "ERP Terms & Conditions | ManekHR",
-        "description": "Terms & Conditions for ManekHR ERP, the attendance, payroll, GST billing, and production tools for textile factories and shops."
+        "description": "Terms & Conditions for ManekHR ERP: the attendance, payroll, and staff management tools for diamond-polishing units."
       }
     }
   },
@@ -14529,27 +13701,11 @@
     "meta": {
       "platform": {
         "title": "Privacy Policy | ManekHR",
-        "description": "How ManekHR collects, uses, and protects your data across the platform: the Connect network, marketplace, jobs, and ERP tools for the textile trade."
-      },
-      "connect": {
-        "title": "Connect Privacy Policy | ManekHR",
-        "description": "How ManekHR Connect handles your data on the B2B network, marketplace, and jobs platform for India's textile trade."
+        "description": "How ManekHR collects, uses, and protects your data across the platform: staff records, attendance, and payroll for diamond-polishing units."
       },
       "erp": {
         "title": "ERP Privacy Policy | ManekHR",
-        "description": "How ManekHR ERP handles your data across attendance, payroll, GST billing, and production for textile factories and shops."
-      }
-    }
-  },
-  "guidelines": {
-    "placeholder": {
-      "title": "Community Guidelines",
-      "body": "The full {product} community guidelines will be published here soon."
-    },
-    "meta": {
-      "connect": {
-        "title": "Community Guidelines | ManekHR",
-        "description": "The community guidelines for ManekHR Connect: what you can post, how to behave, and how the textile trade keeps the network safe and genuine."
+        "description": "How ManekHR ERP handles your data across attendance, payroll, and staff management for diamond-polishing units."
       }
     }
   },

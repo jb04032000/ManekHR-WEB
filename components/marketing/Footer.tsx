@@ -4,10 +4,10 @@ import { getTranslations } from 'next-intl/server';
 import { CONTACT_EMAIL, FOOTER_COLUMNS, FOOTER_SOCIAL } from './content';
 import { Container } from './ui/Container';
 
-/** Coloured bullet on each product column's "Overview" link - Connect = indigo,
- *  ERP = gold. Keyed by link id (matches FOOTER_COLUMNS in content.ts). */
+/** Coloured gold bullet on the ERP column's "Overview" link (ManekHR ships a
+ *  single product, so only the one column needs the accent dot). Keyed by
+ *  link id (matches FOOTER_COLUMNS in content.ts). */
 const DOT_COLOR: Record<string, string> = {
-  connectOverview: 'var(--cr-indigo-600)',
   erpOverview: 'var(--cr-gold-500)',
 };
 
@@ -20,8 +20,8 @@ export async function Footer() {
       <Container>
         <div className="grid gap-10 lg:grid-cols-[1.7fr_repeat(3,1fr)]">
           <div>
-            {/* Two-color on-light brand lockup (navy "zari", gold "360"). Same
-                asset as the marketing Navbar header; keep both in sync. */}
+            {/* Emerald + gold on-light brand lockup. Same asset as the
+                marketing Navbar header; keep both in sync. */}
             <Image
               src="/manekhr-horizontal-on-light.svg"
               alt="ManekHR"
@@ -90,10 +90,11 @@ export async function Footer() {
           {/* Copyright + legal links. Re-added site-wide for AdSense + DPDP so the
               Privacy Policy is reachable from every signed-out page. Privacy/Terms
               point at the company-wide canonical pages (/privacy, /terms) served by
-              the admin legal-pages CMS; Community Guidelines is the Connect UGC
-              policy (/guidelines/connect) AdSense requires; Grievance is the DPDP
-              grievance-officer page (/grievance). Keep these four in sync with the
-              `marketing.footer.legal` keys in every locale. */}
+              the admin legal-pages CMS; Grievance is the DPDP grievance-officer page
+              (/grievance). No Community Guidelines link: ManekHR has no
+              user-generated content, so that Connect-era policy doesn't apply. Keep
+              these three in sync with the `marketing.footer.legal` keys in every
+              locale. */}
           <div className="flex flex-col gap-2.5 sm:flex-row sm:items-center sm:gap-5">
             <p className="text-[0.85rem] text-[var(--cr-neutral-500)]">{t('rights', { year })}</p>
             <ul className="flex flex-wrap items-center gap-4 text-[0.85rem]">
@@ -111,14 +112,6 @@ export async function Footer() {
                   className="text-[var(--cr-neutral-500)] transition-colors hover:text-[var(--cr-indigo-700)]"
                 >
                   {t('legal.terms')}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/guidelines/connect"
-                  className="text-[var(--cr-neutral-500)] transition-colors hover:text-[var(--cr-indigo-700)]"
-                >
-                  {t('legal.guidelines')}
                 </Link>
               </li>
               <li>

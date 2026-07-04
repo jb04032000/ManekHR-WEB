@@ -27,7 +27,6 @@ import { monthlyInstallment } from '@/lib/pricing';
  *     DYNAMICALLY from the catalogue via the shared ErpPricingTable, led by a
  *     prominent 45-day free-trial highlight (trial length is data-driven from the
  *     configured trial plan via getTrialBannerConfig().days).
- *  2. (Connect section removed 2026-07-04 with the Connect product.)
  *
  * Plus the supporting detail a complete pricing page needs: trial highlight,
  * team-size recommender (inside ErpPricingTable), GST clarity (on the cards),

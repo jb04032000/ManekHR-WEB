@@ -94,7 +94,7 @@ export async function Hero() {
             so the value prop + primary CTA lead the fold and the mock rewards the
             scroll. The tall mock previously pushed both below the fold on phones. */}
         <div className="[filter:drop-shadow(0_24px_48px_rgba(14,24,68,0.16))]">
-          <NetworkHeroMock variant="home" />
+          <NetworkHeroMock />
         </div>
       </Container>
     </section>

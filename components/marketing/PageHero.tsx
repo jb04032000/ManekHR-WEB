@@ -9,13 +9,14 @@ const HERO_BG =
 
 /**
  * Page header for marketing sub-pages — two shapes from one component:
- *  - default (no `aside`): a centred text header (Pricing, ERP, About, Contact).
- *  - with `aside`: a two-column hero (copy left, product mock right) so the
- *    marketplace + jobs deep-dive pages match the network-led home/Connect hero.
+ *  - default (no `aside`, used by every current page): a centred text header
+ *    (Pricing, ERP, About, Contact, Guides...).
+ *  - with `aside`: a two-column hero (copy left, mock right), available for a
+ *    future deep-dive page that wants a product visual beside the copy.
  * Above the fold, so NO entrance animation (LCP protection). Any mock passed as
  * `aside` must carry no looping highlight — the single allowed `.mkt-pulse`
- * lives only on the home/Connect hero (see mockups.tsx). Cross-module links:
- * ProductBadge tone (connect=indigo, erp=gold); MarketingButton for the CTAs.
+ * lives only on the home hero (see mockups.tsx). Cross-module links:
+ * ProductBadge tone; MarketingButton for the CTAs.
  */
 export function PageHero({
   badge,

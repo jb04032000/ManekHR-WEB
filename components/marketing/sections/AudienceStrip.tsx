@@ -7,12 +7,12 @@ import { Container } from '../ui/Container';
 import { SectionHeading } from '../ui/SectionHeading';
 
 /**
- * Landing audience strip: one sentence to each trade persona (weaver/karigar,
- * trader, mill owner, job seeker, training institute, student, service
- * provider). Cross-module links: copy under marketing.audience; AUDIENCE_STRIP
- * in content.ts. The grid is 3-up on desktop; with seven personas the lone last
- * card is centred (sm: span both cols, capped to one-column width + mx-auto;
- * lg: placed in the middle column) so no row reads as broken.
+ * Landing audience strip: one sentence to each real ManekHR user (unit owner,
+ * karigar/staff, supervisor, accountant/HR admin). Cross-module links: copy
+ * under marketing.audience; AUDIENCE_STRIP in content.ts. The grid is 3-up on
+ * desktop; with four personas the lone last card is centred (sm: span both
+ * cols, capped to one-column width + mx-auto; lg: placed in the middle column)
+ * so no row reads as broken.
  */
 export async function AudienceStrip() {
   const t = await getTranslations('marketing.audience');

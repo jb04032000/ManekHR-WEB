@@ -265,9 +265,8 @@ export function AwardIcon(p: IconProps) {
   );
 }
 
-// Wrench glyph for the Service providers & experts persona (consultants,
-// machine maintenance, dyeing/printing, transport). Lucide-style stroke path,
-// no fill. Used by the audience strip + the /connect "built for" services point.
+// Wrench glyph, used by the audience strip for the supervisor persona.
+// Lucide-style stroke path, no fill.
 export function WrenchIcon(p: IconProps) {
   return (
     <svg {...STROKE} {...p}>

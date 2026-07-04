@@ -19,18 +19,14 @@ export async function FinalCta({
   page?: MarketingPage;
   /**
    * Explicit signup-intent override for pages whose analytics `page` slug is
-   * neutral but whose AUDIENCE is product-specific. The Connect-flavored SEO
-   * pages (textile-jobs, textile-marketplace, saree-wholesalers, ...) pass
-   * 'connect' so their visitors skip the IntentPicker; the picker had been
-   * asking them a question their entry page already answered. Keeps the
-   * analytics `page` slug untouched (no fake page='connect').
+   * neutral but whose closing story should read as the ERP pitch (e.g. /erp
+   * itself). Keeps the analytics `page` slug untouched.
    */
-  signupIntent?: 'connect' | 'erp';
+  signupIntent?: 'erp';
 }) {
   const t = await getTranslations('marketing.finalCta');
-  // The shared copy sells Connect ("Be found by the whole trade... a profile
-  // and a shop"), which read as the wrong product at the end of /erp. ERP-intent
-  // pages get their own closing story + trial CTA via marketing.finalCta.erp.*.
+  // ERP-intent pages get their own closing story + trial CTA via
+  // marketing.finalCta.erp.*; everything else uses the shared copy.
   const isErp = (signupIntent ?? page) === 'erp';
   // ctaSecondary ("Talk to us") stays shared; only the story keys fork.
   const k = (key: 'eyebrow' | 'headline' | 'sub' | 'ctaPrimary') =>

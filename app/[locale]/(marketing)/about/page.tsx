@@ -22,8 +22,7 @@ import { SectionHeading } from '@/components/marketing/ui/SectionHeading';
  * company-story page) to lead with a direct, factual, quotable answer (category
  * + who it is for) in plain tone, then short self-contained sections (who it is
  * for, what you can do, languages, free to start) and a VISIBLE FAQ whose
- * English copy is mirrored into FAQPage JSON-LD via faqPageJsonLd(). Mirrors the
- * /textile-services page pattern (generateMetadata + breadcrumb + faqEn). Cross-
+ * English copy is mirrored into FAQPage JSON-LD via faqPageJsonLd(). Cross-
  * module links: content.ts (ABOUT_* arrays + AUTH.getStarted + footer `about`
  * link), schema.ts (breadcrumb + faqPage builders), marketing.pages.about.*
  * messages, ICONS for the card icons.
@@ -49,8 +48,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   setRequestLocale(locale);
   const t = await getTranslations('marketing.pages.about');
 
-  // English copy for the FAQPage schema (JSON-LD is never localized). Built the
-  // same way the home + /textile-services pages build their faqEn arrays.
+  // English copy for the FAQPage schema (JSON-LD is never localized).
   const tFaqEn = await getTranslations({ locale: 'en', namespace: 'marketing.pages.about.faq' });
   const faqEn = ABOUT_FAQ_ITEMS.map((id) => ({
     q: tFaqEn(`items.${id}.q`),
@@ -114,7 +112,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         </Container>
       </section>
 
-      {/* What you can do - the four jobs (network / marketplace / jobs / ERP). */}
+      {/* What you can do - staff, attendance, salary, and roles & permissions. */}
       <section className="bg-[var(--cr-cream)] py-16 sm:py-20 lg:py-24">
         <Container>
           <SectionHeading

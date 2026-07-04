@@ -10,7 +10,7 @@ import { FinalCta } from '@/components/marketing/sections/FinalCta';
 import { Container } from '@/components/marketing/ui/Container';
 import { SectionHeading } from '@/components/marketing/ui/SectionHeading';
 
-const PILLARS = ['team', 'finance', 'machines', 'roles'] as const;
+const PILLARS = ['team', 'attendance', 'salary', 'roles'] as const;
 
 export async function generateMetadata({
   params,
@@ -50,9 +50,8 @@ export default async function ErpPage({ params }: { params: Promise<{ locale: st
         primary={{ label: t('hero.ctaPrimary'), href: AUTH.getStartedErp }}
         // Pricing now sits IN the hero CTA row (it used to float alone in a
         // white strip below the hero, which read as a broken leftover). Order:
-        // start trial > see pricing > cross-sell Connect.
+        // start trial > see pricing.
         secondary={{ label: t('hero.ctaPricing'), href: '/erp/pricing' }}
-        tertiary={{ label: t('hero.ctaSecondary'), href: '/connect' }}
       />
       <section className="bg-[var(--cr-cream)] py-16 sm:py-20 lg:py-24">
         <Container>
@@ -63,7 +62,7 @@ export default async function ErpPage({ params }: { params: Promise<{ locale: st
           />
           <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-2">
             {PILLARS.map((id, index) => (
-              // `id` anchors each pillar (#team / #finance / #machines / #roles)
+              // `id` anchors each pillar (#team / #attendance / #salary / #roles)
               // so the marketing footer's ERP feature links scroll straight here.
               // scroll-mt offsets the sticky navbar so the heading is not hidden.
               <div key={id} id={id} className="scroll-mt-24">

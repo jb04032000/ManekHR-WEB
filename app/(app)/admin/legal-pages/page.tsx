@@ -277,10 +277,10 @@ export default function AdminLegalPagesPage() {
         >
           <Row gutter={12}>
             <Col span={12}>
+              {/* Connect product removed (2026-07-04) — ManekHR is ERP-only. */}
               <Form.Item name="product" label="Scope" rules={[{ required: true }]}>
                 <Select size="large" disabled={!!editing}>
                   <Option value="platform">Company-wide (ManekHR)</Option>
-                  <Option value="connect">Connect</Option>
                   <Option value="erp">ERP</Option>
                 </Select>
               </Form.Item>

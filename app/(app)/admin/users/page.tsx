@@ -715,8 +715,9 @@ export default function AdminUsersPage() {
         title={<DsCardTitle>All Users</DsCardTitle>}
         extra={
           <Space wrap>
-            {/* Product-line filter: All / ERP / Connect / Both. Resets to page 1
-                so the total count matches the visible rows. */}
+            {/* Product-line filter. Connect removed (2026-07-04) — ManekHR is
+                ERP-only, so only All/ERP remain. Resets to page 1 so the total
+                count matches the visible rows. */}
             <Segmented<'all' | 'erp' | 'connect' | 'both'>
               aria-label="Filter by product"
               value={product}
@@ -727,8 +728,6 @@ export default function AdminUsersPage() {
               options={[
                 { label: 'All', value: 'all' },
                 { label: 'ERP', value: 'erp' },
-                { label: 'Connect', value: 'connect' },
-                { label: 'Both', value: 'both' },
               ]}
             />
             <Checkbox

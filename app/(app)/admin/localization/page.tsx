@@ -85,7 +85,6 @@ const FALLBACK_NAMESPACES = [
   'dashboard',
   'rbac',
   'admin',
-  'bills',
   'roles',
   'subscription',
   'notifications',

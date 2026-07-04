@@ -4,18 +4,23 @@ import { Button, Collapse, Switch, Tag } from 'antd';
 import { ClockCircleOutlined, CrownOutlined } from '@ant-design/icons';
 import { useTranslations } from 'next-intl';
 import { FEATURE_ACCESS_REGISTRY } from '@/lib/constants/feature-access.registry';
-import {
-  ACCOUNTING_GROUP,
-  TIME_ATTENDANCE_GROUP,
-  MACHINES_GROUP,
-  MODULE_COLORS,
-} from './module-access-editor';
+import { TIME_ATTENDANCE_GROUP, MODULE_COLORS } from './module-access-editor';
 
-// Same cards hidden from the plan module-access editor: bills is superseded by
-// Finance, downtime/maintenance are dead standalone cards (real controls are
-// machines sub-features). Stored flags for hidden modules pass through
-// untouched on save - toggles only add/remove the module they belong to.
-const HIDDEN_AVAILABILITY_MODULES = ['bills', 'downtime', 'maintenance'];
+// Same cards hidden from the plan module-access editor. Machines + Finance
+// products removed (2026-07-04) — their module cards are hidden too;
+// `locations` is NOT hidden, it survived as its own real feature.
+const HIDDEN_AVAILABILITY_MODULES = [
+  'bills',
+  'downtime',
+  'maintenance',
+  'machines',
+  'resource_scopes',
+  'manufacturing',
+  'finance',
+  'inventory',
+  'gst_compliance',
+  'job_work',
+];
 
 interface ModuleAvailabilityEditorProps {
   /** Modules currently flagged "Coming Soon" (AppSettings.comingSoonModules). */
@@ -137,17 +142,17 @@ export function ModuleAvailabilityEditor({
     };
   };
 
-  const grouped = [...ACCOUNTING_GROUP, ...TIME_ATTENDANCE_GROUP, ...MACHINES_GROUP];
+  const grouped = [...TIME_ATTENDANCE_GROUP];
   const flatModules = visibleModules.filter((m) => !grouped.includes(m.module));
 
   return (
     <div className="flex flex-col gap-3">
+      {/* Accounting + Machines groups removed (2026-07-04) — both products are
+          gone, so their group headers no longer render (would be empty). */}
       <Collapse
-        defaultActiveKey={['accounting', 'time-attendance', 'machines', 'other']}
+        defaultActiveKey={['time-attendance', 'other']}
         items={[
-          buildGroupPanel('accounting', t('groupAccounting'), ACCOUNTING_GROUP),
           buildGroupPanel('time-attendance', t('groupTimeAttendance'), TIME_ATTENDANCE_GROUP),
-          buildGroupPanel('machines', t('groupMachines'), MACHINES_GROUP),
           {
             key: 'other',
             label: <span className="font-medium">{t('otherModules')}</span>,

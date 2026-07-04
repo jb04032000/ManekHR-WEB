@@ -14,24 +14,20 @@ const MODULE_COLORS: Record<string, string> = {
   settings: 'orange',
 };
 
-// The three REAL machine modules, grouped under one collapsible "Machines"
-// parent so the admin editor mirrors the user-facing single Machines sidebar
-// section. Order here is the render order inside the group.
-// (machines = machine CRUD + downtime/maintenance/piece-rate sub-features;
-//  locations = sites; resource_scopes = per-user row-level scoping.)
-// manufacturing (Manufacturing / BOM) grouped here too - owner directive 2026-07-03.
-const MACHINES_GROUP = ['machines', 'locations', 'resource_scopes', 'manufacturing'];
+// Machines/Finance products removed (2026-07-04, owner directive) — ManekHR is
+// ERP-only. Both groups are now empty (kept as exported constants + Collapse
+// panels for minimal diff / easy revert). `locations` was moved OUT of the old
+// Machines group into the flat card list below — it survives as its own real,
+// standalone feature (Workspace Settings), unlike the rest of that cluster.
+const MACHINES_GROUP: string[] = [];
 
 // Time & attendance modules, grouped under one collapsible "Time & Attendance"
 // parent (mirrors the Machines Group pattern + the RBAC matrix's Time &
 // Attendance section). Order here is the render order inside the group.
 const TIME_ATTENDANCE_GROUP = ['attendance', 'leave', 'regularization', 'shifts', 'holidays'];
 
-// Accounting cluster: finance + the modules promoted OUT of finance
-// (inventory / GST / job work), grouped under one collapsible "Accounting"
-// parent - owner directive 2026-07-04 (same pattern as the two groups above).
-// Each module keeps its own switch; the group is a visual wrapper only.
-const ACCOUNTING_GROUP = ['finance', 'inventory', 'gst_compliance', 'job_work'];
+// Finance product removed (2026-07-04) — this group is now empty.
+const ACCOUNTING_GROUP: string[] = [];
 
 // Lending cluster inside the Salary card: advance salary requests + employer/0%
 // loans. Rendered as a labelled subsection so the two assign together visually
@@ -44,7 +40,21 @@ const SALARY_LENDING_GROUP = ['advance_payments', 'loan_management'];
 // two cards control nothing and only cause confusion. Hidden from the editor.
 // NOTE: we only hide the CARDS - any pre-existing moduleAccess entries for these
 // stay in the array and pass through on save (see filter below), so no data loss.
-const HIDDEN_PLAN_EDITOR_MODULES = ['downtime', 'maintenance'];
+// Machines + Finance products removed (2026-07-04) — their module cards are
+// hidden too (machines/resource_scopes/manufacturing/finance/inventory/
+// gst_compliance/job_work); `locations` is NOT in this list — it survived as
+// its own real feature and still gets an editable card.
+const HIDDEN_PLAN_EDITOR_MODULES = [
+  'downtime',
+  'maintenance',
+  'machines',
+  'resource_scopes',
+  'manufacturing',
+  'finance',
+  'inventory',
+  'gst_compliance',
+  'job_work',
+];
 
 interface ModuleAccessEditorProps {
   moduleAccess: ModuleAccessEntry[];
@@ -264,9 +274,7 @@ export function ModuleAccessEditor({
       .filter((m): m is (typeof FEATURE_ACCESS_REGISTRY)[number] => Boolean(m))
       .map(buildModulePanel);
 
-  const machinesGroupItems = groupItems(MACHINES_GROUP);
   const timeGroupItems = groupItems(TIME_ATTENDANCE_GROUP);
-  const accountingGroupItems = groupItems(ACCOUNTING_GROUP);
 
   const flatDefaultKeys = flatItems.map((i) => i.key);
 
@@ -295,22 +303,11 @@ export function ModuleAccessEditor({
       </div>
       <div className="flex max-h-[400px] flex-col gap-2 overflow-y-auto pr-2">
         <Collapse defaultActiveKey={flatDefaultKeys} items={flatItems} />
-        {/* Accounting parent group: finance / inventory / gst_compliance /
-            job_work under one collapsible header (same pattern as the Time &
-            Attendance and Machines groups below). */}
-        <Collapse
-          defaultActiveKey={['accounting-group']}
-          items={[
-            {
-              key: 'accounting-group',
-              label: <span className="font-medium">Accounting Group</span>,
-              children: <Collapse defaultActiveKey={ACCOUNTING_GROUP} items={accountingGroupItems} />,
-            },
-          ]}
-        />
+        {/* Accounting + Machines groups removed (2026-07-04) — both products are
+            gone, so their group headers no longer render (would be empty). */}
         {/* Time & Attendance parent group: attendance / leave / regularization /
             shifts / holidays under one collapsible header, mirroring the RBAC
-            matrix's Time & Attendance section (same pattern as Machines Group). */}
+            matrix's Time & Attendance section. */}
         <Collapse
           defaultActiveKey={['time-attendance-group']}
           items={[
@@ -320,22 +317,6 @@ export function ModuleAccessEditor({
               children: (
                 <Collapse defaultActiveKey={TIME_ATTENDANCE_GROUP} items={timeGroupItems} />
               ),
-            },
-          ]}
-        />
-        {/* Machines parent group: wraps the 3 real machine modules
-            (machines / locations / resource_scopes) under one collapsible
-            header, mirroring the user-facing single Machines sidebar section. */}
-        <Collapse
-          defaultActiveKey={['machines-group']}
-          items={[
-            {
-              key: 'machines-group',
-              // Groups the machine-related modules under one header, mirroring the
-              // user-facing single Machines sidebar section. Distinct from the inner
-              // "Machines" module card label to stay unambiguous in the admin editor.
-              label: <span className="font-medium">Machines Group</span>,
-              children: <Collapse defaultActiveKey={MACHINES_GROUP} items={machinesGroupItems} />,
             },
           ]}
         />

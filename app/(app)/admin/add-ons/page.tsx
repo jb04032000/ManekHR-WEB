@@ -334,7 +334,6 @@ export default function AdminAddOnsPage() {
                   <Form.Item name="targetModule" label="Module to Unlock">
                     <Select placeholder="Select module">
                       <Option value="shifts">Shifts</Option>
-                      <Option value="bills">Bills</Option>
                       <Option value="reports">Reports</Option>
                       <Option value="api">API Access</Option>
                     </Select>

@@ -285,11 +285,17 @@ export default function AdminTiersPage() {
             </Col>
           </Row>
 
-          <Form.Item name="product" label="Product Line" rules={[{ required: true }]}>
-            <Select size="large">
+          {/* Connect product removed (2026-07-04) — ManekHR is ERP-only, so this
+              is a single fixed value now (kept as a Select for minimal diff /
+              easy revert if a second product line ever returns). */}
+          <Form.Item
+            name="product"
+            label="Product Line"
+            rules={[{ required: true }]}
+            initialValue="erp"
+          >
+            <Select size="large" disabled>
               <Option value="erp">ERP (workspace tier)</Option>
-              <Option value="connect">Connect (person-centric)</Option>
-              <Option value="bundle">Bundle (ERP + Connect)</Option>
             </Select>
           </Form.Item>
 
